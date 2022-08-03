@@ -43,5 +43,5 @@ plt.grid()# minor
 #plt.savefig('../figs/xnyn.eps')
 #subprocess.run(shlex.split("termux-open ../figs/xnyn.pdf"))
 #else
-plt.savefig('Assignment 1/xnyn.pdf')
+plt.savefig('Assignment 1/xnyn.jpg')
 plt.show()
