@@ -31,5 +31,5 @@ plt.grid()# minor
 #plt.savefig('../figs/dtft.eps')
 #subprocess.run(shlex.split("termux-open ../figs/dtft.pdf"))
 #else
-plt.savefig("Assignment 1/dtft.jpg")
+plt.savefig("Assignment 1/fig/dtft.jpg")
 plt.show()

@@ -52,5 +52,5 @@ plt.grid()# minor
 #plt.savefig('../figs/yndft.pdf')
 #subprocess.run(shlex.split("termux-open ../figs/yndft.pdf"))
 #else
-plt.savefig('Assignment 1/yndft.jpg')
+plt.savefig('Assignment 1/fig/yndft.jpg')
 plt.show()
