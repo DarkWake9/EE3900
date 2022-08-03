@@ -1,0 +1,359 @@
+\documentclass[journal,12pt,twocolumn]{IEEEtran}
+
+\usepackage{setspace}
+\usepackage{gensymb}
+\singlespacing
+\usepackage[cmex10]{amsmath}
+
+\usepackage{amsthm}
+
+\usepackage{mathrsfs}
+\usepackage{txfonts}
+\usepackage{stfloats}
+\usepackage{bm}
+\usepackage{cite}
+\usepackage{cases}
+\usepackage{subfig}
+
+\usepackage{longtable}
+\usepackage{multirow}
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{mhchem}
+\usepackage{stmaryrd}
+\usepackage{graphicx}
+\usepackage[export]{adjustbox}
+
+\usepackage{enumitem}
+\usepackage{mathtools}
+\usepackage{steinmetz}
+\usepackage{tikz}
+\usepackage{circuitikz}
+\usepackage{verbatim}
+\usepackage{tfrupee}
+\usepackage[breaklinks=true]{hyperref}
+\usepackage{graphicx}
+\usepackage{tkz-euclide}
+
+\usetikzlibrary{calc,math}
+\usepackage{listings}
+    \usepackage{color}                                            %%
+    \usepackage{array}                                            %%
+    \usepackage{longtable}                                        %%
+    \usepackage{calc}                                             %%
+    \usepackage{multirow}                                         %%
+    \usepackage{hhline}                                           %%
+    \usepackage{ifthen}                                           %%
+    \usepackage{lscape}     
+\usepackage{multicol}
+\usepackage{chngcntr}
+
+\DeclareMathOperator*{\Res}{Res}
+
+\renewcommand\thesection{\arabic{section}}
+\renewcommand\thesubsection{\thesection.\arabic{subsection}}
+\renewcommand\thesubsubsection{\thesubsection.\arabic{subsubsection}}
+
+\renewcommand\thesectiondis{\arabic{section}}
+\renewcommand\thesubsectiondis{\thesectiondis.\arabic{subsection}}
+\renewcommand\thesubsubsectiondis{\thesubsectiondis.\arabic{subsubsection}}
+\providecommand{\nCr}[2]{\,^{#1}C_{#2}} % nCr
+\providecommand{\nPr}[2]{\,^{#1}P_{#2}} % nPr
+\providecommand{\mbf}{\mathbf}
+\providecommand{\pr}[1]{\ensuremath{\Pr\left(#1\right)}}
+\providecommand{\qfunc}[1]{\ensuremath{Q\left(#1\right)}}
+\providecommand{\sbrak}[1]{\ensuremath{{}\left[#1\right]}}
+\providecommand{\lsbrak}[1]{\ensuremath{{}\left[#1\right.}}
+\providecommand{\rsbrak}[1]{\ensuremath{{}\left.#1\right]}}
+\providecommand{\brak}[1]{\ensuremath{\left(#1\right)}}
+\providecommand{\lbrak}[1]{\ensuremath{\left(#1\right.}}
+\providecommand{\rbrak}[1]{\ensuremath{\left.#1\right)}}
+\providecommand{\cbrak}[1]{\ensuremath{\left\{#1\right\}}}
+\providecommand{\lcbrak}[1]{\ensuremath{\left\{#1\right.}}
+\providecommand{\rcbrak}[1]{\ensuremath{\left.#1\right\}}}
+\theoremstyle{remark}
+\newtheorem{rem}{Remark}
+\newcommand{\sgn}{\mathop{\mathrm{sgn}}}
+\providecommand{\abs}[1]{\left\vert#1\right\vert}
+\providecommand{\res}[1]{\Res\displaylimits_{#1}} 
+\providecommand{\norm}[1]{\lVert#1\rVert}
+\providecommand{\mtx}[1]{\mathbf{#1}}
+\providecommand{\mean}[1]{E\left[ #1 \right]}
+\providecommand{\fourier}{\overset{\mathcal{F}}{ \rightleftharpoons}}
+\providecommand{\ztrans}{\overset{\mathcal{Z}}{ \rightleftharpoons}}
+%\providecommand{\hilbert}{\overset{\mathcal{H}}{ \rightleftharpoons}}
+\providecommand{\system}{\overset{\mathcal{H}}{ \longleftrightarrow}}
+	%\newcommand{\solution}[2]{\textbf{Solution:}{#1}}
+\newcommand{\solution}{\noindent \textbf{Solution: }}
+\providecommand{\dec}[2]{\ensuremath{\overset{#1}{\underset{#2}{\gtrless}}}}
+\numberwithin{equation}{section}
+%\numberwithin{equation}{subsection}
+%\numberwithin{problem}{subsection}
+%\numberwithin{definition}{subsection}
+\makeatletter
+\@addtoreset{figure}{problem}
+\makeatother
+\let\StandardTheFigure\thefigure
+%\renewcommand{\thefigure}{\theproblem.\arabic{figure}}
+\renewcommand{\thefigure}{\theproblem}
+
+
+\hyphenation{op-tical net-works semi-conduc-tor}
+\def\inputGnumericTable{}                                 %%
+
+\lstset{
+%language=C,
+frame=single, 
+breaklines=true,
+columns=fullflexible
+}
+\begin{document}
+\title{Assignment 1}
+\author{Vibhavasu Pasumarti - EP20BTECH11015}
+\maketitle
+\newpage
+\bigskip
+\renewcommand{\thefigure}{\theenumi}
+\renewcommand{\thetable}{\theenumi}
+Download all python codes from 
+\begin{lstlisting}
+https://github.com/VIB2020/AI1103/blob/main/Assignment%201/code/Assignment_1.py
+\end{lstlisting}
+%
+and latex-tikz codes from 
+%
+\begin{lstlisting}
+https://github.com/VIB2020/AI1103/blob/main/Assignment%201/Assignment%201.tex
+\end{lstlisting}
+
+%\section{Difference Equation}
+\section{}
+\section{}
+\section{}
+\section{Z - transform}
+\subsection{}
+\begin{enumerate}[label=\roman*)]
+    \item  To prove:    ${\mathcal {Z}}\{x(n-1)\} = z^{-1}X(z)$\\
+
+    \item To find:  ${\mathcal {Z}}\{x(n-k)\}$
+\end{enumerate}
+
+\begin{enumerate}[label=\roman*)]
+   \item \begin{align}
+        \mathcal{Z} \{x(n-1)\} = \sum_{n=-\infty}^{\infty} x(n-1) z^{-n}\\
+        \intertext{put $n = m + 1$}
+        \implies \sum_{m=-\infty}^{\infty} x[m] z^{-m-1}\\
+        =z^{-1} \sum_{m=-\infty}^{\infty} x[m] z^{-m}
+    \\
+        =z^{-1} $X$(z)\\
+     \end{align}
+
+    \item Similarly 
+    \begin{equation}
+        \mathcal{Z}\{x[n-k]\}=\sum_{n=-\infty}^{\infty} x[n-k] z^{-n}
+    \end{equation}    
+        \intertext{Let $m=n-k$}
+    \begin{align}
+        =\sum_{m=-\infty}^{\infty} x[m] z^{-m-k}\\
+        =z^{-k} X[z]
+    \end{align}
+
+\end{enumerate}
+\subsection{To prove:}
+\begin{align}
+    H(z)=& \frac{Y(z)}{X(z)}    
+\end{equation}
+(Assuming  Z-transform is linear)
+\begin{align}
+    y(n)+\frac{y(n-1)}{2}=x(n)+x(n-z)
+    \intertext{k y(n)=0, n<2}
+    \implies y(z)+\frac{z^{-1} y(z)}{2}=x(z)+z^{-2} x(z) \\
+    H(z)=\frac{1+z^{-2}}{1-z^{-1}}
+\end{align}
+
+\subsection{}
+\begin{enumerate}[label=(\roman*)]
+    \item Find $Z$-transform of $\delta(n)= \begin{cases}1 & n=0 \\ 0 & n \neq 0\end{cases}$
+
+    \item Show $Z$-transform of $\delta(n)= \begin{cases}1 & n \geqslant 0 \\ 0 & n<0\end{cases}$ is:
+\end{enumerate}
+
+\begin{enumerate}[label=(\roman*)]
+    \item) \solution \begin{equation}
+        \Delta(z) = z\{\delta[n]\}=\sum_{n=-\infty}^{\infty} \delta(n) z^{-n} = 1\\
+    \end{equation}
+
+    \item) \solution\begin{align}
+        U(z) = Z\{\delta(n)\}=\sum_{n=-\infty}^{\infty} u[n] z^{-n} \\
+        =1+z^{-1}+z^{-2}+\cdots \\
+        =\frac{1}{1-z^{-1}}
+    \end{align}
+\end{enumerate}
+\subsection{}
+    \begin{align}
+        a^{n} u[n]  \rightleftharpoons ?|z|>|a| \\
+        u[n] = \begin{cases}1 & n \geq 0 \\
+            0 & n<0\end{cases} \\
+        U^{\prime}(z) &=z\{u[n]\}=\sum_{n=-\infty}^{\infty} a^{n}[n] z^{-n} \\
+        &=\frac{1}{1-a z^{-1}}
+    \end{align}
+    
+\section{Impulse Response}
+\subsection{}
+Find $h[n] \underset{z}{\rightleftharpoons} H(z)$
+
+Given: $\exists$ 1-1 relationship b/w $h[n]$ \& $H(z)$
+
+$h(n)$ is the Impulse Response of the system defined in $3.2$
+$y(n)+\frac{y[n-1]}{2}=x[n]+x[n-2]$
+From $4 \cdot 2 \quad H(z)=\frac{1+z^{-2}}{1-\frac{z^{-1}}{2}}$\\
+$\sum_{n=-\infty}^{\infty} h[n] z^{-n}=\frac{1+z^{-2}}{1-\frac{z^{-1}}{2}}=\frac{Y(z)}{x(z)}$
+
+From $4 \cdot 4$ :
+$$
+\begin{align}
+a^{n} u[n] & \frac{Z}{\bar{v}} v^{\prime}(z)=\frac{1}{1-a z^{-1}} \\
+1+(z) &=\frac{1}{1-\frac{z^{-1}}{2}}+\frac{z^{-2}}{1-\frac{z^{-1}}{2}} \\
+&=z\left\{\frac{z}{z} \frac{u[n]}{2^{n}}\right\}+z^{-2} z\{u[n]\} \\
+=& n[n]=\frac{u[n]}{z^{n}}+\frac{u[n-2]}{2^{n-2}} .
+\end{align}
+$$
+
+$$
+\sum_{n=-\infty}^{\infty} h(n)<\infty
+$$
+\subsection{}
+\subsection{}
+5.3 1s the system defined in $3.2$
+$$
+\rightarrow y(n)-\frac{y(n-1]}{2}=x[n]+x[n-2]
+$$
+stable? For the impulse response $h(n)$ in 5.1?
+
+from $5 \cdot 1: h[n]=\frac{u[n]}{2^{n}}+\frac{u[n-2]}{2^{n-2}}$
+$$
+\sum_{n=-\infty}^{\infty} h[n]=\sum_{n=0}^{\infty} \frac{u[n]}{2^{n}}+\sum_{n=2}^{\infty} \frac{u[n-2]}{2^{n-2}}
+$$
+$=\left(1+\frac{1}{2}+\cdots \cdot\right) 2$
+
+$=4<\infty$
+
+$\Rightarrow h(n)$ is STABLE
+
+\subsection{}
+\begin{aligned}
+ h(n)-\frac{h(n-1)}{2}=\delta(n)+\delta(n-2) \\
+ h[n]=? \\
+ S(n)= \begin{cases}1 & n=0 \\ 0 & n \neq 0\end{cases} \\
+ h=0 \rightarrow h(0)-\frac{h(-1)}{2}=1 \\
+ n=1 \rightarrow h(1)-\frac{h(0)}{2}=0 \Rightarrow h(1)=2 h(0) \\
+ n=2 \quad n(2)-\frac{n(1)}{2}=1 \\
+ \Rightarrow h(2)-h(0)=1 \\
+ \text { Assume } h[n]=0 \quad \forall n<0 \\
+ h(0)=1 \quad n(1)=2 \quad n(2)=2 \\
+ h(3)=\frac{h(2)}{2}=1 \quad h(4)=\frac{h(3)}{2}=\frac{1}{2} \\
+ \Rightarrow n[n]= \begin{cases}1 & n=0 \\ 2 & n=1 \\ \frac{1}{2^{n-3}} & n \geqslant 2\end{cases} 
+\end{aligned}
+
+\subsection{}
+
+\begin{equation}
+y(n)=x(n) & * h[n]=\sum_{n=-\infty}^{\infty} x(k) h(n-k) \\
+\end{equation}
+$$
+\subsection{} To prove: \quad
+y(n)=\sum_{n=-\infty}^{\infty} x(n-k) h(k)$ \\
+6.2 To prove: $Y(k)=x(k)_{\infty} 1+(k)$
+\begin{align}
+ X(z)=z\{x(n)\}=\sum_{n=-\infty}^{\infty} x(n) z^{-n} \\
+ 1+(z)=Z\left\{(h(m)\}=\sum_{m=-\infty}^{\infty} h(m) z^{-m}\right. \\
+ X(z) \cdot H(z)=\sum_{n=-\infty}^{\infty} x(n) z^{-n} \sum_{m=-\infty}^{\infty} h(m) z^{-m} \\
+ =\sum_{n=-\infty}^{\infty} \sum_{m=-\infty}^{\infty} x[n] h[m] z^{-(n+m)} \\
+ m=k-n \quad m=-\infty \rightarrow n=\infty \quad m=\infty \rightarrow n=-\infty \\
+ =\sum_{k=-\infty}^{\infty}\left(\sum_{n=-\infty}^{\infty} x[n] h[n-k]\right) z^{-k} \\
+ =\sum_{k=-\infty}^{\infty} y[n] z^{-k}=Y(k) \\
+ \Rightarrow \quad Y(k)=1+(k) \cdot k(k) 
+\end{align}
+
+From 6.2:
+
+\begin{align}
+Y(z)=x(z) \cdot H(z)=\sum_{n=-\infty}^{\infty} x(n) \sum_{m=-\infty}^{\infty} h(m) z^{-(m+n)} \\
+m=n-k \rightarrow Y(z)=\sum_{n=-\infty}^{\infty}\left(\sum_{n=-\infty}^{\infty} x(n) h(n-k) z^{-k}\right. \\
+y^{1}(n)
+\end{align}
+
+now pst $n+m=k \quad n=-\infty$
+
+\begin{aligned}
+& \Rightarrow Y(z)=\sum_{k=-\infty}^{\infty} x(m-k) \sum_{m=-\infty}^{\infty} h(m) z^{-k} \\
+& =\sum_{k=-\infty}^{\infty}\left(\sum_{m=-\infty}^{\infty} x[m-k] h[k]\right) z^{-k} \\
+& \text { but } Y(z)=\sum_{k=-\infty}^{\infty} y(m) z^{-k} \\
+& \Rightarrow y(m)=\sum_{m=-\infty}^{\infty} x[m-k] h(k) \\
+& 5 \cdot 6 \rightarrow y(n)=\sum_{n=-\infty}^{\infty} x(n-k) h(k) 
+\end{aligned}
+$$
+\section{DFT and FFT}
+\subsection{} Compote $x(k) \triangleq \sum_{n=0}^{N-1} x(n) \exp \left(\frac{-i 2 \pi k n}{N}\right)$ $k=0,1 \cdots \cdots-1$
+
+\& $H(k)$ using $h(n)$
+$$
+x_{(n)}=\{1,2,3,4,3,1\} \quad N=6
+$$
+$x_{(k)}=\sum_{n=0}^{5} x_{(n)} \exp \left(\frac{-i 2 \pi k n}{6}\right)$
+
+$x_{(k)}=1+2 \exp \left(-\frac{i \pi_{k}}{3}\right)+3 \exp \left(-\frac{i 2 \pi_{k}}{3}\right)$
+
+$+4 \exp (-i \pi k)+2 \exp \left(-i \frac{4 \pi k}{3}\right)$
+
+$+\exp \left(-\frac{i 5 \pi k}{6}\right)$
+
+$k=0,1,2,3,4,5$
+
+$X(0)=13$
+
+$\begin{aligned} x(1)=1+2 e^{-\frac{i \pi}{3}}+3 e^{-\left(\frac{2 \pi i}{3}\right)}+&+e^{-2 \pi}+2 e^{-\left(\frac{4 \pi i}{3}\right)} \\ &+e^{-\frac{5 \pi i}{6}} \end{aligned}$
+
+$=$ ii) $H(k)$
+$$
+\begin{aligned}
+&\text { (k) with } h(n)= \begin{cases}1 & n=0 \\
+2 & n=1 \\
+\frac{1}{2^{n-3}} & n \geqslant 2 \\
+& l N \rightarrow \infty\end{cases} \\
+&f(k)=\sum_{n=0}^{N-1} h(n) \exp \left(-i 2 \pi k \frac{k}{n}\right)
+\end{aligned}
+
+$$
+x_{(n)}=\{1,2,3,4,3,1\} \quad N=6
+$$
+$x_{(k)}=\sum_{n=0}^{5} x_{(n)} \exp \left(\frac{-i 2 \pi k n}{6}\right)$
+
+$x_{(k)}=1+2 \exp \left(-\frac{i \pi_{k}}{3}\right)+3 \exp \left(-\frac{i 2 \pi_{k}}{3}\right)$
+
+$+4 \exp (-i \pi k)+2 \exp \left(-i \frac{4 \pi k}{3}\right)$
+
+$+\exp \left(-\frac{i 5 \pi k}{6}\right)$
+
+$k=0,1,2,3,4,5$
+
+$X(0)=13$
+
+$\begin{aligned} x(1)=1+2 e^{-\frac{i \pi}{3}}+3 e^{-\left(\frac{2 \pi i}{3}\right)}+&+e^{-2 \pi}+2 e^{-\left(\frac{4 \pi i}{3}\right)} \\ &+e^{-\frac{5 \pi i}{6}} \end{aligned}$
+
+$=$ ii) $H(k)$
+$$
+\begin{aligned}
+&\text { (k) with } h(n)= \begin{cases}1 & n=0 \\
+2 & n=1 \\
+\frac{1}{2^{n-3}} & n \geqslant 2 \\
+& l N \rightarrow \infty\end{cases} \\
+&f(k)=\sum_{n=0}^{N-1} h(n) \exp \left(-i 2 \pi k \frac{k}{n}\right)
+\end{aligned}
+$$
+\section{Exercises}
+\end{document}
