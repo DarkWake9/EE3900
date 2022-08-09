@@ -1,0 +1,7 @@
+\contentsline {section}{\numberline {1}Software Installation}{1}{section.1}%
+\contentsline {section}{\numberline {2}Digital Filter}{1}{section.2}%
+\contentsline {section}{\numberline {3}Difference Equation}{2}{section.3}%
+\contentsline {section}{\numberline {4}$Z$-transform}{2}{section.4}%
+\contentsline {section}{\numberline {5}Impulse Response}{3}{section.5}%
+\contentsline {section}{\numberline {6}DFT and FFT}{4}{section.6}%
+\contentsline {section}{\numberline {7}Exercises}{4}{section.7}%
