@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2022.8.3)  6 AUG 2022 15:52
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2022.8.3)  10 AUG 2022 11:15
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -801,13 +801,8 @@ LaTeX Font Info:    Trying to load font information for TS1+txr on input line 1
 (/usr/share/texlive/texmf-dist/tex/latex/txfonts/ts1txr.fd
 File: ts1txr.fd 2000/12/15 v3.1
 )
-Underfull \hbox (badness 7777) in paragraph at lines 193--207
-[]\OT1/txr/m/n/12 You will find a spec-tro-gram at [][]$https :
- []
-
-
-Underfull \hbox (badness 5374) in paragraph at lines 193--207
-\OT1/txr/m/n/12 / / academo . org / demos / spectrum-[]analyzer$[][]. Up-
+Underfull \hbox (badness 4608) in paragraph at lines 193--207
+\OT1/txr/m/n/12 org / demos / spectrum-[]analyzer$[] []. Up-load the
  []
 
 Package hyperref Info: bookmark level for unknown lstlisting defaults to 0 on i
@@ -844,46 +839,46 @@ Package pdftex.def Info: ./figs/xnyn.pdf  used on input line 247.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 254.
+(hyperref)                removing `math shift' on input line 255.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 254.
+(hyperref)                removing `math shift' on input line 255.
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [2 <./figs/xnyn.pdf>]
 
-LaTeX Warning: Command \j invalid in math mode on input line 371.
+LaTeX Warning: Command \j invalid in math mode on input line 372.
 
 
-LaTeX Warning: Command \j invalid in math mode on input line 371.
+LaTeX Warning: Command \j invalid in math mode on input line 372.
 
 
-LaTeX Warning: Command \j invalid in math mode on input line 373.
+LaTeX Warning: Command \j invalid in math mode on input line 374.
 
 
-LaTeX Warning: Command \j invalid in math mode on input line 373.
+LaTeX Warning: Command \j invalid in math mode on input line 374.
 
-<./figs/dtft.pdf, id=184, 462.52798pt x 346.89601pt>
+<./figs/dtft.pdf, id=185, 462.52798pt x 346.89601pt>
 File: ./figs/dtft.pdf Graphic file (type pdf)
 <use ./figs/dtft.pdf>
-Package pdftex.def Info: ./figs/dtft.pdf  used on input line 382.
+Package pdftex.def Info: ./figs/dtft.pdf  used on input line 383.
 (pdftex.def)             Requested size: 252.0pt x 189.00429pt.
 
-LaTeX Warning: Command \j invalid in math mode on input line 383.
+LaTeX Warning: Command \j invalid in math mode on input line 384.
 
 
-LaTeX Warning: Command \j invalid in math mode on input line 383.
+LaTeX Warning: Command \j invalid in math mode on input line 384.
 
 
 Underfull \vbox (badness 5592) has occurred while \output is active []
 
-<./figs/hn.pdf, id=190, 462.52798pt x 346.89601pt>
+<./figs/hn.pdf, id=191, 462.52798pt x 346.89601pt>
 File: ./figs/hn.pdf Graphic file (type pdf)
 <use ./figs/hn.pdf>
-Package pdftex.def Info: ./figs/hn.pdf  used on input line 415.
+Package pdftex.def Info: ./figs/hn.pdf  used on input line 416.
 (pdftex.def)             Requested size: 252.0pt x 189.00429pt.
 
 Underfull \vbox (badness 1122) has occurred while \output is active []
@@ -893,21 +888,21 @@ Underfull \vbox (badness 1122) has occurred while \output is active []
 pdfTeX warning: /usr/bin/pdflatex (file ./figs/hn.pdf): PDF inclusion: multiple
  pdfs with page group included in a single page
 >]
-<./figs/hndef.pdf, id=304, 462.52798pt x 346.89601pt>
+<./figs/hndef.pdf, id=305, 462.52798pt x 346.89601pt>
 File: ./figs/hndef.pdf Graphic file (type pdf)
 <use ./figs/hndef.pdf>
-Package pdftex.def Info: ./figs/hndef.pdf  used on input line 443.
+Package pdftex.def Info: ./figs/hndef.pdf  used on input line 444.
 (pdftex.def)             Requested size: 252.0pt x 189.00429pt.
-<./figs/ynconv.pdf, id=308, 462.52798pt x 346.89601pt>
+<./figs/ynconv.pdf, id=309, 462.52798pt x 346.89601pt>
 File: ./figs/ynconv.pdf Graphic file (type pdf)
 <use ./figs/ynconv.pdf>
-Package pdftex.def Info: ./figs/ynconv.pdf  used on input line 467.
+Package pdftex.def Info: ./figs/ynconv.pdf  used on input line 468.
 (pdftex.def)             Requested size: 252.0pt x 189.00429pt.
 
 ! Missing } inserted.
 <inserted text> 
                 }
-l.483 \end{align}
+l.484 \end{align}
                  
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -918,14 +913,14 @@ my insertion and my current dilemma will both disappear.
 ! Extra \right.
 <argument> ...nfty }^{\infty } h(m) z^{-m}\right .
                                                    
-l.483 \end{align}
+l.484 \end{align}
                  
 I'm ignoring a \right that had no matching \left.
 
 ! Missing { inserted.
 <inserted text> 
                 {
-l.483 \end{align}
+l.484 \end{align}
                  
 I've put in what seems to be necessary to fix
 the current column of the current alignment.
@@ -934,7 +929,7 @@ Try to go on, since this might almost work.
 ! Missing } inserted.
 <inserted text> 
                 }
-l.483 \end{align}
+l.484 \end{align}
                  
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -945,14 +940,14 @@ my insertion and my current dilemma will both disappear.
 ! Extra \right.
 <argument> ...nfty }^{\infty } h(m) z^{-m}\right .
                                                    
-l.483 \end{align}
+l.484 \end{align}
                  
 I'm ignoring a \right that had no matching \left.
 
 ! Missing \endgroup inserted.
 <inserted text> 
                 \endgroup 
-l.483 \end{align}
+l.484 \end{align}
                  
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -963,7 +958,7 @@ my insertion and my current dilemma will both disappear.
 ! Misplaced \omit.
 \math@cr@@@ ...@ \@ne \add@amps \maxfields@ \omit 
                                                   \kern -\alignsep@ \iftag@ ...
-l.483 \end{align}
+l.484 \end{align}
                  
 I expect to see \omit only after tab marks or the \cr of
 an alignment. Proceed, and I'll ignore this case.
@@ -971,7 +966,7 @@ an alignment. Proceed, and I'll ignore this case.
 ! Missing { inserted.
 <inserted text> 
                 {
-l.483 \end{align}
+l.484 \end{align}
                  
 I've put in what seems to be necessary to fix
 the current column of the current alignment.
@@ -980,7 +975,7 @@ Try to go on, since this might almost work.
 ! Missing } inserted.
 <inserted text> 
                 }
-l.499 \end{align}
+l.500 \end{align}
                  
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -991,7 +986,7 @@ my insertion and my current dilemma will both disappear.
 ! Missing } inserted.
 <inserted text> 
                 }
-l.499 \end{align}
+l.500 \end{align}
                  
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -1002,7 +997,7 @@ my insertion and my current dilemma will both disappear.
 ! Extra }, or forgotten $.
 <recently read> }
                  
-l.499 \end{align}
+l.500 \end{align}
                  
 I've deleted a group-closing symbol because it seems to be
 spurious, as in `$x}$'. But perhaps the } is legitimate and
@@ -1013,7 +1008,7 @@ deleted material, e.g., by typing `I$}'.
 ! Missing { inserted.
 <inserted text> 
                 {
-l.499 \end{align}
+l.500 \end{align}
                  
 I've put in what seems to be necessary to fix
 the current column of the current alignment.
@@ -1022,7 +1017,7 @@ Try to go on, since this might almost work.
 ! Missing } inserted.
 <inserted text> 
                 }
-l.499 \end{align}
+l.500 \end{align}
                  
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -1033,7 +1028,7 @@ my insertion and my current dilemma will both disappear.
 ! Missing } inserted.
 <inserted text> 
                 }
-l.499 \end{align}
+l.500 \end{align}
                  
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -1044,7 +1039,7 @@ my insertion and my current dilemma will both disappear.
 ! Extra }, or forgotten $.
 <recently read> }
                  
-l.499 \end{align}
+l.500 \end{align}
                  
 I've deleted a group-closing symbol because it seems to be
 spurious, as in `$x}$'. But perhaps the } is legitimate and
@@ -1055,7 +1050,7 @@ deleted material, e.g., by typing `I$}'.
 ! Missing \endgroup inserted.
 <inserted text> 
                 \endgroup 
-l.499 \end{align}
+l.500 \end{align}
                  
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -1066,7 +1061,7 @@ my insertion and my current dilemma will both disappear.
 ! Misplaced \omit.
 \math@cr@@@ ...@ \@ne \add@amps \maxfields@ \omit 
                                                   \kern -\alignsep@ \iftag@ ...
-l.499 \end{align}
+l.500 \end{align}
                  
 I expect to see \omit only after tab marks or the \cr of
 an alignment. Proceed, and I'll ignore this case.
@@ -1074,7 +1069,7 @@ an alignment. Proceed, and I'll ignore this case.
 ! Missing { inserted.
 <inserted text> 
                 {
-l.499 \end{align}
+l.500 \end{align}
                  
 I've put in what seems to be necessary to fix
 the current column of the current alignment.
@@ -1089,24 +1084,24 @@ pdfTeX warning: /usr/bin/pdflatex (file ./figs/ynconv.pdf): PDF inclusion: mult
 iple pdfs with page group included in a single page
 >]
 
-LaTeX Warning: Command \j invalid in math mode on input line 519.
+LaTeX Warning: Command \j invalid in math mode on input line 520.
 
 
-LaTeX Warning: Command \j invalid in math mode on input line 528.
+LaTeX Warning: Command \j invalid in math mode on input line 529.
 
-<./figs/yndft.pdf, id=416, 462.52798pt x 346.89601pt>
+<./figs/yndft.pdf, id=417, 462.52798pt x 346.89601pt>
 File: ./figs/yndft.pdf Graphic file (type pdf)
 <use ./figs/yndft.pdf>
-Package pdftex.def Info: ./figs/yndft.pdf  used on input line 540.
+Package pdftex.def Info: ./figs/yndft.pdf  used on input line 541.
 (pdftex.def)             Requested size: 252.0pt x 189.00429pt.
 [5 <./figs/yndft.pdf>] (./main.aux)
 Package rerunfilecheck Info: File `main.out' has not changed.
 (rerunfilecheck)             Checksum: EDE0BD39395C52B880A8A7EB6EB76C7D;824.
  ) 
 Here is how much of TeX's memory you used:
- 16331 strings out of 480247
- 255660 string characters out of 5896152
- 974883 words of memory out of 5000000
+ 16332 strings out of 480247
+ 255667 string characters out of 5896152
+ 973883 words of memory out of 5000000
  33877 multiletter control sequences out of 15000+600000
  530612 words of font info for 150 fonts, out of 8000000 for 9000
  17 hyphenation exceptions out of 8191
@@ -1123,10 +1118,10 @@ onts/type1/public/txfonts/txsya.pfb></usr/share/texlive/texmf-dist/fonts/type1/
 urw/times/utmb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmbi
 8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/sh
 are/texlive/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on main.pdf (5 pages, 164025 bytes).
+Output written on main.pdf (5 pages, 164124 bytes).
 PDF statistics:
- 573 PDF objects out of 1000 (max. 8388607)
- 351 compressed objects within 4 object streams
- 148 named destinations out of 1000 (max. 500000)
+ 574 PDF objects out of 1000 (max. 8388607)
+ 352 compressed objects within 4 object streams
+ 149 named destinations out of 1000 (max. 500000)
  87 words of extra memory for PDF output out of 10000 (max. 10000000)
 
