@@ -226,6 +226,7 @@ The output of the python script in Problem \ref{prob:output} is the audio file S
 \begin{enumerate}[label=\thesection.\arabic*,ref=\thesection.\theenumi]
 \item Let
 \begin{equation}
+	\label{def:xn}
 x(n) = \cbrak{\underset{\uparrow}{1},2,3,4,2,1}
 \end{equation}
 Sketch $x(n)$.
@@ -287,7 +288,8 @@ resulting in \eqref{eq:shift1}. Similarly, it can be shown that
 \label{eq:z_trans_shift}
 	{\mathcal {Z}}\{x(n-k)\} = z^{-k}X(z)
 \end{equation}
-
+\item Obtain $X(z)$ for $x(n)$ defined in problem 
+\ref{def:xn}.
 \item Find
 %
 \begin{equation}
@@ -374,21 +376,24 @@ a^nu(n) \ztrans \frac{1}{1-az^{-1}} \quad \abs{z} > \abs{a}
 \item 
 Let
 \begin{equation}
-H\brak{e^{\j \omega}} = H\brak{z = e^{\j \omega}}.
+	H\brak{e^{\j \omega}} = H\brak{z = e^{\j \omega}}.
 \end{equation}
-Plot $\abs{H\brak{e^{\j \omega}}}$.  Comment.  $H(e^{\j \omega})$ is
+Plot $\abs{H\brak{e^{\j \omega}}}$.  Is it periodic? If so, find the period. $H(e^{\j \omega})$ is
 known as the {\em Discret Time Fourier Transform} (DTFT) of $x(n)$.
 \\
 \solution The following code plots Fig. \ref{fig:dtft}.
 \begin{lstlisting}
-wget https://raw.githubusercontent.com/gadepall/EE1310/master/filter/codes/dtft.py
+	wget https://raw.githubusercontent.com/gadepall/EE1310/master/filter/codes/dtft.py
 \end{lstlisting}
 \begin{figure}[!ht]
-\centering
-\includegraphics[width=\columnwidth]{./figs/dtft}
-\caption{$\abs{H\brak{e^{\j\omega}}}$}
-\label{fig:dtft}
+	\centering
+	\includegraphics[width=\columnwidth]{./figs/dtft}
+	\caption{$\abs{H\brak{e^{\j\omega}}}$}
+	\label{fig:dtft}
 \end{figure}
+\\[10pt]
+\item Express $x(n)$ in terms of $H\brak{e^{\j \omega}}$.\\
+\solution
 \end{enumerate}
 
 \section{Impulse Response}
@@ -440,7 +445,6 @@ This is the definition of $h(n)$.
 \\
 \solution The following code plots Fig. \ref{fig:hndef}. Note that this is the same as Fig. 
 \ref{fig:hn}. 
-%
 \begin{lstlisting}
 wget https://raw.githubusercontent.com/gadepall/EE1310/master/filter/codes/hndef.py
 \end{lstlisting}
@@ -485,7 +489,7 @@ y(n) =  \sum_{n=-\infty}^{\infty}x(n-k)h(k)
 %	y(n)=\sum_{n=-\infty}^{\infty} x(n-k) h(k) \\
 %	\text{6.2 To prove: } Y(k)=X(k) H(k)\\
 	X(z) = {\mathcal{Z}} \{x(n)\}=\sum_{n=-\infty}^{\infty} x(n) z^{-n} \\
-	H(z) = {\mathcal{Z}} \{(h(m)\}=\sum_{m=-\infty}^{\infty} h(m) z^{-m}\right.
+	H(z) = {\mathcal{Z}} \{h(m)\}=\sum_{m=-\infty}^{\infty} h(m) z^{-m}\right.
 \end{align}
 
 \begin{equation}

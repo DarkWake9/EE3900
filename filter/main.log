@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2022.8.3)  10 AUG 2022 12:03
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2022.8.3)  11 AUG 2022 10:44
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -834,278 +834,288 @@ Underfull \hbox (badness 6927) in paragraph at lines 220--223
 <./figs/xnyn.pdf, id=101, 462.52798pt x 346.89601pt>
 File: ./figs/xnyn.pdf Graphic file (type pdf)
 <use ./figs/xnyn.pdf>
-Package pdftex.def Info: ./figs/xnyn.pdf  used on input line 247.
+Package pdftex.def Info: ./figs/xnyn.pdf  used on input line 248.
 (pdftex.def)             Requested size: 252.0pt x 189.00429pt.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 260.
+(hyperref)                removing `math shift' on input line 261.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 260.
+(hyperref)                removing `math shift' on input line 261.
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [2 <./figs/xnyn.pdf>]
 
-LaTeX Warning: Command \j invalid in math mode on input line 377.
-
-
-LaTeX Warning: Command \j invalid in math mode on input line 377.
-
-
 LaTeX Warning: Command \j invalid in math mode on input line 379.
 
 
 LaTeX Warning: Command \j invalid in math mode on input line 379.
+
+
+LaTeX Warning: Command \j invalid in math mode on input line 381.
+
+
+LaTeX Warning: Command \j invalid in math mode on input line 381.
 
 <./figs/dtft.pdf, id=187, 462.52798pt x 346.89601pt>
 File: ./figs/dtft.pdf Graphic file (type pdf)
 <use ./figs/dtft.pdf>
-Package pdftex.def Info: ./figs/dtft.pdf  used on input line 388.
+Package pdftex.def Info: ./figs/dtft.pdf  used on input line 390.
 (pdftex.def)             Requested size: 252.0pt x 189.00429pt.
 
-LaTeX Warning: Command \j invalid in math mode on input line 389.
+LaTeX Warning: Command \j invalid in math mode on input line 391.
 
 
-LaTeX Warning: Command \j invalid in math mode on input line 389.
+LaTeX Warning: Command \j invalid in math mode on input line 391.
 
 
-Underfull \vbox (badness 1092) has occurred while \output is active []
+! LaTeX Error: There's no line here to end.
 
-<./figs/hn.pdf, id=193, 462.52798pt x 346.89601pt>
-File: ./figs/hn.pdf Graphic file (type pdf)
-<use ./figs/hn.pdf>
-Package pdftex.def Info: ./figs/hn.pdf  used on input line 421.
-(pdftex.def)             Requested size: 252.0pt x 189.00429pt.
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.394 \\[10pt]
+              
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
 
-Underfull \vbox (badness 1122) has occurred while \output is active []
 
- [3 <./figs/dtft.pdf> <./figs/hn.pdf
-
-pdfTeX warning: /usr/bin/pdflatex (file ./figs/hn.pdf): PDF inclusion: multiple
- pdfs with page group included in a single page
->]
-<./figs/hndef.pdf, id=307, 462.52798pt x 346.89601pt>
-File: ./figs/hndef.pdf Graphic file (type pdf)
-<use ./figs/hndef.pdf>
-Package pdftex.def Info: ./figs/hndef.pdf  used on input line 449.
-(pdftex.def)             Requested size: 252.0pt x 189.00429pt.
-<./figs/ynconv.pdf, id=311, 462.52798pt x 346.89601pt>
-File: ./figs/ynconv.pdf Graphic file (type pdf)
-<use ./figs/ynconv.pdf>
-Package pdftex.def Info: ./figs/ynconv.pdf  used on input line 473.
-(pdftex.def)             Requested size: 252.0pt x 189.00429pt.
-
-! Missing } inserted.
-<inserted text> 
-                }
-l.489 \end{align}
-                 
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-! Extra \right.
-<argument> ...nfty }^{\infty } h(m) z^{-m}\right .
-                                                   
-l.489 \end{align}
-                 
-I'm ignoring a \right that had no matching \left.
-
-! Missing { inserted.
-<inserted text> 
-                {
-l.489 \end{align}
-                 
-I've put in what seems to be necessary to fix
-the current column of the current alignment.
-Try to go on, since this might almost work.
-
-! Missing } inserted.
-<inserted text> 
-                }
-l.489 \end{align}
-                 
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-! Extra \right.
-<argument> ...nfty }^{\infty } h(m) z^{-m}\right .
-                                                   
-l.489 \end{align}
-                 
-I'm ignoring a \right that had no matching \left.
-
-! Missing \endgroup inserted.
-<inserted text> 
-                \endgroup 
-l.489 \end{align}
-                 
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-! Misplaced \omit.
-\math@cr@@@ ...@ \@ne \add@amps \maxfields@ \omit 
-                                                  \kern -\alignsep@ \iftag@ ...
-l.489 \end{align}
-                 
-I expect to see \omit only after tab marks or the \cr of
-an alignment. Proceed, and I'll ignore this case.
-
-! Missing { inserted.
-<inserted text> 
-                {
-l.489 \end{align}
-                 
-I've put in what seems to be necessary to fix
-the current column of the current alignment.
-Try to go on, since this might almost work.
-
-! Missing } inserted.
-<inserted text> 
-                }
-l.505 \end{align}
-                 
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-! Missing } inserted.
-<inserted text> 
-                }
-l.505 \end{align}
-                 
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-! Extra }, or forgotten $.
-<recently read> }
-                 
-l.505 \end{align}
-                 
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-! Missing { inserted.
-<inserted text> 
-                {
-l.505 \end{align}
-                 
-I've put in what seems to be necessary to fix
-the current column of the current alignment.
-Try to go on, since this might almost work.
-
-! Missing } inserted.
-<inserted text> 
-                }
-l.505 \end{align}
-                 
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-! Missing } inserted.
-<inserted text> 
-                }
-l.505 \end{align}
-                 
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-! Extra }, or forgotten $.
-<recently read> }
-                 
-l.505 \end{align}
-                 
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-! Missing \endgroup inserted.
-<inserted text> 
-                \endgroup 
-l.505 \end{align}
-                 
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-! Misplaced \omit.
-\math@cr@@@ ...@ \@ne \add@amps \maxfields@ \omit 
-                                                  \kern -\alignsep@ \iftag@ ...
-l.505 \end{align}
-                 
-I expect to see \omit only after tab marks or the \cr of
-an alignment. Proceed, and I'll ignore this case.
-
-! Missing { inserted.
-<inserted text> 
-                {
-l.505 \end{align}
-                 
-I've put in what seems to be necessary to fix
-the current column of the current alignment.
-Try to go on, since this might almost work.
+LaTeX Warning: Command \j invalid in math mode on input line 395.
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [4 <./figs/hndef.pdf> <./figs/ynconv.pdf
+<./figs/hn.pdf, id=193, 462.52798pt x 346.89601pt>
+File: ./figs/hn.pdf Graphic file (type pdf)
+<use ./figs/hn.pdf>
+Package pdftex.def Info: ./figs/hn.pdf  used on input line 426.
+(pdftex.def)             Requested size: 252.0pt x 189.00429pt.
+ [3 <./figs/dtft.pdf>]
+<./figs/hndef.pdf, id=275, 462.52798pt x 346.89601pt>
+File: ./figs/hndef.pdf Graphic file (type pdf)
+<use ./figs/hndef.pdf>
+Package pdftex.def Info: ./figs/hndef.pdf  used on input line 453.
+(pdftex.def)             Requested size: 252.0pt x 189.00429pt.
+<./figs/ynconv.pdf, id=279, 462.52798pt x 346.89601pt>
+File: ./figs/ynconv.pdf Graphic file (type pdf)
+<use ./figs/ynconv.pdf>
+Package pdftex.def Info: ./figs/ynconv.pdf  used on input line 477.
+(pdftex.def)             Requested size: 252.0pt x 189.00429pt.
+
+! Missing } inserted.
+<inserted text> 
+                }
+l.493 \end{align}
+                 
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+! Extra \right.
+<argument> ...nfty }^{\infty } h(m) z^{-m}\right .
+                                                   
+l.493 \end{align}
+                 
+I'm ignoring a \right that had no matching \left.
+
+! Missing { inserted.
+<inserted text> 
+                {
+l.493 \end{align}
+                 
+I've put in what seems to be necessary to fix
+the current column of the current alignment.
+Try to go on, since this might almost work.
+
+! Missing } inserted.
+<inserted text> 
+                }
+l.493 \end{align}
+                 
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+! Extra \right.
+<argument> ...nfty }^{\infty } h(m) z^{-m}\right .
+                                                   
+l.493 \end{align}
+                 
+I'm ignoring a \right that had no matching \left.
+
+! Missing \endgroup inserted.
+<inserted text> 
+                \endgroup 
+l.493 \end{align}
+                 
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+! Misplaced \omit.
+\math@cr@@@ ...@ \@ne \add@amps \maxfields@ \omit 
+                                                  \kern -\alignsep@ \iftag@ ...
+l.493 \end{align}
+                 
+I expect to see \omit only after tab marks or the \cr of
+an alignment. Proceed, and I'll ignore this case.
+
+! Missing { inserted.
+<inserted text> 
+                {
+l.493 \end{align}
+                 
+I've put in what seems to be necessary to fix
+the current column of the current alignment.
+Try to go on, since this might almost work.
+
+! Missing } inserted.
+<inserted text> 
+                }
+l.509 \end{align}
+                 
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+! Missing } inserted.
+<inserted text> 
+                }
+l.509 \end{align}
+                 
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+! Extra }, or forgotten $.
+<recently read> }
+                 
+l.509 \end{align}
+                 
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+! Missing { inserted.
+<inserted text> 
+                {
+l.509 \end{align}
+                 
+I've put in what seems to be necessary to fix
+the current column of the current alignment.
+Try to go on, since this might almost work.
+
+! Missing } inserted.
+<inserted text> 
+                }
+l.509 \end{align}
+                 
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+! Missing } inserted.
+<inserted text> 
+                }
+l.509 \end{align}
+                 
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+! Extra }, or forgotten $.
+<recently read> }
+                 
+l.509 \end{align}
+                 
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+! Missing \endgroup inserted.
+<inserted text> 
+                \endgroup 
+l.509 \end{align}
+                 
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+! Misplaced \omit.
+\math@cr@@@ ...@ \@ne \add@amps \maxfields@ \omit 
+                                                  \kern -\alignsep@ \iftag@ ...
+l.509 \end{align}
+                 
+I expect to see \omit only after tab marks or the \cr of
+an alignment. Proceed, and I'll ignore this case.
+
+! Missing { inserted.
+<inserted text> 
+                {
+l.509 \end{align}
+                 
+I've put in what seems to be necessary to fix
+the current column of the current alignment.
+Try to go on, since this might almost work.
+
+[4 <./figs/hn.pdf> <./figs/hndef.pdf
+
+pdfTeX warning: /usr/bin/pdflatex (file ./figs/hndef.pdf): PDF inclusion: multi
+ple pdfs with page group included in a single page
+> <./figs/ynconv.pdf
 
 pdfTeX warning: /usr/bin/pdflatex (file ./figs/ynconv.pdf): PDF inclusion: mult
 iple pdfs with page group included in a single page
 >]
 
-LaTeX Warning: Command \j invalid in math mode on input line 525.
+LaTeX Warning: Command \j invalid in math mode on input line 529.
 
 
-LaTeX Warning: Command \j invalid in math mode on input line 534.
+LaTeX Warning: Command \j invalid in math mode on input line 538.
 
-<./figs/yndft.pdf, id=419, 462.52798pt x 346.89601pt>
+<./figs/yndft.pdf, id=422, 462.52798pt x 346.89601pt>
 File: ./figs/yndft.pdf Graphic file (type pdf)
 <use ./figs/yndft.pdf>
-Package pdftex.def Info: ./figs/yndft.pdf  used on input line 546.
+Package pdftex.def Info: ./figs/yndft.pdf  used on input line 550.
 (pdftex.def)             Requested size: 252.0pt x 189.00429pt.
 [5 <./figs/yndft.pdf>] (./main.aux)
 Package rerunfilecheck Info: File `main.out' has not changed.
 (rerunfilecheck)             Checksum: EDE0BD39395C52B880A8A7EB6EB76C7D;824.
  ) 
 Here is how much of TeX's memory you used:
- 16341 strings out of 480247
- 255767 string characters out of 5896152
+ 16344 strings out of 480247
+ 255789 string characters out of 5896152
  973883 words of memory out of 5000000
- 33884 multiletter control sequences out of 15000+600000
+ 33885 multiletter control sequences out of 15000+600000
  530612 words of font info for 150 fonts, out of 8000000 for 9000
  17 hyphenation exceptions out of 8191
- 60i,14n,63p,236b,1645s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 60i,14n,63p,236b,1680s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texliv
 e/texmf-dist/fonts/type1/public/txfonts/rtcxr.pfb></usr/share/texlive/texmf-dis
 t/fonts/type1/public/txfonts/rtxb.pfb></usr/share/texlive/texmf-dist/fonts/type
@@ -1118,10 +1128,10 @@ onts/type1/public/txfonts/txsya.pfb></usr/share/texlive/texmf-dist/fonts/type1/
 urw/times/utmb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmbi
 8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/sh
 are/texlive/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on main.pdf (5 pages, 165358 bytes).
+Output written on main.pdf (5 pages, 165718 bytes).
 PDF statistics:
- 577 PDF objects out of 1000 (max. 8388607)
- 355 compressed objects within 4 object streams
- 151 named destinations out of 1000 (max. 500000)
+ 580 PDF objects out of 1000 (max. 8388607)
+ 358 compressed objects within 4 object streams
+ 153 named destinations out of 1000 (max. 500000)
  87 words of extra memory for PDF output out of 10000 (max. 10000000)
 

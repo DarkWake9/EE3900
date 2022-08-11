@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2022.8.3)  10 AUG 2022 11:00
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2022.8.3)  11 AUG 2022 10:57
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -761,74 +761,69 @@ LaTeX Info: Redefining \nameref on input line 73.
 \c@example=\count332
 \c@definition=\count333
 \c@rem=\count334
-LaTeX Font Info:    Calculating math sizes for size <14> on input line 223.
-LaTeX Font Info:    Trying to load font information for U+rsfs on input line 22
-3.
+ (./main.toc
+LaTeX Font Info:    Trying to load font information for U+rsfs on input line 4.
+
 
 (/usr/share/texlive/texmf-dist/tex/latex/jknapltx/ursfs.fd
 File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
 )
-LaTeX Font Info:    Trying to load font information for U+txmia on input line 2
-23.
+LaTeX Font Info:    Trying to load font information for U+txmia on input line 4
+.
 
 (/usr/share/texlive/texmf-dist/tex/latex/txfonts/utxmia.fd
 File: utxmia.fd 2000/12/15 v3.1
 )
-LaTeX Font Info:    Trying to load font information for U+txsya on input line 2
-23.
+LaTeX Font Info:    Trying to load font information for U+txsya on input line 4
+.
 
 (/usr/share/texlive/texmf-dist/tex/latex/txfonts/utxsya.fd
 File: utxsya.fd 2000/12/15 v3.1
 )
-LaTeX Font Info:    Trying to load font information for U+txsyb on input line 2
-23.
+LaTeX Font Info:    Trying to load font information for U+txsyb on input line 4
+.
 
 (/usr/share/texlive/texmf-dist/tex/latex/txfonts/utxsyb.fd
 File: utxsyb.fd 2000/12/15 v3.1
 )
-LaTeX Font Info:    Trying to load font information for U+txsyc on input line 2
-23.
+LaTeX Font Info:    Trying to load font information for U+txsyc on input line 4
+.
 
 (/usr/share/texlive/texmf-dist/tex/latex/txfonts/utxsyc.fd
 File: utxsyc.fd 2000/12/15 v3.1
-) (./main.toc)
+))
 \tf@toc=\write4
 \openout4 = `main.toc'.
 
-LaTeX Font Info:    Trying to load font information for TS1+txr on input line 2
-45.
+LaTeX Font Info:    Trying to load font information for TS1+txr on input line 1
+74.
 
 (/usr/share/texlive/texmf-dist/tex/latex/txfonts/ts1txr.fd
 File: ts1txr.fd 2000/12/15 v3.1
 )
-Underfull \hbox (badness 7777) in paragraph at lines 264--278
-[]\OT1/txr/m/n/12 You will find a spec-tro-gram at [][]$https :
- []
-
-
-Underfull \hbox (badness 5374) in paragraph at lines 264--278
-\OT1/txr/m/n/12 / / academo . org / demos / spectrum-[]analyzer$[][]. Up-
+Underfull \hbox (badness 4608) in paragraph at lines 192--206
+\OT1/txr/m/n/12 org / demos / spectrum-[]analyzer$[] []. Up-load the
  []
 
 Package hyperref Info: bookmark level for unknown lstlisting defaults to 0 on i
-nput line 282.
+nput line 210.
 (./codes/Cancel_noise.py)
-Underfull \hbox (badness 10000) in paragraph at lines 291--294
+Underfull \hbox (badness 10000) in paragraph at lines 219--222
 []\OT1/txr/m/n/12 The out-put of the python script
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 291--294
+Underfull \hbox (badness 10000) in paragraph at lines 219--222
 \OT1/txr/m/n/12 in Prob-lem []2.3[] is the au-dio file
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 291--294
+Underfull \hbox (badness 10000) in paragraph at lines 219--222
 \OT1/txr/m/n/12 Sound[]With[]ReducedNoise.wav. Play
  []
 
 
-Underfull \hbox (badness 6927) in paragraph at lines 291--294
+Underfull \hbox (badness 6927) in paragraph at lines 219--222
 \OT1/txr/bx/n/12 Solution: \OT1/txr/m/n/12 The key strokes as well as
  []
 
@@ -836,101 +831,288 @@ Underfull \hbox (badness 6927) in paragraph at lines 291--294
 
 
 ]
-<./figs/xnyn.pdf, id=102, 462.52798pt x 346.89601pt>
+<./figs/xnyn.pdf, id=100, 462.52798pt x 346.89601pt>
 File: ./figs/xnyn.pdf Graphic file (type pdf)
 <use ./figs/xnyn.pdf>
-Package pdftex.def Info: ./figs/xnyn.pdf  used on input line 318.
+Package pdftex.def Info: ./figs/xnyn.pdf  used on input line 247.
 (pdftex.def)             Requested size: 252.0pt x 189.00429pt.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 325.
+(hyperref)                removing `math shift' on input line 263.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 325.
+(hyperref)                removing `math shift' on input line 263.
+
+[2 <./figs/xnyn.pdf>]
+
+LaTeX Warning: Command \j invalid in math mode on input line 381.
+
+
+LaTeX Warning: Command \j invalid in math mode on input line 381.
+
+
+LaTeX Warning: Command \j invalid in math mode on input line 383.
+
+
+LaTeX Warning: Command \j invalid in math mode on input line 383.
+
+<./figs/dtft.pdf, id=188, 462.52798pt x 346.89601pt>
+File: ./figs/dtft.pdf Graphic file (type pdf)
+<use ./figs/dtft.pdf>
+Package pdftex.def Info: ./figs/dtft.pdf  used on input line 392.
+(pdftex.def)             Requested size: 252.0pt x 189.00429pt.
+
+LaTeX Warning: Command \j invalid in math mode on input line 393.
+
+
+LaTeX Warning: Command \j invalid in math mode on input line 393.
+
+
+! LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.395 		\end{figure}\\[100pt]
+                             
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+LaTeX Warning: Command \j invalid in math mode on input line 396.
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [2 <./figs/xnyn.pdf>]
-
-LaTeX Warning: Command \j invalid in math mode on input line 418.
-
-
-LaTeX Warning: Command \j invalid in math mode on input line 418.
-
-
-LaTeX Warning: Command \j invalid in math mode on input line 420.
-
-
-LaTeX Warning: Command \j invalid in math mode on input line 420.
-
-<./figs/dtft.pdf, id=184, 462.52798pt x 346.89601pt>
-File: ./figs/dtft.pdf Graphic file (type pdf)
-<use ./figs/dtft.pdf>
-Package pdftex.def Info: ./figs/dtft.pdf  used on input line 429.
-(pdftex.def)             Requested size: 252.0pt x 189.00429pt.
-
-LaTeX Warning: Command \j invalid in math mode on input line 430.
-
-
-LaTeX Warning: Command \j invalid in math mode on input line 430.
-
-<./figs/hn.pdf, id=190, 462.52798pt x 346.89601pt>
+<./figs/hn.pdf, id=194, 462.52798pt x 346.89601pt>
 File: ./figs/hn.pdf Graphic file (type pdf)
 <use ./figs/hn.pdf>
-Package pdftex.def Info: ./figs/hn.pdf  used on input line 462.
+Package pdftex.def Info: ./figs/hn.pdf  used on input line 427.
 (pdftex.def)             Requested size: 252.0pt x 189.00429pt.
-<./figs/hndef.pdf, id=195, 462.52798pt x 346.89601pt>
+ [3 <./figs/dtft.pdf>]
+<./figs/hndef.pdf, id=276, 462.52798pt x 346.89601pt>
 File: ./figs/hndef.pdf Graphic file (type pdf)
 <use ./figs/hndef.pdf>
-Package pdftex.def Info: ./figs/hndef.pdf  used on input line 490.
+Package pdftex.def Info: ./figs/hndef.pdf  used on input line 454.
 (pdftex.def)             Requested size: 252.0pt x 189.00429pt.
-[3 <./figs/dtft.pdf> <./figs/hn.pdf
-
-pdfTeX warning: /usr/bin/pdflatex (file ./figs/hn.pdf): PDF inclusion: multiple
- pdfs with page group included in a single page
->]
-<./figs/ynconv.pdf, id=310, 462.52798pt x 346.89601pt>
+<./figs/ynconv.pdf, id=280, 462.52798pt x 346.89601pt>
 File: ./figs/ynconv.pdf Graphic file (type pdf)
 <use ./figs/ynconv.pdf>
-Package pdftex.def Info: ./figs/ynconv.pdf  used on input line 515.
+Package pdftex.def Info: ./figs/ynconv.pdf  used on input line 478.
 (pdftex.def)             Requested size: 252.0pt x 189.00429pt.
 
+! Missing } inserted.
+<inserted text> 
+                }
+l.494 		\end{align}
+                   
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
 
-LaTeX Warning: Command \j invalid in math mode on input line 532.
+! Extra \right.
+<argument> ...nfty }^{\infty } h(m) z^{-m}\right .
+                                                   
+l.494 		\end{align}
+                   
+I'm ignoring a \right that had no matching \left.
 
+! Missing { inserted.
+<inserted text> 
+                {
+l.494 		\end{align}
+                   
+I've put in what seems to be necessary to fix
+the current column of the current alignment.
+Try to go on, since this might almost work.
 
-LaTeX Warning: Command \j invalid in math mode on input line 541.
+! Missing } inserted.
+<inserted text> 
+                }
+l.494 		\end{align}
+                   
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
 
-<./figs/yndft.pdf, id=313, 462.52798pt x 346.89601pt>
-File: ./figs/yndft.pdf Graphic file (type pdf)
-<use ./figs/yndft.pdf>
-Package pdftex.def Info: ./figs/yndft.pdf  used on input line 553.
-(pdftex.def)             Requested size: 252.0pt x 189.00429pt.
-[4 <./figs/hndef.pdf> <./figs/ynconv.pdf
+! Extra \right.
+<argument> ...nfty }^{\infty } h(m) z^{-m}\right .
+                                                   
+l.494 		\end{align}
+                   
+I'm ignoring a \right that had no matching \left.
+
+! Missing \endgroup inserted.
+<inserted text> 
+                \endgroup 
+l.494 		\end{align}
+                   
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+! Misplaced \omit.
+\math@cr@@@ ...@ \@ne \add@amps \maxfields@ \omit 
+                                                  \kern -\alignsep@ \iftag@ ...
+l.494 		\end{align}
+                   
+I expect to see \omit only after tab marks or the \cr of
+an alignment. Proceed, and I'll ignore this case.
+
+! Missing { inserted.
+<inserted text> 
+                {
+l.494 		\end{align}
+                   
+I've put in what seems to be necessary to fix
+the current column of the current alignment.
+Try to go on, since this might almost work.
+
+! Missing } inserted.
+<inserted text> 
+                }
+l.510 		\end{align}
+                   
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+! Missing } inserted.
+<inserted text> 
+                }
+l.510 		\end{align}
+                   
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+! Extra }, or forgotten $.
+<recently read> }
+                 
+l.510 		\end{align}
+                   
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+! Missing { inserted.
+<inserted text> 
+                {
+l.510 		\end{align}
+                   
+I've put in what seems to be necessary to fix
+the current column of the current alignment.
+Try to go on, since this might almost work.
+
+! Missing } inserted.
+<inserted text> 
+                }
+l.510 		\end{align}
+                   
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+! Missing } inserted.
+<inserted text> 
+                }
+l.510 		\end{align}
+                   
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+! Extra }, or forgotten $.
+<recently read> }
+                 
+l.510 		\end{align}
+                   
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+! Missing \endgroup inserted.
+<inserted text> 
+                \endgroup 
+l.510 		\end{align}
+                   
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+! Misplaced \omit.
+\math@cr@@@ ...@ \@ne \add@amps \maxfields@ \omit 
+                                                  \kern -\alignsep@ \iftag@ ...
+l.510 		\end{align}
+                   
+I expect to see \omit only after tab marks or the \cr of
+an alignment. Proceed, and I'll ignore this case.
+
+! Missing { inserted.
+<inserted text> 
+                {
+l.510 		\end{align}
+                   
+I've put in what seems to be necessary to fix
+the current column of the current alignment.
+Try to go on, since this might almost work.
+
+[4 <./figs/hn.pdf> <./figs/hndef.pdf
+
+pdfTeX warning: /usr/bin/pdflatex (file ./figs/hndef.pdf): PDF inclusion: multi
+ple pdfs with page group included in a single page
+> <./figs/ynconv.pdf
 
 pdfTeX warning: /usr/bin/pdflatex (file ./figs/ynconv.pdf): PDF inclusion: mult
 iple pdfs with page group included in a single page
-> <./figs/yndft.pdf
+>]
 
-pdfTeX warning: /usr/bin/pdflatex (file ./figs/yndft.pdf): PDF inclusion: multi
-ple pdfs with page group included in a single page
->] [5
+LaTeX Warning: Command \j invalid in math mode on input line 530.
 
-] (./main.aux)
+
+LaTeX Warning: Command \j invalid in math mode on input line 539.
+
+<./figs/yndft.pdf, id=423, 462.52798pt x 346.89601pt>
+File: ./figs/yndft.pdf Graphic file (type pdf)
+<use ./figs/yndft.pdf>
+Package pdftex.def Info: ./figs/yndft.pdf  used on input line 551.
+(pdftex.def)             Requested size: 252.0pt x 189.00429pt.
+[5 <./figs/yndft.pdf>] (./main.aux)
 Package rerunfilecheck Info: File `main.out' has not changed.
 (rerunfilecheck)             Checksum: EDE0BD39395C52B880A8A7EB6EB76C7D;824.
  ) 
 Here is how much of TeX's memory you used:
  16345 strings out of 480247
- 255921 string characters out of 5896152
- 974883 words of memory out of 5000000
- 33910 multiletter control sequences out of 15000+600000
- 541151 words of font info for 183 fonts, out of 8000000 for 9000
+ 255804 string characters out of 5896152
+ 973883 words of memory out of 5000000
+ 33885 multiletter control sequences out of 15000+600000
+ 530612 words of font info for 150 fonts, out of 8000000 for 9000
  17 hyphenation exceptions out of 8191
- 60i,9n,63p,236b,1633s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 60i,14n,63p,236b,1680s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texliv
 e/texmf-dist/fonts/type1/public/txfonts/rtcxr.pfb></usr/share/texlive/texmf-dis
 t/fonts/type1/public/txfonts/rtxb.pfb></usr/share/texlive/texmf-dist/fonts/type
@@ -943,10 +1125,10 @@ onts/type1/public/txfonts/txsya.pfb></usr/share/texlive/texmf-dist/fonts/type1/
 urw/times/utmb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmbi
 8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/sh
 are/texlive/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on main.pdf (5 pages, 161141 bytes).
+Output written on main.pdf (5 pages, 165916 bytes).
 PDF statistics:
- 545 PDF objects out of 1000 (max. 8388607)
- 323 compressed objects within 4 object streams
- 126 named destinations out of 1000 (max. 500000)
+ 581 PDF objects out of 1000 (max. 8388607)
+ 359 compressed objects within 4 object streams
+ 154 named destinations out of 1000 (max. 500000)
  87 words of extra memory for PDF output out of 10000 (max. 10000000)
 
