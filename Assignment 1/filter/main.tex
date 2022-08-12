@@ -257,7 +257,7 @@ wget https://github.com/DarkWake9/EE3900/blob/main/Assignment%201/e3-3.c
 		\end{lstlisting}
 		\solution: Python Code
 \begin{lstlisting}
-	wget https://github.com/DarkWake9/EE3900/blob/main/Assignment%201/e3-3.py
+wget https://github.com/DarkWake9/EE3900/blob/main/Assignment%201/e3-3.py
 \end{lstlisting}		
 	\end{enumerate}
 	\section{$Z$-transform}
@@ -382,7 +382,7 @@ wget https://github.com/DarkWake9/EE3900/blob/main/Assignment%201/e3-3.c
 		\end{equation}
 		Plot $\abs{H\brak{e^{\j \omega}}}$.  Is it periodic? If so, find the period. $H(e^{\j \omega})$ is
 		known as the {\em Discret Time Fourier Transform} (DTFT) of $x(n)$.
-		\\
+		\\[10pt]
 		\solution The following code plots Fig. \ref{fig:dtft}.
 		\begin{lstlisting}
 wget https://raw.githubusercontent.com/gadepall/EE1310/master/filter/codes/dtft.py
@@ -392,9 +392,21 @@ wget https://raw.githubusercontent.com/gadepall/EE1310/master/filter/codes/dtft.
 			\includegraphics[width=\columnwidth]{./figs/dtft}
 			\caption{$\abs{H\brak{e^{\j\omega}}}$}
 			\label{fig:dtft}
-		\end{figure}\\[100pt]
-		\item Express $h(n)$ in terms of $H\brak{e^{\j \omega}}$.\\
-		\solution
+		\end{figure}\\[200pt]
+	
+	\item Express $h(n)$ in terms of $H\brak{e^{\j \omega}}$.\\
+	\solution
+		\begin{align}
+	H( e^{j\omega }) =\sum ^{\infty }_{n=-\infty }h(n') e^{-j\omega n'}\\
+	\implies \int_{\-\pi} ^{\pi }	H\left( e^{j\omega }\right) e^{j\omega n}d\omega\\			
+	= \sum_{n'=-\infty }^{\infty } \int ^{\pi }_{-\pi }h(n') e^{-j\omega n'}e^{j\omega n}d\omega\\			
+	=\sum ^{\infty }_{n'=-\infty }h(n') 2\pi \delta(n'- n) =
+	 2\pi h(n) 
+		\end{align}
+	\begin{equation}
+		\therefore	 h(n) =\dfrac{1}{2\pi }\int ^{\pi }_{-\pi }H\left( e^{ja}\right) e^{j\omega }d\omega 
+	\end{equation}
+
 	\end{enumerate}
 	
 	\section{Impulse Response}
@@ -428,7 +440,6 @@ wget https://raw.githubusercontent.com/gadepall/EE1310/master/filter/codes/hn.py
 			\caption{$h(n)$ as the inverse of $H(z)$}
 			\label{fig:hn}
 		\end{figure}
-		%
 		\item The system with $h(n)$ is defined to be stable if
 		\begin{equation}
 			\sum_{n=-\infty}^{\infty}h(n) < \infty
@@ -455,7 +466,7 @@ wget https://raw.githubusercontent.com/gadepall/EE1310/master/filter/codes/hndef
 			\caption{$h(n)$ from the definition}
 			\label{fig:hndef}
 		\end{figure}
-		%
+		\\[100pt]
 		\item Compute 
 		%
 		\begin{equation}
@@ -542,7 +553,7 @@ wget https://raw.githubusercontent.com/gadepall/EE1310/master/filter/codes/yncon
 		\solution The following code plots Fig. \ref{fig:ynconv}. Note that this is the same as 
 		$y(n)$ in  Fig. 
 		\ref{fig:xnyn}. 
-		%
+		\\[5pt]
 		\begin{lstlisting}
 wget https://raw.githubusercontent.com/gadepall/EE1310/master/filter/codes/yndft.py
 		\end{lstlisting}
