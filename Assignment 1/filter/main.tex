@@ -308,7 +308,10 @@ wget https://github.com/DarkWake9/EE3900/blob/main/Assignment%201/e3-3.py
 			\label{eq:freq_resp}
 		\end{align}
 		%
-		\item Find the Z transform of 
+		\item 
+		\begin{enumerate}
+	
+	\item Find the Z transform of 
 		\begin{equation}
 			\delta(n)
 			=
@@ -318,7 +321,7 @@ wget https://github.com/DarkWake9/EE3900/blob/main/Assignment%201/e3-3.py
 				0 & \text{otherwise}
 			\end{cases}
 		\end{equation}
-		and show that the $Z$-transform of
+		\item and show that the $Z$-transform of
 		\begin{equation}
 			\label{eq:unit_step}
 			u(n)
@@ -333,6 +336,7 @@ wget https://github.com/DarkWake9/EE3900/blob/main/Assignment%201/e3-3.py
 		\begin{equation}
 			U(z) = \frac{1}{1-z^{-1}}, \quad \abs{z} > 1
 		\end{equation}
+			\end{enumerate}
 		\solution It is easy to show that
 		\begin{equation}
 			\delta(n) \ztrans 1
@@ -347,11 +351,11 @@ wget https://github.com/DarkWake9/EE3900/blob/main/Assignment%201/e3-3.py
 		%
 		\begin{enumerate}[label=(\roman*)]
 			\item \solution \begin{equation}
-				\Delta(z) = z\{\delta[n]\}=\sum_{n=-\infty}^{\infty} \delta(n) z^{-n} = 1\\
+				\Delta(z) = {\mathcal{Z}}\{\delta[n]\}=\sum_{n=-\infty}^{\infty} \delta(n) z^{-n} = 1\\
 			\end{equation}
 			
 			\item \solution \begin{align}
-				U(z) = Z\{\delta(n)\}=\sum_{n=-\infty}^{\infty} u[n] z^{-n} \\
+				U(z) = {\mathcal{Z}}\{\delta(n)\}=\sum_{n=-\infty}^{\infty} u[n] z^{-n} \\
 				=1+z^{-1}+z^{-2}+\cdots \\
 				=\frac{1}{1-z^{-1}}
 			\end{align}
@@ -363,14 +367,16 @@ wget https://github.com/DarkWake9/EE3900/blob/main/Assignment%201/e3-3.py
 			a^nu(n) \ztrans \frac{1}{1-az^{-1}} \quad \abs{z} > \abs{a}
 		\end{equation}
 		
-		\solution
+		4.5 \solution
 		\begin{align}
 			a^{n}u[n] = \begin{cases} a^{n} & n \geq 0 \\
 				0 & n<0\end{cases} \\
-			U^{\prime}(z)={\mathcal{Z}}\{a^{n}u[n]\}=\sum_{n=-\infty}^{\infty} a^{n}[n] z^{-n}
+			U^{\prime}(z)={\mathcal{Z}}\{a^{n}u[n]\}=\sum_{n=-\infty}^{\infty} a^{n}u[n] z^{-n}\\
+			=1+az^{-1}+a^{2}z^{-2}+\cdots
 		\end{align}
+Given: $\abs{z} > \abs{a}$\\
 		\begin{equation}
-			\label{eq:U'}
+			\label{eq:U'} 
 			U^{\prime}(z)=\frac{1}{1-a z^{-1}}
 		\end{equation}
 		
@@ -383,7 +389,8 @@ wget https://github.com/DarkWake9/EE3900/blob/main/Assignment%201/e3-3.py
 		Plot $\abs{H\brak{e^{\j \omega}}}$.  Is it periodic? If so, find the period. $H(e^{\j \omega})$ is
 		known as the {\em Discret Time Fourier Transform} (DTFT) of $x(n)$.
 		\\[10pt]
-		\solution The following code plots Fig. \ref{fig:dtft}.
+		\solution The following code plots Fig. \ref{fig:dtft}. \\[10pt]
+		
 		\begin{lstlisting}
 wget https://raw.githubusercontent.com/gadepall/EE1310/master/filter/codes/dtft.py
 		\end{lstlisting}
@@ -392,10 +399,15 @@ wget https://raw.githubusercontent.com/gadepall/EE1310/master/filter/codes/dtft.
 			\includegraphics[width=\columnwidth]{./figs/dtft}
 			\caption{$\abs{H\brak{e^{\j\omega}}}$}
 			\label{fig:dtft}
-		\end{figure}\\[200pt]
+		\end{figure}
+		\solution Period = 2 $\pi$
+		\begin{align}
+			e^{\j 2\pi} = 1\\
+			\implies	e^{\j \omega + 2\pi} = e^{\j \omega}\\
+		\end{align}
 	
-	\item Express $h(n)$ in terms of $H\brak{e^{\j \omega}}$.\\
-	\solution
+	\item Express $h(n)$ in terms of $H\brak{e^{\j \omega}}$.\\[5pt]
+	4.7 \solution
 		\begin{align}
 	H( e^{j\omega }) =\sum ^{\infty }_{n=-\infty }h(n') e^{-j\omega n'}\\
 	\implies \int_{\-\pi} ^{\pi }	H\left( e^{j\omega }\right) e^{j\omega n}d\omega\\			
@@ -411,6 +423,13 @@ wget https://raw.githubusercontent.com/gadepall/EE1310/master/filter/codes/dtft.
 	
 	\section{Impulse Response}
 	\begin{enumerate}[label=\thesection.\arabic*]
+		\item Using long division, 
+		find
+		\begin{align}
+			h(n), \quad n < 5
+		\end{align}
+		for H(z) in 
+		\eqref{eq:freq_resp}.
 		\item \label{prob:impulse_resp}
 		Find an expression for $h(n)$ using $H(z)$, given that 
 		%in Problem \ref{eq:ztransab} and \eqref{eq:anun}, given that
@@ -425,10 +444,10 @@ wget https://raw.githubusercontent.com/gadepall/EE1310/master/filter/codes/dtft.
 		\begin{align}
 			H(z) &= \frac{1}{1 + \frac{1}{2}z^{-1}} + \frac{ z^{-2}}{1 + \frac{1}{2}z^{-1}}
 			\\
-			\implies h(n) &= \brak{-\frac{1}{2}}^{n}u(n) + \brak{-\frac{1}{2}}^{n-2}u(n-2)
+			\therefore h(n) &= \brak{-\frac{1}{2}}^{n}u(n) + \brak{-\frac{1}{2}}^{n-2}u(n-2)
 		\end{align}
 		using \eqref{eq:anun} and \eqref{eq:z_trans_shift}.
-		\item Sketch $h(n)$. Is it bounded? Convergent? 
+		\item Sketch $h(n)$. Is it bounded? Justify theoretically.
 		\\
 		\solution The following code plots Fig. \ref{fig:hn}.
 		\begin{lstlisting}
@@ -440,12 +459,15 @@ wget https://raw.githubusercontent.com/gadepall/EE1310/master/filter/codes/hn.py
 			\caption{$h(n)$ as the inverse of $H(z)$}
 			\label{fig:hn}
 		\end{figure}
+		\item Convergent? Justify using the ratio test.
 		\item The system with $h(n)$ is defined to be stable if
 		\begin{equation}
 			\sum_{n=-\infty}^{\infty}h(n) < \infty
 		\end{equation}
 		Is the system defined by \eqref{eq:iir_filter} stable for the impulse response in \eqref{eq:impulse_resp}?
 		%
+		
+		\item Verify the above result using a python code.
 		\item 
 		Compute and sketch $h(n)$ using 
 		\begin{equation}
@@ -466,7 +488,7 @@ wget https://raw.githubusercontent.com/gadepall/EE1310/master/filter/codes/hndef
 			\caption{$h(n)$ from the definition}
 			\label{fig:hndef}
 		\end{figure}
-		\\[100pt]
+%		\\[100pt]
 		\item Compute 
 		%
 		\begin{equation}
@@ -501,7 +523,8 @@ wget https://raw.githubusercontent.com/gadepall/EE1310/master/filter/codes/yncon
 			%	y(n)=\sum_{n=-\infty}^{\infty} x(n-k) h(k) \\
 			%	\text{6.2 To prove: } Y(k)=X(k) H(k)\\
 			X(z) = {\mathcal{Z}} \{x(n)\}=\sum_{n=-\infty}^{\infty} x(n) z^{-n} \\
-			H(z) = {\mathcal{Z}} \{h(m)\}=\sum_{m=-\infty}^{\infty} h(m) z^{-m}\right.
+			H(z) = {\mathcal{Z}} \{h(m)\}=\sum_{m=-\infty}^{\infty} h(m) z^{-m} \\
+			Y(z) = {\mathcal{Z}} \{h(m)\}=\sum_{k=-\infty}^{\infty} y(m) z^{-k}
 		\end{align}
 		
 		\begin{equation}
@@ -517,7 +540,7 @@ wget https://raw.githubusercontent.com/gadepall/EE1310/master/filter/codes/yncon
 			\implies Y(z)= X(z) \cdot H(z)\\
 			%	Y(z)=\sum_{n=-\infty}^{\infty} x(n) \sum_{m=-\infty}^{\infty} h(m) z^{-(m+n)} \\
 			%	\text{Let } m = n - k \\
-			%	\implies Y(z)=\sum_{n=-\infty}^{\infty} \left( \sum_{n=-\infty}^{\infty} x(n) h(n-k) z^{-k} \right). \\
+			%	\implies Y(z)=\sum_{n=-\infty}^{\infty} \left( \sum_{n=-\infty}^{\infty} x(n) h(n-k) z^{-k} \right) \\
 		\end{align}
 		
 		now put $n+m=k \quad n=-\infty$
@@ -527,7 +550,7 @@ wget https://raw.githubusercontent.com/gadepall/EE1310/master/filter/codes/yncon
 			=\sum_{k=-\infty}^{\infty}\left(\sum_{m=-\infty}^{\infty} x[m-k] h[k]\right) z^{-k} \\
 			\text { but } Y(z)=\sum_{k=-\infty}^{\infty} y(m) z^{-k} \\
 			\Rightarrow y(m)=\sum_{m=-\infty}^{\infty} x[m-k] h(k) \\
-			5 \cdot 6 \rightarrow y(n)=\sum_{n=-\infty}^{\infty} x(n-k) h(k) 
+			\implies y(n)=\sum_{n=-\infty}^{\infty} x(n-k) h(k) 
 		\end{align}
 		
 	\end{enumerate}
