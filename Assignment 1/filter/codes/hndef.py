@@ -23,7 +23,10 @@ plt.ylabel('$h(n)$')
 plt.grid()# minor
 
 #If using termux
-plt.savefig('../figs/hndef.pdf')
-subprocess.run(shlex.split("termux-open ../figs/hndef.pdf"))
+#plt.savefig('../figs/hndef.pdf')
+#subprocess.run(shlex.split("termux-open ../figs/hndef.pdf"))
 #else
+print(h)
+print(len(h))
+
 #plt.show()

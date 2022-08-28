@@ -21,12 +21,14 @@ plt.ylabel('$h(n)$')
 plt.grid()# minor
 
 #if using termux
+
+#plt.show()
 plt.savefig('../figs/hn.pdf')
 plt.savefig('../figs/hn.eps')
-subprocess.run(shlex.split("termux-open ../figs/hn.pdf"))
+#subprocess.run(shlex.split("termux-open ../figs/hn.pdf"))
 #else
-#plt.show()
-
+print(hn1+hn2)
+plt.show()
 
 
 

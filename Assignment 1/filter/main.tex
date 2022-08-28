@@ -38,8 +38,11 @@
 %\usepackage{iithtlc}
 %\usepackage[framemethod=tikz]{mdframed}
 \usepackage{listings}
-
-
+\usepackage{scalerel}
+\usepackage{stackengine}
+\usepackage{xcolor}
+\newcommand\showdiv[1]{\overline{\smash{\hstretch{.5}{)}\mkern-3.2mu\hstretch{.5}{)}}#1}}
+\usepackage{polynom}
 %\usepackage{stmaryrd}
 
 
@@ -304,7 +307,7 @@ wget https://github.com/DarkWake9/EE3900/blob/main/Assignment%201/e3-3.py
 		\begin{align}
 			Y(z) + \frac{1}{2}z^{-1}Y(z) &= X(z)+z^{-2}X(z)
 			\\
-			\implies \frac{Y(z)}{X(z)} &= \frac{1 + z^{-2}}{1 + \frac{1}{2}z^{-1}}
+			\implies H(z) = \frac{Y(z)}{X(z)} &= \frac{1 + z^{-2}}{1 + \frac{1}{2}z^{-1}}
 			\label{eq:freq_resp}
 		\end{align}
 		%
@@ -387,9 +390,9 @@ Given: $\abs{z} > \abs{a}$\\
 			H\brak{e^{\j \omega}} = H\brak{z = e^{\j \omega}}.
 		\end{equation}
 		Plot $\abs{H\brak{e^{\j \omega}}}$.  Is it periodic? If so, find the period. $H(e^{\j \omega})$ is
-		known as the {\em Discret Time Fourier Transform} (DTFT) of $x(n)$.
-		\\[10pt]
-		\solution The following code plots Fig. \ref{fig:dtft}. \\[10pt]
+		known as the {\em Discret Time Fourier Transform} (DTFT) of $h(n)$.
+%		\\[10pt]
+		\solution The following code plots Fig. \ref{fig:dtft}
 		
 		\begin{lstlisting}
 wget https://raw.githubusercontent.com/gadepall/EE1310/master/filter/codes/dtft.py
@@ -398,14 +401,44 @@ wget https://raw.githubusercontent.com/gadepall/EE1310/master/filter/codes/dtft.
 			\centering
 			\includegraphics[width=\columnwidth]{./figs/dtft}
 			\caption{$\abs{H\brak{e^{\j\omega}}}$}
-			\label{fig:dtft}
+\label{fig:dtft}
+	\raggedright{ \quad \quad $\therefore$ Period of $H(e^{\j \omega})$ is $2\pi$\\}
 		\end{figure}
-		\solution Period = 2 $\pi$
-		\begin{align}
-			e^{\j 2\pi} = 1\\
-			\implies	e^{\j \omega + 2\pi} = e^{\j \omega}\\
-		\end{align}
+\solution From \eqref{eq:freq_resp} we get
+	\begin{align}
+		%H\brak{e^{\j \omega}} = H\brak{z = e^{\j \omega}}\\
+		H\brak{e^{\j \omega}}=\frac{1 + e^{-2\j \omega}}{1 + \frac{1}{2}e^{-\j \omega}}\\
+		=\frac{e^{\j \omega} + e^{-\j \omega}}{e^{\j \omega} + \frac{1}{2}}
+		=\frac{2\cos\brak{\omega}}{e^{\j \omega} + \frac{1}{2}}\\
+		\implies \abs{H\brak{e^{\j \omega}}}\\
+		=\frac{2\cos\omega}{\sqrt{\brak{\cos\omega+\frac{1}{2}}^{2}+\sin^2\omega}}
+	\end{align}
+	\begin{align}
+		=\frac{2\cos\omega}{\sqrt{\cos^2\omega + \sin^2 \omega + \cos \omega + \frac{1}{4}}}\\
+		=\frac{2\cos\omega}{\sqrt{\frac{5}{4}+\cos\omega}}
+	\end{align}
+	For a periodic function of period $T$,
+	\begin{align}
+		f\brak{x} = f\brak{x+T}, T \neq 0	 
+	\end{align}
+%	Period of numerator = $2\pi$\\
+%	Period of denominator = $2\pi$\\
+	%Both the numerator and denominator have a period of $2\pi$ since $\cos\brak{\omega}$ has a period of $2\pi$. Which means that $H(e^{\j (\omega)})$ has a period of $2\pi$
+	%Checking if $2\pi$ is the fundamental period by 
+	Checking if $\pi$ is a period,
+	\begin{align}
+		\frac{2\cos\brak{\omega+\pi}}{\sqrt{\frac{5}{4}+\cos\brak{\omega+\pi}}} =
+		\frac{-2\cos\omega}{\sqrt{\frac{5}{4}-\cos\omega}}\\
+		\implies H\brak{e^{\j \brak{\omega+\pi}}} \neq H\brak{e^{\j \omega}}
+	\end{align}
+	Checking if $2\pi$ is a period,
+	\begin{align}
+		\frac{2\cos\brak{\omega+2\pi}}{\sqrt{\frac{5}{4}+\cos\brak{\omega + 2\pi}}} =
+		\frac{2\cos \omega}{\sqrt{\frac{5}{4} + \cos \omega }}\\
+		\implies H\brak{e^{\j \brak{\omega + 2\pi}}} = H\brak{e^{\j \omega}}
+	\end{align}
 	
+	$\therefore$ period is $2\pi$.\\
 	\item Express $h(n)$ in terms of $H\brak{e^{\j \omega}}$.\\[5pt]
 	4.7 \solution
 		\begin{align}
@@ -416,7 +449,7 @@ wget https://raw.githubusercontent.com/gadepall/EE1310/master/filter/codes/dtft.
 	 2\pi h(n) 
 		\end{align}
 	\begin{equation}
-		\therefore	 h(n) =\dfrac{1}{2\pi }\int ^{\pi }_{-\pi }H\left( e^{ja}\right) e^{j\omega }d\omega 
+		\therefore	 h(n) =\dfrac{1}{2\pi }\int ^{\pi }_{-\pi }H\left( e^{j \omega}\right) e^{j\omega }d\omega 
 	\end{equation}
 
 	\end{enumerate}
@@ -429,7 +462,28 @@ wget https://raw.githubusercontent.com/gadepall/EE1310/master/filter/codes/dtft.
 			h(n), \quad n < 5
 		\end{align}
 		for H(z) in 
-		\eqref{eq:freq_resp}.
+		\eqref{eq:freq_resp}.\\
+		\solution
+		from \eqref{eq:freq_resp}
+		\begin{align}
+			H(z)= \frac{1 + z^{-2}}{1 + \frac{1}{2}z^{-1}}\\
+			= (1 + z^{-2})\brak{1+\frac{1}{2}z^{-1}}^{-1}\\
+			\setstackgap{S}{1.5pt}
+			\stackMath\def\stackalignment{r}
+			\end{align}
+		\begin{align*}
+			&\underline{1-\dfrac{1}{2}z^{-1}+\dfrac{5}{4}z^{-2}-\dfrac{5}{8}z^{-3}}+\ldots \ldots\\
+			\rbrak{1 + \frac{1}{2}z^{-1}} &\text{\quad}\text{\quad}\text{\quad}\text{   }\text{\large $1 + z^{-2}$}\\
+			&\text{\quad}\text{\quad}\text{\quad}\underline{\text{ }1 + \frac{1}{2}z^{-1}}\\
+			&\text{\quad}\text{\quad}\text{\quad}\text{ }\text{ }\text{ }-\frac{z^{-1}}{2}+z^{-2}\\
+			&\text{\quad}\text{\quad}\text{\quad}\text{ }\text{ }\underline{\text{} -\frac{z^{-1}}{2} - \frac{1}{4}z^{-2}}\\
+			&\text{\quad}\text{\quad}\text{\quad}\text{ }\text{ }\underline{\text{ }\text{ }\text{ }\text{ }\frac{5}{4}z^{-2}\text{\quad \quad \quad \quad}}\\
+			&\text{\quad}\text{\quad}\text{\quad}\text{ }\text{ }\underline{\text{ }\text{ }\text{ }\text{ }\frac{5}{4}z^{-2} + \frac{5}{8}z^{-3}}\\
+			&\text{\quad}\text{\quad}\text{\quad}\text{ }\text{ }\underline{\text{ }\text{ }\text{ }\text{\quad}\text{\quad}\frac{5}{8}z^{-3}\text{\quad}}\\
+			&\text{\quad}\text{\quad}\text{\quad}\text{ }\text{ }\underline{\text{ }\text{ }\text{ }\text{ }\text{ }\frac{5}{8}z^{-3} + \frac{5}{16}z^{-4}}\\
+			&\text{\quad}\text{\quad}\text{\quad}\text{\quad}\text{\quad}\text{\quad}\text{\quad}\vdots
+		\end{align*}
+
 		\item \label{prob:impulse_resp}
 		Find an expression for $h(n)$ using $H(z)$, given that 
 		%in Problem \ref{eq:ztransab} and \eqref{eq:anun}, given that
@@ -512,37 +566,97 @@ wget https://raw.githubusercontent.com/gadepall/EE1310/master/filter/codes/yncon
 			\caption{$y(n)$ from the definition of convolution}
 			\label{fig:ynconv}
 		\end{figure}
-		
+	
+	
+		\item Express the above convolution using a Teoplitz matrix.\\
+		\solution From \eqref{def:xn}
+				$x(n) = \cbrak{1,2,3,4,2,1}$\\
+			From \eqref{eq:convolution}	$y(n) = x(n)*h(n)$\\
+%			n = 0, $\ldots$ 6\\
+			\begin{equation}
+			\scriptsize 
+			\left(
+			\begin{smallmatrix}
+				x(1) & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0\\
+				x(2) & x(1) & 0 &0 & 0 & 0 & 0 & 0 &  0 & 0 & 0 & 0\\
+				x(3) & x(2) & x(1) & 0 & 0 & 0 & 0 &  0 & 0 & 0 & 0 & 0\\
+				x(4) & x(3) & x(2) & x(1) & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0\\
+				x(5) & x(4) & x(3) & x(2)&x(1) & 0 & 0 & 0 & 0 & 0 & 0 & 0\\
+				x(6) & x(5) & x(4) & x(3)&x(2)&x(1)&0&0&0&0&0&0\\
+				0 & x(6) & x(5) & x(4)&x(3)&x(2)&x(1)&0&0&0&0&0\\
+				0 & 0 & x(6) & x(5)& x(4)&x(3)&x(2)&x(1)&0&0&0&0\\
+				0 & 0 & 0 & x(6) & x(5)&x(4)&x(3)&x(2)&x(1)&0&0&0\\
+				0 & 0 & 0 & 0 & x(6) & x(5)&x(4)&x(3)&x(2)&x(1)&0&0\\
+				0 & 0 & 0 & 0 & 0 & x(6)&x(5)&x(4)&x(3)&x(2)&x(1)&0\\
+				0 & 0 & 0 & 0 & 0 & 0 &x(6)&x(5)&x(4)&x(3)&x(2)&x(1)\\
+				0 & 0 & 0 & 0 & 0 & 0 & 0 & x(6)&x(5)&x(4)&x(3)&x(2)\\
+				0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 &x(6)&x(5)&x(4)&x(3)\\
+				0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 &x(6)&x(5)&x(4)\\
+				0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 &x(6)&x(5)\\
+				0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 &x(6)\\
+				0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0\\
+			\end{smallmatrix}
+					\right)
+						\left(
+			\begin{smallmatrix}
+				h(1)\\h(2)\\h(3)\\h(4)\\h(5)\\h(6)\\h(7)\\h(8)\\h(9)\\h(10)\\h(11)\\h(12)
+			\end{smallmatrix}
+			\right)	
+		\normalsize
+			\end{equation}	
+		\begin{align}
+			\left(	\begin{smallmatrix}
+				1&0&0&0&0&0&0&0&0&0&0&0\\
+				2&1&0&0&0&0&0&0&0&0&0&0\\
+				3&2&1&0&0&0&0&0&0&0&0&0\\
+				4&3&2&1&0&0&0&0&0&0&0&0\\
+				5&4&3&2&1&0&0&0&0&0&0&0\\
+				6&5&4&3&2&1&0&0&0&0&0&0\\
+				0&6&5&4&3&2&1&0&0&0&0&0\\
+				0&0&6&5&4&3&2&1&0&0&0&0\\
+				0&0&0&6&5&4&3&2&1&0&0&0\\
+				0&0&0&0&6&5&4&3&2&1&0&0\\
+				0&0&0&0&0&6&5&4&3&2&1&0\\
+				0&0&0&0&0&0&6&5&4&3&2&1\\
+				0&0&0&0&0&0&0&6&5&4&3&2\\
+				0&0&0&0&0&0&0&0&6&5&4&3\\
+				0&0&0&0&0&0&0&0&0&6&5&4\\
+				0&0&0&0&0&0&0&0&0&0&6&5\\
+				0&0&0&0&0&0&0&0&0&0&0&6\\
+				0&0&0&0&0&0&0&0&0&0&0&0\\
+			\end{smallmatrix} \right)
+		\left(\begin{smallmatrix}1.   \\      -0.5    \\     1.25   \\    -0.625   \\    0.3125  \\   -0.15625 \\ 0.078125  \\  -0.0390625 \\  0.01953125 \\ -0.00976562 \\ 0.00390625 \\ -0.00195312
+		\end{smallmatrix} \right)\\
+		= \left(\begin{smallmatrix}
+					1 \\ 1.5 \\ 3.25\\ 4.375\\
+					2.8125 \\ 3.59375 \\ 0.203125 \\ 0.8984375\\
+					-0.44921875 \\ 0.224609375 \\-0.112304688 \\ 0.0561523438\\
+					-0.0280761719 \\ 0.0140380859 \\-7.01904297  \times 10^{-3} \\ 3.50952148 \times 10^{-3}\\
+					-1.75476074 \times 10^{-3} \\ 8.77380371  \times 10^{-4} \\-4.38690186 \times 10^{-4} \\\\ 0 \\\\
+		\end{smallmatrix}\right)
+		\end{align}		
 		\item Show that
 		\begin{equation}
 			y(n) =  \sum_{n=-\infty}^{\infty}x(n-k)h(k)
 		\end{equation}
 		
-		5.6 \solution
+		5.10 \solution
 		\begin{align}
-			%	y(n)=\sum_{n=-\infty}^{\infty} x(n-k) h(k) \\
-			%	\text{6.2 To prove: } Y(k)=X(k) H(k)\\
 			X(z) = {\mathcal{Z}} \{x(n)\}=\sum_{n=-\infty}^{\infty} x(n) z^{-n} \\
 			H(z) = {\mathcal{Z}} \{h(m)\}=\sum_{m=-\infty}^{\infty} h(m) z^{-m} \\
 			Y(z) = {\mathcal{Z}} \{h(m)\}=\sum_{k=-\infty}^{\infty} y(m) z^{-k}
 		\end{align}
 		
 		\begin{equation}
-			X(z) H(z)=\sum_{n=-\infty}^{\infty} x(n) z^{-n} \sum_{m=-\infty}^{\infty} h(m) z^{-m}
+			X(z)H(z)=\sum_{n=-\infty}^{\infty} x(n) z^{-n} \sum_{m=-\infty}^{\infty} h(m) z^{-m}
 		\end{equation}
-		
 		\begin{align}
 			=\sum_{n=-\infty}^{\infty} \sum_{m=-\infty}^{\infty} x[n] h[m] z^{-(n+m)} \\
-			\intertext{Let $m = k - n$}	%\quad m=-\infty \rightarrow n=\infty \\
-			%m=\infty \rightarrow n=-\infty \\
+			\intertext{Let $m = k - n$}
 			=\sum_{k=-\infty}^{\infty}\left(\sum_{n=-\infty}^{\infty} x[n] h[n-k]\right) z^{-k} \\
-			=\sum_{k=-\infty}^{\infty} y[n] z^{-k}=Y({$z$}) \\
-			\implies Y(z)= X(z) \cdot H(z)\\
-			%	Y(z)=\sum_{n=-\infty}^{\infty} x(n) \sum_{m=-\infty}^{\infty} h(m) z^{-(m+n)} \\
-			%	\text{Let } m = n - k \\
-			%	\implies Y(z)=\sum_{n=-\infty}^{\infty} \left( \sum_{n=-\infty}^{\infty} x(n) h(n-k) z^{-k} \right) \\
+			=\sum_{k=-\infty}^{\infty} y[n] z^{-k}=Y($z$) \\
+			\implies Y(z) = X(z) \cdot H(z)
 		\end{align}
-		
 		now put $n+m=k \quad n=-\infty$
 		
 		\begin{align}

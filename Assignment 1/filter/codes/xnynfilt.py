@@ -29,8 +29,10 @@ plt.ylabel('$y(n)$')
 plt.grid()# minor
 
 #If using termux
-plt.savefig('../figs/xnynfilt.pdf')
-plt.savefig('../figs/xnynfilt.eps')
-subprocess.run(shlex.split("termux-open ../figs/xnynfilt.pdf"))
+#plt.savefig('../figs/xnynfilt.pdf')
+#plt.savefig('../figs/xnynfilt.eps')
+#subprocess.run(shlex.split("termux-open ../figs/xnynfilt.pdf"))
 #else
 #plt.show()
+print(y)
+print(len(y))
