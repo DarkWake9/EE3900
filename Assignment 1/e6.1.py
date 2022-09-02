@@ -8,12 +8,22 @@ pi = np.pi
 for k in range(N):
     for i in range(N):
         X[k] = xn[i] * np.exp(-1 * 1j * 2 * pi * k * i / float(N))
+X = np.array(X)
 
-plt.plot(xn, np.abs(X))
+plt.subplot(2, 1, 1)
+plt.stem(range(0,N),xn)
+plt.ylabel('$x$')
+plt.grid()
+
+
+plt.subplot(2, 1, 2)
+plt.stem(range(0,N), abs(X))
 plt.title('DFT')
-plt.xlabel('$x$')
 plt.ylabel('$|X(k)|$')
 plt.grid()
+
+
 print(X)
+print(abs(X))
 plt.show()
 

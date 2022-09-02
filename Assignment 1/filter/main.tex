@@ -472,17 +472,25 @@ wget https://raw.githubusercontent.com/gadepall/EE1310/master/filter/codes/dtft.
 			\stackMath\def\stackalignment{r}
 			\end{align}
 		\begin{align*}
-			&\underline{1-\dfrac{1}{2}z^{-1}+\dfrac{5}{4}z^{-2}-\dfrac{5}{8}z^{-3}}+\ldots \ldots\\
+			&\underline{1-\dfrac{1}{2}z^{-1}+\dfrac{5}{4}z^{-2}-\dfrac{5}{8}z^{-3}+\frac{5}{16}z^{-4}}\ldots \ldots\\
 			\rbrak{1 + \frac{1}{2}z^{-1}} &\text{\quad}\text{\quad}\text{\quad}\text{   }\text{\large $1 + z^{-2}$}\\
 			&\text{\quad}\text{\quad}\text{\quad}\underline{\text{ }1 + \frac{1}{2}z^{-1}}\\
 			&\text{\quad}\text{\quad}\text{\quad}\text{ }\text{ }\text{ }-\frac{z^{-1}}{2}+z^{-2}\\
 			&\text{\quad}\text{\quad}\text{\quad}\text{ }\text{ }\underline{\text{} -\frac{z^{-1}}{2} - \frac{1}{4}z^{-2}}\\
 			&\text{\quad}\text{\quad}\text{\quad}\text{ }\text{ }\underline{\text{ }\text{ }\text{ }\text{ }\frac{5}{4}z^{-2}\text{\quad \quad \quad \quad}}\\
 			&\text{\quad}\text{\quad}\text{\quad}\text{ }\text{ }\underline{\text{ }\text{ }\text{ }\text{ }\frac{5}{4}z^{-2} + \frac{5}{8}z^{-3}}\\
-			&\text{\quad}\text{\quad}\text{\quad}\text{ }\text{ }\underline{\text{ }\text{ }\text{ }\text{\quad}\text{\quad}\frac{5}{8}z^{-3}\text{\quad}}\\
-			&\text{\quad}\text{\quad}\text{\quad}\text{ }\text{ }\underline{\text{ }\text{ }\text{ }\text{ }\text{ }\frac{5}{8}z^{-3} + \frac{5}{16}z^{-4}}\\
+			&\text{\quad}\text{\quad}\text{\quad}\text{ }\text{ }\underline{\text{ }\text{ }\text{ }\text{\quad}-\frac{5}{8}z^{-3}\text{\quad}\text{\quad}}\\
+			&\text{\quad}\text{\quad}\text{\quad}\text{ }\text{ }\underline{\text{ }\text{ }\text{ }\text{ }\text{ }-\frac{5}{8}z^{-3} - \frac{5}{16}z^{-4}}\\
+			&\text{\quad}\text{\quad}\text{\quad}\text{ }\text{ }\underline{\text{ }\text{ }\text{ }\text{ }\text{ }\text{\quad}\frac{5}{16}z^{-4}\text{\quad}\text{\quad}}\\
+			&\text{\quad}\text{\quad}\text{\quad}\text{ }\text{ }\underline{\text{ }\text{ }\text{ }\text{ }\text{ }\frac{5}{16}z^{-4} + \frac{5}{32}z^{-5}}\\
 			&\text{\quad}\text{\quad}\text{\quad}\text{\quad}\text{\quad}\text{\quad}\text{\quad}\vdots
 		\end{align*}
+		\begin{align}
+			H(z) =\sum ^{\infty }_{n=-\infty }h(n) z^{-n}\\
+			\intertext{comparing coefficients:}
+			h(0) = 1,\quad h(1) = -\frac{1}{2},\quad h(2) = \frac{5}{4}\\
+			h(3) = -\frac{5}{8},\quad h(4) = \frac{5}{16}
+		\end{align}
 
 		\item \label{prob:impulse_resp}
 		Find an expression for $h(n)$ using $H(z)$, given that 
@@ -513,7 +521,21 @@ wget https://raw.githubusercontent.com/gadepall/EE1310/master/filter/codes/hn.py
 			\caption{$h(n)$ as the inverse of $H(z)$}
 			\label{fig:hn}
 		\end{figure}
-		\item Convergent? Justify using the ratio test.
+		\item Convergent? Justify using the ratio test.\\
+		\solution\\
+			\onehalfspacing
+		h(n) = 
+		$\begin{cases}
+
+			0, \quad $if$ \quad n < 0\\
+			
+			1, \quad $if$ \quad n = 1\\
+			
+			-\dfrac{1}{2}, \quad $if$ \quad n = 2\\
+			5\brak{-\dfrac{1}{2}}^{n}, \quad $if$ \quad n > 2
+		\end{cases}$
+			\singlespacing
+			
 		\item The system with $h(n)$ is defined to be stable if
 		\begin{equation}
 			\sum_{n=-\infty}^{\infty}h(n) < \infty
