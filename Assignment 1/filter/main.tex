@@ -370,7 +370,7 @@ wget https://github.com/DarkWake9/EE3900/blob/main/Assignment%201/e3-3.py
 			a^nu(n) \ztrans \frac{1}{1-az^{-1}} \quad \abs{z} > \abs{a}
 		\end{equation}
 		
-		4.5 \solution
+		\solution
 		\begin{align}
 			a^{n}u[n] = \begin{cases} a^{n} & n \geq 0 \\
 				0 & n<0\end{cases} \\
@@ -382,17 +382,13 @@ Given: $\abs{z} > \abs{a}$\\
 			\label{eq:U'} 
 			U^{\prime}(z)=\frac{1}{1-a z^{-1}}
 		\end{equation}
-		
-		
-		\item 
-		Let
+		\item Let
 		\begin{equation}
 			H\brak{e^{\j \omega}} = H\brak{z = e^{\j \omega}}.
 		\end{equation}
 		Plot $\abs{H\brak{e^{\j \omega}}}$.  Is it periodic? If so, find the period. $H(e^{\j \omega})$ is
-		known as the {\em Discret Time Fourier Transform} (DTFT) of $h(n)$.
-%		\\[10pt]
-		\solution The following code plots Fig. \ref{fig:dtft}
+		known as the {\em Discret Time Fourier Transform} (DTFT) of $h(n)$.\\\\
+		\solution The following code plots Fig. $\ref{fig:dtft}$
 		
 		\begin{lstlisting}
 wget https://raw.githubusercontent.com/gadepall/EE1310/master/filter/codes/dtft.py
@@ -402,8 +398,8 @@ wget https://raw.githubusercontent.com/gadepall/EE1310/master/filter/codes/dtft.
 			\includegraphics[width=\columnwidth]{./figs/dtft}
 			\caption{$\abs{H\brak{e^{\j\omega}}}$}
 \label{fig:dtft}
-	\raggedright{ \quad \quad $\therefore$ Period of $H(e^{\j \omega})$ is $2\pi$\\}
 		\end{figure}
+%	\raggedright{ \quad \quad $\therefore$ Period of $H(e^{\j \omega})$ is $2\pi$\\
 \solution From \eqref{eq:freq_resp} we get
 	\begin{align}
 		%H\brak{e^{\j \omega}} = H\brak{z = e^{\j \omega}}\\
@@ -421,31 +417,27 @@ wget https://raw.githubusercontent.com/gadepall/EE1310/master/filter/codes/dtft.
 	\begin{align}
 		f\brak{x} = f\brak{x+T}, T \neq 0	 
 	\end{align}
-%	Period of numerator = $2\pi$\\
-%	Period of denominator = $2\pi$\\
-	%Both the numerator and denominator have a period of $2\pi$ since $\cos\brak{\omega}$ has a period of $2\pi$. Which means that $H(e^{\j (\omega)})$ has a period of $2\pi$
-	%Checking if $2\pi$ is the fundamental period by 
+
 	Checking if $\pi$ is a period,
+
 	\begin{align}
-		\frac{2\cos\brak{\omega+\pi}}{\sqrt{\frac{5}{4}+\cos\brak{\omega+\pi}}} =
+		\frac{2\cos\brak{\omega+\pi}}{\sqrt{\frac{5}{4}+\cos\brak{\omega+\pi}}}\\ =
 		\frac{-2\cos\omega}{\sqrt{\frac{5}{4}-\cos\omega}}\\
-		\implies H\brak{e^{\j \brak{\omega+\pi}}} \neq H\brak{e^{\j \omega}}
-	\end{align}
-	Checking if $2\pi$ is a period,
-	\begin{align}
-		\frac{2\cos\brak{\omega+2\pi}}{\sqrt{\frac{5}{4}+\cos\brak{\omega + 2\pi}}} =
+		\implies H\brak{e^{\j \brak{\omega+\pi}}} \neq H\brak{e^{\j \omega}}\\
+	\intertext{Checking if $2\pi$ is a period}
+		\dfrac{2\cos\brak{\omega+2\pi}}{\sqrt{\frac{5}{4}+\cos\brak{\omega + 2\pi}}} =
 		\frac{2\cos \omega}{\sqrt{\frac{5}{4} + \cos \omega }}\\
 		\implies H\brak{e^{\j \brak{\omega + 2\pi}}} = H\brak{e^{\j \omega}}
 	\end{align}
 	
-	$\therefore$ period is $2\pi$.\\
-	\item Express $h(n)$ in terms of $H\brak{e^{\j \omega}}$.\\[5pt]
-	4.7 \solution
+$\therefore$ Period of $H(e^{\j \omega})$ is $2\pi$\\
+	\item Express $h(n)$ in terms of $H\brak{e^{\j \omega}}$ \\[5pt]
+	\solution
 		\begin{align}
-	H( e^{j\omega }) =\sum ^{\infty }_{n=-\infty }h(n') e^{-j\omega n'}\\
-	\implies \int_{\-\pi} ^{\pi }	H\left( e^{j\omega }\right) e^{j\omega n}d\omega\\			
-	= \sum_{n'=-\infty }^{\infty } \int ^{\pi }_{-\pi }h(n') e^{-j\omega n'}e^{j\omega n}d\omega\\			
-	=\sum ^{\infty }_{n'=-\infty }h(n') 2\pi \delta(n'- n) =
+		H( e^{j\omega }) =\sum ^{\infty }_{n=-\infty }h(n') e^{-j\omega n'}\\
+		\implies \int_{\-\pi} ^{\pi }	H\left( e^{j\omega }\right) e^{j\omega n}d\omega\\			
+		= \sum_{n'=-\infty }^{\infty } \int ^{\pi }_{-\pi }h(n') e^{-j\omega n'}e^{j\omega n}d\omega\\			
+		=\sum ^{\infty }_{n'=-\infty }h(n') 2\pi \delta(n'- n) =
 	 2\pi h(n) 
 		\end{align}
 	\begin{equation}
@@ -466,14 +458,13 @@ wget https://raw.githubusercontent.com/gadepall/EE1310/master/filter/codes/dtft.
 		\solution
 		from \eqref{eq:freq_resp}
 		\begin{align}
-			H(z)= \frac{1 + z^{-2}}{1 + \frac{1}{2}z^{-1}}\\
-			= (1 + z^{-2})\brak{1+\frac{1}{2}z^{-1}}^{-1}\\
-			\setstackgap{S}{1.5pt}
-			\stackMath\def\stackalignment{r}
+			H(z) %= \frac{1 + z^{-2}}{1 + \frac{1}{2}z^{-1}}
+			= (1 + z^{-2})\brak{1+\frac{1}{2}z^{-1}}^{-1}
 			\end{align}
+	\tiny
 		\begin{align*}
 			&\underline{1-\dfrac{1}{2}z^{-1}+\dfrac{5}{4}z^{-2}-\dfrac{5}{8}z^{-3}+\frac{5}{16}z^{-4}}\ldots \ldots\\
-			\rbrak{1 + \frac{1}{2}z^{-1}} &\text{\quad}\text{\quad}\text{\quad}\text{   }\text{\large $1 + z^{-2}$}\\
+			\rbrak{1 + \dfrac{1}{2}z^{-1}} &\text{\quad}\text{\quad}\text{\quad}\text{   }\text{$1 + z^{-2}$}\\
 			&\text{\quad}\text{\quad}\text{\quad}\underline{\text{ }1 + \frac{1}{2}z^{-1}}\\
 			&\text{\quad}\text{\quad}\text{\quad}\text{ }\text{ }\text{ }-\frac{z^{-1}}{2}+z^{-2}\\
 			&\text{\quad}\text{\quad}\text{\quad}\text{ }\text{ }\underline{\text{} -\frac{z^{-1}}{2} - \frac{1}{4}z^{-2}}\\
@@ -482,16 +473,23 @@ wget https://raw.githubusercontent.com/gadepall/EE1310/master/filter/codes/dtft.
 			&\text{\quad}\text{\quad}\text{\quad}\text{ }\text{ }\underline{\text{ }\text{ }\text{ }\text{\quad}-\frac{5}{8}z^{-3}\text{\quad}\text{\quad}}\\
 			&\text{\quad}\text{\quad}\text{\quad}\text{ }\text{ }\underline{\text{ }\text{ }\text{ }\text{ }\text{ }-\frac{5}{8}z^{-3} - \frac{5}{16}z^{-4}}\\
 			&\text{\quad}\text{\quad}\text{\quad}\text{ }\text{ }\underline{\text{ }\text{ }\text{ }\text{ }\text{ }\text{\quad}\frac{5}{16}z^{-4}\text{\quad}\text{\quad}}\\
-			&\text{\quad}\text{\quad}\text{\quad}\text{ }\text{ }\underline{\text{ }\text{ }\text{ }\text{ }\text{ }\frac{5}{16}z^{-4} + \frac{5}{32}z^{-5}}\\
-			&\text{\quad}\text{\quad}\text{\quad}\text{\quad}\text{\quad}\text{\quad}\text{\quad}\vdots
+			&\text{\quad}\text{\quad}\text{\quad}\text{ }\text{ }\text{ }\text{ }\text{ }\text{ }\text{ }\frac{5}{16}z^{-4} + \frac{5}{32}z^{-5}\\
+			&\text{\quad}\text{\quad}\text{\quad}\text{\quad}\text{\quad}\text{\quad}\text{\quad} \normalsize \vdots
 		\end{align*}
+	\normalsize
 		\begin{align}
-			H(z) =\sum ^{\infty }_{n=-\infty }h(n) z^{-n}\\
+			\text{We know that } H(z) =\sum ^{\infty }_{n=-\infty }h(n) z^{-n}\\
 			\intertext{comparing coefficients:}
-			h(0) = 1,\quad h(1) = -\frac{1}{2},\quad h(2) = \frac{5}{4}\\
-			h(3) = -\frac{5}{8},\quad h(4) = \frac{5}{16}
+			h(n) = \begin{cases}
+				%\doublespacing
+				0 \quad $if \quad$ n < 0\\
+				1, \quad $if \quad$ n = 0\\
+				-\frac{1}{2}$, \quad if \quad$ n = 1\\
+				5\brak{-\tfrac{1}{2}}^{n}$, \quad if \quad$ n \ge 2
+			\end{cases}\\
+			h(0) = 1$,\quad$ h(1) = -\frac{1}{2}$,\quad$ h(2) = \frac{5}{4}\\
+			h(3) = -\frac{5}{8}$,\quad$ h(4) = \frac{5}{16}
 		\end{align}
-
 		\item \label{prob:impulse_resp}
 		Find an expression for $h(n)$ using $H(z)$, given that 
 		%in Problem \ref{eq:ztransab} and \eqref{eq:anun}, given that
@@ -517,33 +515,45 @@ wget https://raw.githubusercontent.com/gadepall/EE1310/master/filter/codes/hn.py
 		\end{lstlisting}
 		\begin{figure}[!ht]
 			\centering
-			\includegraphics[width=\columnwidth]{./figs/hn}
+			\includegraphics[width=0.96\columnwidth]{./figs/hn}
 			\caption{$h(n)$ as the inverse of $H(z)$}
 			\label{fig:hn}
 		\end{figure}
+%	\vspace{7.5cm}
 		\item Convergent? Justify using the ratio test.\\
 		\solution\\
+		\begin{align}
 			\onehalfspacing
-		h(n) = 
-		$\begin{cases}
-
-			0, \quad $if$ \quad n < 0\\
-			
-			1, \quad $if$ \quad n = 1\\
-			
-			-\dfrac{1}{2}, \quad $if$ \quad n = 2\\
-			5\brak{-\dfrac{1}{2}}^{n}, \quad $if$ \quad n > 2
-		\end{cases}$
-			\singlespacing
-			
+			h(n) = \begin{cases}
+				\doublespacing
+				0 \quad $if \quad$ n < 0\\
+				1, \quad $if \quad$ n = 0\\
+				-\frac{1}{2}$, \quad if \quad$ n = 1\\
+				5\brak{-\tfrac{1}{2}}^{n}$, \quad if \quad$ n \ge 2
+			\end{cases}\\
+		\intertext{Using ratio test:}
+		\lim_{n \rightarrow \infty} \abs{\dfrac{h(n+1)}{h(n)}} = \abs{\dfrac{5\brak{-\tfrac{1}{2}}^{n+1}}{5\brak{-\tfrac{1}{2}}^{n}}}
+		= \frac{1}{2} < \infty
+		\end{align}
+\singlespacing
+		$\implies h(n)$ is convergent\\
 		\item The system with $h(n)$ is defined to be stable if
 		\begin{equation}
 			\sum_{n=-\infty}^{\infty}h(n) < \infty
 		\end{equation}
-		Is the system defined by \eqref{eq:iir_filter} stable for the impulse response in \eqref{eq:impulse_resp}?
-		%
-		
-		\item Verify the above result using a python code.
+		Is the system defined by \eqref{eq:iir_filter} stable for the impulse response in \eqref{eq:impulse_resp}\\
+		\solution
+		\begin{align}
+			\sum_{n=-\infty}^{\infty}h(n) = 0 + 1 - \frac{1}{2} + 5\sum_{n=2}^{\infty} \brak{-\dfrac{1}{2}}^{n}\\
+			= \dfrac{1}{2} + 5\brak{1 - \dfrac{1}{2} - \brak{\dfrac{1}{1 + \tfrac{1}{2}}}}\\
+			= \dfrac{1}{2} + \dfrac{5}{6} = \dfrac{8}{6} = 1.333 < \infty
+		\end{align}
+			$\therefore h(n)$  is Stable\\
+		\item Verify the above result using a python code.\\
+		\solution The Following code computes and proves the aboves result
+		\begin{lstlisting}
+wget https://github.com/DarkWake9/EE3900/blob/main/Assignment%201/e5-6.py
+		\end{lstlisting}
 		\item 
 		Compute and sketch $h(n)$ using 
 		\begin{equation}
@@ -552,15 +562,14 @@ wget https://raw.githubusercontent.com/gadepall/EE1310/master/filter/codes/hn.py
 		\end{equation}
 		%
 		This is the definition of $h(n)$.
-		\\
-		\solution The following code plots Fig. \ref{fig:hndef}. Note that this is the same as Fig. 
-		\ref{fig:hn}. 
+		\\\\
+		\solution The following code plots Fig. \ref{fig:hndef}. Note that this is the same as Fig. \ref{fig:hn}. \\\\
 		\begin{lstlisting}
 wget https://raw.githubusercontent.com/gadepall/EE1310/master/filter/codes/hndef.py
 		\end{lstlisting}
 		\begin{figure}[!ht]
 			\centering
-			\includegraphics[width=\columnwidth]{./figs/hndef}
+			\includegraphics[width=0.95\columnwidth]{./figs/hndef}
 			\caption{$h(n)$ from the definition}
 			\label{fig:hndef}
 		\end{figure}
@@ -584,12 +593,11 @@ wget https://raw.githubusercontent.com/gadepall/EE1310/master/filter/codes/yncon
 		\end{lstlisting}
 		\begin{figure}[!ht]
 			\centering
-			\includegraphics[width=\columnwidth]{./figs/ynconv}
-			\caption{$y(n)$ from the definition of convolution}
+			\includegraphics[width=0.915\columnwidth]{./figs/ynconv}
+			\caption{\small $y(n)$ from the definition of convolution}
 			\label{fig:ynconv}
 		\end{figure}
-	
-	
+	\vspace{5cm}
 		\item Express the above convolution using a Teoplitz matrix.\\
 		\solution From \eqref{def:xn}
 				$x(n) = \cbrak{1,2,3,4,2,1}$\\
@@ -632,19 +640,19 @@ wget https://raw.githubusercontent.com/gadepall/EE1310/master/filter/codes/yncon
 				2&1&0&0&0&0&0&0&0&0&0&0\\
 				3&2&1&0&0&0&0&0&0&0&0&0\\
 				4&3&2&1&0&0&0&0&0&0&0&0\\
-				5&4&3&2&1&0&0&0&0&0&0&0\\
-				6&5&4&3&2&1&0&0&0&0&0&0\\
-				0&6&5&4&3&2&1&0&0&0&0&0\\
-				0&0&6&5&4&3&2&1&0&0&0&0\\
-				0&0&0&6&5&4&3&2&1&0&0&0\\
-				0&0&0&0&6&5&4&3&2&1&0&0\\
-				0&0&0&0&0&6&5&4&3&2&1&0\\
-				0&0&0&0&0&0&6&5&4&3&2&1\\
-				0&0&0&0&0&0&0&6&5&4&3&2\\
-				0&0&0&0&0&0&0&0&6&5&4&3\\
-				0&0&0&0&0&0&0&0&0&6&5&4\\
-				0&0&0&0&0&0&0&0&0&0&6&5\\
-				0&0&0&0&0&0&0&0&0&0&0&6\\
+				2&4&3&2&1&0&0&0&0&0&0&0\\
+				1&2&4&3&2&1&0&0&0&0&0&0\\
+				0&1&2&4&3&2&1&0&0&0&0&0\\
+				0&0&1&2&4&3&2&1&0&0&0&0\\
+				0&0&0&1&2&4&3&2&1&0&0&0\\
+				0&0&0&0&1&2&4&3&2&1&0&0\\
+				0&0&0&0&0&1&2&4&3&2&1&0\\
+				0&0&0&0&0&0&1&2&4&3&2&1\\
+				0&0&0&0&0&0&0&1&2&4&3&2\\
+				0&0&0&0&0&0&0&0&1&2&4&3\\
+				0&0&0&0&0&0&0&0&0&1&2&4\\
+				0&0&0&0&0&0&0&0&0&0&1&2\\
+				0&0&0&0&0&0&0&0&0&0&0&1\\
 				0&0&0&0&0&0&0&0&0&0&0&0\\
 			\end{smallmatrix} \right)
 		\left(\begin{smallmatrix}1.   \\      -0.5    \\     1.25   \\    -0.625   \\    0.3125  \\   -0.15625 \\ 0.078125  \\  -0.0390625 \\  0.01953125 \\ -0.00976562 \\ 0.00390625 \\ -0.00195312
@@ -661,8 +669,7 @@ wget https://raw.githubusercontent.com/gadepall/EE1310/master/filter/codes/yncon
 		\begin{equation}
 			y(n) =  \sum_{n=-\infty}^{\infty}x(n-k)h(k)
 		\end{equation}
-		
-		5.10 \solution
+		\solution
 		\begin{align}
 			X(z) = {\mathcal{Z}} \{x(n)\}=\sum_{n=-\infty}^{\infty} x(n) z^{-n} \\
 			H(z) = {\mathcal{Z}} \{h(m)\}=\sum_{m=-\infty}^{\infty} h(m) z^{-m} \\
