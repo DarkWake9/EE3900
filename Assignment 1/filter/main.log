@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2022.9.4)  4 SEP 2022 19:10
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2022.9.4)  8 SEP 2022 10:29
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1027,229 +1027,11 @@ Underfull \hbox (badness 10000) in paragraph at lines 433--434
 LaTeX Warning: Command \j invalid in math mode on input line 434.
 
 
-LaTeX Font Warning: Command \normalsize invalid in math mode on input line 478.
+LaTeX Font Warning: Command \normalsize invalid in math mode on input line 480.
 
 
 
-LaTeX Font Warning: Command \normalsize invalid in math mode on input line 478.
-
-
-! Missing } inserted.
-<inserted text> 
-                }
-l.492 		\end{align}
-                   
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-! Missing { inserted.
-<inserted text> 
-                {
-l.492 		\end{align}
-                   
-I've put in what seems to be necessary to fix
-the current column of the current alignment.
-Try to go on, since this might almost work.
-
-! Missing } inserted.
-<inserted text> 
-                }
-l.492 		\end{align}
-                   
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-! Missing { inserted.
-<inserted text> 
-                {
-l.492 		\end{align}
-                   
-I've put in what seems to be necessary to fix
-the current column of the current alignment.
-Try to go on, since this might almost work.
-
-! Missing } inserted.
-<inserted text> 
-                }
-l.492 		\end{align}
-                   
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-! Missing \endgroup inserted.
-<inserted text> 
-                \endgroup 
-l.492 		\end{align}
-                   
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-! Misplaced \omit.
-\math@cr@@@ ...@ \@ne \add@amps \maxfields@ \omit 
-                                                  \kern -\alignsep@ \iftag@ ...
-l.492 		\end{align}
-                   
-I expect to see \omit only after tab marks or the \cr of
-an alignment. Proceed, and I'll ignore this case.
-
-! Missing { inserted.
-<inserted text> 
-                {
-l.492 		\end{align}
-                   
-I've put in what seems to be necessary to fix
-the current column of the current alignment.
-Try to go on, since this might almost work.
-
-! Missing } inserted.
-<inserted text> 
-                }
-l.492 		\end{align}
-                   
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-! Missing \endgroup inserted.
-<inserted text> 
-                \endgroup 
-l.492 		\end{align}
-                   
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-! Misplaced \omit.
-\math@cr@@@ ...@ \@ne \add@amps \maxfields@ \omit 
-                                                  \kern -\alignsep@ \iftag@ ...
-l.492 		\end{align}
-                   
-I expect to see \omit only after tab marks or the \cr of
-an alignment. Proceed, and I'll ignore this case.
-
-! Missing { inserted.
-<inserted text> 
-                {
-l.492 		\end{align}
-                   
-I've put in what seems to be necessary to fix
-the current column of the current alignment.
-Try to go on, since this might almost work.
-
-<./figs/hn.pdf, id=274, 462.52798pt x 346.89601pt>
-File: ./figs/hn.pdf Graphic file (type pdf)
-<use ./figs/hn.pdf>
-Package pdftex.def Info: ./figs/hn.pdf  used on input line 518.
-(pdftex.def)             Requested size: 241.92169pt x 181.4456pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 523--525
-
- []
-
-[4 <./figs/hn.pdf>]
-
-LaTeX Font Warning: Command \normalsize invalid in math mode on input line 537.
-
-
-
-LaTeX Font Warning: Command \normalsize invalid in math mode on input line 537.
-
-
-
-LaTeX Font Warning: Command \normalsize invalid in math mode on input line 537.
-
-
-
-LaTeX Font Warning: Command \normalsize invalid in math mode on input line 537.
-
-
-
-LaTeX Font Warning: Command \normalsize invalid in math mode on input line 537.
-
-
-
-LaTeX Font Warning: Command \normalsize invalid in math mode on input line 537.
-
-
-
-LaTeX Font Warning: Command \normalsize invalid in math mode on input line 537.
-
-
-
-LaTeX Font Warning: Command \normalsize invalid in math mode on input line 537.
-
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 539--540
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 550--552
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 562--567
-
- []
-
-
-Underfull \hbox (badness 3343) in paragraph at lines 562--567
-\OT1/txr/bx/n/12 Solution: \OT1/txr/m/n/12 The fol-low-ing code plots Fig.
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 562--567
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 562--567
-
- []
-
-<./figs/hndef.pdf, id=346, 462.52798pt x 346.89601pt>
-File: ./figs/hndef.pdf Graphic file (type pdf)
-<use ./figs/hndef.pdf>
-Package pdftex.def Info: ./figs/hndef.pdf  used on input line 572.
-(pdftex.def)             Requested size: 239.39923pt x 179.55063pt.
-<./figs/ynconv.pdf, id=350, 462.52798pt x 346.89601pt>
-File: ./figs/ynconv.pdf Graphic file (type pdf)
-<use ./figs/ynconv.pdf>
-Package pdftex.def Info: ./figs/ynconv.pdf  used on input line 596.
-(pdftex.def)             Requested size: 230.57831pt x 172.93413pt.
-[5 <./figs/hndef.pdf> <./figs/ynconv.pdf
-
-pdfTeX warning: /usr/bin/pdflatex (file ./figs/ynconv.pdf): PDF inclusion: mult
-iple pdfs with page group included in a single page
->]
-Underfull \hbox (badness 10000) in paragraph at lines 601--606
-
- []
-
-
-LaTeX Font Warning: Command \scriptsize invalid in math mode on input line 607.
-
-
-
-LaTeX Font Warning: Command \normalsize invalid in math mode on input line 635.
+LaTeX Font Warning: Command \normalsize invalid in math mode on input line 480.
 
 
 
@@ -1259,7 +1041,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 ! Missing } inserted.
 <inserted text> 
                 }
-l.688 		\end{align}
+l.495 		\end{align}
                    
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -1270,7 +1052,7 @@ my insertion and my current dilemma will both disappear.
 ! Missing { inserted.
 <inserted text> 
                 {
-l.688 		\end{align}
+l.495 		\end{align}
                    
 I've put in what seems to be necessary to fix
 the current column of the current alignment.
@@ -1279,7 +1061,27 @@ Try to go on, since this might almost work.
 ! Missing } inserted.
 <inserted text> 
                 }
-l.688 		\end{align}
+l.495 		\end{align}
+                   
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+! Missing { inserted.
+<inserted text> 
+                {
+l.495 		\end{align}
+                   
+I've put in what seems to be necessary to fix
+the current column of the current alignment.
+Try to go on, since this might almost work.
+
+! Missing } inserted.
+<inserted text> 
+                }
+l.495 		\end{align}
                    
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -1290,7 +1092,7 @@ my insertion and my current dilemma will both disappear.
 ! Missing \endgroup inserted.
 <inserted text> 
                 \endgroup 
-l.688 		\end{align}
+l.495 		\end{align}
                    
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -1301,7 +1103,7 @@ my insertion and my current dilemma will both disappear.
 ! Misplaced \omit.
 \math@cr@@@ ...@ \@ne \add@amps \maxfields@ \omit 
                                                   \kern -\alignsep@ \iftag@ ...
-l.688 		\end{align}
+l.495 		\end{align}
                    
 I expect to see \omit only after tab marks or the \cr of
 an alignment. Proceed, and I'll ignore this case.
@@ -1309,39 +1111,247 @@ an alignment. Proceed, and I'll ignore this case.
 ! Missing { inserted.
 <inserted text> 
                 {
-l.688 		\end{align}
+l.495 		\end{align}
+                   
+I've put in what seems to be necessary to fix
+the current column of the current alignment.
+Try to go on, since this might almost work.
+
+! Missing } inserted.
+<inserted text> 
+                }
+l.495 		\end{align}
+                   
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+! Missing \endgroup inserted.
+<inserted text> 
+                \endgroup 
+l.495 		\end{align}
+                   
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+! Misplaced \omit.
+\math@cr@@@ ...@ \@ne \add@amps \maxfields@ \omit 
+                                                  \kern -\alignsep@ \iftag@ ...
+l.495 		\end{align}
+                   
+I expect to see \omit only after tab marks or the \cr of
+an alignment. Proceed, and I'll ignore this case.
+
+! Missing { inserted.
+<inserted text> 
+                {
+l.495 		\end{align}
                    
 I've put in what seems to be necessary to fix
 the current column of the current alignment.
 Try to go on, since this might almost work.
 
 
-LaTeX Warning: Command \j invalid in math mode on input line 707.
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
+ [4]
+<./figs/hn.pdf, id=298, 462.52798pt x 346.89601pt>
+File: ./figs/hn.pdf Graphic file (type pdf)
+<use ./figs/hn.pdf>
+Package pdftex.def Info: ./figs/hn.pdf  used on input line 521.
+(pdftex.def)             Requested size: 226.79846pt x 170.10226pt.
 
-LaTeX Warning: Command \j invalid in math mode on input line 716.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 717--723
+Underfull \hbox (badness 10000) in paragraph at lines 526--528
 
  []
 
-[6]
-<./figs/yndft.pdf, id=487, 462.52798pt x 346.89601pt>
+
+LaTeX Font Warning: Command \normalsize invalid in math mode on input line 540.
+
+
+
+LaTeX Font Warning: Command \normalsize invalid in math mode on input line 540.
+
+
+
+LaTeX Font Warning: Command \normalsize invalid in math mode on input line 540.
+
+
+
+LaTeX Font Warning: Command \normalsize invalid in math mode on input line 540.
+
+
+
+LaTeX Font Warning: Command \normalsize invalid in math mode on input line 540.
+
+
+
+LaTeX Font Warning: Command \normalsize invalid in math mode on input line 540.
+
+
+
+LaTeX Font Warning: Command \normalsize invalid in math mode on input line 540.
+
+
+
+LaTeX Font Warning: Command \normalsize invalid in math mode on input line 540.
+
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 542--543
+
+ []
+
+
+Underfull \vbox (badness 1888) has occurred while \output is active []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 553--555
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 565--570
+
+ []
+
+
+Underfull \hbox (badness 3343) in paragraph at lines 565--570
+\OT1/txr/bx/n/12 Solution: \OT1/txr/m/n/12 The fol-low-ing code plots Fig.
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 565--570
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 565--570
+
+ []
+
+<./figs/hndef.pdf, id=303, 462.52798pt x 346.89601pt>
+File: ./figs/hndef.pdf Graphic file (type pdf)
+<use ./figs/hndef.pdf>
+Package pdftex.def Info: ./figs/hndef.pdf  used on input line 575.
+(pdftex.def)             Requested size: 252.0pt x 189.00429pt.
+<./figs/ynconv.pdf, id=307, 462.52798pt x 346.89601pt>
+File: ./figs/ynconv.pdf Graphic file (type pdf)
+<use ./figs/ynconv.pdf>
+Package pdftex.def Info: ./figs/ynconv.pdf  used on input line 599.
+(pdftex.def)             Requested size: 252.0pt x 189.00429pt.
+[5 <./figs/hn.pdf>]
+Underfull \hbox (badness 10000) in paragraph at lines 604--609
+
+ []
+
+
+LaTeX Font Warning: Command \scriptsize invalid in math mode on input line 610.
+
+
+
+LaTeX Font Warning: Command \normalsize invalid in math mode on input line 638.
+
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+! Missing } inserted.
+<inserted text> 
+                }
+l.691 		\end{align}
+                   
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+! Missing { inserted.
+<inserted text> 
+                {
+l.691 		\end{align}
+                   
+I've put in what seems to be necessary to fix
+the current column of the current alignment.
+Try to go on, since this might almost work.
+
+! Missing } inserted.
+<inserted text> 
+                }
+l.691 		\end{align}
+                   
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+! Missing \endgroup inserted.
+<inserted text> 
+                \endgroup 
+l.691 		\end{align}
+                   
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+! Misplaced \omit.
+\math@cr@@@ ...@ \@ne \add@amps \maxfields@ \omit 
+                                                  \kern -\alignsep@ \iftag@ ...
+l.691 		\end{align}
+                   
+I expect to see \omit only after tab marks or the \cr of
+an alignment. Proceed, and I'll ignore this case.
+
+! Missing { inserted.
+<inserted text> 
+                {
+l.691 		\end{align}
+                   
+I've put in what seems to be necessary to fix
+the current column of the current alignment.
+Try to go on, since this might almost work.
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [6 <./figs/hndef.pdf> <./figs/ynconv.pdf
+
+pdfTeX warning: /usr/bin/pdflatex (file ./figs/ynconv.pdf): PDF inclusion: mult
+iple pdfs with page group included in a single page
+>]
+
+LaTeX Warning: Command \j invalid in math mode on input line 710.
+
+
+LaTeX Warning: Command \j invalid in math mode on input line 719.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 720--726
+
+ []
+
+<./figs/yndft.pdf, id=476, 462.52798pt x 346.89601pt>
 File: ./figs/yndft.pdf Graphic file (type pdf)
 <use ./figs/yndft.pdf>
-Package pdftex.def Info: ./figs/yndft.pdf  used on input line 728.
+Package pdftex.def Info: ./figs/yndft.pdf  used on input line 731.
 (pdftex.def)             Requested size: 252.0pt x 189.00429pt.
- [7 <./figs/yndft.pdf>] (./main.aux)
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
+[7 <./figs/yndft.pdf>] (./main.aux)
 Package rerunfilecheck Info: File `main.out' has not changed.
 (rerunfilecheck)             Checksum: EDE0BD39395C52B880A8A7EB6EB76C7D;824.
  ) 
 Here is how much of TeX's memory you used:
- 17635 strings out of 478287
- 275474 string characters out of 5849290
+ 17638 strings out of 478287
+ 275513 string characters out of 5849290
  1004375 words of memory out of 5000000
  35345 multiletter control sequences out of 15000+600000
  546534 words of font info for 191 fonts, out of 8000000 for 9000
@@ -1360,10 +1370,10 @@ public/txfonts/txsyc.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/u
 tmb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmbi8a.pfb></us
 r/share/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texlive
 /texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on main.pdf (7 pages, 179676 bytes).
+Output written on main.pdf (7 pages, 179572 bytes).
 PDF statistics:
- 649 PDF objects out of 1000 (max. 8388607)
- 422 compressed objects within 5 object streams
- 196 named destinations out of 1000 (max. 500000)
+ 653 PDF objects out of 1000 (max. 8388607)
+ 426 compressed objects within 5 object streams
+ 199 named destinations out of 1000 (max. 500000)
  87 words of extra memory for PDF output out of 10000 (max. 10000000)
 

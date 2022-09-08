@@ -459,7 +459,9 @@ $\therefore$ Period of $H(e^{\j \omega})$ is $2\pi$\\
 		from \eqref{eq:freq_resp}
 		\begin{align}
 			H(z) %= \frac{1 + z^{-2}}{1 + \frac{1}{2}z^{-1}}
-			= (1 + z^{-2})\brak{1+\frac{1}{2}z^{-1}}^{-1}
+			= (1 + z^{-2})\brak{1+\frac{1}{2}z^{-1}}^{-1}\\
+			\text{For ROC:} \quad \abs{\frac{1}{2}z^{-1}} < 1\\
+			\implies \abs{z} > \frac{1}{2} \text{ is the ROC for this case}
 			\end{align}
 	\tiny
 		\begin{align*}
@@ -478,8 +480,9 @@ $\therefore$ Period of $H(e^{\j \omega})$ is $2\pi$\\
 		\end{align*}
 	\normalsize
 		\begin{align}
+			\implies H(z) = \frac{1 + z^{-2}}{1+\tfrac{1}{2}z^{-1}} = 1 - \tfrac{1}{2}z^{-1} + \sum_{n=2}^{\infty}\frac{5}{4}z^{-n}\\
 			\text{We know that } H(z) =\sum ^{\infty }_{n=-\infty }h(n) z^{-n}\\
-			\intertext{comparing coefficients:}
+			\intertext{comparing coefficients: \($ in the ROC $\abs{z} > \frac{1}{2}\)}
 			h(n) = \begin{cases}
 				%\doublespacing
 				0 \quad $if \quad$ n < 0\\
@@ -487,8 +490,8 @@ $\therefore$ Period of $H(e^{\j \omega})$ is $2\pi$\\
 				-\frac{1}{2}$, \quad if \quad$ n = 1\\
 				5\brak{-\tfrac{1}{2}}^{n}$, \quad if \quad$ n \ge 2
 			\end{cases}\\
-			h(0) = 1$,\quad$ h(1) = -\frac{1}{2}$,\quad$ h(2) = \frac{5}{4}\\
-			h(3) = -\frac{5}{8}$,\quad$ h(4) = \frac{5}{16}
+			h(0) = 1$,\quad$ h(1) = -\frac{1}{2}$,\quad$ h(2) = \tfrac{5}{4}\\
+			h(3) = -\tfrac{5}{8}$,\quad$ h(4) = \tfrac{5}{16}
 		\end{align}
 		\item \label{prob:impulse_resp}
 		Find an expression for $h(n)$ using $H(z)$, given that 
@@ -515,7 +518,7 @@ wget https://raw.githubusercontent.com/gadepall/EE1310/master/filter/codes/hn.py
 		\end{lstlisting}
 		\begin{figure}[!ht]
 			\centering
-			\includegraphics[width=0.96\columnwidth]{./figs/hn}
+			\includegraphics[width=0.9\columnwidth]{./figs/hn}
 			\caption{$h(n)$ as the inverse of $H(z)$}
 			\label{fig:hn}
 		\end{figure}
@@ -569,7 +572,7 @@ wget https://raw.githubusercontent.com/gadepall/EE1310/master/filter/codes/hndef
 		\end{lstlisting}
 		\begin{figure}[!ht]
 			\centering
-			\includegraphics[width=0.95\columnwidth]{./figs/hndef}
+			\includegraphics[width=\columnwidth]{./figs/hndef}
 			\caption{$h(n)$ from the definition}
 			\label{fig:hndef}
 		\end{figure}
@@ -593,7 +596,7 @@ wget https://raw.githubusercontent.com/gadepall/EE1310/master/filter/codes/yncon
 		\end{lstlisting}
 		\begin{figure}[!ht]
 			\centering
-			\includegraphics[width=0.915\columnwidth]{./figs/ynconv}
+			\includegraphics[width=\columnwidth]{./figs/ynconv}
 			\caption{\small $y(n)$ from the definition of convolution}
 			\label{fig:ynconv}
 		\end{figure}
@@ -732,6 +735,9 @@ wget https://raw.githubusercontent.com/gadepall/EE1310/master/filter/codes/yndft
 		
 		\item Repeat the previous exercise by computing $X(k), H(k)$ and $y(n)$ through FFT and 
 		IFFT.
+		\begin{lstlisting}
+			content...
+		\end{lstlisting}
 		\item Wherever possible, express all the above equations as matrix equations.
 	\end{enumerate}
 	%
