@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2022.9.4)  8 SEP 2022 10:29
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2022.9.4)  14 SEP 2022 02:46
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -849,34 +849,34 @@ File: utxsyc.fd 2000/12/15 v3.1
 \openout4 = `main.toc'.
 
 LaTeX Font Info:    Trying to load font information for TS1+txr on input line 1
-77.
+79.
 
 (/usr/share/texlive/texmf-dist/tex/latex/txfonts/ts1txr.fd
 File: ts1txr.fd 2000/12/15 v3.1
 )
-Underfull \hbox (badness 4608) in paragraph at lines 195--209
+Underfull \hbox (badness 4608) in paragraph at lines 197--211
 \OT1/txr/m/n/12 org / demos / spectrum-[]analyzer$[] []. Up-load the
  []
 
 Package hyperref Info: bookmark level for unknown lstlisting defaults to 0 on i
-nput line 213.
+nput line 215.
 (./codes/Cancel_noise.py)
-Underfull \hbox (badness 10000) in paragraph at lines 222--225
+Underfull \hbox (badness 10000) in paragraph at lines 224--227
 []\OT1/txr/m/n/12 The out-put of the python script
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 222--225
+Underfull \hbox (badness 10000) in paragraph at lines 224--227
 \OT1/txr/m/n/12 in Prob-lem []2.3[] is the au-dio file
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 222--225
+Underfull \hbox (badness 10000) in paragraph at lines 224--227
 \OT1/txr/m/n/12 Sound[]With[]ReducedNoise.wav. Play
  []
 
 
-Underfull \hbox (badness 6927) in paragraph at lines 222--225
+Underfull \hbox (badness 6927) in paragraph at lines 224--227
 \OT1/txr/bx/n/12 Solution: \OT1/txr/m/n/12 The key strokes as well as
  []
 
@@ -884,33 +884,27 @@ Underfull \hbox (badness 6927) in paragraph at lines 222--225
 
 
 ]
-<./figs/xnyn.pdf, id=100, 462.52798pt x 346.89601pt>
+<./figs/xnyn.pdf, id=120, 462.52798pt x 346.89601pt>
 File: ./figs/xnyn.pdf Graphic file (type pdf)
 <use ./figs/xnyn.pdf>
-Package pdftex.def Info: ./figs/xnyn.pdf  used on input line 250.
+Package pdftex.def Info: ./figs/xnyn.pdf  used on input line 252.
 (pdftex.def)             Requested size: 252.0pt x 189.00429pt.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 266.
+(hyperref)                removing `math shift' on input line 268.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 266.
+(hyperref)                removing `math shift' on input line 268.
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [2 <./figs/xnyn.pdf>]
-Underfull \hbox (badness 10000) in paragraph at lines 379--381
+Underfull \hbox (badness 10000) in paragraph at lines 381--383
 
  []
-
-
-LaTeX Warning: Command \j invalid in math mode on input line 387.
-
-
-LaTeX Warning: Command \j invalid in math mode on input line 387.
 
 
 LaTeX Warning: Command \j invalid in math mode on input line 389.
@@ -919,119 +913,115 @@ LaTeX Warning: Command \j invalid in math mode on input line 389.
 LaTeX Warning: Command \j invalid in math mode on input line 389.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 388--392
-
- []
+LaTeX Warning: Command \j invalid in math mode on input line 391.
 
 
-Underfull \hbox (badness 3343) in paragraph at lines 388--392
-\OT1/txr/bx/n/12 Solution: \OT1/txr/m/n/12 The fol-low-ing code plots Fig.
- []
+LaTeX Warning: Command \j invalid in math mode on input line 391.
 
-<./figs/dtft.pdf, id=189, 462.52798pt x 346.89601pt>
+<./figs/dtft.pdf, id=207, 462.52798pt x 346.89601pt>
 File: ./figs/dtft.pdf Graphic file (type pdf)
 <use ./figs/dtft.pdf>
-Package pdftex.def Info: ./figs/dtft.pdf  used on input line 398.
+Package pdftex.def Info: ./figs/dtft.pdf  used on input line 400.
 (pdftex.def)             Requested size: 252.0pt x 189.00429pt.
 
-LaTeX Warning: Command \j invalid in math mode on input line 399.
+LaTeX Warning: Command \j invalid in math mode on input line 401.
 
 
-LaTeX Warning: Command \j invalid in math mode on input line 399.
+LaTeX Warning: Command \j invalid in math mode on input line 401.
 
 
-LaTeX Warning: Command \j invalid in math mode on input line 411.
+LaTeX Warning: Command \j invalid in math mode on input line 413.
 
 
-LaTeX Warning: Command \j invalid in math mode on input line 411.
+LaTeX Warning: Command \j invalid in math mode on input line 413.
 
 
-LaTeX Warning: Command \j invalid in math mode on input line 411.
+LaTeX Warning: Command \j invalid in math mode on input line 413.
 
 
-LaTeX Warning: Command \j invalid in math mode on input line 411.
+LaTeX Warning: Command \j invalid in math mode on input line 413.
 
 
-LaTeX Warning: Command \j invalid in math mode on input line 411.
+LaTeX Warning: Command \j invalid in math mode on input line 413.
 
 
-LaTeX Warning: Command \j invalid in math mode on input line 411.
+LaTeX Warning: Command \j invalid in math mode on input line 413.
 
 
-LaTeX Warning: Command \j invalid in math mode on input line 411.
+LaTeX Warning: Command \j invalid in math mode on input line 413.
 
 
-LaTeX Warning: Command \j invalid in math mode on input line 411.
+LaTeX Warning: Command \j invalid in math mode on input line 413.
 
 
-LaTeX Warning: Command \j invalid in math mode on input line 411.
+LaTeX Warning: Command \j invalid in math mode on input line 413.
 
 
-LaTeX Warning: Command \j invalid in math mode on input line 411.
+LaTeX Warning: Command \j invalid in math mode on input line 413.
 
 
-LaTeX Warning: Command \j invalid in math mode on input line 411.
+LaTeX Warning: Command \j invalid in math mode on input line 413.
 
 
-LaTeX Warning: Command \j invalid in math mode on input line 411.
+LaTeX Warning: Command \j invalid in math mode on input line 413.
 
 
-LaTeX Warning: Command \j invalid in math mode on input line 411.
+LaTeX Warning: Command \j invalid in math mode on input line 413.
 
 
-LaTeX Warning: Command \j invalid in math mode on input line 411.
+LaTeX Warning: Command \j invalid in math mode on input line 413.
 
 
-LaTeX Warning: Command \j invalid in math mode on input line 411.
+LaTeX Warning: Command \j invalid in math mode on input line 413.
 
 
-LaTeX Warning: Command \j invalid in math mode on input line 411.
+LaTeX Warning: Command \j invalid in math mode on input line 413.
 
 
-LaTeX Warning: Command \j invalid in math mode on input line 431.
+LaTeX Warning: Command \j invalid in math mode on input line 433.
 
 
-LaTeX Warning: Command \j invalid in math mode on input line 431.
+LaTeX Warning: Command \j invalid in math mode on input line 433.
 
 
-LaTeX Warning: Command \j invalid in math mode on input line 431.
+LaTeX Warning: Command \j invalid in math mode on input line 433.
 
 
-LaTeX Warning: Command \j invalid in math mode on input line 431.
+LaTeX Warning: Command \j invalid in math mode on input line 433.
 
 
-LaTeX Warning: Command \j invalid in math mode on input line 431.
+LaTeX Warning: Command \j invalid in math mode on input line 433.
 
 
-LaTeX Warning: Command \j invalid in math mode on input line 431.
+LaTeX Warning: Command \j invalid in math mode on input line 433.
 
 
-LaTeX Warning: Command \j invalid in math mode on input line 431.
+LaTeX Warning: Command \j invalid in math mode on input line 433.
 
 
-LaTeX Warning: Command \j invalid in math mode on input line 431.
+LaTeX Warning: Command \j invalid in math mode on input line 433.
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [3 <./figs/dtft.pdf>]
 
-LaTeX Warning: Command \j invalid in math mode on input line 433.
+LaTeX Warning: Command \j invalid in math mode on input line 435.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 433--434
+Underfull \hbox (badness 10000) in paragraph at lines 435--436
 
  []
 
 
-LaTeX Warning: Command \j invalid in math mode on input line 434.
+LaTeX Warning: Command \j invalid in math mode on input line 436.
 
 
-LaTeX Font Warning: Command \normalsize invalid in math mode on input line 480.
+LaTeX Font Warning: Command \normalsize invalid in math mode on input line 482.
 
 
 
-LaTeX Font Warning: Command \normalsize invalid in math mode on input line 480.
+LaTeX Font Warning: Command \normalsize invalid in math mode on input line 482.
 
 
 
@@ -1041,7 +1031,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 ! Missing } inserted.
 <inserted text> 
                 }
-l.495 		\end{align}
+l.497 		\end{align}
                    
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -1052,7 +1042,7 @@ my insertion and my current dilemma will both disappear.
 ! Missing { inserted.
 <inserted text> 
                 {
-l.495 		\end{align}
+l.497 		\end{align}
                    
 I've put in what seems to be necessary to fix
 the current column of the current alignment.
@@ -1061,7 +1051,7 @@ Try to go on, since this might almost work.
 ! Missing } inserted.
 <inserted text> 
                 }
-l.495 		\end{align}
+l.497 		\end{align}
                    
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -1072,7 +1062,7 @@ my insertion and my current dilemma will both disappear.
 ! Missing { inserted.
 <inserted text> 
                 {
-l.495 		\end{align}
+l.497 		\end{align}
                    
 I've put in what seems to be necessary to fix
 the current column of the current alignment.
@@ -1081,7 +1071,7 @@ Try to go on, since this might almost work.
 ! Missing } inserted.
 <inserted text> 
                 }
-l.495 		\end{align}
+l.497 		\end{align}
                    
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -1092,7 +1082,7 @@ my insertion and my current dilemma will both disappear.
 ! Missing \endgroup inserted.
 <inserted text> 
                 \endgroup 
-l.495 		\end{align}
+l.497 		\end{align}
                    
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -1103,7 +1093,7 @@ my insertion and my current dilemma will both disappear.
 ! Misplaced \omit.
 \math@cr@@@ ...@ \@ne \add@amps \maxfields@ \omit 
                                                   \kern -\alignsep@ \iftag@ ...
-l.495 		\end{align}
+l.497 		\end{align}
                    
 I expect to see \omit only after tab marks or the \cr of
 an alignment. Proceed, and I'll ignore this case.
@@ -1111,7 +1101,7 @@ an alignment. Proceed, and I'll ignore this case.
 ! Missing { inserted.
 <inserted text> 
                 {
-l.495 		\end{align}
+l.497 		\end{align}
                    
 I've put in what seems to be necessary to fix
 the current column of the current alignment.
@@ -1120,7 +1110,7 @@ Try to go on, since this might almost work.
 ! Missing } inserted.
 <inserted text> 
                 }
-l.495 		\end{align}
+l.497 		\end{align}
                    
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -1131,7 +1121,7 @@ my insertion and my current dilemma will both disappear.
 ! Missing \endgroup inserted.
 <inserted text> 
                 \endgroup 
-l.495 		\end{align}
+l.497 		\end{align}
                    
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -1142,7 +1132,7 @@ my insertion and my current dilemma will both disappear.
 ! Misplaced \omit.
 \math@cr@@@ ...@ \@ne \add@amps \maxfields@ \omit 
                                                   \kern -\alignsep@ \iftag@ ...
-l.495 		\end{align}
+l.497 		\end{align}
                    
 I expect to see \omit only after tab marks or the \cr of
 an alignment. Proceed, and I'll ignore this case.
@@ -1150,7 +1140,7 @@ an alignment. Proceed, and I'll ignore this case.
 ! Missing { inserted.
 <inserted text> 
                 {
-l.495 		\end{align}
+l.497 		\end{align}
                    
 I've put in what seems to be necessary to fix
 the current column of the current alignment.
@@ -1160,50 +1150,50 @@ Try to go on, since this might almost work.
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [4]
-<./figs/hn.pdf, id=298, 462.52798pt x 346.89601pt>
+<./figs/hn.pdf, id=318, 462.52798pt x 346.89601pt>
 File: ./figs/hn.pdf Graphic file (type pdf)
 <use ./figs/hn.pdf>
-Package pdftex.def Info: ./figs/hn.pdf  used on input line 521.
+Package pdftex.def Info: ./figs/hn.pdf  used on input line 523.
 (pdftex.def)             Requested size: 226.79846pt x 170.10226pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 526--528
+Underfull \hbox (badness 10000) in paragraph at lines 528--530
 
  []
 
 
-LaTeX Font Warning: Command \normalsize invalid in math mode on input line 540.
+LaTeX Font Warning: Command \normalsize invalid in math mode on input line 542.
 
 
 
-LaTeX Font Warning: Command \normalsize invalid in math mode on input line 540.
+LaTeX Font Warning: Command \normalsize invalid in math mode on input line 542.
 
 
 
-LaTeX Font Warning: Command \normalsize invalid in math mode on input line 540.
+LaTeX Font Warning: Command \normalsize invalid in math mode on input line 542.
 
 
 
-LaTeX Font Warning: Command \normalsize invalid in math mode on input line 540.
+LaTeX Font Warning: Command \normalsize invalid in math mode on input line 542.
 
 
 
-LaTeX Font Warning: Command \normalsize invalid in math mode on input line 540.
+LaTeX Font Warning: Command \normalsize invalid in math mode on input line 542.
 
 
 
-LaTeX Font Warning: Command \normalsize invalid in math mode on input line 540.
+LaTeX Font Warning: Command \normalsize invalid in math mode on input line 542.
 
 
 
-LaTeX Font Warning: Command \normalsize invalid in math mode on input line 540.
+LaTeX Font Warning: Command \normalsize invalid in math mode on input line 542.
 
 
 
-LaTeX Font Warning: Command \normalsize invalid in math mode on input line 540.
+LaTeX Font Warning: Command \normalsize invalid in math mode on input line 542.
 
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 542--543
+Underfull \hbox (badness 10000) in paragraph at lines 544--545
 
  []
 
@@ -1211,51 +1201,51 @@ Underfull \hbox (badness 10000) in paragraph at lines 542--543
 Underfull \vbox (badness 1888) has occurred while \output is active []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 553--555
+Underfull \hbox (badness 10000) in paragraph at lines 555--557
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 565--570
+Underfull \hbox (badness 10000) in paragraph at lines 567--572
 
  []
 
 
-Underfull \hbox (badness 3343) in paragraph at lines 565--570
+Underfull \hbox (badness 3343) in paragraph at lines 567--572
 \OT1/txr/bx/n/12 Solution: \OT1/txr/m/n/12 The fol-low-ing code plots Fig.
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 565--570
+Underfull \hbox (badness 10000) in paragraph at lines 567--572
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 565--570
+Underfull \hbox (badness 10000) in paragraph at lines 567--572
 
  []
 
-<./figs/hndef.pdf, id=303, 462.52798pt x 346.89601pt>
+<./figs/hndef.pdf, id=323, 462.52798pt x 346.89601pt>
 File: ./figs/hndef.pdf Graphic file (type pdf)
 <use ./figs/hndef.pdf>
-Package pdftex.def Info: ./figs/hndef.pdf  used on input line 575.
+Package pdftex.def Info: ./figs/hndef.pdf  used on input line 577.
 (pdftex.def)             Requested size: 252.0pt x 189.00429pt.
-<./figs/ynconv.pdf, id=307, 462.52798pt x 346.89601pt>
+<./figs/ynconv.pdf, id=327, 462.52798pt x 346.89601pt>
 File: ./figs/ynconv.pdf Graphic file (type pdf)
 <use ./figs/ynconv.pdf>
-Package pdftex.def Info: ./figs/ynconv.pdf  used on input line 599.
+Package pdftex.def Info: ./figs/ynconv.pdf  used on input line 601.
 (pdftex.def)             Requested size: 252.0pt x 189.00429pt.
 [5 <./figs/hn.pdf>]
-Underfull \hbox (badness 10000) in paragraph at lines 604--609
+Underfull \hbox (badness 10000) in paragraph at lines 606--611
 
  []
 
 
-LaTeX Font Warning: Command \scriptsize invalid in math mode on input line 610.
+LaTeX Font Warning: Command \scriptsize invalid in math mode on input line 612.
 
 
 
-LaTeX Font Warning: Command \normalsize invalid in math mode on input line 638.
+LaTeX Font Warning: Command \normalsize invalid in math mode on input line 640.
 
 
 
@@ -1265,7 +1255,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 ! Missing } inserted.
 <inserted text> 
                 }
-l.691 		\end{align}
+l.693 		\end{align}
                    
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -1276,7 +1266,7 @@ my insertion and my current dilemma will both disappear.
 ! Missing { inserted.
 <inserted text> 
                 {
-l.691 		\end{align}
+l.693 		\end{align}
                    
 I've put in what seems to be necessary to fix
 the current column of the current alignment.
@@ -1285,7 +1275,7 @@ Try to go on, since this might almost work.
 ! Missing } inserted.
 <inserted text> 
                 }
-l.691 		\end{align}
+l.693 		\end{align}
                    
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -1296,7 +1286,7 @@ my insertion and my current dilemma will both disappear.
 ! Missing \endgroup inserted.
 <inserted text> 
                 \endgroup 
-l.691 		\end{align}
+l.693 		\end{align}
                    
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -1307,7 +1297,7 @@ my insertion and my current dilemma will both disappear.
 ! Misplaced \omit.
 \math@cr@@@ ...@ \@ne \add@amps \maxfields@ \omit 
                                                   \kern -\alignsep@ \iftag@ ...
-l.691 		\end{align}
+l.693 		\end{align}
                    
 I expect to see \omit only after tab marks or the \cr of
 an alignment. Proceed, and I'll ignore this case.
@@ -1315,7 +1305,7 @@ an alignment. Proceed, and I'll ignore this case.
 ! Missing { inserted.
 <inserted text> 
                 {
-l.691 		\end{align}
+l.693 		\end{align}
                    
 I've put in what seems to be necessary to fix
 the current column of the current alignment.
@@ -1330,33 +1320,76 @@ pdfTeX warning: /usr/bin/pdflatex (file ./figs/ynconv.pdf): PDF inclusion: mult
 iple pdfs with page group included in a single page
 >]
 
-LaTeX Warning: Command \j invalid in math mode on input line 710.
+LaTeX Warning: Command \j invalid in math mode on input line 711.
 
 
-LaTeX Warning: Command \j invalid in math mode on input line 719.
+LaTeX Warning: Command \j invalid in math mode on input line 720.
 
+<./figs/yndft.pdf, id=495, 462.52798pt x 346.89601pt>
+File: ./figs/yndft.pdf Graphic file (type pdf)
+<use ./figs/yndft.pdf>
+Package pdftex.def Info: ./figs/yndft.pdf  used on input line 732.
+(pdftex.def)             Requested size: 252.0pt x 189.00429pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 720--726
+Package hyperref Warning: Difference (2) between bookmark levels is greater 
+(hyperref)                than one, level fixed on input line 741.
+
+<./figs/e6.4-Xk-FFT.jpg, id=500, 462.528pt x 346.896pt>
+File: ./figs/e6.4-Xk-FFT.jpg Graphic file (type jpg)
+<use ./figs/e6.4-Xk-FFT.jpg>
+Package pdftex.def Info: ./figs/e6.4-Xk-FFT.jpg  used on input line 743.
+(pdftex.def)             Requested size: 252.0pt x 189.00427pt.
+<./figs/e6.4-Hk-FFT.jpg, id=501, 462.528pt x 346.896pt>
+File: ./figs/e6.4-Hk-FFT.jpg Graphic file (type jpg)
+<use ./figs/e6.4-Hk-FFT.jpg>
+Package pdftex.def Info: ./figs/e6.4-Hk-FFT.jpg  used on input line 749.
+(pdftex.def)             Requested size: 252.0pt x 189.00427pt.
+<./figs/e6.4-Yk-FFT.jpg, id=502, 462.528pt x 346.896pt>
+File: ./figs/e6.4-Yk-FFT.jpg Graphic file (type jpg)
+<use ./figs/e6.4-Yk-FFT.jpg>
+Package pdftex.def Info: ./figs/e6.4-Yk-FFT.jpg  used on input line 755.
+(pdftex.def)             Requested size: 252.0pt x 189.00427pt.
+<./figs/e6.4-yn-IFFT.jpg, id=503, 578.16pt x 361.35pt>
+File: ./figs/e6.4-yn-IFFT.jpg Graphic file (type jpg)
+<use ./figs/e6.4-yn-IFFT.jpg>
+Package pdftex.def Info: ./figs/e6.4-yn-IFFT.jpg  used on input line 761.
+(pdftex.def)             Requested size: 252.0pt x 157.50026pt.
+
+! LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.766 	\end{enumerate}
+                      
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+[7 <./figs/yndft.pdf> <./figs/e6.4-Xk-FFT.jpg>]
+Underfull \hbox (badness 10000) in paragraph at lines 839--841
 
  []
 
-<./figs/yndft.pdf, id=476, 462.52798pt x 346.89601pt>
-File: ./figs/yndft.pdf Graphic file (type pdf)
-<use ./figs/yndft.pdf>
-Package pdftex.def Info: ./figs/yndft.pdf  used on input line 731.
-(pdftex.def)             Requested size: 252.0pt x 189.00429pt.
-[7 <./figs/yndft.pdf>] (./main.aux)
+
+Underfull \vbox (badness 2922) has occurred while \output is active []
+
+ [8 <./figs/e6.4-Hk-FFT.jpg> <./figs/e6.4-Yk-FFT.jpg> <./figs/e6.4-yn-IFFT.jpg>
+] [9
+
+]
+(./main.aux)
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: EDE0BD39395C52B880A8A7EB6EB76C7D;824.
+(rerunfilecheck)             Checksum: 4AB2ED82E304CB691B82C53B40F19769;1147.
  ) 
 Here is how much of TeX's memory you used:
- 17638 strings out of 478287
- 275513 string characters out of 5849290
- 1004375 words of memory out of 5000000
- 35345 multiletter control sequences out of 15000+600000
+ 17721 strings out of 478287
+ 276844 string characters out of 5849290
+ 1006375 words of memory out of 5000000
+ 35382 multiletter control sequences out of 15000+600000
  546534 words of font info for 191 fonts, out of 8000000 for 9000
  1144 hyphenation exceptions out of 8191
- 70i,16n,76p,246b,1645s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 70i,16n,76p,246b,1436s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texliv
 e/texmf-dist/fonts/type1/public/txfonts/rtcxr.pfb></usr/share/texlive/texmf-dis
 t/fonts/type1/public/txfonts/rtxb.pfb></usr/share/texlive/texmf-dist/fonts/type
@@ -1370,10 +1403,10 @@ public/txfonts/txsyc.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/u
 tmb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmbi8a.pfb></us
 r/share/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texlive
 /texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on main.pdf (7 pages, 179572 bytes).
+Output written on main.pdf (9 pages, 307507 bytes).
 PDF statistics:
- 653 PDF objects out of 1000 (max. 8388607)
- 426 compressed objects within 5 object streams
- 199 named destinations out of 1000 (max. 500000)
- 87 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 738 PDF objects out of 1000 (max. 8388607)
+ 504 compressed objects within 6 object streams
+ 240 named destinations out of 1000 (max. 500000)
+ 139 words of extra memory for PDF output out of 10000 (max. 10000000)
 

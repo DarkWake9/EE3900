@@ -1,8 +1,8 @@
 import numpy as np
 import matplotlib.pyplot as plt
+
+
 def x(n):
-    #if n < 0:
-    #    return 0
     if n >= 0 and n < 6:
         x_dict = {0:1,1:2,2:3,3:4,4:2,5:1}
         return x_dict[n]
@@ -20,71 +20,130 @@ def h(n):
         return -0.5 #h(1) = -1/2
     else:
         return 5.0 * ((-0.5)**n)
-N=14
-xn = []
-hn = []
-n = None
-for i in range(0,N):
-    xn.append(x(i))
-    hn.append(h(i))
+
+n = 16
+xn_i = [x(i) for i in range(n)]
+hn_i = [h(i) for i in range(n)]
 
 
+########################################################    FFT    ########################################################
 
-def fast_fourier(x, n, X = np.zeros(N),s = 1):
-    if n == 1:
-        X[0] = x[0]
+
+def fft(x):
+
+    N = len(x)
+    
+    if N == 1:
+        return x
     else:
-        X[int(n/2) - 1] = fast_fourier(x, int(n/2), X,2 * s)
-        X[int(n/2)] = fast_fourier(x[s:], int(n/2), X,2 * s)
-        for k in range(int(n/2) - 1):
-            p = X[k]
-            q = np.exp(-1j * 2 * np.pi * k / n) * X[k+int(n/2)]
-            X[k] = p + q 
-            X[k+n/2] = p - q
+        X_even = fft(x[::2])
+        X_odd = fft(x[1::2])
+        factor = np.exp(-2j*np.pi*np.arange(N)/ N)
+        
+        X = np.concatenate(\
+            [X_even+factor[:int(N/2)]*X_odd,
+             X_even+factor[int(N/2):]*X_odd])
+        return X
 
-    return X
 
-def inv_fast_fourier(X, n, x = np.zeros(N),s = 1):
-    if n == 1:
-        x[0] = X[0]
+
+
+################################    PLOTS   #################################################
+
+############################    X(k)    ###########################
+
+Xo = fft(xn_i)
+X = np.real(Xo)
+
+plt.stem(range(0,n),X)
+plt.title('X(k) using FFT')
+plt.xlabel('$k$')
+plt.ylabel('$X(k)$')
+plt.grid(True, which='both')
+plt.savefig('Assignment 1/filter/figs/e6.4-Xk-FFT.jpg')
+plt.show()    
+
+
+###########################     H(k)    ###########################
+
+Ho = fft(hn_i)
+H = np.real(Ho)/n
+#print("\nRe{H}\n")
+#print(H)
+
+plt.stem(range(0,n),H)
+plt.title('H(k) using FFT')
+plt.xlabel('$k$')
+plt.ylabel('$H(k)$')
+plt.grid(True, which='both')
+plt.savefig('Assignment 1/filter/figs/e6.4-Hk-FFT.jpg')
+plt.show()    
+
+
+###########################     Y(k)    ###########################
+Yo = []
+for k in range(n):
+    Yo.append(Xo[k] * Ho[k])
+#print("\nRe{Y}\n")
+#print(Y)
+Y = np.real(Yo)
+
+plt.stem(range(0,n),Y)
+plt.title('Y(k) from FFT')
+plt.xlabel('$k$')
+plt.ylabel('$Y(k) = H(k)X(k)$')
+plt.grid(True, which='both')
+plt.savefig('Assignment 1/filter/figs/e6.4-Yk-FFT.jpg')
+plt.show() 
+
+
+########################################################    IFFT    ########################################################
+
+def ifft(X):
+    '''
+    N = len(X)
+    
+    if N == 1:
+        return X
     else:
-        x[int(n/2) - 1] = fast_fourier(X, int(n/2), x,2 * s)
-        x[int(n/2)] = fast_fourier(X[s:], int(n/2), x,2 * s)
-        for k in range(int(n/2) - 1):
-            p = x[k]
-            q = np.exp(+1j * 2 * np.pi * k / n) * X[k+int(n/2)]
-            x[k] = p + q 
-            x[k+n/2] = p - q
-
+        x_even = fft(X[::2])
+        x_odd = fft(X[1::2])
+        factor = np.exp(2j*np.pi*np.arange(N)/ N)
+        
+        x = np.concatenate([x_even+factor[:int(N/2)]*x_odd,
+             x_even+factor[int(N/2):]*x_odd])
+        return x
+    '''
+    Xx = np.conjugate(X)
+    x = fft(Xx)
     return x
 
+yn = ifft(Yo)
+y = np.real(yn)
+print('Re{y}')
+print(y)
 
 
-X = [0]*N
-Xo = fast_fourier(xn,N,X,1)
-X = np.real(Xo)/N
-
-print("\nRe{X}\n")
-print(X)
-#plots
-plt.stem(range(0,N),X)
-plt.title('Filter Output using DFT')
+plt.stem(range(0,n),y)
+plt.title('y(n) using IFFT')
 plt.xlabel('$k$')
-plt.ylabel('$X(k)$')
-plt.grid()
-#plt.savefig('Assignment 1/filter/figs/Xkdft.jpg')
-plt.show()    
-
-H = [0]*N
-Ho = fast_fourier(hn, N)
-H = np.real(Ho)/N
-print("\nRe{H}\n")
-print(X)
-#plots
-plt.stem(range(0,N),H)
-plt.title('Filter Output using DFT')
+plt.ylabel('$y(n) = IFFT(Y(k))$')
+plt.grid(True, which='both')
+plt.savefig('Assignment 1/filter/figs/yn-IFFT.jpg')
+plt.show()
+'''
+plt.figure(figsize=(8,5))
+plt.subplot(2,1,1)
+plt.stem(range(0,n),Y)
 plt.xlabel('$k$')
-plt.ylabel('$X(k)$')
+plt.ylabel('$Y(k)$')
 plt.grid()
-#plt.savefig('Assignment 1/filter/figs/Xkdft.jpg')
-plt.show()    
+plt.subplot(2,1,2)
+plt.stem(range(0,n),y)
+plt.xlabel('$k$')
+plt.ylabel('$y(k)$')
+plt.title('y(n) using IFFT')
+plt.grid()
+plt.savefig('Assignment 1/filter/figs/e6.4-yn-IFFT.jpg')
+plt.show()
+'''

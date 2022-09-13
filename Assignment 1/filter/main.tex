@@ -89,6 +89,8 @@
 	\newcommand{\BEQA}{\begin{eqnarray}}
 		\newcommand{\EEQA}{\end{eqnarray}}
 	\newcommand{\define}{\stackrel{\triangle}{=}}
+	\newcommand{\myvec}[1]{\ensuremath{\begin{pmatrix}#1\end{pmatrix}}}
+	\newcommand{\mydet}[1]{\ensuremath{\begin{vmatrix}#1\end{vmatrix}}}
 	
 	\bibliographystyle{IEEEtran}
 	%\bibliographystyle{ieeetr}
@@ -359,7 +361,7 @@ wget https://github.com/DarkWake9/EE3900/blob/main/Assignment%201/e3-3.py
 			
 			\item \solution \begin{align}
 				U(z) = {\mathcal{Z}}\{\delta(n)\}=\sum_{n=-\infty}^{\infty} u[n] z^{-n} \\
-				=1+z^{-1}+z^{-2}+\cdots \\
+				=1+z^{-1}+z^{-2}+\cdots 
 				=\frac{1}{1-z^{-1}}
 			\end{align}
 		\end{enumerate}
@@ -387,7 +389,7 @@ Given: $\abs{z} > \abs{a}$\\
 			H\brak{e^{\j \omega}} = H\brak{z = e^{\j \omega}}.
 		\end{equation}
 		Plot $\abs{H\brak{e^{\j \omega}}}$.  Is it periodic? If so, find the period. $H(e^{\j \omega})$ is
-		known as the {\em Discret Time Fourier Transform} (DTFT) of $h(n)$.\\\\
+		known as the {\em Discret Time Fourier Transform} (DTFT) of $h(n)$.\\
 		\solution The following code plots Fig. $\ref{fig:dtft}$
 		
 		\begin{lstlisting}
@@ -701,80 +703,271 @@ wget https://raw.githubusercontent.com/gadepall/EE1310/master/filter/codes/yncon
 		
 	\end{enumerate}
 	
+\section{DFT and FFT}
+\begin{enumerate}[label=\thesection.\arabic*]
+	\item
+	Compute
+	\begin{equation}
+		X(k) \define \sum _{n=0}^{N-1}x(n) e^{-\j2\pi kn/N}, \quad k = 0,1,\dots, N-1
+	\end{equation}
+	and $H(k)$ using $h(n)$.
+	\item Compute 
+	\begin{equation}
+		Y(k) = X(k)H(k)
+	\end{equation}
+	\item Compute
+	\begin{equation}
+		y\brak{n}={\frac {1}{N}}\sum _{k=0}^{N-1}Y\brak{k}\cdot e^{\j 2\pi kn/N},\quad n = 0,1,\dots, N-1
+	\end{equation}
+	\\
+	\solution The following code plots Fig. \ref{fig:ynconv}. Note that this is the same as 
+	$y(n)$ in  Fig. 
+	\ref{fig:xnyn}. 
 	%
-	\section{DFT and FFT}
-	\begin{enumerate}[label=\thesection.\arabic*]
-		\item
-		Compute
-		\begin{equation}
-			X(k) \define \sum _{n=0}^{N-1}x(n) e^{-\j2\pi kn/N}, \quad k = 0,1,\dots, N-1
-		\end{equation}
-		and $H(k)$ using $h(n)$.
-		\item Compute 
-		\begin{equation}
-			Y(k) = X(k)H(k)
-		\end{equation}
-		\item Compute
-		\begin{equation}
-			y\brak{n}={\frac {1}{N}}\sum _{k=0}^{N-1}Y\brak{k}\cdot e^{\j 2\pi kn/N},\quad n = 0,1,\dots, N-1
-		\end{equation}
-		\\
-		\solution The following code plots Fig. \ref{fig:ynconv}. Note that this is the same as 
-		$y(n)$ in  Fig. 
-		\ref{fig:xnyn}. 
-		\\[5pt]
-		\begin{lstlisting}
+	\begin{lstlisting}
 wget https://raw.githubusercontent.com/gadepall/EE1310/master/filter/codes/yndft.py
-		\end{lstlisting}
-		\begin{figure}[!ht]
-			\centering
-			\includegraphics[width=\columnwidth]{./figs/yndft}
-			\caption{$y(n)$ from the DFT}
-			\label{fig:yndft}
-		\end{figure}
-		
-		\item Repeat the previous exercise by computing $X(k), H(k)$ and $y(n)$ through FFT and 
-		IFFT.
-		\begin{lstlisting}
-			content...
-		\end{lstlisting}
-		\item Wherever possible, express all the above equations as matrix equations.
+	\end{lstlisting}
+	\begin{figure}[!ht]
+		\centering
+		\includegraphics[width=\columnwidth]{./figs/yndft}
+		\caption{$y(n)$ from the DFT}
+		\label{fig:yndft}
+	\end{figure}
+	\item Repeat the previous exercise by computing $X(k), H(k)$ and $y(n)$ through FFT and 
+	IFFT.
+	\solution The following code plots Fig. \ref{fig:Xkdef}, \ref{fig:Hkdef}, \ref{fig:Ykdef}, and \ref{fig:yndef}. 
+	\subsubsection{}
+	\begin{enumerate}
+	\begin{figure}[!ht]
+		\centering
+		\includegraphics[width=\columnwidth]{./figs/e6.4-Xk-FFT.jpg}
+		\caption{$X(k)$ using FFT}
+		\label{fig:Xkdef}
+	\end{figure}
+	\begin{figure}[!ht]
+		\centering
+		\includegraphics[width=\columnwidth]{./figs/e6.4-Hk-FFT.jpg}
+		\caption{$H(k)$ using FFT}
+		\label{fig:Hkdef}
+	\end{figure}
+	\begin{figure}[!ht]
+		\centering
+		\includegraphics[width=\columnwidth]{./figs/e6.4-Yk-FFT.jpg}
+		\caption{$Y(k)$ from FFT}
+		\label{fig:Ykdef}
+	\end{figure}
+	\begin{figure}[!ht]
+		\centering
+		\includegraphics[width=\columnwidth]{./figs/e6.4-yn-IFFT.jpg}
+		\caption{$y(n)$ using IFFT}
+		\label{fig:yndef}
+	\end{figure}
+	Note that the figure \ref{fig:yndef} is the same as $y(n)$ in Fig. \ref{fig:xnyn}
 	\end{enumerate}
+	%\item Wherever possible, express all the above equations as matrix equations.
+	%\item Verify the above equations by generating the DFT matrix in python.
+\end{enumerate}
+%
+\section{FFT}
+\subsection{Definitions}
+\begin{enumerate}[label=\arabic*.,ref=\thesection.\theenumi]
+	\numberwithin{equation}{section}
+	\item The DFT of $x(n)$ is given by
+	\begin{align}
+		X(k) \triangleq \sum_{n=0}^{N-1} x(n) e^{-j 2 \pi k n / N}, \quad k=0,1, \ldots, N-1
+	\end{align}
+	\item Let 
+	\begin{align}
+		W_{N} = e^{-j2\pi/N} 
+	\end{align}
+	Then the $N$-point {\em DFT matrix} is defined as 
+	\begin{align}
+		\vec{F}_{N} = \sbrak{W_{N}^{mn}}
+	\end{align}
+	where $W_{N}^{mn}$ are the elements of $\vec{F}_{N}$.
+	\item Let 
+	\begin{align}
+		\vec{I}_4 = \myvec{\vec{e}_4^{1} &\vec{e}_4^{2} &\vec{e}_4^{3} &\vec{e}_4^{4} }
+	\end{align}
+	be the $4\times 4$ identity matrix.  Then the 4 point {\em DFT permutation matrix} is defined as 
+	\begin{align}
+		\vec{P}_4 = \myvec{\vec{e}_4^{1} &\vec{e}_4^{3} &\vec{e}_4^{2} &\vec{e}_4^{4}}
+	\end{align}
+	\item The 4 point {\em DFT diagonal matrix} is defined as 
+	\begin{align}
+		\vec{D}_4 = diag\myvec{W_{N}^{0} & W_{N}^{1} & W_{N}^{2} & W_{N}^{3}}
+	\end{align}
+\end{enumerate}
+\subsection{Problems}
+\begin{enumerate}[label=\arabic*.,ref=\thesection.\theenumi]
+	\numberwithin{equation}{section}
+	\item Show that 
+	\begin{equation}
+		W_{N}^{2}=W_{N/2}
+	\end{equation}
+	\item Find $\vec{P}_6$.
+	\item Find $\vec{D}_3$.
+	\item Show that 
+	\begin{equation}
+		\vec{F}_{6}=
+		\begin{bmatrix}
+			\vec{I}_{3} & \vec{D}_{3} \\
+			\vec{I}_{3} & -\vec{D}_{3}
+		\end{bmatrix}
+		\begin{bmatrix}
+			\vec{F}_{3} & 0 \\
+			0 & \vec{F}_{3}
+		\end{bmatrix}
+		\vec{P}_{3}
+	\end{equation}
+	\item Show that 
+	\begin{equation}
+		\vec{F}_{N}=
+		\begin{bmatrix}
+			\vec{I}_{N/2} & \vec{D}_{N/2} \\
+			\vec{I}_{N/2} & -\vec{D}_{N/2}
+		\end{bmatrix}
+		\begin{bmatrix}
+			\vec{F}_{N/2} & 0 \\
+			0 & \vec{F}_{N/2}
+		\end{bmatrix}
+		\vec{P}_{N}
+	\end{equation}
+	\item Find 
+	\begin{align}
+		\vec{P}_6 \vec{x}
+	\end{align}
+	\solution\\
+	\begin{align}
+		\vec{P}_{6} = \myvec{\vec{e}_6^{1} &\vec{e}_6^{2} &\vec{e}_6^{2} &\vec{e}_6^{3}
+		&\vec{e}_6^{4} &\vec{e}_6^{5} &\vec{e}_6^{6}}\\
+	\end{align}
+	\item Show that 
+	\begin{align}
+		\vec{X} = \vec{F}_N \vec{x}
+		\label{eq:dft-mat-def}
+	\end{align}
+	where $\vec{x}, \vec{X}$ are the vector representations of $x(n), X(k)$ respectively.
+	\item 
+	Let 
+	\begin{equation}
+		\myvec{
+			X_{1}(0) \\ 
+			X_{1}(1) \\ 
+			X_{1}(2) 
+		}
+		= F_{3}
+		\myvec{
+			x(0) \\ 
+			x(2) \\ 
+			x(4) 
+		}
+	\end{equation}
+	\begin{equation}
+		\myvec{
+			X_{2}(0) \\ 
+			X_{2}(1) \\ 
+			X_{2}(2) 
+		}
+		= F_{3}
+		\myvec{
+			x(1) \\ 
+			x(3) \\ 
+			x(5) 
+		}
+	\end{equation}
+	Show that 
+	\begin{equation}
+		\myvec{
+			X(0) \\ 
+			X(1) \\ 
+			X(2)  
+		}
+		=
+		\myvec{
+			X_{1}(0) \\ 
+			X_{1}(1)\\ 
+			X_{1}(2)
+		}
+		+
+		\myvec{
+			W^{0}_{6} & 0 & 0\\
+			0 & W^{1}_{6} & 0\\
+			0 & 0 & W^{2}_{6}\\
+		}
+		\myvec{
+			X_{2}(0) \\ 
+			X_{2}(1) \\ 
+			X_{2}(2)
+		}
+	\end{equation}
+	\begin{equation}
+		\myvec{
+			X(3) \\ 
+			X(4) \\ 
+			X(5) 
+		}
+		=
+		\myvec{
+			X_{1}(0) \\ 
+			X_{1}(1)\\ 
+			X_{1}(2)
+		}
+		-
+		\myvec{
+			W^{0}_{6} & 0 & 0\\
+			0 & W^{1}_{6} & 0\\
+			0 & 0 & W^{2}_{6}
+		}
+		\myvec{
+			X_{2}(0) \\ 
+			X_{2}(1) \\ 
+			X_{2}(2)
+		}
+		\label{eq:fft-mat-def}
+	\end{equation}
+	\item For 
+	\begin{align}
+		\vec{x} = \myvec{1\\2\\3\\4\\2\\1}
+		\label{eq:equation1}
+	\end{align}
+	compte the DFT using 
+	\eqref{eq:dft-mat-def}
+	\item Repeat the above exercise using
+	\eqref{eq:fft-mat-def}
+	\item Write a C program to compute the 8-point FFT. 
+\end{enumerate}
+\section{Exercises}
+Answer the following questions by looking at the python code in Problem \ref{prob:output}.
+\begin{enumerate}[label=\thesection.\arabic*]
+	\item
+	The command
+	\begin{lstlisting}
+		output_signal = signal.lfilter(b, a, input_signal)
+	\end{lstlisting}
+	in Problem \ref{prob:output} is executed through the following difference equation
+	\begin{equation}
+		\label{eq:iir_filter_gen}
+		\sum _{m=0}^{M}a\brak{m}y\brak{n-m}=\sum _{k=0}^{N}b\brak{k}x\brak{n-k}
+	\end{equation}
 	%
-	\section{Exercises}
-	
-	Answer the following questions by looking at the python code in Problem \ref{prob:output}.
-	\begin{enumerate}[label=\thesection.\arabic*]
-		\item
-		The command
-		\begin{lstlisting}
-output_signal = signal.lfilter(b, a, input_signal)
-		\end{lstlisting}
-		in Problem \ref{prob:output} is executed through the following difference equation
-		\begin{equation}
-			\label{eq:iir_filter_gen}
-			\sum _{m=0}^{M}a\brak{m}y\brak{n-m}=\sum _{k=0}^{N}b\brak{k}x\brak{n-k}
-		\end{equation}
-		%
-		where the input signal is $x(n)$ and the output signal is $y(n)$ with initial values all 0. Replace
-		\textbf{signal.filtfilt} with your own routine and verify.
-		%
-		\item Repeat all the exercises in the previous sections for the above $a$ and $b$.
-		
-		\item What is the sampling frequency of the input signal?
-		\\
-		\solution
-		Sampling frequency(fs)=44.1kHZ.
-		\item
-		What is type, order and  cutoff-frequency of the above butterworth filter
-		\\
-		\solution
-		The given butterworth filter is low pass with order=2 and cutoff-frequency=4kHz.
-		%
-		\item
-		Modifying the code with different input parameters and to get the best possible output.
-		%
-	\end{enumerate}
-	
+	where the input signal is $x(n)$ and the output signal is $y(n)$ with initial values all 0. Replace
+	\textbf{signal.filtfilt} with your own routine and verify.
+	%
+	\item Repeat all the exercises in the previous sections for the above $a$ and $b$.
+	\item What is the sampling frequency of the input signal?
+	\\
+	\solution
+	Sampling frequency(fs)=44.1kHZ.
+	\item
+	What is type, order and  cutoff-frequency of the above butterworth filter
+	\\
+	\solution
+	The given butterworth filter is low pass with order=2 and cutoff-frequency=4kHz.
+	%
+	\item
+	Modifying the code with different input parameters and to get the best possible output.
+	%
+\end{enumerate}
 \end{document}
 
