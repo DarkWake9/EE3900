@@ -690,7 +690,7 @@ wget https://raw.githubusercontent.com/gadepall/EE1310/master/filter/codes/yncon
 			=\sum_{k=-\infty}^{\infty}\left(\sum_{n=-\infty}^{\infty} x[n] h[n-k]\right) z^{-k} \\
 			=\sum_{k=-\infty}^{\infty} y[n] z^{-k}=Y($z$) \\
 			\implies Y(z) = X(z) \cdot H(z)
-			\end{align}
+		\end{align}
 		now put $n+m=k \quad n=-\infty$
 		
 		\begin{align}
@@ -733,34 +733,44 @@ wget https://raw.githubusercontent.com/gadepall/EE1310/master/filter/codes/yndft
 		\caption{$y(n)$ from the DFT}
 		\label{fig:yndft}
 	\end{figure}
-\vspace{2cm}
 	\item Repeat the previous exercise by computing $X(k), H(k)$ and $y(n)$ through FFT and 
 	IFFT.
-	\solution The following code plots Fig. \ref{fig:fft}, and \ref{fig:ifft}. 
+	\solution The following code plots Fig. \ref{fig:Xkdef}, \ref{fig:Hkdef}, \ref{fig:Ykdef}, and \ref{fig:yndef}. 
 	\begin{lstlisting}
 wget https://github.com/DarkWake9/EE3900/blob/main/Assignment%201/e6.4.py
 	\end{lstlisting}
+	\subsubsection{}
 	\begin{enumerate}
-
 	\begin{figure}[!ht]
 		\centering
-		\includegraphics[width=\columnwidth]{./figs/e6.4-FFT.jpg}
+		\includegraphics[width=\columnwidth]{./figs/e6.4-Xk-FFT.jpg}
+		\caption{$X(k)$ using FFT}
+		\label{fig:Xkdef}
+	\end{figure}
+	\begin{figure}[!ht]
+		\centering
+		\includegraphics[width=\columnwidth]{./figs/e6.4-Hk-FFT.jpg}
 		\caption{$H(k)$ using FFT}
-		\label{fig:fft}
+		\label{fig:Hkdef}
 	\end{figure}
-\item 
 	\begin{figure}[!ht]
 		\centering
-		\includegraphics[width=\columnwidth]{./figs/e6.4-IFFT.jpg}
-		\caption{$y(n)$ using IFFT}
-		\label{fig:ifft}
+		\includegraphics[width=\columnwidth]{./figs/e6.4-Yk-FFT.jpg}
+		\caption{$Y(k)$ from FFT}
+		\label{fig:Ykdef}
 	\end{figure}
-	Note that the figure \ref{fig:ifft} is the same as $y(n)$ in Fig. \ref{fig:xnyn}
+	\begin{figure}[!ht]
+		\centering
+		\includegraphics[width=\columnwidth]{./figs/e6.4-yn-IFFT.jpg}
+		\caption{$y(n)$ using IFFT}
+		\label{fig:yndef}
+	\end{figure}
+	Note that the figure \ref{fig:yndef} is the same as $y(n)$ in Fig. \ref{fig:xnyn}
 	\end{enumerate}
 	%\item Wherever possible, express all the above equations as matrix equations.
 	%\item Verify the above equations by generating the DFT matrix in python.
 \end{enumerate}
-\vspace{2cm}
+%
 \section{FFT}
 \subsection{Definitions}
 \begin{enumerate}[label=\arabic*.,ref=\thesection.\theenumi]
@@ -798,23 +808,8 @@ wget https://github.com/DarkWake9/EE3900/blob/main/Assignment%201/e6.4.py
 	\begin{equation}
 		W_{N}^{2}=W_{N/2}
 	\end{equation}
-	\begin{align}
-			W_{N} = e^{-j2\pi/N}\\
-			\implies W_{N/2} = e^{-j2\pi/(N/2)}\\
-			W_{N}^{2} = e^{2 (-j2\pi/N)} = e^{-j2\pi/(N/2)} = W_{N/2}\\
-	\end{align}
-	\item Find $\vec{P}_6$.\\
-	\solution\\
-	\begin{align}
-		\vec{P}_{6} = \myvec{\vec{e}_6^{1} &\vec{e}_6^{3} &\vec{e}_6^{5} &\vec{e}_6^{2}
-			&\vec{e}_6^{4} &\vec{e}_6^{6}}
-	\end{align}
-	
-	\item Find $\vec{D}_3$.\\
-	\solution 	
-	\begin{align}
-		\vec{D}_3 = diag\myvec{W_{3}^{0} & W_{3}^{1} & W_{3}^{2}}
-	\end{align}
+	\item Find $\vec{P}_6$.
+	\item Find $\vec{D}_3$.
 	\item Show that 
 	\begin{equation}
 		\vec{F}_{6}=
@@ -847,10 +842,8 @@ wget https://github.com/DarkWake9/EE3900/blob/main/Assignment%201/e6.4.py
 	\end{align}
 	\solution\\
 	\begin{align}
-		\vec{P}_{6} = \myvec{\vec{e}_6^{1} &\vec{e}_6^{3} &\vec{e}_6^{5} &\vec{e}_6^{2}
-	&\vec{e}_6^{4} &\vec{e}_6^{6}}\\
-		\text{From}\eqref{def:xn}: \quad \vec{x} = \cbrak{1,2,3,4,2,1}\\
-		\vec{P}_6 \vec{x} = \myvec{1,3,2,2,4,1}
+		\vec{P}_{6} = \myvec{\vec{e}_6^{1} &\vec{e}_6^{2} &\vec{e}_6^{2} &\vec{e}_6^{3}
+		&\vec{e}_6^{4} &\vec{e}_6^{5} &\vec{e}_6^{6}}\\
 	\end{align}
 	\item Show that 
 	\begin{align}
@@ -953,7 +946,7 @@ Answer the following questions by looking at the python code in Problem \ref{pro
 	\item
 	The command
 	\begin{lstlisting}
-output_signal = signal.lfilter(b, a, input_signal)
+		output_signal = signal.lfilter(b, a, input_signal)
 	\end{lstlisting}
 	in Problem \ref{prob:output} is executed through the following difference equation
 	\begin{equation}

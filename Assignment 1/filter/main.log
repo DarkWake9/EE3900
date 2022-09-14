@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2022.9.4)  14 SEP 2022 02:46
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2022.9.4)  14 SEP 2022 12:58
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -884,7 +884,7 @@ Underfull \hbox (badness 6927) in paragraph at lines 224--227
 
 
 ]
-<./figs/xnyn.pdf, id=120, 462.52798pt x 346.89601pt>
+<./figs/xnyn.pdf, id=115, 462.52798pt x 346.89601pt>
 File: ./figs/xnyn.pdf Graphic file (type pdf)
 <use ./figs/xnyn.pdf>
 Package pdftex.def Info: ./figs/xnyn.pdf  used on input line 252.
@@ -918,7 +918,7 @@ LaTeX Warning: Command \j invalid in math mode on input line 391.
 
 LaTeX Warning: Command \j invalid in math mode on input line 391.
 
-<./figs/dtft.pdf, id=207, 462.52798pt x 346.89601pt>
+<./figs/dtft.pdf, id=202, 462.52798pt x 346.89601pt>
 File: ./figs/dtft.pdf Graphic file (type pdf)
 <use ./figs/dtft.pdf>
 Package pdftex.def Info: ./figs/dtft.pdf  used on input line 400.
@@ -1150,7 +1150,7 @@ Try to go on, since this might almost work.
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [4]
-<./figs/hn.pdf, id=318, 462.52798pt x 346.89601pt>
+<./figs/hn.pdf, id=313, 462.52798pt x 346.89601pt>
 File: ./figs/hn.pdf Graphic file (type pdf)
 <use ./figs/hn.pdf>
 Package pdftex.def Info: ./figs/hn.pdf  used on input line 523.
@@ -1225,12 +1225,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 567--572
 
  []
 
-<./figs/hndef.pdf, id=323, 462.52798pt x 346.89601pt>
+<./figs/hndef.pdf, id=318, 462.52798pt x 346.89601pt>
 File: ./figs/hndef.pdf Graphic file (type pdf)
 <use ./figs/hndef.pdf>
 Package pdftex.def Info: ./figs/hndef.pdf  used on input line 577.
 (pdftex.def)             Requested size: 252.0pt x 189.00429pt.
-<./figs/ynconv.pdf, id=327, 462.52798pt x 346.89601pt>
+<./figs/ynconv.pdf, id=322, 462.52798pt x 346.89601pt>
 File: ./figs/ynconv.pdf Graphic file (type pdf)
 <use ./figs/ynconv.pdf>
 Package pdftex.def Info: ./figs/ynconv.pdf  used on input line 601.
@@ -1255,8 +1255,8 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 ! Missing } inserted.
 <inserted text> 
                 }
-l.693 		\end{align}
-                   
+l.693 			\end{align}
+                    
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
 With luck, this will get me unwedged. But if you
@@ -1266,8 +1266,8 @@ my insertion and my current dilemma will both disappear.
 ! Missing { inserted.
 <inserted text> 
                 {
-l.693 		\end{align}
-                   
+l.693 			\end{align}
+                    
 I've put in what seems to be necessary to fix
 the current column of the current alignment.
 Try to go on, since this might almost work.
@@ -1275,8 +1275,8 @@ Try to go on, since this might almost work.
 ! Missing } inserted.
 <inserted text> 
                 }
-l.693 		\end{align}
-                   
+l.693 			\end{align}
+                    
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
 With luck, this will get me unwedged. But if you
@@ -1286,8 +1286,8 @@ my insertion and my current dilemma will both disappear.
 ! Missing \endgroup inserted.
 <inserted text> 
                 \endgroup 
-l.693 		\end{align}
-                   
+l.693 			\end{align}
+                    
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
 With luck, this will get me unwedged. But if you
@@ -1297,16 +1297,16 @@ my insertion and my current dilemma will both disappear.
 ! Misplaced \omit.
 \math@cr@@@ ...@ \@ne \add@amps \maxfields@ \omit 
                                                   \kern -\alignsep@ \iftag@ ...
-l.693 		\end{align}
-                   
+l.693 			\end{align}
+                    
 I expect to see \omit only after tab marks or the \cr of
 an alignment. Proceed, and I'll ignore this case.
 
 ! Missing { inserted.
 <inserted text> 
                 {
-l.693 		\end{align}
-                   
+l.693 			\end{align}
+                    
 I've put in what seems to be necessary to fix
 the current column of the current alignment.
 Try to go on, since this might almost work.
@@ -1325,68 +1325,51 @@ LaTeX Warning: Command \j invalid in math mode on input line 711.
 
 LaTeX Warning: Command \j invalid in math mode on input line 720.
 
-<./figs/yndft.pdf, id=495, 462.52798pt x 346.89601pt>
+<./figs/yndft.pdf, id=490, 462.52798pt x 346.89601pt>
 File: ./figs/yndft.pdf Graphic file (type pdf)
 <use ./figs/yndft.pdf>
 Package pdftex.def Info: ./figs/yndft.pdf  used on input line 732.
 (pdftex.def)             Requested size: 252.0pt x 189.00429pt.
 
-Package hyperref Warning: Difference (2) between bookmark levels is greater 
-(hyperref)                than one, level fixed on input line 741.
+Underfull \vbox (badness 1117) has occurred while \output is active []
 
-<./figs/e6.4-Xk-FFT.jpg, id=500, 462.528pt x 346.896pt>
-File: ./figs/e6.4-Xk-FFT.jpg Graphic file (type jpg)
-<use ./figs/e6.4-Xk-FFT.jpg>
-Package pdftex.def Info: ./figs/e6.4-Xk-FFT.jpg  used on input line 743.
-(pdftex.def)             Requested size: 252.0pt x 189.00427pt.
-<./figs/e6.4-Hk-FFT.jpg, id=501, 462.528pt x 346.896pt>
-File: ./figs/e6.4-Hk-FFT.jpg Graphic file (type jpg)
-<use ./figs/e6.4-Hk-FFT.jpg>
-Package pdftex.def Info: ./figs/e6.4-Hk-FFT.jpg  used on input line 749.
-(pdftex.def)             Requested size: 252.0pt x 189.00427pt.
-<./figs/e6.4-Yk-FFT.jpg, id=502, 462.528pt x 346.896pt>
-File: ./figs/e6.4-Yk-FFT.jpg Graphic file (type jpg)
-<use ./figs/e6.4-Yk-FFT.jpg>
-Package pdftex.def Info: ./figs/e6.4-Yk-FFT.jpg  used on input line 755.
-(pdftex.def)             Requested size: 252.0pt x 189.00427pt.
-<./figs/e6.4-yn-IFFT.jpg, id=503, 578.16pt x 361.35pt>
-File: ./figs/e6.4-yn-IFFT.jpg Graphic file (type jpg)
-<use ./figs/e6.4-yn-IFFT.jpg>
-Package pdftex.def Info: ./figs/e6.4-yn-IFFT.jpg  used on input line 761.
-(pdftex.def)             Requested size: 252.0pt x 157.50026pt.
-
-! LaTeX Error: Something's wrong--perhaps a missing \item.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.766 	\end{enumerate}
-                      
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-[7 <./figs/yndft.pdf> <./figs/e6.4-Xk-FFT.jpg>]
-Underfull \hbox (badness 10000) in paragraph at lines 839--841
+<./figs/e6.4-FFT.jpg, id=493, 867.24pt x 722.7pt>
+File: ./figs/e6.4-FFT.jpg Graphic file (type jpg)
+<use ./figs/e6.4-FFT.jpg>
+Package pdftex.def Info: ./figs/e6.4-FFT.jpg  used on input line 747.
+(pdftex.def)             Requested size: 252.0pt x 209.99667pt.
+<./figs/e6.4-IFFT.jpg, id=494, 867.24pt x 722.7pt>
+File: ./figs/e6.4-IFFT.jpg Graphic file (type jpg)
+<use ./figs/e6.4-IFFT.jpg>
+Package pdftex.def Info: ./figs/e6.4-IFFT.jpg  used on input line 754.
+(pdftex.def)             Requested size: 252.0pt x 209.99667pt.
+ [7 <./figs/yndft.pdf> <./figs/e6.4-FFT.jpg>]
+Underfull \hbox (badness 10000) in paragraph at lines 806--808
 
  []
 
 
-Underfull \vbox (badness 2922) has occurred while \output is active []
+Underfull \hbox (badness 10000) in paragraph at lines 847--849
 
- [8 <./figs/e6.4-Hk-FFT.jpg> <./figs/e6.4-Yk-FFT.jpg> <./figs/e6.4-yn-IFFT.jpg>
-] [9
+ []
 
-]
-(./main.aux)
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [8 <./figs/e6.4-IFFT.jpg>] [9
+
+] (./main.aux)
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 4AB2ED82E304CB691B82C53B40F19769;1147.
+(rerunfilecheck)             Checksum: 2D550BA8C7F113187078AE68EF76BB1E;1092.
  ) 
 Here is how much of TeX's memory you used:
- 17721 strings out of 478287
- 276844 string characters out of 5849290
+ 17712 strings out of 478287
+ 276481 string characters out of 5849290
  1006375 words of memory out of 5000000
- 35382 multiletter control sequences out of 15000+600000
+ 35368 multiletter control sequences out of 15000+600000
  546534 words of font info for 191 fonts, out of 8000000 for 9000
  1144 hyphenation exceptions out of 8191
  70i,16n,76p,246b,1436s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1403,10 +1386,10 @@ public/txfonts/txsyc.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/u
 tmb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmbi8a.pfb></us
 r/share/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texlive
 /texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on main.pdf (9 pages, 307507 bytes).
+Output written on main.pdf (9 pages, 356773 bytes).
 PDF statistics:
- 738 PDF objects out of 1000 (max. 8388607)
- 504 compressed objects within 6 object streams
- 240 named destinations out of 1000 (max. 500000)
- 139 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 747 PDF objects out of 1000 (max. 8388607)
+ 508 compressed objects within 6 object streams
+ 247 named destinations out of 1000 (max. 500000)
+ 121 words of extra memory for PDF output out of 10000 (max. 10000000)
 

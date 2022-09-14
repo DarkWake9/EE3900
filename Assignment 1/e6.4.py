@@ -55,14 +55,14 @@ def fft(x):
 Xo = fft(xn_i)
 X = np.real(Xo)
 
-plt.stem(range(0,n),X)
+'''plt.stem(range(0,n),X)
 plt.title('X(k) using FFT')
 plt.xlabel('$k$')
 plt.ylabel('$X(k)$')
 plt.grid(True, which='both')
 plt.savefig('Assignment 1/filter/figs/e6.4-Xk-FFT.jpg')
 plt.show()    
-
+'''
 
 ###########################     H(k)    ###########################
 
@@ -70,7 +70,7 @@ Ho = fft(hn_i)
 H = np.real(Ho)/n
 #print("\nRe{H}\n")
 #print(H)
-
+'''
 plt.stem(range(0,n),H)
 plt.title('H(k) using FFT')
 plt.xlabel('$k$')
@@ -78,7 +78,7 @@ plt.ylabel('$H(k)$')
 plt.grid(True, which='both')
 plt.savefig('Assignment 1/filter/figs/e6.4-Hk-FFT.jpg')
 plt.show()    
-
+'''
 
 ###########################     Y(k)    ###########################
 Yo = []
@@ -88,6 +88,7 @@ for k in range(n):
 #print(Y)
 Y = np.real(Yo)
 
+'''
 plt.stem(range(0,n),Y)
 plt.title('Y(k) from FFT')
 plt.xlabel('$k$')
@@ -95,6 +96,31 @@ plt.ylabel('$Y(k) = H(k)X(k)$')
 plt.grid(True, which='both')
 plt.savefig('Assignment 1/filter/figs/e6.4-Yk-FFT.jpg')
 plt.show() 
+'''
+
+plt.figure(figsize=(12,10))
+plt.subplot(3,1,1)
+plt.stem(range(0,n),X)
+plt.ylabel('$X(k)$')
+plt.grid()
+plt.title('X(k) using FFT')
+plt.subplot(3,1,2)
+plt.stem(range(0,n),H)
+plt.ylabel('$H(k)$')
+plt.grid()
+plt.title('H(k) using FFT')
+plt.subplot(3,1,3)
+plt.stem(range(0,n),Y)
+plt.xlabel('$k$')
+plt.ylabel('$Y(k)$')
+plt.title('Y(k) using FFT')
+plt.grid()
+plt.savefig('Assignment 1/filter/figs/e6.4-FFT.jpg')
+plt.show()
+
+
+
+
 
 
 ########################################################    IFFT    ########################################################
@@ -123,7 +149,7 @@ y = np.real(yn)
 print('Re{y}')
 print(y)
 
-
+'''
 plt.stem(range(0,n),y)
 plt.title('y(n) using IFFT')
 plt.xlabel('$k$')
@@ -132,10 +158,10 @@ plt.grid(True, which='both')
 plt.savefig('Assignment 1/filter/figs/yn-IFFT.jpg')
 plt.show()
 '''
-plt.figure(figsize=(8,5))
+plt.figure(figsize=(12,10))
 plt.subplot(2,1,1)
 plt.stem(range(0,n),Y)
-plt.xlabel('$k$')
+plt.title('Y(k)')
 plt.ylabel('$Y(k)$')
 plt.grid()
 plt.subplot(2,1,2)
@@ -144,6 +170,5 @@ plt.xlabel('$k$')
 plt.ylabel('$y(k)$')
 plt.title('y(n) using IFFT')
 plt.grid()
-plt.savefig('Assignment 1/filter/figs/e6.4-yn-IFFT.jpg')
+plt.savefig('Assignment 1/filter/figs/e6.4-IFFT.jpg')
 plt.show()
-'''
