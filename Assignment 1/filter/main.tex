@@ -690,7 +690,7 @@ wget https://raw.githubusercontent.com/gadepall/EE1310/master/filter/codes/yncon
 			=\sum_{k=-\infty}^{\infty}\left(\sum_{n=-\infty}^{\infty} x[n] h[n-k]\right) z^{-k} \\
 			=\sum_{k=-\infty}^{\infty} y[n] z^{-k}=Y($z$) \\
 			\implies Y(z) = X(z) \cdot H(z)
-			\end{align}
+0			\end{align}
 		now put $n+m=k \quad n=-\infty$
 		
 		\begin{align}
@@ -841,6 +841,15 @@ wget https://github.com/DarkWake9/EE3900/blob/main/Assignment%201/e6.4.py
 		\end{bmatrix}
 		\vec{P}_{N}
 	\end{equation}
+\solution
+\begin{align}
+		\vec{F}_N = 
+		\begin{bmatrix}
+				\vec{F}_{N/2} & \vec{D}_{N/2} \vec{F}_{N/2}\\
+				\vec{F}_{N/2} & -\vec{D}_{N/2} \vec{F}_{N/2}\\
+		\end{bmatrix}
+\end{align}
+
 	\item Find 
 	\begin{align}
 		\vec{P}_6 \vec{x}
