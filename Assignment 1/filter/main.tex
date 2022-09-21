@@ -711,6 +711,13 @@ wget https://raw.githubusercontent.com/gadepall/EE1310/master/filter/codes/yncon
 		X(k) \define \sum _{n=0}^{N-1}x(n) e^{-\j2\pi kn/N}, \quad k = 0,1,\dots, N-1
 	\end{equation}
 	and $H(k)$ using $h(n)$.
+%	\solution
+		\begin{figure}[!ht]
+		\centering
+		\includegraphics[width=\columnwidth]{./figs/e6.4-IFFT.jpg}
+		\caption{$y(n)$ using IFFT}
+		\label{fig:ifft}
+	\end{figure}
 	\item Compute 
 	\begin{equation}
 		Y(k) = X(k)H(k)
@@ -745,7 +752,7 @@ wget https://github.com/DarkWake9/EE3900/blob/main/Assignment%201/e6.4.py
 	\begin{figure}[!ht]
 		\centering
 		\includegraphics[width=\columnwidth]{./figs/e6.4-FFT.jpg}
-		\caption{$H(k)$ using FFT}
+		\caption{Outputs using FFT}
 		\label{fig:fft}
 	\end{figure}
 \item 

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2022.9.4)  19 SEP 2022 23:16
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2022.9.4)  21 SEP 2022 11:50
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -660,7 +660,11 @@ File: l3backend-pdftex.def 2022-01-12 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count325
 \l__pdf_internal_box=\box69
 )
-(./main.aux)
+(./main.aux
+
+LaTeX Warning: Label `fig:ifft' multiply defined.
+
+)
 \openout1 = `main.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/txmi/m/it on input line 76.
@@ -1255,8 +1259,8 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 ! Missing } inserted.
 <inserted text> 
                 }
-l.693 			\end{align}
-                    
+l.693 0			\end{align}
+                     
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
 With luck, this will get me unwedged. But if you
@@ -1266,8 +1270,8 @@ my insertion and my current dilemma will both disappear.
 ! Missing { inserted.
 <inserted text> 
                 {
-l.693 			\end{align}
-                    
+l.693 0			\end{align}
+                     
 I've put in what seems to be necessary to fix
 the current column of the current alignment.
 Try to go on, since this might almost work.
@@ -1275,8 +1279,8 @@ Try to go on, since this might almost work.
 ! Missing } inserted.
 <inserted text> 
                 }
-l.693 			\end{align}
-                    
+l.693 0			\end{align}
+                     
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
 With luck, this will get me unwedged. But if you
@@ -1286,8 +1290,8 @@ my insertion and my current dilemma will both disappear.
 ! Missing \endgroup inserted.
 <inserted text> 
                 \endgroup 
-l.693 			\end{align}
-                    
+l.693 0			\end{align}
+                     
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
 With luck, this will get me unwedged. But if you
@@ -1297,16 +1301,16 @@ my insertion and my current dilemma will both disappear.
 ! Misplaced \omit.
 \math@cr@@@ ...@ \@ne \add@amps \maxfields@ \omit 
                                                   \kern -\alignsep@ \iftag@ ...
-l.693 			\end{align}
-                    
+l.693 0			\end{align}
+                     
 I expect to see \omit only after tab marks or the \cr of
 an alignment. Proceed, and I'll ignore this case.
 
 ! Missing { inserted.
 <inserted text> 
                 {
-l.693 			\end{align}
-                    
+l.693 0			\end{align}
+                     
 I've put in what seems to be necessary to fix
 the current column of the current alignment.
 Try to go on, since this might almost work.
@@ -1322,49 +1326,57 @@ iple pdfs with page group included in a single page
 
 LaTeX Warning: Command \j invalid in math mode on input line 711.
 
+<./figs/e6.4-IFFT.jpg, id=488, 867.24pt x 722.7pt>
+File: ./figs/e6.4-IFFT.jpg Graphic file (type jpg)
+<use ./figs/e6.4-IFFT.jpg>
+Package pdftex.def Info: ./figs/e6.4-IFFT.jpg  used on input line 717.
+(pdftex.def)             Requested size: 252.0pt x 209.99667pt.
 
-LaTeX Warning: Command \j invalid in math mode on input line 720.
+LaTeX Warning: Command \j invalid in math mode on input line 727.
 
-<./figs/yndft.pdf, id=490, 462.52798pt x 346.89601pt>
+<./figs/yndft.pdf, id=491, 462.52798pt x 346.89601pt>
 File: ./figs/yndft.pdf Graphic file (type pdf)
 <use ./figs/yndft.pdf>
-Package pdftex.def Info: ./figs/yndft.pdf  used on input line 732.
+Package pdftex.def Info: ./figs/yndft.pdf  used on input line 739.
 (pdftex.def)             Requested size: 252.0pt x 189.00429pt.
 
 Underfull \vbox (badness 1117) has occurred while \output is active []
 
-<./figs/e6.4-FFT.jpg, id=493, 867.24pt x 722.7pt>
+<./figs/e6.4-FFT.jpg, id=494, 867.24pt x 722.7pt>
 File: ./figs/e6.4-FFT.jpg Graphic file (type jpg)
 <use ./figs/e6.4-FFT.jpg>
-Package pdftex.def Info: ./figs/e6.4-FFT.jpg  used on input line 747.
+Package pdftex.def Info: ./figs/e6.4-FFT.jpg  used on input line 754.
 (pdftex.def)             Requested size: 252.0pt x 209.99667pt.
-<./figs/e6.4-IFFT.jpg, id=494, 867.24pt x 722.7pt>
 File: ./figs/e6.4-IFFT.jpg Graphic file (type jpg)
 <use ./figs/e6.4-IFFT.jpg>
-Package pdftex.def Info: ./figs/e6.4-IFFT.jpg  used on input line 754.
+Package pdftex.def Info: ./figs/e6.4-IFFT.jpg  used on input line 761.
 (pdftex.def)             Requested size: 252.0pt x 209.99667pt.
- [7 <./figs/yndft.pdf> <./figs/e6.4-FFT.jpg>]
-Underfull \hbox (badness 10000) in paragraph at lines 806--808
+
+Underfull \vbox (badness 2035) has occurred while \output is active []
+
+ [7 <./figs/e6.4-IFFT.jpg> <./figs/yndft.pdf>]
+Underfull \vbox (badness 2020) has occurred while \output is active []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 813--815
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 856--858
+Underfull \hbox (badness 10000) in paragraph at lines 863--865
 
  []
 
+[8 <./figs/e6.4-FFT.jpg>] [9] (./main.aux)
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
+LaTeX Warning: There were multiply-defined labels.
 
- [8 <./figs/e6.4-IFFT.jpg>] [9
-
-] (./main.aux)
 Package rerunfilecheck Info: File `main.out' has not changed.
 (rerunfilecheck)             Checksum: 2D550BA8C7F113187078AE68EF76BB1E;1092.
  ) 
 Here is how much of TeX's memory you used:
- 17713 strings out of 478287
- 276494 string characters out of 5849290
+ 17714 strings out of 478287
+ 276511 string characters out of 5849290
  1006375 words of memory out of 5000000
  35368 multiletter control sequences out of 15000+600000
  546534 words of font info for 191 fonts, out of 8000000 for 9000
@@ -1383,10 +1395,10 @@ public/txfonts/txsyc.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/u
 tmb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmbi8a.pfb></us
 r/share/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texlive
 /texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on main.pdf (9 pages, 356829 bytes).
+Output written on main.pdf (9 pages, 356934 bytes).
 PDF statistics:
- 748 PDF objects out of 1000 (max. 8388607)
- 509 compressed objects within 6 object streams
- 248 named destinations out of 1000 (max. 500000)
+ 749 PDF objects out of 1000 (max. 8388607)
+ 510 compressed objects within 6 object streams
+ 249 named destinations out of 1000 (max. 500000)
  121 words of extra memory for PDF output out of 10000 (max. 10000000)
 

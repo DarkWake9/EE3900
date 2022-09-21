@@ -38,6 +38,29 @@ print("X\n")
 print(X)
 print("\ny\n")
 print(y)
+X = np.real(X)
+plt.stem(range(0,N),X)
+plt.title('$X(k)$ with DFT')
+plt.xlabel('$n$')
+plt.ylabel('$X(k)$')
+plt.grid()# minor
+plt.savefig("Assignment 1/fig/Xkdft.jpg")
+plt.show()
+H = np.real(H)
+plt.stem(range(0,N),H)
+plt.title('$H(k)$ with DFT')
+plt.xlabel('$n$')
+plt.ylabel('$H(k)$')
+plt.grid()# minor
+plt.savefig("Assignment 1/fig/Hkdft.jpg")
+Y = np.real(Y)
+plt.stem(range(0,N),Y)
+plt.title('$Y(k)$ with DFT')
+plt.xlabel('$n$')
+plt.ylabel('$Y(k)$')
+plt.grid()# minor
+plt.savefig("Assignment 1/fig/Ykdft.jpg")
+plt.show()
 y = np.real(y)/N
 print("\nRe{y}\n")
 print(y)
@@ -47,6 +70,7 @@ plt.title('Filter Output using DFT')
 plt.xlabel('$n$')
 plt.ylabel('$y(n)$')
 plt.grid()# minor
+
 #
 #If using termux
 #plt.savefig('../figs/yndft.pdf')
