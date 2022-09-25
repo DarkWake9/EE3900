@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2022.9.4)  26 SEP 2022 02:49
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2022.9.4)  26 SEP 2022 02:54
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1386,10 +1386,10 @@ Package rerunfilecheck Info: File `main.out' has not changed.
 (rerunfilecheck)             Checksum: EDFC8E4B8727EDBA1BB28508A87337F9;882.
  ) 
 Here is how much of TeX's memory you used:
- 17747 strings out of 478287
- 277061 string characters out of 5849290
+ 17750 strings out of 478287
+ 277097 string characters out of 5849290
  1005371 words of memory out of 5000000
- 35382 multiletter control sequences out of 15000+600000
+ 35383 multiletter control sequences out of 15000+600000
  546534 words of font info for 191 fonts, out of 8000000 for 9000
  1144 hyphenation exceptions out of 8191
  70i,17n,76p,246b,1436s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1406,10 +1406,10 @@ public/txfonts/txsyc.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/u
 tmb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmbi8a.pfb></us
 r/share/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texlive
 /texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on main.pdf (10 pages, 383054 bytes).
+Output written on main.pdf (10 pages, 383215 bytes).
 PDF statistics:
- 755 PDF objects out of 1000 (max. 8388607)
- 520 compressed objects within 6 object streams
- 266 named destinations out of 1000 (max. 500000)
+ 757 PDF objects out of 1000 (max. 8388607)
+ 522 compressed objects within 6 object streams
+ 268 named destinations out of 1000 (max. 500000)
  115 words of extra memory for PDF output out of 10000 (max. 10000000)
 
