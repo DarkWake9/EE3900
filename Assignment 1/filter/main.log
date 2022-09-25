@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2022.9.4)  25 SEP 2022 20:39
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2022.9.4)  26 SEP 2022 00:16
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1369,6 +1369,52 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [9]
+Underfull \hbox (badness 10000) in paragraph at lines 1184--1186
+
+ []
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.1190 \begin{bmatrix}
+                      
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.1199 \end{bmatrix}
+                    
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.1204 \begin{bmatrix}
+                      
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.1213 \end{bmatrix}
+                    
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
 [10] (./main.aux)
 
 LaTeX Warning: There were undefined references.
@@ -1377,8 +1423,8 @@ Package rerunfilecheck Info: File `main.out' has not changed.
 (rerunfilecheck)             Checksum: EDFC8E4B8727EDBA1BB28508A87337F9;882.
  ) 
 Here is how much of TeX's memory you used:
- 17740 strings out of 478287
- 276970 string characters out of 5849290
+ 17743 strings out of 478287
+ 277009 string characters out of 5849290
  1005371 words of memory out of 5000000
  35381 multiletter control sequences out of 15000+600000
  546534 words of font info for 191 fonts, out of 8000000 for 9000
@@ -1397,10 +1443,10 @@ public/txfonts/txsyc.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/u
 tmb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmbi8a.pfb></us
 r/share/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texlive
 /texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on main.pdf (10 pages, 381727 bytes).
+Output written on main.pdf (10 pages, 383166 bytes).
 PDF statistics:
- 748 PDF objects out of 1000 (max. 8388607)
- 513 compressed objects within 6 object streams
- 260 named destinations out of 1000 (max. 500000)
+ 751 PDF objects out of 1000 (max. 8388607)
+ 516 compressed objects within 6 object streams
+ 263 named destinations out of 1000 (max. 500000)
  115 words of extra memory for PDF output out of 10000 (max. 10000000)
 
