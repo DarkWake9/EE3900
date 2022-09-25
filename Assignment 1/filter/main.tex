@@ -810,7 +810,7 @@ be the $4\times 4$ identity matrix.  Then the 4 point {\em DFT permutation matri
 %    \item Find $\vec{P}_6$.
 %    \item Find $\vec{D}_3$.
 \item Show that 
-\begin{equation}
+\begin{align}
 	\vec{F}_{4}=
 	\begin{bmatrix}
 		\vec{I}_{2} & \vec{D}_{2} \\
@@ -821,10 +821,9 @@ be the $4\times 4$ identity matrix.  Then the 4 point {\em DFT permutation matri
 		0 & \vec{F}_{2}
 	\end{bmatrix}
 	\vec{P}_{4}
-\end{equation}
+\end{align}
 \solution
 \begin{align}
-%	\vec{F}_{4}=
 	\vec{F}_{2} = 
 	\begin{bmatrix}
 		W_{2}^0	&	W_{2}^0\\
@@ -834,44 +833,44 @@ be the $4\times 4$ identity matrix.  Then the 4 point {\em DFT permutation matri
 		1	&	1\\
 		1	&	-1
 	\end{bmatrix}\\
-	\vec{D}_2 =
+	\vec{D}_{4/2} =
 	\begin{bmatrix}
-		W_2^0 &	0\\
-		0	&	W_2^1 
+		W_4^0 &	0\\
+		0	&	W_4^1 
 	\end{bmatrix}
 	=\begin{bmatrix}
 		1	&	0\\
-		0	&	-1 
+		0	&	-i 
 	\end{bmatrix}\\
 \text{R.H.S } = 
 \begin{bmatrix}
-	\vec{F}_{2} & \vec{D}_{2} \vec{F}_{2}\\
-	\vec{F}_{2} & -\vec{D}_{2} \vec{F}_{2}\\
+	\vec{F}_{2} & \vec{D}_{4/2} \vec{F}_{2}\\
+	\vec{F}_{2} & -\vec{D}_{4/2} \vec{F}_{2}\\
 \end{bmatrix}\vec{P}_{4}\\
-	=\begin{bmatrix}
-		W_{2}^0	&	W_{2}^0	&	(W_{2}^0)^2	&	(W_{2}^0)^2\\
-		W_{2}^0	&	W_{2}^1	&	W_{2}^0 W_{2}^1	&	(W_{2}^1)^2\\
-		W_{2}^0	&	W_{2}^0	&	-(W_{2}^0)^2	&	-(W_{2}^0)^2\\
-		W_{2}^0	&	W_{2}^1	&	-W_{2}^0 W_{2}^1	&	-(W_{2}^1)^2\\
-	\end{bmatrix}\vec{P}_{4}\\
-		=\frac{1}{\sqrt{2}}\begin{bmatrix}
+%	=\begin{bmatrix}
+%		W_{2}^0	&	W_{2}^0	&	(W_{2}^0)^2	&	(W_{2}^0)^2\\
+%		W_{2}^0	&	W_{2}^1	&	W_{2}^0 W_{2}^1	&	(W_{2}^1)^2\\
+%		W_{2}^0	&	W_{2}^0	&	-(W_{2}^0)^2	&	-(W_{2}^0)^2\\
+%		W_{2}^0	&	W_{2}^1	&	-W_{2}^0 W_{2}^1	&	-(W_{2}^1)^2\\
+%	\end{bmatrix}\vec{P}_{4}\\
+		=\begin{bmatrix}
 		1	&	1	&	1	&	1\\
-		1	&	-1	&	-1	&	1\\
+		1	&	-1	&	-i	&	i\\
 		1	&	1	&	-1	&	-1\\
-		1	&	-1	&	1	&	-1\\
+		1	&	-1	&	i	&	-i\\
 	\end{bmatrix}\vec{P}_{4}\\
-		=\frac{1}{\sqrt{2}}\begin{bmatrix}
+		=\begin{bmatrix}
 			1	&	1	&	1	&	1\\
-			1	&	-1	&	-1	&	1\\
+			1	&	-i	&	-1	&	i\\
 			1	&	-1	&	1	&	-1\\
-			1	&	1	&	-1	&	-21\\
+			1	&	i	&	-1	&	-i\\
 		\end{bmatrix}\\
-	= Re\begin{bmatrix}
+	= \begin{bmatrix}
 		W_{4}^0	&	W_{4}^0	&	W_{4}^0	&	W_{4}^0\\
 		W_{4}^0	&	W_{4}^1	&	W_{4}^2	&	W_{4}^3\\
 		W_{4}^0	&	W_{4}^2	&	W_{4}^4	&	W_{4}^6\\
 		W_{4}^0	&	W_{4}^3	&	W_{4}^6	&	W_{4}^9\\
-	\end{bmatrix} = Re(\vec{F}_{4})
+	\end{bmatrix} = \vec{F}_{4}
 \end{align}
 \item Show that 
 \begin{equation}
@@ -1185,46 +1184,56 @@ using
 after zero padding $\vec{x}$.\\
 
 \solution
-
 \begin{lstlisting}
-		
+wget https://github.com/DarkWake9/EE3900/blob/main/Assignment%201/e7.12.py
 \end{lstlisting}
 
+
 From the above code we get this output:
-\begin{bmatrix}
-	(13+0j)\\
-	(-3.1213-6.5355j)\\
-	(-0+1j)\\
-	(1.1213-0.5355j)\\
-	(-1-0j)\\
-	(1.1213+0.5355j)\\
-	-1j\\
-	(-3.1213+6.5355j)
-\end{bmatrix}
+$\begin{bmatrix}
+	13\\
+	-3.1213-6.5355j\\
+	j\\
+	1.1213-0.5355j\\
+	-1\\
+	1.1213+0.5355j\\
+	-j\\
+	-3.1213+6.5355j
+\end{bmatrix}$
 
 %	    \eqref{eq:fft-mat-def}
 \item Write a C program to compute the 8-point FFT. \\
-\solution
 
-From the above code we get this output:
-\begin{bmatrix}
-	(13.0000) + j(0.0000)\\
-	(-3.1327) + j(-6.5545)\\
-	(0.0000) + j(1.0000)\\
-	(1.1327) + j(-0.5545)\\
-	(-1.0000) + j(0.0000)\\
-	(1.1327) + j(0.5545)\\
-	(0.0000) + j(-1.0000)\\
-	(-3.1327) + j(6.5545)
-\end{bmatrix}
+\solution
+\begin{lstlisting}
+wget https://github.com/DarkWake9/EE3900/blob/main/Assignment%201/e7.13.c
+\end{lstlisting}
+
+ From the above code we get this output:
+$\begin{bmatrix}
+	13\\
+	-3.1327 - j6.5545\\
+	j\\
+	1.1327 - j0.5545\\
+	-1\\
+	1.1327 + j0.5545\\
+	- j\\
+	-3.1327 + j6.5545\\
+\end{bmatrix}$
+\vspace{1cm}
+
+
+
 \end{enumerate}
+
+
 \section{Exercises}
 Answer the following questions by looking at the python code in Problem \ref{prob:output}.
 \begin{enumerate}[label=\thesection.\arabic*]
 \item
 The command
 \begin{lstlisting}
-	output_signal = signal.lfilter(b, a, input_signal)
+output_signal = signal.lfilter(b, a, input_signal)
 \end{lstlisting}
 in Problem \ref{prob:output} is executed through the following difference equation
 \begin{equation}
@@ -1233,8 +1242,11 @@ in Problem \ref{prob:output} is executed through the following difference equati
 \end{equation}
 %
 where the input signal is $x(n)$ and the output signal is $y(n)$ with initial values all 0. Replace
-\textbf{signal.filtfilt} with your own routine and verify.
-%
+\textbf{signal.filtfilt} with your own routine and verify.\\
+\solution
+\begin{lstlisting}
+wget
+\end{lstlisting}
 \item Repeat all the exercises in the previous sections for the above $a$ and $b$.
 \item What is the sampling frequency of the input signal?
 \\
