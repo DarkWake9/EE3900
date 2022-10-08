@@ -204,5 +204,17 @@ The code used for this exercise can found at:\\
 wget https://raw.githubusercontent.com/gadepall/EE1310/master/Assignment 3/a3.ipynb
 \end{lstlisting}
 
+\newpage
+For $i^{th}$ neutrino and $j^{th}$ pulsar:
+\begin{align*}
+	S_{ij} = \frac{1}{2\pi\sigma_i^2}e^{-(|\theta_i-\theta_j|)^2/2\sigma_i^2}\\
+	S_i = \sum_{j = 0}^{p}\dfrac{S_{ij}}{ns[j]}
+\end{align*}
+where ns[j] is the no.of events associated with $j^{th}$ source/pulsar
+
+\begin{align*}
+	B_i = \dfrac{\text{total no of neutrino events within $ \delta \pm 3$ of $\nu_i$}}{2\pi(\sin(\delta + 3) - \sin(\delta + 3))}
+\end{align*}
+
 
 \end{document}
