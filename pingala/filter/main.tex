@@ -121,6 +121,7 @@
 	%\providecommand{\hilbert}{\overset{\mathcal{H}}{ \rightleftharpoons}}
 	\providecommand{\system}{\overset{\mathcal{H}}{ \longleftrightarrow}}
 	%\newcommand{\solution}[2]{\textbf{Solution:}{#1}}
+	\newcommand{\proof}{\noindent \textbf{Proof: }}
 	\newcommand{\solution}{\noindent \textbf{Solution: }}
 	\providecommand{\dec}[2]{\ensuremath{\overset{#1}{\underset{#2}{\gtrless}}}}
 	\numberwithin{equation}{section}
@@ -171,14 +172,7 @@
 	% was not built to handle multiple paragraphs
 	%
 	
-	\author{ G V V Sharma$^{*}$ %<-this  stops a space
-		\thanks{*The author is with the Department
-			of Electrical Engineering, Indian Institute of Technology, Hyderabad
-			502285 India e-mail:  gadepall@iith.ac.in.  All content in the manuscript is 
-			released under GNU GPL.  Free to use for anything. }% <-this % stops a space
-		%\thanks{J. Doe and J. Doe are with Anonymous University.}% <-this % stops a space
-		%\thanks{Manuscript received April 19, 2005; revised January 11, 2007.}}
-}
+	\author{ VIBHAVASU - EP20BTECH11015}
 % note the % following the last \IEEEmembership and also \thanks - 
 % these prevent an unwanted space from occurring between the last author name
 % and the end of the author line. i.e., if you had this:
@@ -257,23 +251,54 @@ Verify the following using a python code.
 \begin{align}
 	\sum_{k=1}^{n}a_k = a_{n+2}-1, \quad n \ge 1
 \end{align}
+\solution
+\begin{figure}[!ht]
+\includegraphics[width=\columnwidth]{/media/darkwake/VIB2/EE3900/pingala/figs/e1.1.jpg}
+\captionof{figure}{}
+\label{fig:an21}
+\end{figure}
+\newline
+From \ref{fig:an21} above equation is \textbf{True}
 \item 
 \begin{align}
 	\sum_{k=1}^{\infty}\frac{a_k}{10^k} =\frac{10}{89}
 \end{align}
+\solution\\
+Proposed value of above summation = $\mathbf{\frac{10}{89}}$ = 0.11235955056179775\\
+Calculated value from the code = 0.11235955056179774\\
+$\therefore$ The above equation is \textbf{True}
 \item 
 \begin{align}
 	b_n =\alpha^n + \beta^n, \quad n \ge 1
 \end{align}
+\solution
+\begin{figure}[!ht]
+	\includegraphics[width=\columnwidth]{/media/darkwake/VIB2/EE3900/pingala/figs/e1.3.jpg}
+	\captionof{figure}{}
+	\label{fig:bn}
+\end{figure}
+\newline
+From \ref{fig:bn} above equation is \textbf{True}
 \item 
 \begin{align}
 	\sum_{k=1}^{\infty}\frac{b_k}{10^k} =\frac{8}{89}
 \end{align}
-\solution
-\begin{lstlisting}
+\solution\\
+Proposed value of above summation = $\mathbf{\frac{8}{89}}$ = 0.0898876404494382\\
+Calculated value from the code = 0.1348314606741573\\
+$\therefore$ The above relation is \textbf{False}
 
+
+\solution\\ The solution to all above questions can be found at:
+\begin{lstlisting}
+wget https://github.com/DarkWake9/EE3900/blob/main/pingala/codes/e1.py
 \end{lstlisting}
 \end{enumerate}
+
+
+
+
+
 \section{Pingala Series}
 \begin{enumerate}[label=\thesection.\arabic*,ref=\thesection.\theenumi]
 \item The {\em one sided} $Z$-transform of $x(n)$ is defined as 
@@ -282,13 +307,39 @@ Verify the following using a python code.
 	X^{+}(z) = \sum_{n = 0}^{\infty}x(n)z^{-n}, \quad z \in \mathbb{C}
 	\label{eq:one-Z}
 \end{align}
+
+
 \item The {\em Pingala} series is generated using the difference equation 
 \begin{align}
 	x(n+2) = x\brak{n+1} + x\brak{n},  \quad x(0) = x(1) = 1, n \ge 0
 	\label{eq:10-pingala}
 \end{align}
-Generate a stem plot for $x(n)$.
+Generate a stem plot for $x(n)$.\\
+\solution
+\begin{figure}[!ht]
+	\includegraphics[width=\columnwidth]{/media/darkwake/VIB2/EE3900/pingala/figs/e2.1.jpg}
+	\captionof{figure}{}	\label{fig:bn}
+\end{figure}
+
 \item 		Find $X^{+}(z)$.
+
+\solution\\
+\begin{figure}[!ht]
+	\includegraphics[width=\columnwidth]{/media/darkwake/VIB2/EE3900/pingala/figs/e2.3a.jpg}
+	\captionof{figure}{}
+	\label{fig:xan}
+\end{figure}
+\newline
+From \ref{fig:xan}: we see that
+\begin{align}
+	x(n) = a_{n + 1}	\quad	n \geq 1
+\intertext{Apply $\mathcal{Z}^+$ transform on both sides}
+=1 + \sum_{n = 1}^{\infty}a_{n+1}z^{-n} \\
+	=\sum_{n=0}^{\infty} \dfrac{\alpha^{n+1} - \beta^{n+1}}{(\alpha - \beta)}z^{-n}\\
+	=\frac{1}{\alpha-\beta}\left(\frac{\alpha}{1-\alpha z^{-1}}-\frac{\beta}{1-\beta z^{-1}}\right)\\
+	=\frac{1}{\left(1-\alpha z^{-1}\right)\left(1-\beta z^{-1}\right)}\\
+	X^{+}(z) =	\frac{1}{1-z^{-1}-2^{-2}}
+\end{align}
 \item Find $x(n)$.
 
 \item Sketch 

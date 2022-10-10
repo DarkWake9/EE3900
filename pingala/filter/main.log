@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2022.9.4)  10 OCT 2022 12:27
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2022.9.4)  10 OCT 2022 20:26
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -598,7 +598,11 @@ File: l3backend-pdftex.def 2022-01-12 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count319
 \l__pdf_internal_box=\box63
 )
-(./main.aux)
+(./main.aux
+
+LaTeX Warning: Label `fig:bn' multiply defined.
+
+)
 \openout1 = `main.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/txmi/m/it on input line 74.
@@ -761,74 +765,141 @@ LaTeX Info: Redefining \nameref on input line 74.
 \c@example=\count332
 \c@definition=\count333
 \c@rem=\count334
-LaTeX Font Info:    Calculating math sizes for size <14> on input line 226.
-LaTeX Font Info:    Trying to load font information for U+rsfs on input line 22
-6.
 
-(/usr/share/texlive/texmf-dist/tex/latex/jknapltx/ursfs.fd
+
+! LaTeX Error: Command \proof already defined.
+               Or name \end... illegal, see p.192 of the manual.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.124 ...mmand{\proof}{\noindent \textbf{Proof: }}
+                                                  
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+(./main.toc)
+\tf@toc=\write4
+\openout4 = `main.toc'.
+
+LaTeX Font Info:    Trying to load font information for U+rsfs on input line 24
+1.
+ (/usr/share/texlive/texmf-dist/tex/latex/jknapltx/ursfs.fd
 File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
 )
 LaTeX Font Info:    Trying to load font information for U+txmia on input line 2
-26.
+41.
 
 (/usr/share/texlive/texmf-dist/tex/latex/txfonts/utxmia.fd
 File: utxmia.fd 2000/12/15 v3.1
 )
 LaTeX Font Info:    Trying to load font information for U+txsya on input line 2
-26.
+41.
 
 (/usr/share/texlive/texmf-dist/tex/latex/txfonts/utxsya.fd
 File: utxsya.fd 2000/12/15 v3.1
 )
 LaTeX Font Info:    Trying to load font information for U+txsyb on input line 2
-26.
+41.
 
 (/usr/share/texlive/texmf-dist/tex/latex/txfonts/utxsyb.fd
 File: utxsyb.fd 2000/12/15 v3.1
 )
 LaTeX Font Info:    Trying to load font information for U+txsyc on input line 2
-26.
+41.
 
 (/usr/share/texlive/texmf-dist/tex/latex/txfonts/utxsyc.fd
 File: utxsyc.fd 2000/12/15 v3.1
-) (./main.toc)
-\tf@toc=\write4
-\openout4 = `main.toc'.
+)
+</media/darkwake/VIB2/EE3900/pingala/figs/e1.1.jpg, id=19, 462.528pt x 346.896p
+t>
+File: /media/darkwake/VIB2/EE3900/pingala/figs/e1.1.jpg Graphic file (type jpg)
 
+<use /media/darkwake/VIB2/EE3900/pingala/figs/e1.1.jpg>
+Package pdftex.def Info: /media/darkwake/VIB2/EE3900/pingala/figs/e1.1.jpg  use
+d on input line 256.
+(pdftex.def)             Requested size: 252.0pt x 189.00427pt.
 
-Overfull \hbox (25.86975pt too wide) detected at line 286
-[]
+Underfull \hbox (badness 10000) in paragraph at lines 265--271
+\OT1/txr/m/n/12 Calculated value from the code =
+ []
+
+</media/darkwake/VIB2/EE3900/pingala/figs/e1.3.jpg, id=21, 462.528pt x 346.896p
+t>
+File: /media/darkwake/VIB2/EE3900/pingala/figs/e1.3.jpg Graphic file (type jpg)
+
+<use /media/darkwake/VIB2/EE3900/pingala/figs/e1.3.jpg>
+Package pdftex.def Info: /media/darkwake/VIB2/EE3900/pingala/figs/e1.3.jpg  use
+d on input line 276.
+(pdftex.def)             Requested size: 252.0pt x 189.00427pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 285--290
+\OT1/txr/m/n/12 Calculated value from the code =
  []
 
 [1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
 
 
+ </media/darkwake/VIB2/EE3900/pingala/figs/e1.1.jpg> </media/darkwake/VIB2/EE39
+00/pingala/figs/e1.3.jpg>]
+Overfull \hbox (25.86975pt too wide) detected at line 316
+[]
+ []
+
+</media/darkwake/VIB2/EE3900/pingala/figs/e2.1.jpg, id=52, 462.528pt x 346.896p
+t>
+File: /media/darkwake/VIB2/EE3900/pingala/figs/e2.1.jpg Graphic file (type jpg)
+
+<use /media/darkwake/VIB2/EE3900/pingala/figs/e2.1.jpg>
+Package pdftex.def Info: /media/darkwake/VIB2/EE3900/pingala/figs/e2.1.jpg  use
+d on input line 320.
+(pdftex.def)             Requested size: 252.0pt x 189.00427pt.
+</media/darkwake/VIB2/EE3900/pingala/figs/e2.3a.jpg, id=53, 462.528pt x 346.896
+pt>
+File: /media/darkwake/VIB2/EE3900/pingala/figs/e2.3a.jpg Graphic file (type jpg
+)
+<use /media/darkwake/VIB2/EE3900/pingala/figs/e2.3a.jpg>
+Package pdftex.def Info: /media/darkwake/VIB2/EE3900/pingala/figs/e2.3a.jpg  us
+ed on input line 328.
+(pdftex.def)             Requested size: 252.0pt x 189.00427pt.
+
+Underfull \vbox (badness 4608) has occurred while \output is active []
+
+ [2 </media/darkwake/VIB2/EE3900/pingala/figs/e2.1.jpg> </media/darkwake/VIB2/E
+E3900/pingala/figs/e2.3a.jpg>] [3
+
 ] (./main.aux)
+
+LaTeX Warning: There were multiply-defined labels.
+
 Package rerunfilecheck Info: File `main.out' has not changed.
 (rerunfilecheck)             Checksum: 6EF0FDA02AE42AB5EB9699AF63378C50;377.
  ) 
 Here is how much of TeX's memory you used:
- 15690 strings out of 478287
- 248856 string characters out of 5849290
- 747924 words of memory out of 5000000
- 33612 multiletter control sequences out of 15000+600000
- 540490 words of font info for 181 fonts, out of 8000000 for 9000
+ 16114 strings out of 478287
+ 253416 string characters out of 5849290
+ 742924 words of memory out of 5000000
+ 34017 multiletter control sequences out of 15000+600000
+ 531301 words of font info for 150 fonts, out of 8000000 for 9000
  1144 hyphenation exceptions out of 8191
- 60i,9n,63p,232b,327s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 60i,10n,63p,232b,1322s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texliv
 e/texmf-dist/fonts/type1/public/txfonts/rtxmi.pfb></usr/share/texlive/texmf-dis
 t/fonts/type1/public/txfonts/rtxr.pfb></usr/share/texlive/texmf-dist/fonts/type
 1/public/txfonts/rtxsc.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/tx
 fonts/txex.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/txfonts/txsy.p
-fb></usr/share/texlive/texmf-dist/fonts/type1/public/txfonts/txsyb.pfb></usr/sh
-are/texlive/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/texlive/tex
-mf-dist/fonts/type1/urw/times/utmbi8a.pfb></usr/share/texlive/texmf-dist/fonts/
-type1/urw/times/utmr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times
-/utmri8a.pfb>
-Output written on main.pdf (1 page, 69611 bytes).
+fb></usr/share/texlive/texmf-dist/fonts/type1/public/txfonts/txsya.pfb></usr/sh
+are/texlive/texmf-dist/fonts/type1/public/txfonts/txsyb.pfb></usr/share/texlive
+/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/texlive/texmf-dist/fon
+ts/type1/urw/times/utmbi8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/t
+imes/utmr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmri8a.pf
+b>
+Output written on main.pdf (3 pages, 214449 bytes).
 PDF statistics:
- 123 PDF objects out of 1000 (max. 8388607)
- 99 compressed objects within 1 object stream
- 39 named destinations out of 1000 (max. 500000)
- 25 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 158 PDF objects out of 1000 (max. 8388607)
+ 125 compressed objects within 2 object streams
+ 53 named destinations out of 1000 (max. 500000)
+ 45 words of extra memory for PDF output out of 10000 (max. 10000000)
 
