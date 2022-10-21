@@ -12,15 +12,19 @@ def xn(n):
     else:
         return 0
 
-#e2.1
+#e2.5
 n = np.array(range(0, 21))
 x = [xn(i) for i in n]
+
+
+yn= lambda n: xn(n-1) + xn(n+1)
+y = [yn(i) for i in n]
+
+
 plt.figure()
-plt.stem(n , x)
+plt.stem(n , y)
 plt.xlabel("n")
-plt.ylabel("x(n)")
+plt.ylabel("y(n)")
 plt.grid(True, which='both')
-plt.savefig('/media/darkwake/VIB2/EE3900/pingala/figs/e2.1.jpg')
+plt.savefig('/media/darkwake/VIB2/EE3900/pingala/figs/e2.5.jpg')
 plt.show()
-
-

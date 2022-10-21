@@ -312,7 +312,7 @@ wget https://github.com/DarkWake9/EE3900/blob/main/pingala/codes/e1.py
 \item The {\em Pingala} series is generated using the difference equation 
 \begin{align}
 	x(n+2) = x\brak{n+1} + x\brak{n},  \quad x(0) = x(1) = 1, n \ge 0
-	\label{eq:10-pingala}
+	\label{eq:1-pingala}
 \end{align}
 Generate a stem plot for $x(n)$.\\
 \solution
@@ -323,41 +323,89 @@ Generate a stem plot for $x(n)$.\\
 
 \item 		Find $X^{+}(z)$.
 
-\solution\\
-\begin{figure}[!ht]
-	\includegraphics[width=\columnwidth]{/media/darkwake/VIB2/EE3900/pingala/figs/e2.3a.jpg}
-	\captionof{figure}{}
-	\label{fig:xan}
-\end{figure}
-\newline
-From \ref{fig:xan}: we see that
+\solution From \eqref{eq:1-pingala}
 \begin{align}
-	x(n) = a_{n + 1}	\quad	n \geq 1
-\intertext{Apply $\mathcal{Z}^+$ transform on both sides}
-=1 + \sum_{n = 1}^{\infty}a_{n+1}z^{-n} \\
-	=\sum_{n=0}^{\infty} \dfrac{\alpha^{n+1} - \beta^{n+1}}{(\alpha - \beta)}z^{-n}\\
-	=\frac{1}{\alpha-\beta}\left(\frac{\alpha}{1-\alpha z^{-1}}-\frac{\beta}{1-\beta z^{-1}}\right)\\
-	=\frac{1}{\left(1-\alpha z^{-1}\right)\left(1-\beta z^{-1}\right)}\\
-	X^{+}(z) =	\frac{1}{1-z^{-1}-2^{-2}}
+	\mathcal{Z}^+\brak{x(n + 2)} =\\ \mathcal{Z}^+\brak{x(n + 1)} + \mathcal{Z}^+\brak{x(n)} \\
+	\implies z^2X^+(z) - z^2x(0) - zx(1)  = \\zX^+(z) - zx(0) + X^+(z)\\
+	\brak{z^2 - z - 1}X^+(z) = z^2 \\
+	X^+(z) = \frac{1}{1 - z^{-1} - z^{-2}} 
 \end{align}
-\item Find $x(n)$.
-
+Let, $\alpha$ and $\beta$ be solutions to eqn $z^2 - z - 1 = 0$,
+$\implies $they are solutions of  $z^{-2} + z^{-1} - 1 = 0$
+\begin{align}
+	X^{+}(z)= \frac{1}{\brak{1 - \alpha z^{-1}}\brak{1 - \beta z^{-1}}} \quad |z| > \alpha
+	\label{eq:X-z}
+\end{align}
+%\begin{figure}[!ht]
+%	\includegraphics[width=\columnwidth]{/media/darkwake/VIB2/EE3900/pingala/figs/e2.3a.jpg}
+%	\captionof{figure}{}
+%	\label{fig:xan}
+%\end{figure}
+%\newline
+%From Fig. \ref{fig:xan}: we see that
+%\begin{equation}
+%		x(n) = a_{n + 1}	\quad	n \geq 1
+%		\label{eq:xnan1}
+%\end{equation}
+\item Find $x(n)$.\\
+\solution
+Apply $\mathcal{Z}^+$ transform on both sides
+\begin{align}
+	X^{+}(z) =	\frac{1}{1-z^{-1}-2^{-2}}\\
+	=\frac{1}{\left(1-\alpha z^{-1}\right)\left(1-\beta z^{-1}\right)}\\
+	=\frac{1}{\alpha-\beta}\left(\frac{\alpha}{1-\alpha z^{-1}}-\frac{\beta}{1-\beta z^{-1}}\right)\\
+	=\sum_{n=0}^{\infty} \dfrac{\alpha^{n+1} - \beta^{n+1}}{(\alpha - \beta)}u(n)z^{-n}\\
+%	x_n = a_{n+1}	\quad	n \geq 1\\
+	\implies x_n = a_{n+1}u(n)
+\end{align}
 \item Sketch 
 \begin{align}
 	y(n)	 = x\brak{n-1} + x\brak{n+1},  \quad n \ge 0
 	\label{eq:10-orig-diff-rev}
 \end{align}
+\solution\\
+\begin{figure}[!ht]
+	\includegraphics[width=\columnwidth]{/media/darkwake/VIB2/EE3900/pingala/figs/e2.5.jpg}
+	\captionof{figure}{}
+	\label{fig:xan}
+\end{figure}
+\newline
 
-\item Find $Y^{+}(z)$. 
-\item Find $y(n)$.
-\end{enumerate}
-\section{Power of the Z transform}
-\begin{enumerate}[label=\thesection.\arabic*,ref=\thesection.\theenumi]
-\item Show that 
+
+\item Find $Y^{+}(z)$. \\
+\solution\\
 \begin{align}
+	Y^{+}(z) = \mathcal{Z}^{+}\brak{x(n-1) + x(n+1)}\\
+	= z^{-1}(X^{+}(z)) + zX^{+}(z) - zx(0)\\
+	= (z + z^{-1})X^{+}(z) - z\\
+	= \frac{z + z^{-1}}{1 - z^{-1} - z^{-2}} - z\\
+	= \frac{2z^{-1} + 1}{1 - z^{-1} - z^{-2}}
+\end{align}
+\item Find $y(n)$.\\
+\solution From eq \eqref{eq:10-orig-diff-rev}
+\begin{align}
+	y(n) = (x\brak{n-1} + x\brak{n+1})u(n)\\
+	= (a_n + a_{n+2})u(n)
+\end{align}
+\begin{equation}
+\therefore	y(n)= b_{n+1}u(n) = (\alpha^{n+1} + \beta^{n+1})u(n)
+\label{eq:yndef}
+\end{equation}
+\end{enumerate}\section{Power of the Z transform}
+\begin{enumerate}[label=\thesection.\arabic*,ref=\thesection.\theenumi]
+%problem-3.1
+\item Show that 
+\begin{align}u(n)
 	\sum_{k=1}^{n}a_k = 
 	\sum_{k=0}^{n-1}x(n) = x(n)*u(n-1)
 \end{align}
+\solution %From the eqn \eqref{eq:x-n-def}, we can see that $x(n) = 0\ \forall\ n < 0$,
+\begin{align}
+	\sum_{k=1}^{n}a_k &= \sum_{k=0}^{n-1}x(k)= \sum_{k = -\infty}^{n - 1}x(k)\\
+	&= \sum_{k = -\infty}^{\infty}x(k)u(n - 1 - k) \\
+	&= x(n)*u(n - 1)
+\end{align}
+%problem-3.2
 \item Show that 
 \begin{align}
 	a_{n+2}-1, \quad n \ge 1
@@ -366,29 +414,92 @@ can be expressed as
 \begin{align}
 	\sbrak{x\brak{n+1}-1}u\brak{n}
 \end{align}
+\solution %From the eqn \eqref{eq:x-n-def},
+\begin{align}
+	a_{n+2} - 1 = \sbrak{x(n + 1) - 1}, \quad n \ge 0\\
+%\end{align}
+%Now, using the definition of $u(n)$,
+%\begin{align}
+	u(n) = 1 \quad n > 0
+\end{align}
+\begin{equation}
+	\implies a_{n+2} - 1 = \sbrak{x(n + 1) - 1}u(n)
+	\label{eq:an2xn}
+\end{equation}
+%problem-3.3
 \item Show that 
 \begin{align}
 	\sum_{k=1}^{\infty}\frac{a_k}{10^k}= 
 	\frac{1}{10}\sum_{k=0}^{\infty}\frac{x\brak{k}}{10^k} =\frac{1}{10}X^{+}\brak{{10}}
+\label{eq:x+10}
 \end{align}
+\solution 
+\begin{align}
+	\sum_{k=1}^{\infty}\frac{a_k}{10^k} = \frac{1}{10}\sum_{k = 0}^{\infty}\frac{a_{k+1}}{10^k} \\
+	= \frac{1}{10}\sum_{k = 0}^{\infty}\frac{x(k)}{10^k} 
+	= \frac{1}{10}X^+(10) \\
+	= \frac{1}{10}\times\frac{100}{89} = \frac{10}{89}
+\end{align}
+%problem-3.4
 \item Show that 
 \begin{align}
 	\alpha^n + \beta^n, \quad n \ge 1
+	\label{eq:yn-exp}
 \end{align}
 can be expressed as 
 \begin{align}
 	w(n) =\brak{\alpha^{n+1} + \beta^{n+1}}u(n)
 \end{align}
-and find $W(z)$.
+and find $W(z)$.\\
+\solution %Let, $n = k + 1$ in \eqref{eq:yn-exp} and using the definition of $u(n)$, we get: 
+\begin{align}
+	\alpha^n + \beta^n \quad n \ge 1\\
+	\equiv (\alpha^{n+1} + \beta^{n+1})\quad n \ge 0\\
+	= (\alpha^{n+1} + \beta^{n+1})u(n)\\
+	\intertext{From eq \eqref{eq:yndef}}
+	w(n) = \brak{\alpha^{n+1} + \beta^{n+1}}u(n) = y(n)\\
+	\therefore W(z) = Y(z) = \frac{1 + 2z^{-1}}{1 - z^{-1} - z^{-2}}
+\end{align}
 
 \item Show that 
 \begin{align}
 	\sum_{k=1}^{\infty}\frac{b_k}{10^k} =
 	\frac{1}{10}\sum_{k=0}^{\infty}\frac{y\brak{k}}{10^k} =\frac{1}{10}Y^{+}\brak{{10}}
+\label{eq:y+10}
 \end{align}
-\item Solve the JEE 2019 problem.
-
+\solution
+\begin{align}
+	\sum_{k=1}^{\infty}\frac{b_k}{10^k} &= \frac{1}{10}\sum_{k = 0}^{\infty}\frac{b_{k+1}}{10^k} \\
+	&= \frac{1}{10}\sum_{k = 0}^{\infty}\frac{y(k)}{10^k} \\
+	&= \frac{1}{10}Y^+(z) \\
+	&= \frac{1}{10}\times\frac{120}{89} = \frac{12}{89}
+\end{align}
+\break
+%problem-3.6
+\item Solve the JEE 2019 problem.\\
+\label{pr:1-6}
+\solution
+\begin{align}
+	\sum_{k = 1}^{n}a_k = x(n)*u(n - 1)
+\end{align}
+also as
+\begin{align}
+	&x(n)*u(n - 1) \ztrans X(z)z^{-1}U(z) \\
+	&= \frac{z^{-1}}{\brak{1 - z^{-1} - z^{-2}}\brak{1 - z^{-1}}} \\
+	&= z\sbrak{\frac{1}{1 - z^{-1} - z^{-2}} - \frac{1}{1 - z^{-1}}} \\
+	&\ztrans z\sum_{n = 0}^{\infty}\brak{x(n) - 1}z^{-n} \\
+	&= \sum_{n = 0}^{\infty}\brak{x(n) - 1}z^{-n + 1} \\
+	&= \sum_{n = 0}^{\infty}\brak{x(n + 1) - 1}z^{-n} 
+\end{align}
+And from \eqref{eq:an2xn}, we get
+\begin{equation}
+	\sum_{k = 1}^{n}a_k = a_{n+2} - 1
+	\label{eq:a2a}
+\end{equation}
 \end{enumerate}
-
+\onehalfspacing
+From \eqref{eq:a2a}, \eqref{eq:x+10}, \eqref{eq:y+10}:\\
+Options  a, b, and c are correct\\
+Option  d is incorrect
 
 \end{document}
