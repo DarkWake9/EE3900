@@ -1,0 +1,13 @@
+Output After Switching
+R1 X 0 1
+C1 X 0 1u ic=1.33
+R2 X 3 2
+V2 3 0 dc 2V
+.tran 100n 10u uic
+
+.control
+run
+wrdata v2.txt v(X)
+.endc
+
+.end

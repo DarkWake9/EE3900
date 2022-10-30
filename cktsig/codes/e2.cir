@@ -1,0 +1,20 @@
+* Switch at P
+*NAME   END NODE START NODE VALUE
+V1  1   0   dc 1
+
+R1  X   1   1
+
+C1  X   0   1u
+
+R2  2   X   2
+
+V2  2   0   dc 2
+*TRANSIENT START TIME STOP TIME
+.tran 100n  10u uic
+
+.control
+run
+wrdata e2.txt x(X)
+.endc
+
+.end

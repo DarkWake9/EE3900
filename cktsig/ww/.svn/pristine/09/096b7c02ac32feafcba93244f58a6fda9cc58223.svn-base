@@ -1,0 +1,64 @@
+\relax 
+\providecommand\hyper@newdestlabel[2]{}
+\providecommand\HyperFirstAtBeginDocument{\AtBeginDocument}
+\HyperFirstAtBeginDocument{\ifx\hyper@anchor\@undefined
+\global\let\oldcontentsline\contentsline
+\gdef\contentsline#1#2#3#4{\oldcontentsline{#1}{#2}{#3}}
+\global\let\oldnewlabel\newlabel
+\gdef\newlabel#1#2{\newlabelxx{#1}#2}
+\gdef\newlabelxx#1#2#3#4#5#6{\oldnewlabel{#1}{{#2}{#3}}}
+\AtEndDocument{\ifx\hyper@anchor\@undefined
+\let\contentsline\oldcontentsline
+\let\newlabel\oldnewlabel
+\fi}
+\fi}
+\global\let\hyper@last\relax 
+\gdef\HyperFirstAtBeginDocument#1{#1}
+\providecommand\HyField@AuxAddToFields[1]{}
+\providecommand\HyField@AuxAddToCoFields[2]{}
+\bibstyle{IEEEtran}
+\@writefile{toc}{\contentsline {section}{\numberline {1}Definitions}{1}{section.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {2}Laplace Transform}{1}{section.2}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {2.1}{\ignorespaces \relax }}{1}{figure.caption.2}\protected@file@percent }
+\providecommand*\caption@xref[2]{\@setref\relax\@undefined{#1}}
+\newlabel{fig:ckt}{{2.1}{1}{\relax }{figure.caption.2}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {2.2}{\ignorespaces \relax }}{1}{figure.caption.3}\protected@file@percent }
+\newlabel{fig:ckt-q1}{{2.2}{1}{\relax }{figure.caption.3}{}}
+\newlabel{eq:L-u}{{2.6}{1}{Laplace Transform}{equation.2.6}{}}
+\newlabel{eq:L-u-shift}{{2.9}{2}{Laplace Transform}{equation.2.9}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {2.3}{\ignorespaces \relax }}{2}{figure.caption.4}\protected@file@percent }
+\newlabel{fig:sckt-q2}{{2.3}{2}{\relax }{figure.caption.4}{}}
+\newlabel{eq:V-s}{{2.16}{2}{Laplace Transform}{equation.2.16}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {2.4}{\ignorespaces $v_{C_0}(t)$ before the switch is flipped\relax }}{2}{figure.caption.5}\protected@file@percent }
+\newlabel{fig:v1-t}{{2.4}{2}{$v_{C_0}(t)$ before the switch is flipped\relax }{figure.caption.5}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {3}Initial Conditions}{2}{section.3}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {3.1}{\ignorespaces \relax }}{3}{figure.caption.6}\protected@file@percent }
+\newlabel{fig:ckt-q2}{{3.1}{3}{\relax }{figure.caption.6}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3.2}{\ignorespaces \relax }}{3}{figure.caption.7}\protected@file@percent }
+\newlabel{fig:sckt-q2}{{3.2}{3}{\relax }{figure.caption.7}{}}
+\newlabel{eq:v2-s}{{3.3}{3}{Initial Conditions}{equation.3.3}{}}
+\newlabel{eq:v2-t}{{3.6}{3}{Initial Conditions}{equation.3.6}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3.3}{\ignorespaces $v_{C_0}(t)$ after the switch is flipped\relax }}{3}{figure.caption.8}\protected@file@percent }
+\newlabel{fig:v2-t}{{3.3}{3}{$v_{C_0}(t)$ after the switch is flipped\relax }{figure.caption.8}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3.4}{\ignorespaces \relax }}{4}{figure.caption.9}\protected@file@percent }
+\newlabel{fig:tckt-q2}{{3.4}{4}{\relax }{figure.caption.9}{}}
+\newlabel{eq:s1}{{3.14}{4}{Initial Conditions}{equation.3.14}{}}
+\newlabel{eq:s3}{{3.16}{4}{Initial Conditions}{equation.3.16}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {4}Bilinear Transform}{4}{section.4}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {4.1}{\ignorespaces \relax }}{4}{figure.caption.10}\protected@file@percent }
+\newlabel{fig:tckt-q4}{{4.1}{4}{\relax }{figure.caption.10}{}}
+\newlabel{eq:diff1}{{4.4}{4}{Bilinear Transform}{equation.4.4}{}}
+\newlabel{eq:diff2}{{4.5}{4}{Bilinear Transform}{equation.4.5}{}}
+\newlabel{eq:diff3}{{4.6}{4}{Bilinear Transform}{equation.4.6}{}}
+\newlabel{eq:diff-eqn-init}{{4.10}{4}{Bilinear Transform}{equation.4.10}{}}
+\newlabel{eq:diff-eqn}{{4.12}{4}{Bilinear Transform}{equation.4.12}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {4.2}{\ignorespaces \relax }}{5}{figure.caption.11}\protected@file@percent }
+\newlabel{fig:sckt-q4}{{4.2}{5}{\relax }{figure.caption.11}{}}
+\newlabel{eq:Hs}{{4.15}{5}{Bilinear Transform}{equation.4.15}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {4.3}{\ignorespaces Plot of $H(s)$.\relax }}{5}{figure.caption.12}\protected@file@percent }
+\newlabel{fig:Hs}{{4.3}{5}{Plot of $H(s)$.\relax }{figure.caption.12}{}}
+\newlabel{eq:difference-eqn}{{4.18}{5}{Bilinear Transform}{equation.4.18}{}}
+\newlabel{eq:Hz}{{4.20}{5}{Bilinear Transform}{equation.4.20}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {4.4}{\ignorespaces Representation of output across $C_0$.\relax }}{6}{figure.caption.13}\protected@file@percent }
+\newlabel{fig:vc0}{{4.4}{6}{Representation of output across $C_0$.\relax }{figure.caption.13}{}}
+\gdef \@abspage@last{6}

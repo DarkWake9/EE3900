@@ -1,0 +1,641 @@
+\documentclass[journal,12pt,twocolumn]{IEEEtran}
+%
+\usepackage{setspace}
+\usepackage{gensymb}
+\usepackage{xcolor}
+\usepackage{caption}
+%\usepackage{subcaption}
+%\doublespacing
+\singlespacing
+\usepackage{siunitx}
+%\usepackage{graphicx}
+%\usepackage{amssymb}
+%\usepackage{relsize}
+\usepackage[cmex10]{amsmath}
+\usepackage[thinc]{esdiff}
+\usepackage{mathtools}
+%\usepackage{amsthm}
+%\interdisplaylinepenalty=2500
+%\savesymbol{iint}
+%\usepackage{txfonts}
+%\restoresymbol{TXF}{iint}
+%\usepackage{wasysym}
+\usepackage{hyperref}
+\usepackage{amsthm}
+\usepackage{mathrsfs}
+\usepackage{txfonts}
+\usepackage{stfloats}
+\usepackage{cite}
+\usepackage{cases}
+\usepackage{subfig}
+%\usepackage{xtab}
+\usepackage{longtable}
+\usepackage{multirow}
+%\usepackage{algorithm}
+%\usepackage{algpseudocode}
+%\usepackage{enumerate}
+\usepackage{enumitem}
+\usepackage{mathtools}
+%\usepackage{iithtlc}
+%\usepackage[framemethod=tikz]{mdframed}
+\usepackage{listings}
+\usepackage{tikz}
+\usetikzlibrary{shapes,arrows,positioning}
+\usepackage{circuitikz}
+\let\vec\mathbf
+
+
+%\usepackage{stmaryrd}
+
+
+%\usepackage{wasysym}
+%\newcounter{MYtempeqncnt}
+\DeclareMathOperator*{\Res}{Res}
+%\renewcommand{\baselinestretch}{2}
+\renewcommand\thesection{\arabic{section}}
+\renewcommand\thesubsection{\thesection.\arabic{subsection}}
+\renewcommand\thesubsubsection{\thesubsection.\arabic{subsubsection}}
+
+\renewcommand\thesectiondis{\arabic{section}}
+\renewcommand\thesubsectiondis{\thesectiondis.\arabic{subsection}}
+\renewcommand\thesubsubsectiondis{\thesubsectiondis.\arabic{subsubsection}}
+
+%\renewcommand{\labelenumi}{\textbf{\theenumi}}
+%\renewcommand{\theenumi}{P.\arabic{enumi}}
+
+% correct bad hyphenation here
+\hyphenation{op-tical net-works semi-conduc-tor}
+
+\lstset{
+language=Python,
+frame=single, 
+breaklines=true,
+columns=fullflexible
+}
+
+
+
+\begin{document}
+%
+
+\theoremstyle{definition}
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{problem}{Problem}
+\newtheorem{proposition}{Proposition}[section]
+\newtheorem{lemma}{Lemma}[section]
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{example}{Example}[section]
+\newtheorem{definition}{Definition}[section]
+%\newtheorem{algorithm}{Algorithm}[section]
+%\newtheorem{cor}{Corollary}
+\newcommand{\BEQA}{\begin{eqnarray}}
+\newcommand{\EEQA}{\end{eqnarray}}
+\newcommand{\define}{\stackrel{\triangle}{=}}
+\newcommand{\myvec}[1]{\ensuremath{\begin{pmatrix}#1\end{pmatrix}}}
+\newcommand{\mydet}[1]{\ensuremath{\begin{vmatrix}#1\end{vmatrix}}}
+
+\bibliographystyle{IEEEtran}
+%\bibliographystyle{ieeetr}
+
+\providecommand{\nCr}[2]{\,^{#1}C_{#2}} % nCr
+\providecommand{\nPr}[2]{\,^{#1}P_{#2}} % nPr
+\providecommand{\mbf}{\mathbf}
+\providecommand{\pr}[1]{\ensuremath{\Pr\left(#1\right)}}
+\providecommand{\qfunc}[1]{\ensuremath{Q\left(#1\right)}}
+\providecommand{\sbrak}[1]{\ensuremath{{}\left[#1\right]}}
+\providecommand{\lsbrak}[1]{\ensuremath{{}\left[#1\right.}}
+\providecommand{\rsbrak}[1]{\ensuremath{{}\left.#1\right]}}
+\providecommand{\brak}[1]{\ensuremath{\left(#1\right)}}
+\providecommand{\lbrak}[1]{\ensuremath{\left(#1\right.}}
+\providecommand{\rbrak}[1]{\ensuremath{\left.#1\right)}}
+\providecommand{\cbrak}[1]{\ensuremath{\left\{#1\right\}}}
+\providecommand{\lcbrak}[1]{\ensuremath{\left\{#1\right.}}
+\providecommand{\rcbrak}[1]{\ensuremath{\left.#1\right\}}}
+\theoremstyle{remark}
+\newtheorem{rem}{Remark}
+\newcommand{\sgn}{\mathop{\mathrm{sgn}}}
+\providecommand{\abs}[1]{\left\vert#1\right\vert}
+\providecommand{\res}[1]{\Res\displaylimits_{#1}} 
+\providecommand{\norm}[1]{\lVert#1\rVert}
+\providecommand{\mtx}[1]{\mathbf{#1}}
+\providecommand{\mean}[1]{E\left[ #1 \right]}
+\providecommand{\fourier}{\overset{\mathcal{F}}{ \rightleftharpoons}}
+\providecommand{\ztrans}{\overset{\mathcal{Z}}{ \rightleftharpoons}}
+
+%\providecommand{\hilbert}{\overset{\mathcal{H}}{ \rightleftharpoons}}
+\providecommand{\system}[1]{\overset{\mathcal{#1}}{\longleftrightarrow}}
+	%\newcommand{\solution}[2]{\textbf{Solution:}{#1}}
+\newcommand{\solution}{\noindent \textbf{Solution: }}
+\providecommand{\dec}[2]{\ensuremath{\overset{#1}{\underset{#2}{\gtrless}}}}
+\numberwithin{equation}{section}
+%\numberwithin{equation}{subsection}
+%\numberwithin{problem}{subsection}
+%\numberwithin{definition}{subsection}
+\makeatletter
+\@addtoreset{figure}{problem}
+\makeatother
+
+\let\StandardTheFigure\thefigure
+%\renewcommand{\thefigure}{\theproblem.\arabic{figure}}
+\renewcommand{\thefigure}{\theproblem}
+\renewcommand{\thefigure}{\arabic{section}.\arabic{figure}}
+\makeatletter
+\@addtoreset{figure}{section}
+\makeatother
+
+%\numberwithin{figure}{subsection}
+
+\def\putbox#1#2#3{\makebox[0in][l]{\makebox[#1][l]{}\raisebox{\baselineskip}[0in][0in]{\raisebox{#2}[0in][0in]{#3}}}}
+     \def\rightbox#1{\makebox[0in][r]{#1}}
+     \def\centbox#1{\makebox[0in]{#1}}
+     \def\topbox#1{\raisebox{-\baselineskip}[0in][0in]{#1}}
+     \def\midbox#1{\raisebox{-0.5\baselineskip}[0in][0in]{#1}}
+
+\vspace{3cm}
+
+\title{ 
+Circuits and Transforms
+}
+
+\author{Mulugu Vishwanath Sharma}
+
+% make the title area
+\maketitle
+
+%\newpage
+
+\tableofcontents
+
+%\renewcommand{\thefigure}{\thesection.\theenumi}
+%\renewcommand{\thetable}{\thesection.\theenumi}
+
+\renewcommand{\thefigure}{\theenumi}
+\renewcommand{\thetable}{\theenumi}
+
+%\renewcommand{\theequation}{\thesection}
+
+
+\bigskip
+
+\begin{abstract}
+This manual provides a simple introduction to Transforms
+\end{abstract}
+
+\section{Definitions}
+\begin{enumerate}[label=\arabic*.,ref=\thesection.\theenumi]
+\numberwithin{equation}{section}
+\numberwithin{figure}{section}
+\item The unit step function is 
+\begin{align}
+u(t) =
+\begin{cases}
+1 & t > 0
+\\
+	\frac{1}{2} & t = 0
+\\
+0 & t < 0
+\end{cases}
+\end{align}
+\item The Laplace transform of $g(t)$ is defined as 
+\begin{align}
+	G(s) = \int_{-\infty}^{\infty} g(t) e^{-st}\, dt
+\end{align}
+ \end{enumerate}
+
+ \section{Laplace Transform}
+\begin{enumerate}[label=\arabic*.,ref=\thesection.\theenumi]
+\numberwithin{equation}{section}
+\item In the circuit, the switch S is connected to position P for a long time so that the charge on the capacitor
+	becomes $q_1 \, \mu C$. Then S is switched to position Q.  After a long time, the charge on the capacitor is
+		$q_2 \, \mu C$.
+		\begin{figure}[!ht]
+			\centering
+			\includegraphics[width=\columnwidth]{figs/ckt.jpg}
+			\caption{}
+			\label{fig:ckt}
+\end{figure}
+\item Find $q_1$.
+
+\solution The equivalent circuit at steady-state when the switch is at P is shown alongside.
+Assuming the circuit to be grounded at G and the relative potential at point
+X to be $V$, we use KCL at X and get
+
+\begin{align}
+    \frac{V - 1}{1} + \frac{V - 2}{2} = 0 \\
+    \implies V = \SI[parse-numbers=false]{\frac{4}{3}}{\V}
+\end{align}
+Hence,
+\begin{align}
+    q_1 = CV = \SI[parse-numbers=false]{\frac{4}{3}}{\micro\coulomb}
+\end{align}
+
+\begin{figure}[!h]
+    \begin{circuitikz} 
+        \draw 
+        (0,0) to[battery1, l=1 $V$, invert] (0,2)
+        -- (0.5,2) node[label={above:P}] {}
+        to[R, l^=$1 \Omega$, *-*] (3,2) 
+        node[label={above:X}] {}
+        to[R, l^=$2 \Omega$] (5.5,2)
+        to[battery1, l=2 $V$] (5.5,0)
+        -- (0,0)
+        (3,2) to[C, l=1 ${\mu}F$] (3,0) 
+        -- (3,-0.5) node[ground, label={right:G}] {};
+    \end{circuitikz}
+    \caption{}
+    \label{fig:ckt-q1}
+\end{figure}
+
+
+\item Show that the Laplace transform of $u(t)$ is $\frac{1}{s}$ and find the ROC.
+
+\solution We have,
+\begin{align}
+    u(t) &\system{L} \int_{0}^{\infty}u(t)e^{-st}dt \\
+         &= \int_{0}^{0}\frac{1}{2}e^{-st}dt + \int_{0}^{\infty}e^{-st}dt \\
+         &= \frac{1}{s}, \quad \Re{(s)} > 0
+         \label{eq:L-u}
+\end{align}
+\item Show that 
+		\begin{align}
+			e^{-at}u(t) \system{L} \frac{1}{s+a}, \quad a > 0
+		\end{align}
+		and find the ROC.
+
+\solution Note that by substituting $s := s + a$ in \eqref{eq:L-u}, and considering
+$a \in \mathbb{R}$,
+
+\begin{align}
+    e^{-at}u(t) &\system{L} \int_{0}^{\infty}u(t)e^{-(s + a)t}dt \\
+                &= \frac{1}{s + a}, \quad \Re{(s)} > -a
+                \label{eq:L-u-shift}
+\end{align}
+
+\item Now consider the following resistive circuit transformed from 
+Fig. \ref{fig:ckt}
+\begin{figure}[!htb]
+    \begin{center}
+    \begin{circuitikz} 
+    \ctikzset{resistor = european}
+    \draw
+    (0,0) to[battery1, invert, l = $\frac{1}{s} V$] (0,3)
+    node[label={above:Q}] {}
+    to[R, l^=$R_1$, *-*] (3,3) 
+    node[label={above:X}] {}
+    to[R, l^=$R_2$] (5.5,3)
+    to[battery1, l= $\frac{2}{s} V$] (5.5,0)
+    -- (0,0)
+    (3,3) to[R, l=$\frac{1}{sC_0}$] (3,0) 
+    -- (3,-0.5) node[ground, label={right:G}] {};
+    \end{circuitikz}
+    \end{center}
+\caption{}
+\label{fig:sckt-q2}
+\end{figure}
+		where 
+		\begin{align}
+			u(t) \system{L} V_1(s)
+			\\
+			2u(t) \system{L} V_2(s)
+		\end{align}
+		Find the voltage across the capacitor $V_{C_0}(s)$.
+
+\solution We see that
+\begin{align}
+    V_1(s) = \frac{1}{s}
+    V_2(s) = \frac{2}{s}
+\end{align}
+Now, labelling points G and X as in Fig. \ref{fig:ckt-q1}, we use KCL at X.
+
+\begin{align}
+    &\frac{V - \frac{1}{s}}{R_1} + \frac{V - \frac{2}{s}}{R_2} + sC_0V = 0 \\
+    &V\brak{\frac{1}{R_1} + \frac{1}{R_2} + sC_0} = \frac{1}{s}\brak{\frac{1}{R_1} + \frac{2}{R_2}} \\
+    &V(s) = \frac{\frac{1}{R_1} + \frac{2}{R_2}}{s\brak{\frac{1}{R_1} + \frac{1}{R_2} + sC_0}} \\
+    &= \frac{\frac{1}{R_1} + \frac{2}{R_2}}{\frac{1}{R_1} + \frac{1}{R_2}}\brak{\frac{1}{s} - \frac{1}{\frac{1}{C_0}\brak{\frac{1}{R_1} + \frac{1}{R_2}} + s}} 
+    \label{eq:V-s}
+\end{align}
+\item Find $v_{C_0}(t)$.  Plot using python.
+
+\solution Taking the inverse Laplace transform in \eqref{eq:V-s},
+\begin{align}
+    &V(s) \system{L} \frac{2R_1 + R_2}{R_1 + R_2}u(t)\brak{1 - e^{-\brak{\frac{1}{R_1} + \frac{1}{R_2}}\frac{t}{C_0}}} \\
+    &= \frac{4}{3}\brak{1 - e^{-\brak{1.5 \times 10^6}t}}u(t)
+\end{align}
+The below code plots the graph \ref{fig:v1-t}
+\begin{lstlisting}
+    https://github.com/Vishwanath-123/EE3900/blob/main/EE3900-2022-main/cktsig/codes/2_6.py
+\end{lstlisting}
+
+\begin{figure}[!htb]
+    \includegraphics[width=\columnwidth]{figs/2_6.png}
+    \caption{$v_{C_0}(t)$ before the switch is flipped}
+    \label{fig:v1-t}
+\end{figure}
+\item Verify your result using ngspice.
+
+\solution The following ngspice script simulates the given circuit and the generated output is depicted in Fig. \eqref{fig:v1-t}
+\begin{lstlisting}
+    https://github.com/Vishwanath-123/EE3900/blob/main/EE3900-2022-main/cktsig/codes/2_7.cir
+\end{lstlisting}
+\end{enumerate}
+
+ \section{Initial Conditions}
+\begin{enumerate}[label=\arabic*.,ref=\thesection.\theenumi]
+\numberwithin{equation}{section}
+\item Find $q_2$ in Fig. \ref{fig:ckt}.
+
+\solution The equivalent circuit at steady state when the switch is at Q is shown
+below.
+\begin{figure}[!htb]
+    \begin{center}
+    \begin{circuitikz} \draw
+    (0,0) -- (0,2)
+    node[label={above:Q}] {}
+    to[R, l^=$1 \Omega$, *-*] (3,2) 
+    node[label={above:X}] {}
+    to[R, l^=$2 \Omega$] (5.5,2)
+    to[battery1, l=2 $V$] (5.5,0)
+    -- (0,0)
+    (3,2) to[C, l=1 ${\mu}F$] (3,0) 
+    -- (3,-0.5) node[ground, label={right:G}] {};
+    \end{circuitikz}
+    \end{center}
+\caption{}
+\label{fig:ckt-q2}
+\end{figure}
+
+Since capacitor behaves as an open circuit, we use KCL at X.
+\begin{align}
+    \frac{V - 0}{1} + \frac{V - 2}{2} = 0
+    \implies V = \SI[parse-numbers=false]{\frac{2}{3}}{\V}
+\end{align}                                         
+and hence, $q_2 = \SI[parse-numbers=false]{\frac{2}{3}}{\micro\coulomb}$.
+
+\item Draw the equivalent $s$-domain resistive circuit w	hen S is switched to position Q.  Use variables $R_1, R_2, C_0$ for the passive elements.
+	
+\begin{figure}[!htb]
+    \begin{center}
+    \begin{circuitikz} 
+    \ctikzset{resistor = european}
+    \draw
+    (0,0) -- (0,3)
+    node[label={above:Q}] {}
+    to[R, l^=$R_1$, *-*] (3,3) 
+    node[label={above:X}] {}
+    to[R, l^=$R_2$] (5.5,3)
+    to[battery1, l= $\frac{2}{s} V$] (5.5,0)
+    -- (0,0)
+    (3,3) to[battery1, l=$\frac{4}{3s} V$] (3,2) to[R, l=$\frac{1}{sC_0}$] (3,0) 
+    -- (3,-0.5) node[ground, label={right:G}] {};
+    \end{circuitikz}
+    \end{center}
+\caption{}
+\label{fig:sckt-q2}
+\end{figure}
+\item $V_{C_0}(s)$ = ?  
+
+\solution Using KCL at node X in Fig. \ref{fig:sckt-q2}
+\begin{align}
+    \frac{V - 0}{R_1} + \frac{V - \frac{2}{s}}{R_2} + sC_0\brak{V - \frac{4}{3s}} = 0 \\
+\implies V_{C_0}(s) = \frac{\frac{2}{sR_2} + \frac{4C_0}{3}}{\frac{1}{R_1} + \frac{2}{R_2} + sC_0}
+\label{eq:v2-s}
+\end{align}
+\item $v_{C_0}(t)$ = ? Plot using python.
+
+\solution From \eqref{eq:v2-s},
+\begin{align}
+    &V_{C_0}(s) = \frac{4}{3}\brak{\frac{1}{\frac{1}{C_0}\brak{\frac{1}{R_1} + \frac{1}{R_2}}+s}} \nonumber \\
+    &+ \frac{2}{R_2\brak{\frac{1}{R_1} +\frac{1}{R_2}}}\brak{\frac{1}{s} - \frac{1}{\frac{1}{C_0}\brak{\frac{1}{R_1} + \frac{1}{R_2}} + s}}
+\end{align}
+Taking an inverse Laplace Transform,
+\begin{align}
+    &v_{C_0}(t) = \frac{4}{3}e^{-\brak{\frac{1}{R_1} + \frac{1}{R_2}}\frac{t}{C_0}}u(t) \nonumber \\ 
+    &+ \frac{2}{R_2\brak{\frac{1}{R_1}+\frac{1}{R_2}}}\brak{1 - e^{-\brak{\frac{1}{R_1} + \frac{1}{R_2}}\frac{t}{C_0}}}u(t)
+\end{align}
+Substituting values gives
+\begin{align}
+    v_{C_0}(t) = \frac{2}{3}\brak{1 +e^{-\brak{1.5 \times 10^6}t}}u(t)
+    \label{eq:v2-t}
+\end{align}
+The below code plots the graph \ref{fig:v2-t}
+\begin{lstlisting}
+    https://github.com/Vishwanath-123/EE3900/blob/main/EE3900-2022-main/cktsig/codes/3_4.py
+\end{lstlisting}
+\begin{figure}[!htb]
+    \includegraphics[width=\columnwidth]{figs/3_4.png}
+    \caption{$v_{C_0}(t)$ after the switch is flipped}
+    \label{fig:v2-t}
+\end{figure}
+\item Verify your result using ngspice.
+
+\solution The following ngspice script simulates the given circuit and the generated output is depicted in Fig. \eqref{fig:v2-t}.
+\begin{lstlisting}
+    https://github.com/Vishwanath-123/EE3900/blob/main/EE3900-2022-main/cktsig/codes/3_5.cir
+\end{lstlisting}
+\item Find $v_{C_0}(0-), v_{C_0}(0+)$ and  $v_{C_0}(\infty) $. 
+
+\solution From the initial conditions,
+\begin{align}
+    v_{C_0}(0-) = \frac{q_1}{C} = \SI[parse-numbers=false]{\frac{4}{3}}{\V}
+\end{align}
+Using \eqref{eq:v2-t},
+\begin{align}
+    v_{C_0}(0+) &= \lim_{t \to 0+}v_{C_0}(t) = \SI[parse-numbers=false]{\frac{4}{3}}{\V} \\
+    v_{C_0}(\infty) &= \lim_{t \to \infty}v_{C_0}(t) = \SI[parse-numbers=false]{\frac{2}{3}}{\V}
+\end{align}
+
+\item Obtain the Fig. in problem 3.2 using the equivalent differential equations.
+
+\solution The equivalent circuit in the $t$-domain is shown below.
+	
+\begin{figure}[!htb]
+    \begin{center}
+    \begin{circuitikz} 
+    \draw
+    (0,0) -- (0,3)
+    node[label={above:Q}] {}
+    to[R, l^=$R_1$, *-*, i = $i_1$] (3,3) 
+    node[label={above:X}] {}
+    to[R, l^=$R_2$, i = $i_3$] (5.5,3)
+    to[battery1, l= $\SI{2}{\V}$] (5.5,0)
+    -- (0,0)
+    (3,3) to[battery1, l=$\frac{4}{3} V$] (3,2) to[C, l=$C_0$, i = $i_2$] (3,0) ;
+    \end{circuitikz}
+    \end{center}
+\caption{}
+\label{fig:tckt-q2}
+\end{figure}
+From KCL and KVL,
+\begin{align}
+    &i_1 = i_2 +i_3 \\
+    &i_1R_1 + \frac{4}{3} + \frac{1}{C_0}\int_{0}^{t}i_2dt = 0 \\
+    &\frac{4}{3} + \frac{1}{C_0}\int_{0}^{t}i_2dt - i_3R_2 - 2 = 0 \\
+\end{align}
+Taking Laplace Transforms on both sides and using the properties of Laplace Transforms,
+\begin{align}
+    &I_1 = I_2 +I_3 \label{eq:s1}\\
+    &I_1R_1 + \frac{4}{3} + \frac{1}{sC_0}I_2 = 0 \\
+    &\frac{4}{3} + \frac{1}{sC_0}I_2 - I_3R_2 - 2 = 0 \label{eq:s3} \\
+\end{align}
+where $i(t) \system{L} I(s)$. Note that the capacitor is equivalent to a resistive element of resistance $R_C = \frac{1}{sC_0}$ in the $s$-domain. Equations \eqref{eq:s1} - \eqref{eq:s3} precisely describe Fig. \ref{fig:sckt-q2}. 
+\end{enumerate}
+\section{Bilinear Transform}
+\begin{enumerate}[label=\arabic*.,ref=\thesection.\theenumi]
+\numberwithin{equation}{section}
+\item In Fig. \ref{fig:ckt}, consider the case when $S$ is switched to 
+$Q$ right in the beginning. Formulate the differential equation.
+
+\solution The equivalent circuit in the $t$-domain is shown below.
+	
+\begin{figure}[!htb]
+    \begin{center}
+    \begin{circuitikz} 
+    \draw
+    (0,0) -- (0,3)
+    node[label={above:Q}] {}
+    to[R, l^=$R_1$, *-*, i = $i_1$] (3,3) 
+    node[label={above:X}] {}
+    to[R, l^=$R_2$, i = $i_3$] (5.5,3)
+    to[battery1, l= $V_2$] (5.5,0)
+    -- (0,0)
+    (3,3) to[C, l=$C_0$, i = $i_2$] (3,0) ;
+    \end{circuitikz}
+    \end{center}
+\caption{}
+\label{fig:tckt-q4}
+\end{figure}
+
+Applying KCL and KVL,
+\begin{align}
+    &i_1 = i_2 + i_3 \\
+    &i_1R_1 + \frac{1}{C_0}\int_0^ti_2\, dt = 0 \\
+    &i_3R_2 + 2 - \frac{1}{C_0}\int_0^ti_2\, dt = 0
+\end{align}
+Differentiating the above equations,
+\begin{align}
+    &\diff{i_1}{t} = \diff{i_2}{t} + \diff{i_3}{t} \label{eq:diff1}\\
+    &R_1\diff{i_1}{t} + \frac{i_2}{C_0} = 0 \label{eq:diff2}\\
+    &R_2\diff{i_3}{t} - \frac{i_2}{C_0} = 0 
+    \label{eq:diff3}
+\end{align}
+Using \eqref{eq:diff1} and \eqref{eq:diff3} in \eqref{eq:diff2},
+\begin{align}
+    &R_1\brak{\diff{i_2}{t} + \diff{i_3}{t}} + \frac{i_2}{C_0} = 0 \\
+    &R_1\diff{i_2}{t} + \brak{1 + \frac{R_1}{R_2}}\frac{i_2}{C_0} = 0 \\
+    &\diff{i_2}{t} + \brak{\frac{1}{R_1} + \frac{1}{R_2}}\frac{i_2}{C_0} = 0 \\
+    &\diff{i_2}{t} + \frac{i_2}{\tau} = 0
+    \label{eq:diff-eqn-init}
+\end{align}
+where $\tau = \frac{C_0R_1R_2}{R_1 + R_2}$ is the RC time 
+constant of the circuit. Note that $i_2(0) = \frac{V_2}{R_2}$ A and 
+$i_2 = C_0\diff{V}{t}$, where $V$ is the voltage of the capacitor. 
+Hence, integrating \eqref{eq:diff-eqn-init},
+\begin{align}
+    C_0\diff{V}{t} - \frac{V_2}{R_2} + \frac{C_0V}{\tau} &= 0 \\
+    \implies \diff{V}{t} + \frac{V}{\tau} = \frac{V_2}{C_0R_2}
+    \label{eq:diff-eqn}
+\end{align}
+\item Find $H(s)$ considering the output voltage at the capacitor.
+\solution Transforming Fig. \ref{fig:tckt-q4} to the $s$-domain,
+\begin{figure}[!htb]
+    \begin{center}
+    \begin{circuitikz} 
+    \ctikzset{resistor = european}
+    \draw
+    (0,0) -- (0,3)
+    node[label={above:Q}] {}
+    to[R, l^=$R_1$, *-*] (3,3) 
+    node[label={above:X}] {}
+    to[R, l^=$R_2$] (5.5,3)
+    to[battery1, l= $V_2(s)$] (5.5,0)
+    -- (0,0)
+    (3,3) to[R, l=$\frac{1}{sC_0}$] (3,0) 
+    -- (3,-0.5) node[ground, label={right:G}] {};
+    \end{circuitikz}
+    \end{center}
+\caption{}
+\label{fig:sckt-q4}
+\end{figure}
+Applying nodal analysis at X, and noting that 
+$H(s) = \frac{V(s)}{V_2(s)}$,
+\begin{align}
+    &\frac{V}{R_1} + \frac{V}{\frac{1}{sC_0}} + \frac{V - V_2}{R_2} = 0 \\
+    &H(s)\brak{\frac{1}{R_1} + \frac{1}{R_2} + sC_0} = \frac{1}{R_2} \\
+    &H(s) = \frac{\frac{1}{R_2}}{\frac{1}{R_1} + \frac{1}{R_2} + sC_0}
+    \label{eq:Hs}
+\end{align}
+\item Plot $H(s)$. What kind of filter is it?
+\solution The below Python code plots $H(s)$.
+\begin{lstlisting}
+    https://github.com/Vishwanath-123/EE3900/blob/main/EE3900-2022-main/cktsig/codes/4_3.py
+\end{lstlisting}
+\begin{figure}[!ht]
+    \includegraphics[width=\columnwidth]{figs/4_3.png}
+    \caption{Plot of $H(s)$.}
+    \label{fig:Hs}
+\end{figure}
+Clearly, $H(s)$ is a low-pass filter.
+\item Using trapezoidal rule for integration, formulate the difference
+equation by considering 
+\begin{align}
+	y(n) = y(t)\vert_{t=n}
+\end{align}
+\solution Integrating \eqref{eq:diff-eqn} between limits $n$ to $n+1$ 
+and applying the trapezoidal formula,
+\begin{align}
+    v(n+1) - v(n) + \frac{v(n) + v(n+1)}{2\tau} = \nonumber\\
+    \frac{V_2\brak{u(n)+u(n+1)}}{C_0R_2} \\
+    v(n)\brak{2\tau+1} + v(n-1)\brak{2\tau-1} = \nonumber\\ 
+    \frac{V_2\tau\brak{u(n)+u(n-1)}}{C_0R_2}
+    \label{eq:difference-eqn}
+\end{align}
+for $n > 0$, where $v(0) = 0$.
+\item Find $H(z)$.
+\solution Note that for the input voltage, $v_i(n) = 2u(n)$ and
+so, $V_i(z) = \frac{2}{1-z^{-1}}$. Applying the Z-transform
+on both sides of \eqref{eq:difference-eqn},
+\begin{align}
+    V(z)\sbrak{(2\tau + 1) - z^{-1}(2\tau - 1)} \nonumber \\
+    = \frac{\tau\brak{1 + z^{-1}}V_i(z)}{C_0R_2}
+\end{align}
+Hence,
+\begin{align}
+    H(z) = \frac{\tau\brak{1+z^{-1}}}{C_0R_2\brak{\brak{2\tau+1}-\brak{2\tau-1}z^{-1}}}
+    \label{eq:Hz}
+\end{align}
+since $\abs{\frac{2\tau-1}{2\tau+1}} < 1$, the ROC is $\abs{z} > 1$.
+\item How can you obtain $H(z)$ from $H(s)$?
+\solution We use the bilinear transformation. Setting
+\begin{align}
+    s := \frac{2}{T}\frac{1 - z^{-1}}{1 + z^{-1}}
+\end{align}
+we get
+\begin{align}
+    H(z) &= \frac{\frac{1}{R_2}}{\frac{1}{R_1} + \frac{1}{R_2} + \frac{2C_0}{T}\frac{1 - z^{-1}}{1 + z^{-1}}} \\
+         &= \frac{T\tau\brak{1+z^{-1}}}{C_0R_2\brak{\brak{2\tau+T}-\brak{2\tau-T}z^{-1}}}
+\end{align}
+Setting $T = 1$ gives \eqref{eq:Hz}.
+\item Find $v(n)$. Verify using ngspice and the differential equation.
+\solution We have,
+\begin{align}
+    V(z) &= H(z)V_i(z) \\
+         &= \frac{TV_2\tau\brak{1+z^{-1}}}{C_0R_2\brak{1-z^{-1}}\brak{\brak{2\tau+T}-\brak{2\tau-T}z^{-1}}} \\
+         &= \frac{V_2\tau\brak{z+1}}{2C_0R_2}\sum_{k=-\infty}^{\infty}\brak{1-p^k}u(k)z^{-k}
+\end{align}
+where $p := \frac{2\tau-T}{2\tau+T}$. Thus,
+\begin{align}
+    v(n) = \frac{V_2\tau}{C_0R_2}\sbrak{u(n)\brak{1-p^n}+u(n+1)\brak{1-p^{n+1}}}
+\end{align}
+where $p := \frac{2\tau-1}{2\tau+1}$. We take $T = 10^{-7}$ as the
+sampling interval. The below python code verifies
+these equalities.
+\begin{lstlisting}
+    https://github.com/Vishwanath-123/EE3900/blob/main/EE3900-2022-main/cktsig/codes/4_7.py
+\end{lstlisting}
+\begin{figure}
+    \includegraphics[width=\columnwidth]{figs/4_7.png}
+    \caption{Representation of output across $C_0$.}
+    \label{fig:vc0}
+\end{figure}
+\end{enumerate}
+\end{document}
