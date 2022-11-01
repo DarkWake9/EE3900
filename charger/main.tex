@@ -208,9 +208,8 @@ Let
 \item Plot $x(t)$.
 \solution
 \begin{lstlisting}
-
+https://github.com/DarkWake9/EE3900/blob/main/charger/codes/e1.1.py
 \end{lstlisting}
-
 \begin{figure}[!ht]
 	\begin{center}
 		\includegraphics[width=\columnwidth]{./figs/e1.1.pdf}
@@ -278,7 +277,18 @@ Multiplying both sides by $e^{-\j2\pi kf_0 t}$ Integrating w.r.t t from $-\frac{
 \item Verify 
 	\eqref{eq:10-orig-diff-def}
 	using python.
-	\item Show that 
+\begin{lstlisting}
+https://github.com/DarkWake9/EE3900/blob/main/charger/codes/e2.3.py
+\end{lstlisting}
+\begin{figure}[!ht]
+	\begin{center}
+		\includegraphics[width=\columnwidth]{./figs/e2.3.pdf}
+	\end{center}
+	\captionof{figure}{}
+	\label{fig:}	
+\end{figure}	
+
+\item Show that 
 \begin{align}
 	x(t) = \sum_{k = 0}^{\infty}\brak{a_k\cos{\j2\pi kf_0 t}+b_k\sin{\j2\pi kf_0 t}}
 \label{eq:one-Z-real}
@@ -321,6 +331,18 @@ From \eqref{eq:10-orig-diff-def}:
 \item Verify 
 \eqref{eq:one-Z-real}
 using python.
+\begin{lstlisting}
+https://github.com/DarkWake9/EE3900/blob/main/charger/codes/e2.6.py
+\end{lstlisting}
+\begin{figure}[!ht]
+	\begin{center}
+		\includegraphics[width=\columnwidth]{./figs/e2.6.pdf}
+	\end{center}
+	\captionof{figure}{}
+	\label{fig:}	
+\end{figure}
+
+
 
 \end{enumerate}
 \section{Fourier Transform}
@@ -390,7 +412,7 @@ Using the linearity of the Fourier Transform and \eqref{eq:f-shift},
 	&\system{F}\frac{1}{2}\brak{\delta\brak{f+f_0} + \delta\brak{f-f_0}}
 \end{align}
  \item Find the Fourier Transform of $x(t)$ and plot it.  Verify using python.\\
- \solution From \eqref{eq:ck-xt}
+ \solution From \eqref{eq:one-Z-complex} and \eqref{eq:ck-xt}
 \begin{align}
  x(t)&\system{F}\sum_{k=-\infty}^{\infty}c_k\delta\brak{f+kf_0} \\
  &=\frac{2A_0}{\pi}\sum_{k=-\infty}^{\infty}\frac{\delta\brak{f+2kf_0}}{1-4k^2}
