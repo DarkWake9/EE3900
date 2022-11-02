@@ -338,12 +338,9 @@ https://github.com/DarkWake9/EE3900/blob/main/charger/codes/e2.6.py
 	\begin{center}
 		\includegraphics[width=\columnwidth]{./figs/e2.6.pdf}
 	\end{center}
-	\captionof{figure}{}
-	\label{fig:}	
+	\captionof{figure}{Fourier Expansion of x(t)}
+	\label{fig:ft}	
 \end{figure}
-
-
-
 \end{enumerate}
 \section{Fourier Transform}
 
@@ -415,35 +412,102 @@ Using the linearity of the Fourier Transform and \eqref{eq:f-shift},
  \solution From \eqref{eq:one-Z-complex} and \eqref{eq:ck-xt}
 \begin{align}
  x(t)&\system{F}\sum_{k=-\infty}^{\infty}c_k\delta\brak{f+kf_0} \\
- &=\frac{2A_0}{\pi}\sum_{k=-\infty}^{\infty}\frac{\delta\brak{f+2kf_0}}{1-4k^2}
+ X(f)&=\frac{2A_0}{\pi}\sum_{k=-\infty}^{\infty}\frac{\delta\brak{f+2kf_0}}{1-4k^2}
  \label{eq:fourier-xt}
 \end{align}
+Python code used to verify \eqref{eq:fourier-xt}:
+\begin{lstlisting}
+https://github.com/DarkWake9/EE3900/blob/main/charger/codes/e3.8.py
+\end{lstlisting}
+\begin{figure}[!ht]
+	\begin{center}
+		\includegraphics[width=\columnwidth]{./figs/e3.8.pdf}
+	\end{center}
+	\captionof{figure}{}
+	\label{fig:}	
+\end{figure}
+\vspace{4cm}
  \item Show that 
  \begin{align}
 	 \rect{t} \system{F} \sinc{t}
  \end{align}
-\solution We write
+ Verify using python.\\
+\solution 
 \begin{align}
-	\rect{t}&\system{F}\int_{-\infty}^{\infty}\rect{t}e^{-\j2\pi ft}\, dt \\
-	&=\int_{-\frac{1}{2}}^{\frac{1}{2}}e^{-\j2\pi ft}\, dt \\
-	&=\frac{e^{\j\pi f} - e^{-\j\pi f}}{\j2\pi f} = \frac{\sin{\pi f}}{\pi f} = \sinc{f}
+	\rect{t}\system{F}\int_{-\infty}^{\infty}\rect{t}e^{-\j2\pi ft}\, dt \\
+	=\int_{-\frac{1}{2}}^{\frac{1}{2}}e^{-\j2\pi ft}\, dt \\
+	=\frac{e^{\j\pi f} - e^{-\j\pi f}}{\j2\pi f} = \frac{\sin{\pi f}}{\pi f} = \sinc{f}
 	\label{eq:fourier-rect}
 \end{align}		
- Verify using python.
+\begin{lstlisting}
+https://github.com/DarkWake9/EE3900/blob/main/charger/codes/e3.9.py
+\end{lstlisting}
+\begin{figure}[!ht]
+	\begin{center}
+		\includegraphics[width=\columnwidth]{./figs/e3.9.pdf}
+	\end{center}
+	\captionof{figure}{}
+	\label{fig:}	
+\end{figure}
  \item 
-$	 \sinc{t}\system{F} ?$.  Verify using python.
+$	 \sinc{t}\system{F} ?$.  Verify using python.\\
 \solution From \eqref{eq:duality}
 \begin{align}
 	\sinc{t}\system{F}\rect{-f}=\rect{f}
 	\label{eq:fourier-sinc}
 \end{align}
+\begin{lstlisting}
+https://github.com/DarkWake9/EE3900/blob/main/charger/codes/e3.10.py
+\end{lstlisting}
+\begin{figure}[!ht]
+	\begin{center}
+		\includegraphics[width=\columnwidth]{./figs/e3.10.pdf}
+	\end{center}
+	\captionof{figure}{}
+	\label{fig:}	
+\end{figure}
 \end{enumerate}
 \section{Filter}
 \begin{enumerate}[label=\thesection.\arabic*
 ,ref=\thesection.\theenumi]
-\item Find $H(f)$ which transforms $x(t)$ to DC 5V.
-\item Find $h(t)$.
+\item Find $H(f)$ which transforms $x(t)$ to DC 5V.\\
+\solution\\
+H(f) is a \textit{Low-pass} filter which allows only the zero$^{th}$ harmonic and filters the rest.\\
+
+If $f_0$ is the cut-off frequency then an ideal Low-pass filter is described by:
+\begin{align}
+	H(f) = \rect{\frac{f}{2f_0}} = \begin{cases}
+		1 \quad $if $ \abs{f} < f_0\\
+		0 \quad $otherwise$
+	\end{cases}
+\end{align}
+Multiplying by a scaling factor to get DC 5V,
+\begin{align}
+	H(f) = \frac{\pi V_0}{2A_0}\rect{\frac{f}{2f_0}}
+\end{align}
+where $V_0 = 5$ V.
+\item Find $h(t)$.\\
+\solution\\
+\begin{align}
+	h(t) = \int_{-\infty}^{\infty} H(f)e^{\j2\pi f t}df\\
+	= \frac{\pi V_0}{2A_0} \int_{-\infty}^{\infty}\rect{\frac{f}{2f_0}} e^{\j2\pi f t}df\\
+	= \frac{\pi V_0}{2A_0} \int_{-f_0}^{f_0} e^{\j2\pi f t}df\\
+	= \frac{\pi V_0}{2A_0} \dfrac{e^{\j2\pi f_0 t} - e^{-\j2\pi f_0 t}}{\j2\pi t}\\
+	= \frac{\pi V_0}{A_0} \dfrac{\j\sin(2\pi f_0 t)}{\j2\pi t}\\
+	= \frac{\pi V_0}{A_0} f_0\sinc{2f_0 t}
+\end{align}
 \item Verify your result using  through convolution.
+\solution
+\begin{lstlisting}
+https://github.com/DarkWake9/EE3900/blob/main/charger/codes/e4.3.py
+\end{lstlisting}
+\begin{figure}[!ht]
+	\begin{center}
+		\includegraphics[width=\columnwidth]{./figs/e4.3.pdf}
+	\end{center}
+	\captionof{figure}{}
+	\label{fig:}	
+\end{figure}
 \end{enumerate}
 \section{Filter Design}
 \begin{enumerate}[label=\thesection.\arabic*
