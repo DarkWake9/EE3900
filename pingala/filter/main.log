@@ -1,12 +1,13 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2022.9.4)  21 OCT 2022 13:29
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Termux) (preloaded format=pdflatex 2022.10.31)  31 OCT 2022 22:47
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
 **main.tex
 (./main.tex
-LaTeX2e <2021-11-15> patch level 1
-L3 programming layer <2022-01-21>
-(/usr/share/texlive/texmf-dist/tex/latex/ieeetran/IEEEtran.cls
+LaTeX2e <2022-06-01> patch level 5
+L3 programming layer <2022-10-26>
+(/data/data/com.termux/files/usr/share/texlive/texmf-dist/tex/latex/ieeetran/IE
+EEtran.cls
 Document Class: IEEEtran 2015/08/26 V1.8b by Michael Shell
 -- See the "IEEEtran_HOWTO" manual for usage information.
 -- http://www.michaelshell.org/tex/ieeetran/
@@ -19,7 +20,9 @@ Document Class: IEEEtran 2015/08/26 V1.8b by Michael Shell
 \@IEEEtrantmptoksA=\toks16
 LaTeX Font Info:    Trying to load font information for OT1+ptm on input line 5
 03.
-(/usr/share/texlive/texmf-dist/tex/latex/psnfss/ot1ptm.fd
+
+(/data/data/com.termux/files/usr/share/texlive/texmf-dist/tex/latex/psnfss/ot1p
+tm.fd
 File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
 )
 -- Using 8.5in x 11in (letter) paper.
@@ -103,55 +106,69 @@ LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <24> not available
 \@IEEEquantizeheightC=\dimen158
 \@IEEEquantizeprevdepth=\dimen159
 \@IEEEquantizemultiple=\count198
-\@IEEEquantizeboxA=\box50
+\@IEEEquantizeboxA=\box51
 \@IEEEtmpitemindent=\dimen160
 \IEEEPARstartletwidth=\dimen161
 \c@IEEEbiography=\count199
-\@IEEEtranrubishbin=\box51
-) (/usr/share/texlive/texmf-dist/tex/latex/setspace/setspace.sty
+\@IEEEtranrubishbin=\box52
+)
+(/data/data/com.termux/files/usr/share/texlive/texmf-dist/tex/latex/setspace/se
+tspace.sty
 Package: setspace 2011/12/19 v6.7a set line spacing
 )
-(/usr/share/texlive/texmf-dist/tex/latex/was/gensymb.sty
-Package: gensymb 2003/07/02 v1.0 (WaS)
+(/data/data/com.termux/files/usr/share/texlive/texmf-dist/tex/latex/gensymb/gen
+symb.sty
+Package: gensymb 2022/10/17 v1.0.2 (KJH)
 )
-(/usr/share/texlive/texmf-dist/tex/latex/xcolor/xcolor.sty
-Package: xcolor 2021/10/31 v2.13 LaTeX color extensions (UK)
+(/data/data/com.termux/files/usr/share/texlive/texmf-dist/tex/latex/xcolor/xcol
+or.sty
+Package: xcolor 2022/06/12 v2.14 LaTeX color extensions (UK)
 
-(/usr/share/texlive/texmf-dist/tex/latex/graphics-cfg/color.cfg
+(/data/data/com.termux/files/usr/share/texlive/texmf-dist/tex/latex/graphics-cf
+g/color.cfg
 File: color.cfg 2016/01/02 v1.6 sample color configuration
 )
 Package xcolor Info: Driver file: pdftex.def on input line 227.
 
-(/usr/share/texlive/texmf-dist/tex/latex/graphics-def/pdftex.def
-File: pdftex.def 2020/10/05 v1.2a Graphics/color driver for pdftex
+(/data/data/com.termux/files/usr/share/texlive/texmf-dist/tex/latex/graphics-de
+f/pdftex.def
+File: pdftex.def 2022/09/22 v1.2b Graphics/color driver for pdftex
+\stockwidth=\dimen162
+\stockheight=\dimen163
 )
-Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1352.
-Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1356.
-Package xcolor Info: Model `RGB' extended on input line 1368.
-Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1370.
-Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1371.
-Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1372.
-Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1373.
-Package xcolor Info: Model `Gray' substituted by `gray' on input line 1374.
-Package xcolor Info: Model `wave' substituted by `hsb' on input line 1375.
+(/data/data/com.termux/files/usr/share/texlive/texmf-dist/tex/latex/graphics/ma
+thcolor.ltx)
+Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1353.
+Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1357.
+Package xcolor Info: Model `RGB' extended on input line 1369.
+Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1371.
+Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1372.
+Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1373.
+Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1374.
+Package xcolor Info: Model `Gray' substituted by `gray' on input line 1375.
+Package xcolor Info: Model `wave' substituted by `hsb' on input line 1376.
 )
-(/usr/share/texlive/texmf-dist/tex/latex/caption/caption.sty
-Package: caption 2020/10/26 v3.5g Customizing captions (AR)
+(/data/data/com.termux/files/usr/share/texlive/texmf-dist/tex/latex/caption/cap
+tion.sty
+Package: caption 2022/03/01 v3.6b Customizing captions (AR)
 
-(/usr/share/texlive/texmf-dist/tex/latex/caption/caption3.sty
-Package: caption3 2020/10/21 v2.2e caption3 kernel (AR)
+(/data/data/com.termux/files/usr/share/texlive/texmf-dist/tex/latex/caption/cap
+tion3.sty
+Package: caption3 2022/03/17 v2.3b caption3 kernel (AR)
 
-(/usr/share/texlive/texmf-dist/tex/latex/graphics/keyval.sty
-Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
+(/data/data/com.termux/files/usr/share/texlive/texmf-dist/tex/latex/graphics/ke
+yval.sty
+Package: keyval 2022/05/29 v1.15 key=value parser (DPC)
 \KV@toks@=\toks17
 )
-\captionmargin=\dimen162
-\captionmargin@=\dimen163
-\captionwidth=\dimen164
-\caption@tempdima=\dimen165
-\caption@indent=\dimen166
-\caption@parindent=\dimen167
-\caption@hangindent=\dimen168
+\caption@tempdima=\dimen164
+\captionmargin=\dimen165
+\caption@leftmargin=\dimen166
+\caption@rightmargin=\dimen167
+\caption@width=\dimen168
+\caption@indent=\dimen169
+\caption@parindent=\dimen170
+\caption@hangindent=\dimen171
 Package caption Info: Unknown document class (or package),
 (caption)             standard defaults will be used.
 Package caption Info: \@makecaption = \long macro:#1#2->\ifx \@captype \@IEEEta
@@ -164,7 +181,7 @@ malfont \footnotesize {#1.}\nobreakspace \nobreakspace }\parbox [t]{\hsize }{\n
 ormalfont \footnotesize \noindent \unhbox \@tempboxa #2}\else \ifCLASSOPTIONcon
 ference \hbox to\hsize {\normalfont \footnotesize \hfil \box \@tempboxa \hfil }
 \else \hbox to\hsize {\normalfont \footnotesize \box \@tempboxa \hfil }\fi \fi 
-\fi  on input line 1139.
+\fi  on input line 1176.
 )
 
 Package caption Warning: Unknown document class (or package),
@@ -173,42 +190,59 @@ See the caption package documentation for explanation.
 
 \c@caption@flags=\count266
 \c@continuedfloat=\count267
-) (/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsmath.sty
-Package: amsmath 2021/10/15 v2.17l AMS math features
+)
+(/data/data/com.termux/files/usr/share/texlive/texmf-dist/tex/latex/amsmath/ams
+math.sty
+Package: amsmath 2022/04/08 v2.17n AMS math features
 \@mathmargin=\skip50
 
 For additional information on amsmath, use the `?' option.
-(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amstext.sty
+
+(/data/data/com.termux/files/usr/share/texlive/texmf-dist/tex/latex/amsmath/ams
+text.sty
 Package: amstext 2021/08/26 v2.01 AMS text
 
-(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsgen.sty
+(/data/data/com.termux/files/usr/share/texlive/texmf-dist/tex/latex/amsmath/ams
+gen.sty
 File: amsgen.sty 1999/11/30 v2.0 generic functions
 \@emptytoks=\toks18
-\ex@=\dimen169
+\ex@=\dimen172
 ))
-(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsbsy.sty
+(/data/data/com.termux/files/usr/share/texlive/texmf-dist/tex/latex/amsmath/ams
+bsy.sty
 Package: amsbsy 1999/11/29 v1.2d Bold Symbols
-\pmbraise@=\dimen170
+\pmbraise@=\dimen173
 )
-(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsopn.sty
-Package: amsopn 2021/08/26 v2.02 operator names
+(/data/data/com.termux/files/usr/share/texlive/texmf-dist/tex/latex/amsmath/ams
+opn.sty
+Package: amsopn 2022/04/08 v2.04 operator names
 )
 \inf@bad=\count268
 LaTeX Info: Redefining \frac on input line 234.
 \uproot@=\count269
 \leftroot@=\count270
 LaTeX Info: Redefining \overline on input line 399.
+LaTeX Info: Redefining \colon on input line 410.
 \classnum@=\count271
 \DOTSCASE@=\count272
 LaTeX Info: Redefining \ldots on input line 496.
 LaTeX Info: Redefining \dots on input line 499.
 LaTeX Info: Redefining \cdots on input line 620.
-\Mathstrutbox@=\box52
-\strutbox@=\box53
-\big@size=\dimen171
+\Mathstrutbox@=\box53
+\strutbox@=\box54
+LaTeX Info: Redefining \big on input line 722.
+LaTeX Info: Redefining \Big on input line 723.
+LaTeX Info: Redefining \bigg on input line 724.
+LaTeX Info: Redefining \Bigg on input line 725.
+\big@size=\dimen174
 LaTeX Font Info:    Redeclaring font encoding OML on input line 743.
 LaTeX Font Info:    Redeclaring font encoding OMS on input line 744.
 \macc@depth=\count273
+LaTeX Info: Redefining \bmod on input line 905.
+LaTeX Info: Redefining \pmod on input line 910.
+LaTeX Info: Redefining \smash on input line 940.
+LaTeX Info: Redefining \relbar on input line 970.
+LaTeX Info: Redefining \Relbar on input line 971.
 \c@MaxMatrixCols=\count274
 \dotsspace@=\muskip16
 \c@parentequation=\count275
@@ -218,28 +252,30 @@ LaTeX Font Info:    Redeclaring font encoding OMS on input line 744.
 \column@=\count278
 \maxfields@=\count279
 \andhelp@=\toks20
-\eqnshift@=\dimen172
-\alignsep@=\dimen173
-\tagshift@=\dimen174
-\tagwidth@=\dimen175
-\totwidth@=\dimen176
-\lineht@=\dimen177
+\eqnshift@=\dimen175
+\alignsep@=\dimen176
+\tagshift@=\dimen177
+\tagwidth@=\dimen178
+\totwidth@=\dimen179
+\lineht@=\dimen180
 \@envbody=\toks21
 \multlinegap=\skip51
 \multlinetaggap=\skip52
 \mathdisplay@stack=\toks22
-LaTeX Info: Redefining \[ on input line 2938.
-LaTeX Info: Redefining \] on input line 2939.
+LaTeX Info: Redefining \[ on input line 2953.
+LaTeX Info: Redefining \] on input line 2954.
 )
-(/usr/share/texlive/texmf-dist/tex/latex/mathtools/mathtools.sty
-Package: mathtools 2021/02/02 v1.28 mathematical typesetting tools
+(/data/data/com.termux/files/usr/share/texlive/texmf-dist/tex/latex/mathtools/m
+athtools.sty
+Package: mathtools 2022/06/29 v1.29 mathematical typesetting tools
 
-(/usr/share/texlive/texmf-dist/tex/latex/tools/calc.sty
+(/data/data/com.termux/files/usr/share/texlive/texmf-dist/tex/latex/tools/calc.
+sty
 Package: calc 2017/05/25 v4.3 Infix arithmetic (KKT,FJ)
 \calc@Acount=\count280
 \calc@Bcount=\count281
-\calc@Adimen=\dimen178
-\calc@Bdimen=\dimen179
+\calc@Adimen=\dimen181
+\calc@Bdimen=\dimen182
 \calc@Askip=\skip53
 \calc@Bskip=\skip54
 LaTeX Info: Redefining \setlength on input line 80.
@@ -247,157 +283,190 @@ LaTeX Info: Redefining \addtolength on input line 81.
 \calc@Ccount=\count282
 \calc@Cskip=\skip55
 )
-(/usr/share/texlive/texmf-dist/tex/latex/mathtools/mhsetup.sty
+(/data/data/com.termux/files/usr/share/texlive/texmf-dist/tex/latex/mathtools/m
+hsetup.sty
 Package: mhsetup 2021/03/18 v1.4 programming setup (MH)
 )
 \g_MT_multlinerow_int=\count283
-\l_MT_multwidth_dim=\dimen180
+\l_MT_multwidth_dim=\dimen183
 \origjot=\skip56
-\l_MT_shortvdotswithinadjustabove_dim=\dimen181
-\l_MT_shortvdotswithinadjustbelow_dim=\dimen182
-\l_MT_above_intertext_sep=\dimen183
-\l_MT_below_intertext_sep=\dimen184
-\l_MT_above_shortintertext_sep=\dimen185
-\l_MT_below_shortintertext_sep=\dimen186
-\xmathstrut@box=\box54
-\xmathstrut@dim=\dimen187
+\l_MT_shortvdotswithinadjustabove_dim=\dimen184
+\l_MT_shortvdotswithinadjustbelow_dim=\dimen185
+\l_MT_above_intertext_sep=\dimen186
+\l_MT_below_intertext_sep=\dimen187
+\l_MT_above_shortintertext_sep=\dimen188
+\l_MT_below_shortintertext_sep=\dimen189
+\xmathstrut@box=\box55
+\xmathstrut@dim=\dimen190
 )
-(/usr/share/texlive/texmf-dist/tex/latex/hyperref/hyperref.sty
-Package: hyperref 2021-06-07 v7.00m Hypertext links for LaTeX
+(/data/data/com.termux/files/usr/share/texlive/texmf-dist/tex/latex/hyperref/hy
+perref.sty
+Package: hyperref 2022-09-22 v7.00t Hypertext links for LaTeX
 
-(/usr/share/texlive/texmf-dist/tex/generic/ltxcmds/ltxcmds.sty
+(/data/data/com.termux/files/usr/share/texlive/texmf-dist/tex/generic/ltxcmds/l
+txcmds.sty
 Package: ltxcmds 2020-05-10 v1.25 LaTeX kernel commands for general use (HO)
 )
-(/usr/share/texlive/texmf-dist/tex/generic/iftex/iftex.sty
-Package: iftex 2020/03/06 v1.0d TeX engine tests
+(/data/data/com.termux/files/usr/share/texlive/texmf-dist/tex/generic/iftex/ift
+ex.sty
+Package: iftex 2022/02/03 v1.0f TeX engine tests
 )
-(/usr/share/texlive/texmf-dist/tex/generic/pdftexcmds/pdftexcmds.sty
+(/data/data/com.termux/files/usr/share/texlive/texmf-dist/tex/generic/pdftexcmd
+s/pdftexcmds.sty
 Package: pdftexcmds 2020-06-27 v0.33 Utility functions of pdfTeX for LuaTeX (HO
 )
 
-(/usr/share/texlive/texmf-dist/tex/generic/infwarerr/infwarerr.sty
+(/data/data/com.termux/files/usr/share/texlive/texmf-dist/tex/generic/infwarerr
+/infwarerr.sty
 Package: infwarerr 2019/12/03 v1.5 Providing info/warning/error messages (HO)
 )
 Package pdftexcmds Info: \pdf@primitive is available.
 Package pdftexcmds Info: \pdf@ifprimitive is available.
 Package pdftexcmds Info: \pdfdraftmode found.
 )
-(/usr/share/texlive/texmf-dist/tex/generic/kvsetkeys/kvsetkeys.sty
-Package: kvsetkeys 2019/12/15 v1.18 Key value parser (HO)
+(/data/data/com.termux/files/usr/share/texlive/texmf-dist/tex/latex/kvsetkeys/k
+vsetkeys.sty
+Package: kvsetkeys 2022-10-05 v1.19 Key value parser (HO)
 )
-(/usr/share/texlive/texmf-dist/tex/generic/kvdefinekeys/kvdefinekeys.sty
+(/data/data/com.termux/files/usr/share/texlive/texmf-dist/tex/generic/kvdefinek
+eys/kvdefinekeys.sty
 Package: kvdefinekeys 2019-12-19 v1.6 Define keys (HO)
 )
-(/usr/share/texlive/texmf-dist/tex/generic/pdfescape/pdfescape.sty
+(/data/data/com.termux/files/usr/share/texlive/texmf-dist/tex/generic/pdfescape
+/pdfescape.sty
 Package: pdfescape 2019/12/09 v1.15 Implements pdfTeX's escape features (HO)
 )
-(/usr/share/texlive/texmf-dist/tex/latex/hycolor/hycolor.sty
+(/data/data/com.termux/files/usr/share/texlive/texmf-dist/tex/latex/hycolor/hyc
+olor.sty
 Package: hycolor 2020-01-27 v1.10 Color options for hyperref/bookmark (HO)
 )
-(/usr/share/texlive/texmf-dist/tex/latex/letltxmacro/letltxmacro.sty
+(/data/data/com.termux/files/usr/share/texlive/texmf-dist/tex/latex/letltxmacro
+/letltxmacro.sty
 Package: letltxmacro 2019/12/03 v1.6 Let assignment for LaTeX macros (HO)
 )
-(/usr/share/texlive/texmf-dist/tex/latex/auxhook/auxhook.sty
+(/data/data/com.termux/files/usr/share/texlive/texmf-dist/tex/latex/auxhook/aux
+hook.sty
 Package: auxhook 2019-12-17 v1.6 Hooks for auxiliary files (HO)
 )
-(/usr/share/texlive/texmf-dist/tex/latex/kvoptions/kvoptions.sty
-Package: kvoptions 2020-10-07 v3.14 Key value format for package options (HO)
-)
-\@linkdim=\dimen188
-\Hy@linkcounter=\count284
-\Hy@pagecounter=\count285
+(/data/data/com.termux/files/usr/share/texlive/texmf-dist/tex/latex/hyperref/na
+meref.sty
+Package: nameref 2022-05-17 v2.50 Cross-referencing by name of section
 
-(/usr/share/texlive/texmf-dist/tex/latex/hyperref/pd1enc.def
-File: pd1enc.def 2021-06-07 v7.00m Hyperref: PDFDocEncoding definition (HO)
+(/data/data/com.termux/files/usr/share/texlive/texmf-dist/tex/latex/refcount/re
+fcount.sty
+Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
+)
+(/data/data/com.termux/files/usr/share/texlive/texmf-dist/tex/generic/gettitles
+tring/gettitlestring.sty
+Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
+
+(/data/data/com.termux/files/usr/share/texlive/texmf-dist/tex/latex/kvoptions/k
+voptions.sty
+Package: kvoptions 2022-06-15 v3.15 Key value format for package options (HO)
+))
+\c@section@level=\count284
+)
+\@linkdim=\dimen191
+\Hy@linkcounter=\count285
+\Hy@pagecounter=\count286
+
+(/data/data/com.termux/files/usr/share/texlive/texmf-dist/tex/latex/hyperref/pd
+1enc.def
+File: pd1enc.def 2022-09-22 v7.00t Hyperref: PDFDocEncoding definition (HO)
 Now handling font encoding PD1 ...
 ... no UTF-8 mapping file for font encoding PD1
 )
-(/usr/share/texlive/texmf-dist/tex/latex/hyperref/hyperref-langpatches.def
-File: hyperref-langpatches.def 2021-06-07 v7.00m Hyperref: patches for babel la
-nguages
-)
-(/usr/share/texlive/texmf-dist/tex/generic/intcalc/intcalc.sty
+(/data/data/com.termux/files/usr/share/texlive/texmf-dist/tex/generic/intcalc/i
+ntcalc.sty
 Package: intcalc 2019/12/15 v1.3 Expandable calculations with integers (HO)
 )
-(/usr/share/texlive/texmf-dist/tex/generic/etexcmds/etexcmds.sty
+(/data/data/com.termux/files/usr/share/texlive/texmf-dist/tex/generic/etexcmds/
+etexcmds.sty
 Package: etexcmds 2019/12/15 v1.7 Avoid name clashes with e-TeX commands (HO)
 )
-\Hy@SavedSpaceFactor=\count286
+\Hy@SavedSpaceFactor=\count287
 
-(/usr/share/texlive/texmf-dist/tex/latex/hyperref/puenc.def
-File: puenc.def 2021-06-07 v7.00m Hyperref: PDF Unicode definition (HO)
+(/data/data/com.termux/files/usr/share/texlive/texmf-dist/tex/latex/hyperref/pu
+enc.def
+File: puenc.def 2022-09-22 v7.00t Hyperref: PDF Unicode definition (HO)
 Now handling font encoding PU ...
 ... no UTF-8 mapping file for font encoding PU
 )
-Package hyperref Info: Hyper figures OFF on input line 4192.
-Package hyperref Info: Link nesting OFF on input line 4197.
-Package hyperref Info: Hyper index ON on input line 4200.
-Package hyperref Info: Plain pages OFF on input line 4207.
-Package hyperref Info: Backreferencing OFF on input line 4212.
+Package hyperref Info: Hyper figures OFF on input line 4162.
+Package hyperref Info: Link nesting OFF on input line 4167.
+Package hyperref Info: Hyper index ON on input line 4170.
+Package hyperref Info: Plain pages OFF on input line 4177.
+Package hyperref Info: Backreferencing OFF on input line 4182.
 Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
-Package hyperref Info: Bookmarks ON on input line 4445.
-\c@Hy@tempcnt=\count287
+Package hyperref Info: Bookmarks ON on input line 4410.
+\c@Hy@tempcnt=\count288
 
-(/usr/share/texlive/texmf-dist/tex/latex/url/url.sty
+(/data/data/com.termux/files/usr/share/texlive/texmf-dist/tex/latex/url/url.sty
 \Urlmuskip=\muskip17
 Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 )
-LaTeX Info: Redefining \url on input line 4804.
-\XeTeXLinkMargin=\dimen189
+LaTeX Info: Redefining \url on input line 4748.
+\XeTeXLinkMargin=\dimen192
 
-(/usr/share/texlive/texmf-dist/tex/generic/bitset/bitset.sty
+(/data/data/com.termux/files/usr/share/texlive/texmf-dist/tex/generic/bitset/bi
+tset.sty
 Package: bitset 2019/12/09 v1.3 Handle bit-vector datatype (HO)
 
-(/usr/share/texlive/texmf-dist/tex/generic/bigintcalc/bigintcalc.sty
+(/data/data/com.termux/files/usr/share/texlive/texmf-dist/tex/generic/bigintcal
+c/bigintcalc.sty
 Package: bigintcalc 2019/12/15 v1.5 Expandable calculations on big integers (HO
 )
 ))
-\Fld@menulength=\count288
-\Field@Width=\dimen190
-\Fld@charsize=\dimen191
-Package hyperref Info: Hyper figures OFF on input line 6076.
-Package hyperref Info: Link nesting OFF on input line 6081.
-Package hyperref Info: Hyper index ON on input line 6084.
-Package hyperref Info: backreferencing OFF on input line 6091.
-Package hyperref Info: Link coloring OFF on input line 6096.
-Package hyperref Info: Link coloring with OCG OFF on input line 6101.
-Package hyperref Info: PDF/A mode OFF on input line 6106.
-LaTeX Info: Redefining \ref on input line 6146.
-LaTeX Info: Redefining \pageref on input line 6150.
+\Fld@menulength=\count289
+\Field@Width=\dimen193
+\Fld@charsize=\dimen194
+Package hyperref Info: Hyper figures OFF on input line 6027.
+Package hyperref Info: Link nesting OFF on input line 6032.
+Package hyperref Info: Hyper index ON on input line 6035.
+Package hyperref Info: backreferencing OFF on input line 6042.
+Package hyperref Info: Link coloring OFF on input line 6047.
+Package hyperref Info: Link coloring with OCG OFF on input line 6052.
+Package hyperref Info: PDF/A mode OFF on input line 6057.
 
-(/usr/share/texlive/texmf-dist/tex/latex/base/atbegshi-ltx.sty
+(/data/data/com.termux/files/usr/share/texlive/texmf-dist/tex/latex/base/atbegs
+hi-ltx.sty
 Package: atbegshi-ltx 2021/01/10 v1.0c Emulation of the original atbegshi
 package with kernel methods
 )
-\Hy@abspage=\count289
-\c@Item=\count290
-\c@Hfootnote=\count291
+\Hy@abspage=\count290
+\c@Item=\count291
+\c@Hfootnote=\count292
 )
 Package hyperref Info: Driver (autodetected): hpdftex.
 
-(/usr/share/texlive/texmf-dist/tex/latex/hyperref/hpdftex.def
-File: hpdftex.def 2021-06-07 v7.00m Hyperref driver for pdfTeX
+(/data/data/com.termux/files/usr/share/texlive/texmf-dist/tex/latex/hyperref/hp
+dftex.def
+File: hpdftex.def 2022-09-22 v7.00t Hyperref driver for pdfTeX
 
-(/usr/share/texlive/texmf-dist/tex/latex/base/atveryend-ltx.sty
+(/data/data/com.termux/files/usr/share/texlive/texmf-dist/tex/latex/base/atvery
+end-ltx.sty
 Package: atveryend-ltx 2020/08/19 v1.0a Emulation of the original atveryend pac
 kage
 with kernel methods
 )
-\Fld@listcount=\count292
-\c@bookmark@seq@number=\count293
+\Fld@listcount=\count293
+\c@bookmark@seq@number=\count294
 
-(/usr/share/texlive/texmf-dist/tex/latex/rerunfilecheck/rerunfilecheck.sty
-Package: rerunfilecheck 2019/12/05 v1.9 Rerun checks for auxiliary files (HO)
+(/data/data/com.termux/files/usr/share/texlive/texmf-dist/tex/latex/rerunfilech
+eck/rerunfilecheck.sty
+Package: rerunfilecheck 2022-07-10 v1.10 Rerun checks for auxiliary files (HO)
 
-(/usr/share/texlive/texmf-dist/tex/generic/uniquecounter/uniquecounter.sty
+(/data/data/com.termux/files/usr/share/texlive/texmf-dist/tex/generic/uniquecou
+nter/uniquecounter.sty
 Package: uniquecounter 2019/12/15 v1.4 Provide unlimited unique counter (HO)
 )
 Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
-86.
+85.
 )
 \Hy@SectionHShift=\skip57
 )
-(/usr/share/texlive/texmf-dist/tex/latex/amscls/amsthm.sty
+(/data/data/com.termux/files/usr/share/texlive/texmf-dist/tex/latex/amscls/amst
+hm.sty
 Package: amsthm 2020/05/29 v2.20.6
 \thm@style=\toks23
 \thm@bodyfont=\toks24
@@ -409,11 +478,13 @@ Package: amsthm 2020/05/29 v2.20.6
 \thm@headsep=\skip60
 \dth@everypar=\toks28
 )
-(/usr/share/texlive/texmf-dist/tex/latex/jknapltx/mathrsfs.sty
+(/data/data/com.termux/files/usr/share/texlive/texmf-dist/tex/latex/jknapltx/ma
+thrsfs.sty
 Package: mathrsfs 1996/01/01 Math RSFS package v1.0 (jk)
 \symrsfs=\mathgroup4
 )
-(/usr/share/texlive/texmf-dist/tex/latex/txfonts/txfonts.sty
+(/data/data/com.termux/files/usr/share/texlive/texmf-dist/tex/latex/txfonts/txf
+onts.sty
 Package: txfonts 2008/01/22 v3.2.1
 LaTeX Font Info:    Redeclaring symbol font `operators' on input line 21.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
@@ -493,112 +564,124 @@ LaTeX Info: Redefining \not on input line 1043.
 LaTeX Info: Redefining \textsquare on input line 1063.
 LaTeX Info: Redefining \openbox on input line 1064.
 )
-(/usr/share/texlive/texmf-dist/tex/latex/sttools/stfloats.sty
+(/data/data/com.termux/files/usr/share/texlive/texmf-dist/tex/latex/sttools/stf
+loats.sty
 Package: stfloats 2017/03/27 v3.3 Improve float mechanism and baselineskip sett
 ings
-\@dblbotnum=\count294
-\c@dblbotnumber=\count295
+\@dblbotnum=\count295
+\c@dblbotnumber=\count296
 )
-(/usr/share/texlive/texmf-dist/tex/latex/cite/cite.sty
+(/data/data/com.termux/files/usr/share/texlive/texmf-dist/tex/latex/cite/cite.s
+ty
 LaTeX Info: Redefining \cite on input line 302.
 LaTeX Info: Redefining \nocite on input line 332.
 Package: cite 2015/02/27  v 5.5
 )
-(/usr/share/texlive/texmf-dist/tex/latex/cases/cases.sty
+(/data/data/com.termux/files/usr/share/texlive/texmf-dist/tex/latex/cases/cases
+.sty
 Package: cases 2020/03/29 ver 3.2
-\numc@numwid=\dimen192
+\numc@numwid=\dimen195
 )
-(/usr/share/texlive/texmf-dist/tex/latex/subfig/subfig.sty
+(/data/data/com.termux/files/usr/share/texlive/texmf-dist/tex/latex/subfig/subf
+ig.sty
 Package: subfig 2005/06/28 ver: 1.3 subfig package
-\c@KVtest=\count296
+\c@KVtest=\count297
 \sf@farskip=\skip61
-\sf@captopadj=\dimen193
+\sf@captopadj=\dimen196
 \sf@capskip=\skip62
 \sf@nearskip=\skip63
-\c@subfigure=\count297
-\c@subfigure@save=\count298
-\c@lofdepth=\count299
-\c@subtable=\count300
-\c@subtable@save=\count301
-\c@lotdepth=\count302
+\c@subfigure=\count298
+\c@subfigure@save=\count299
+\c@lofdepth=\count300
+\c@subtable=\count301
+\c@subtable@save=\count302
+\c@lotdepth=\count303
 \sf@top=\skip64
 \sf@bottom=\skip65
 )
-(/usr/share/texlive/texmf-dist/tex/latex/tools/longtable.sty
+(/data/data/com.termux/files/usr/share/texlive/texmf-dist/tex/latex/tools/longt
+able.sty
 Package: longtable 2021-09-01 v4.17 Multi-page Table package (DPC)
 \LTleft=\skip66
 \LTright=\skip67
 \LTpre=\skip68
 \LTpost=\skip69
-\LTchunksize=\count303
-\LTcapwidth=\dimen194
-\LT@head=\box55
-\LT@firsthead=\box56
-\LT@foot=\box57
-\LT@lastfoot=\box58
-\LT@gbox=\box59
-\LT@cols=\count304
-\LT@rows=\count305
-\c@LT@tables=\count306
-\c@LT@chunks=\count307
+\LTchunksize=\count304
+\LTcapwidth=\dimen197
+\LT@head=\box56
+\LT@firsthead=\box57
+\LT@foot=\box58
+\LT@lastfoot=\box59
+\LT@gbox=\box60
+\LT@cols=\count305
+\LT@rows=\count306
+\c@LT@tables=\count307
+\c@LT@chunks=\count308
 \LT@p@ftn=\toks29
 )
-(/usr/share/texlive/texmf-dist/tex/latex/multirow/multirow.sty
+(/data/data/com.termux/files/usr/share/texlive/texmf-dist/tex/latex/multirow/mu
+ltirow.sty
 Package: multirow 2021/03/15 v2.8 Span multiple rows of a table
 \multirow@colwidth=\skip70
-\multirow@cntb=\count308
+\multirow@cntb=\count309
 \multirow@dima=\skip71
-\bigstrutjot=\dimen195
+\bigstrutjot=\dimen198
 )
-(/usr/share/texlive/texmf-dist/tex/latex/enumitem/enumitem.sty
+(/data/data/com.termux/files/usr/share/texlive/texmf-dist/tex/latex/enumitem/en
+umitem.sty
 Package: enumitem 2019/06/20 v3.9 Customized lists
 \labelindent=\skip72
-\enit@outerparindent=\dimen196
+\enit@outerparindent=\dimen199
 \enit@toks=\toks30
-\enit@inbox=\box60
-\enit@count@id=\count309
-\enitdp@description=\count310
+\enit@inbox=\box61
+\enit@count@id=\count310
+\enitdp@description=\count311
 )
-(/usr/share/texlive/texmf-dist/tex/latex/listings/listings.sty
-\lst@mode=\count311
-\lst@gtempboxa=\box61
+(/data/data/com.termux/files/usr/share/texlive/texmf-dist/tex/latex/listings/li
+stings.sty
+\lst@mode=\count312
+\lst@gtempboxa=\box62
 \lst@token=\toks31
-\lst@length=\count312
-\lst@currlwidth=\dimen197
-\lst@column=\count313
-\lst@pos=\count314
-\lst@lostspace=\dimen198
-\lst@width=\dimen199
-\lst@newlines=\count315
-\lst@lineno=\count316
-\lst@maxwidth=\dimen256
+\lst@length=\count313
+\lst@currlwidth=\dimen256
+\lst@column=\count314
+\lst@pos=\count315
+\lst@lostspace=\dimen257
+\lst@width=\dimen258
+\lst@newlines=\count316
+\lst@lineno=\count317
+\lst@maxwidth=\dimen259
 
-(/usr/share/texlive/texmf-dist/tex/latex/listings/lstmisc.sty
+(/data/data/com.termux/files/usr/share/texlive/texmf-dist/tex/latex/listings/ls
+tmisc.sty
 File: lstmisc.sty 2020/03/24 1.8d (Carsten Heinz)
-\c@lstnumber=\count317
-\lst@skipnumbers=\count318
-\lst@framebox=\box62
+\c@lstnumber=\count318
+\lst@skipnumbers=\count319
+\lst@framebox=\box63
 )
-(/usr/share/texlive/texmf-dist/tex/latex/listings/listings.cfg
+(/data/data/com.termux/files/usr/share/texlive/texmf-dist/tex/latex/listings/li
+stings.cfg
 File: listings.cfg 2020/03/24 1.8d listings configuration
 ))
 Package: listings 2020/03/24 1.8d (Carsten Heinz)
 
-(/usr/share/texlive/texmf-dist/tex/latex/listings/lstlang1.sty
+(/data/data/com.termux/files/usr/share/texlive/texmf-dist/tex/latex/listings/ls
+tlang1.sty
 File: lstlang1.sty 2020/03/24 1.8d listings language file
 )
 LaTeX Font Info:    Trying to load font information for OT1+txr on input line 7
 4.
 
-(/usr/share/texlive/texmf-dist/tex/latex/txfonts/ot1txr.fd
+(/data/data/com.termux/files/usr/share/texlive/texmf-dist/tex/latex/txfonts/ot1
+txr.fd
 File: ot1txr.fd 2000/12/15 v3.1
 )
-(/usr/share/texlive/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
-File: l3backend-pdftex.def 2022-01-12 L3 backend support: PDF output (pdfTeX)
-\l__color_backend_stack_int=\count319
-\l__pdf_internal_box=\box63
-)
-(./main.aux
+(/data/data/com.termux/files/usr/share/texlive/texmf-dist/tex/latex/l3backend/l
+3backend-pdftex.def
+File: l3backend-pdftex.def 2022-10-26 L3 backend support: PDF output (pdfTeX)
+\l__color_backend_stack_int=\count320
+\l__pdf_internal_box=\box64
+) (./main.aux
 
 LaTeX Warning: Label `fig:bn' multiply defined.
 
@@ -608,7 +691,9 @@ LaTeX Warning: Label `fig:bn' multiply defined.
 LaTeX Font Info:    Checking defaults for OML/txmi/m/it on input line 74.
 LaTeX Font Info:    Trying to load font information for OML+txmi on input line 
 74.
- (/usr/share/texlive/texmf-dist/tex/latex/txfonts/omltxmi.fd
+
+(/data/data/com.termux/files/usr/share/texlive/texmf-dist/tex/latex/txfonts/oml
+txmi.fd
 File: omltxmi.fd 2000/12/15 v3.1
 )
 LaTeX Font Info:    ... okay on input line 74.
@@ -616,7 +701,8 @@ LaTeX Font Info:    Checking defaults for OMS/txsy/m/n on input line 74.
 LaTeX Font Info:    Trying to load font information for OMS+txsy on input line 
 74.
 
-(/usr/share/texlive/texmf-dist/tex/latex/txfonts/omstxsy.fd
+(/data/data/com.termux/files/usr/share/texlive/texmf-dist/tex/latex/txfonts/oms
+txsy.fd
 File: omstxsy.fd 2000/12/15 v3.1
 )
 LaTeX Font Info:    ... okay on input line 74.
@@ -630,7 +716,8 @@ LaTeX Font Info:    Checking defaults for OMX/txex/m/n on input line 74.
 LaTeX Font Info:    Trying to load font information for OMX+txex on input line 
 74.
 
-(/usr/share/texlive/texmf-dist/tex/latex/txfonts/omxtxex.fd
+(/data/data/com.termux/files/usr/share/texlive/texmf-dist/tex/latex/txfonts/omx
+txex.fd
 File: omxtxex.fd 2000/12/15 v3.1
 )
 LaTeX Font Info:    ... okay on input line 74.
@@ -638,7 +725,8 @@ LaTeX Font Info:    Checking defaults for U/txexa/m/n on input line 74.
 LaTeX Font Info:    Trying to load font information for U+txexa on input line 7
 4.
 
-(/usr/share/texlive/texmf-dist/tex/latex/txfonts/utxexa.fd
+(/data/data/com.termux/files/usr/share/texlive/texmf-dist/tex/latex/txfonts/utx
+exa.fd
 File: utxexa.fd 2000/12/15 v3.1
 )
 LaTeX Font Info:    ... okay on input line 74.
@@ -695,18 +783,20 @@ Package gensymb Info: Using \Omega for \ohm on input line 74.
 
 Package gensymb Warning: Not defining \micro.
 
-(/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+
+(/data/data/com.termux/files/usr/share/texlive/texmf-dist/tex/context/base/mkii
+/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count320
-\scratchdimen=\dimen257
-\scratchbox=\box64
-\nofMPsegments=\count321
-\nofMParguments=\count322
+\scratchcounter=\count321
+\scratchdimen=\dimen260
+\scratchbox=\box65
+\nofMPsegments=\count322
+\nofMParguments=\count323
 \everyMPshowfont=\toks32
-\MPscratchCnt=\count323
-\MPscratchDim=\dimen258
-\MPnumerator=\count324
-\makeMPintoPDFobject=\count325
+\MPscratchCnt=\count324
+\MPscratchDim=\dimen261
+\MPnumerator=\count325
+\makeMPintoPDFobject=\count326
 \everyMPtoPDFconversion=\toks33
 )
 Package caption Info: Begin \AtBeginDocument code.
@@ -714,46 +804,36 @@ Package caption Info: subfig package v1.3 is loaded.
 Package caption Info: hyperref package is loaded.
 Package caption Info: listings package is loaded.
 Package caption Info: longtable package is loaded.
- (/usr/share/texlive/texmf-dist/tex/latex/caption/ltcaption.sty
-Package: ltcaption 2020/05/30 v1.4b longtable captions (AR)
+
+(/data/data/com.termux/files/usr/share/texlive/texmf-dist/tex/latex/caption/ltc
+aption.sty
+Package: ltcaption 2021/01/08 v1.4c longtable captions (AR)
 )
 Package caption Info: End \AtBeginDocument code.
 
-(/usr/share/texlive/texmf-dist/tex/latex/graphics/graphicx.sty
+(/data/data/com.termux/files/usr/share/texlive/texmf-dist/tex/latex/graphics/gr
+aphicx.sty
 Package: graphicx 2021/09/16 v1.2d Enhanced LaTeX Graphics (DPC,SPQR)
 
-(/usr/share/texlive/texmf-dist/tex/latex/graphics/graphics.sty
-Package: graphics 2021/03/04 v1.4d Standard LaTeX Graphics (DPC,SPQR)
+(/data/data/com.termux/files/usr/share/texlive/texmf-dist/tex/latex/graphics/gr
+aphics.sty
+Package: graphics 2022/03/10 v1.4e Standard LaTeX Graphics (DPC,SPQR)
 
-(/usr/share/texlive/texmf-dist/tex/latex/graphics/trig.sty
+(/data/data/com.termux/files/usr/share/texlive/texmf-dist/tex/latex/graphics/tr
+ig.sty
 Package: trig 2021/08/11 v1.11 sin cos tan (DPC)
 )
-(/usr/share/texlive/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
+(/data/data/com.termux/files/usr/share/texlive/texmf-dist/tex/latex/graphics-cf
+g/graphics.cfg
 File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
 )
 Package graphics Info: Driver file: pdftex.def on input line 107.
 )
-\Gin@req@height=\dimen259
-\Gin@req@width=\dimen260
+\Gin@req@height=\dimen262
+\Gin@req@width=\dimen263
 )
 Package hyperref Info: Link coloring OFF on input line 74.
-
-(/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
-Package: nameref 2021-04-02 v2.47 Cross-referencing by name of section
-
-(/usr/share/texlive/texmf-dist/tex/latex/refcount/refcount.sty
-Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
-)
-(/usr/share/texlive/texmf-dist/tex/generic/gettitlestring/gettitlestring.sty
-Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
-)
-\c@section@level=\count326
-)
-LaTeX Info: Redefining \ref on input line 74.
-LaTeX Info: Redefining \pageref on input line 74.
-LaTeX Info: Redefining \nameref on input line 74.
-
-(./main.out) (./main.out)
+ (./main.out) (./main.out)
 \@outlinefile=\write3
 \openout3 = `main.out'.
 
@@ -776,60 +856,6 @@ Type  H <return>  for immediate help.
                                                   
 l.124 ...mmand{\proof}{\noindent \textbf{Proof: }}
                                                   
-? \documentclass[journal,12pt,twocolumn]{IEEEtran}
-Type <return> to proceed, S to scroll future error messages,
-R to run without stopping, Q to run quietly,
-I to insert something, E to edit your file,
-1 or ... or 9 to ignore the next 1 to 9 tokens of input,
-H for help, X to quit.
-? %
-Type <return> to proceed, S to scroll future error messages,
-R to run without stopping, Q to run quietly,
-I to insert something, E to edit your file,
-1 or ... or 9 to ignore the next 1 to 9 tokens of input,
-H for help, X to quit.
-? \usepackage{setspace}
-Type <return> to proceed, S to scroll future error messages,
-R to run without stopping, Q to run quietly,
-I to insert something, E to edit your file,
-1 or ... or 9 to ignore the next 1 to 9 tokens of input,
-H for help, X to quit.
-? \usepackage{gensymb}
-Type <return> to proceed, S to scroll future error messages,
-R to run without stopping, Q to run quietly,
-I to insert something, E to edit your file,
-1 or ... or 9 to ignore the next 1 to 9 tokens of input,
-H for help, X to quit.
-? \usepackage{xcolor}
-Type <return> to proceed, S to scroll future error messages,
-R to run without stopping, Q to run quietly,
-I to insert something, E to edit your file,
-1 or ... or 9 to ignore the next 1 to 9 tokens of input,
-H for help, X to quit.
-? \usepackage{caption}
-Type <return> to proceed, S to scroll future error messages,
-R to run without stopping, Q to run quietly,
-I to insert something, E to edit your file,
-1 or ... or 9 to ignore the next 1 to 9 tokens of input,
-H for help, X to quit.
-? %\usepackage{subcaption}
-Type <return> to proceed, S to scroll future error messages,
-R to run without stopping, Q to run quietly,
-I to insert something, E to edit your file,
-1 or ... or 9 to ignore the next 1 to 9 tokens of input,
-H for help, X to quit.
-? %\doublespacing
-Type <return> to proceed, S to scroll future error messages,
-R to run without stopping, Q to run quietly,
-I to insert something, E to edit your file,
-1 or ... or 9 to ignore the next 1 to 9 tokens of input,
-H for help, X to quit.
-? \singlespacing
-Type <return> to proceed, S to scroll future error messages,
-R to run without stopping, Q to run quietly,
-I to insert something, E to edit your file,
-1 or ... or 9 to ignore the next 1 to 9 tokens of input,
-H for help, X to quit.
 ? 
 (./main.toc)
 \tf@toc=\write4
@@ -837,84 +863,127 @@ H for help, X to quit.
 
 LaTeX Font Info:    Trying to load font information for U+rsfs on input line 24
 1.
- (/usr/share/texlive/texmf-dist/tex/latex/jknapltx/ursfs.fd
+
+(/data/data/com.termux/files/usr/share/texlive/texmf-dist/tex/latex/jknapltx/ur
+sfs.fd
 File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
 )
 LaTeX Font Info:    Trying to load font information for U+txmia on input line 2
 41.
 
-(/usr/share/texlive/texmf-dist/tex/latex/txfonts/utxmia.fd
+(/data/data/com.termux/files/usr/share/texlive/texmf-dist/tex/latex/txfonts/utx
+mia.fd
 File: utxmia.fd 2000/12/15 v3.1
 )
 LaTeX Font Info:    Trying to load font information for U+txsya on input line 2
 41.
 
-(/usr/share/texlive/texmf-dist/tex/latex/txfonts/utxsya.fd
+(/data/data/com.termux/files/usr/share/texlive/texmf-dist/tex/latex/txfonts/utx
+sya.fd
 File: utxsya.fd 2000/12/15 v3.1
 )
 LaTeX Font Info:    Trying to load font information for U+txsyb on input line 2
 41.
 
-(/usr/share/texlive/texmf-dist/tex/latex/txfonts/utxsyb.fd
+(/data/data/com.termux/files/usr/share/texlive/texmf-dist/tex/latex/txfonts/utx
+syb.fd
 File: utxsyb.fd 2000/12/15 v3.1
 )
 LaTeX Font Info:    Trying to load font information for U+txsyc on input line 2
 41.
 
-(/usr/share/texlive/texmf-dist/tex/latex/txfonts/utxsyc.fd
+(/data/data/com.termux/files/usr/share/texlive/texmf-dist/tex/latex/txfonts/utx
+syc.fd
 File: utxsyc.fd 2000/12/15 v3.1
 )
-</media/darkwake/VIB2/EE3900/pingala/figs/e1.1.jpg, id=19, 462.528pt x 346.896p
-t>
-File: /media/darkwake/VIB2/EE3900/pingala/figs/e1.1.jpg Graphic file (type jpg)
 
-<use /media/darkwake/VIB2/EE3900/pingala/figs/e1.1.jpg>
-Package pdftex.def Info: /media/darkwake/VIB2/EE3900/pingala/figs/e1.1.jpg  use
-d on input line 256.
-(pdftex.def)             Requested size: 252.0pt x 189.00427pt.
+LaTeX Warning: File `/media/darkwake/VIB2/EE3900/pingala/figs/e1.1.jpg' not fou
+nd on input line 256.
 
+
+! Package pdftex.def Error: File `/media/darkwake/VIB2/EE3900/pingala/figs/e1.1
+.jpg' not found: using draft setting.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.256 ...rkwake/VIB2/EE3900/pingala/figs/e1.1.jpg}
+                                                  
+? 
+LaTeX Font Info:    Trying to load font information for OT1+txtt on input line 
+256.
+
+(/data/data/com.termux/files/usr/share/texlive/texmf-dist/tex/latex/txfonts/ot1
+txtt.fd
+File: ot1txtt.fd 2000/12/15 v3.1
+)
 Underfull \hbox (badness 10000) in paragraph at lines 265--271
 \OT1/txr/m/n/12 Calculated value from the code =
  []
 
-</media/darkwake/VIB2/EE3900/pingala/figs/e1.3.jpg, id=21, 462.528pt x 346.896p
-t>
-File: /media/darkwake/VIB2/EE3900/pingala/figs/e1.3.jpg Graphic file (type jpg)
 
-<use /media/darkwake/VIB2/EE3900/pingala/figs/e1.3.jpg>
-Package pdftex.def Info: /media/darkwake/VIB2/EE3900/pingala/figs/e1.3.jpg  use
-d on input line 276.
-(pdftex.def)             Requested size: 252.0pt x 189.00427pt.
+LaTeX Warning: File `/media/darkwake/VIB2/EE3900/pingala/figs/e1.3.jpg' not fou
+nd on input line 276.
+
+
+! Package pdftex.def Error: File `/media/darkwake/VIB2/EE3900/pingala/figs/e1.3
+.jpg' not found: using draft setting.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.276 ...rkwake/VIB2/EE3900/pingala/figs/e1.3.jpg}
+                                                  
+? 
 
 Underfull \hbox (badness 10000) in paragraph at lines 285--290
 \OT1/txr/m/n/12 Calculated value from the code =
  []
 
-[1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
+
+LaTeX Warning: Text page 1 contains only floats.
+
+[1{/data/data/com.termux/files/usr/share/texlive/texmf-var/fonts/map/pdftex/upd
+map/pdftex.map}
 
 
- </media/darkwake/VIB2/EE3900/pingala/figs/e1.1.jpg> </media/darkwake/VIB2/EE39
-00/pingala/figs/e1.3.jpg>]
+]
 Overfull \hbox (25.86975pt too wide) detected at line 316
 []
  []
 
-</media/darkwake/VIB2/EE3900/pingala/figs/e2.1.jpg, id=52, 462.528pt x 346.896p
-t>
-File: /media/darkwake/VIB2/EE3900/pingala/figs/e2.1.jpg Graphic file (type jpg)
 
-<use /media/darkwake/VIB2/EE3900/pingala/figs/e2.1.jpg>
-Package pdftex.def Info: /media/darkwake/VIB2/EE3900/pingala/figs/e2.1.jpg  use
-d on input line 320.
-(pdftex.def)             Requested size: 252.0pt x 189.00427pt.
-</media/darkwake/VIB2/EE3900/pingala/figs/e2.5.jpg, id=54, 462.528pt x 346.896p
-t>
-File: /media/darkwake/VIB2/EE3900/pingala/figs/e2.5.jpg Graphic file (type jpg)
+LaTeX Warning: File `/media/darkwake/VIB2/EE3900/pingala/figs/e2.1.jpg' not fou
+nd on input line 320.
 
-<use /media/darkwake/VIB2/EE3900/pingala/figs/e2.5.jpg>
-Package pdftex.def Info: /media/darkwake/VIB2/EE3900/pingala/figs/e2.5.jpg  use
-d on input line 368.
-(pdftex.def)             Requested size: 252.0pt x 189.00427pt.
+
+! Package pdftex.def Error: File `/media/darkwake/VIB2/EE3900/pingala/figs/e2.1
+.jpg' not found: using draft setting.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.320 ...rkwake/VIB2/EE3900/pingala/figs/e2.1.jpg}
+                                                  
+? 
+
+LaTeX Warning: File `/media/darkwake/VIB2/EE3900/pingala/figs/e2.5.jpg' not fou
+nd on input line 368.
+
+
+! Package pdftex.def Error: File `/media/darkwake/VIB2/EE3900/pingala/figs/e2.5
+.jpg' not found: using draft setting.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.368 ...rkwake/VIB2/EE3900/pingala/figs/e2.5.jpg}
+                                                  
+? 
 
 Underfull \hbox (badness 10000) in paragraph at lines 365--373
 
@@ -928,21 +997,19 @@ Underfull \hbox (badness 10000) in paragraph at lines 375--377
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [2 </media/darkwake/VIB2/EE3900/pingala/figs/e2.1.jpg> </media/darkwake/VIB2/E
-E3900/pingala/figs/e2.5.jpg>]
-Underfull \hbox (badness 10000) in paragraph at lines 476--479
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 476--479
-
- []
-
-
+ [2]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [3]
+Underfull \hbox (badness 10000) in paragraph at lines 476--479
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 476--479
+
+ []
+
 [4
 
 ] (./main.aux)
@@ -953,28 +1020,33 @@ Package rerunfilecheck Info: File `main.out' has not changed.
 (rerunfilecheck)             Checksum: 6EF0FDA02AE42AB5EB9699AF63378C50;377.
  ) 
 Here is how much of TeX's memory you used:
- 16163 strings out of 478287
- 254005 string characters out of 5849290
- 748924 words of memory out of 5000000
- 34025 multiletter control sequences out of 15000+600000
- 531301 words of font info for 150 fonts, out of 8000000 for 9000
+ 16428 strings out of 475066
+ 268305 string characters out of 5767795
+ 804616 words of memory out of 5000000
+ 37481 multiletter control sequences out of 15000+600000
+ 531577 words of font info for 151 fonts, out of 8000000 for 9000
  1144 hyphenation exceptions out of 8191
- 60i,10n,63p,232b,1322s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texliv
-e/texmf-dist/fonts/type1/public/txfonts/rtxmi.pfb></usr/share/texlive/texmf-dis
-t/fonts/type1/public/txfonts/rtxr.pfb></usr/share/texlive/texmf-dist/fonts/type
-1/public/txfonts/rtxsc.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/tx
-fonts/txex.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/txfonts/txsy.p
-fb></usr/share/texlive/texmf-dist/fonts/type1/public/txfonts/txsya.pfb></usr/sh
-are/texlive/texmf-dist/fonts/type1/public/txfonts/txsyb.pfb></usr/share/texlive
-/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/texlive/texmf-dist/fon
-ts/type1/urw/times/utmbi8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/t
-imes/utmr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmri8a.pf
-b>
-Output written on main.pdf (4 pages, 211339 bytes).
+ 72i,10n,77p,249b,1350s stack positions out of 10000i,1000n,20000p,200000b,200000s
+{/data/data/com.termux/files/usr/share/texlive/texmf-dist/fonts/enc/dvips/bas
+e/8r.enc}</data/data/com.termux/files/usr/share/texlive/texmf-dist/fonts/type1/
+public/txfonts/rtxmi.pfb></data/data/com.termux/files/usr/share/texlive/texmf-d
+ist/fonts/type1/public/txfonts/rtxr.pfb></data/data/com.termux/files/usr/share/
+texlive/texmf-dist/fonts/type1/public/txfonts/rtxsc.pfb></data/data/com.termux/
+files/usr/share/texlive/texmf-dist/fonts/type1/public/txfonts/txex.pfb></data/d
+ata/com.termux/files/usr/share/texlive/texmf-dist/fonts/type1/public/txfonts/tx
+sy.pfb></data/data/com.termux/files/usr/share/texlive/texmf-dist/fonts/type1/pu
+blic/txfonts/txsya.pfb></data/data/com.termux/files/usr/share/texlive/texmf-dis
+t/fonts/type1/public/txfonts/txsyb.pfb></data/data/com.termux/files/usr/share/t
+exlive/texmf-dist/fonts/type1/public/txfonts/txtt.pfb></data/data/com.termux/fi
+les/usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></data/data/c
+om.termux/files/usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmbi8a.pfb>
+</data/data/com.termux/files/usr/share/texlive/texmf-dist/fonts/type1/urw/times
+/utmr8a.pfb></data/data/com.termux/files/usr/share/texlive/texmf-dist/fonts/typ
+e1/urw/times/utmri8a.pfb>
+Output written on main.pdf (4 pages, 87849 bytes).
 PDF statistics:
- 217 PDF objects out of 1000 (max. 8388607)
- 182 compressed objects within 2 object streams
+ 218 PDF objects out of 1000 (max. 8388607)
+ 185 compressed objects within 2 object streams
  94 named destinations out of 1000 (max. 500000)
- 45 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 25 words of extra memory for PDF output out of 10000 (max. 10000000)
 

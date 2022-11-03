@@ -1,9 +1,8 @@
 import numpy as np
 from scipy import fft
 from matplotlib import pyplot as plt
-import os
-
-
+import subprocess
+import shlex
 
 ts = 2e-4   # sampling interval
 N = 100
@@ -38,7 +37,6 @@ plt.legend()
 plt.xlabel(' f[Hz]')
 plt.ylabel('X(f)')
 plt.title("Fourier Transform of sinc(x)")
-plt.savefig('../figs/e3.10.png')
+plt.savefig('../figs/e3.10.pdf')
 plt.show()
-#subprocess.run(shlex.split("termux-open ../figs/e3.10.png"))
-os.system("termux-open ../figs/e3.10.png")
+subprocess.run(shlex.split("termux-open ../figs/e3.10.pdf"))

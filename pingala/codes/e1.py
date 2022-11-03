@@ -1,7 +1,8 @@
 import numpy as np
 import matplotlib.pyplot as plt
 import os
-
+import shlex
+import subprocess
 
 alpha = float(0.5*(1+np.sqrt(5)))
 beta = float(0.5*(1-np.sqrt(5)))
@@ -51,8 +52,9 @@ ax2.stem(x, y2, linefmt='-g', markerfmt='og')
 ax2.set_xlabel("n")
 ax2.set_ylabel("$\sum_{k=1}^{n}a_k$")
 ax2.grid(True, which='both')
-
-plt.savefig('EE3900/pingala/figs/e1.1.jpg')
+#subprocess.run(shlhex.split("termux-open "))
+plt.savefig('../figs/e1.1.pdf')
+subprocess.run(shlex.split("termux-open --send ../figs/e1.1.pdf"))
 plt.show()
 
 truecount = 0
@@ -104,7 +106,8 @@ ax2.stem(x, y2, linefmt='-g', markerfmt='og')
 ax2.set_xlabel("n")
 ax2.set_ylabel(f"alpha^n + beta^n")
 ax2.grid(True, which='both')
-plt.savefig('EE3900/pingala/figs/e1.3.jpg')
+plt.savefig('../figs/e1.3.pdf')
+subprocess.run(shlex.split("termux-open ../figs/e1.3.pdf"))
 plt.show()
 truecount = 0
 for i in range(len(y1)):
