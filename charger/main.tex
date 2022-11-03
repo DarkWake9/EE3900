@@ -512,8 +512,35 @@ https://github.com/DarkWake9/EE3900/blob/main/charger/codes/e4.3.py
 \section{Filter Design}
 \begin{enumerate}[label=\thesection.\arabic*
 ,ref=\thesection.\theenumi]
-\item Design a Butterworth filter for $H(f)$.
+\item Design a Butterworth filter for $H(f)$.\\
+\solution\\
+For an $n^{th}$ order Butterworth filter:\\
+The Gain response $G(f)$ is given by\\
+\begin{align}
+G^2(f) = |H_n(f)|^2 = \frac{1}{1 + \brak{\frac{f}{f_0}}^{2n}}
+\end{align}
+Where $f_0$ is the cutoff frequency.
 \item Design a Chebyschev filter for $H(f)$.
+\solution\\
+For an $n^{th}$ order Chebyschev filter:\\
+The Gain response $G(f)$ is given by\\
+\begin{align}
+	G(f) = H_n(f) = \frac{1}{\sqrt{1 + \epsilon^2 T^2_n\frac{f}{f_0}}}
+\end{align}
+Where :
+\begin{enumerate}
+
+\item $f_0$ is the cutoff frequency.\\
+\item $T_n$ is a Chebyshev polynomial of the $n^{th}$ order.
+\begin{align}
+	T_n = \begin{cases}
+		\cos \brak{n \cos^{-1} x} & \abs{x} < 1\\
+		\cosh \brak{n \cosh^{-1} x} & \abs{x} \geq 1
+	\end{cases}
+\end{align}
+\item $\epsilon$ is the ripple
+\end{enumerate}
+
 \item Design a circuit for your Butterworth filter.
 \item Design a circuit for your Chebyschev filter.
 \end{enumerate}

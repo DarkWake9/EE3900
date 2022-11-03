@@ -42,6 +42,13 @@
 \usepackage{tikz}
 \usetikzlibrary{shapes,arrows,positioning}
 \usepackage{circuitikz}
+\usepackage{setspace}
+\usepackage{gensymb}
+\usepackage{xcolor}
+\usepackage{caption}
+\usepackage{tikz}
+% \usepackage{decorate}
+\usetikzlibrary { decorations.pathmorphing, decorations.pathreplacing, decorations.shapes, }
 \let\vec\mathbf
 
 
@@ -240,6 +247,57 @@ $q_2 \, \mu C$.
 	\label{fig:ckt-q1}
 \end{figure}
 
+\iffalse
+\begin{figure}
+	\begin{tikzpicture}
+%		\draw[gray, thick] (1,0) -- (1,3.6); %Q
+%		\draw[gray, thick] (0.75,4.4) -- (1.5,4); %S
+		\draw[gray, thick] (0,4) -- (1.5,4); %P
+		\draw[gray, thick] (1.5,4) -- (2,4); %R_1 and R_2
+		\draw[decorate,decoration=zigzag] (2,4) -- (3.5,4);
+		\draw[gray, thick] (3.5,4) -- (5.5,4);
+		\draw[decorate,decoration=zigzag] (5.5,4) -- (7,4);
+		\draw[gray, thick] (7,4) -- (8,4);
+		\draw[gray, thick] (0,0) -- (0,1.95); %1V
+		\draw[gray, thick] (0,2.25) -- (0,4);
+		\draw[gray, thick] (-0.25,1.95) -- (0.25,1.95);
+		\draw[gray, thick] (-0.5,2.25) -- (0.5,2.25);
+		\draw[gray, thick] (8,0) -- (8,1.95); %2V
+		\draw[gray, thick] (7.75,1.95) -- (8.25,1.95);
+		\draw[gray, thick] (7.5,2.25) -- (8.5,2.25);
+		\draw[gray, thick] (8,2.25) -- (8,4);
+		\draw[gray, thick] (4,0) -- (4,1.95); %capacitor
+		\draw[gray, thick] (4,2.25) -- (4,4);
+		\draw[gray, thick] (3.65,1.95) -- (4.35,1.95);
+		\draw[gray, thick] (3.65,2.25) -- (4.35,2.25);
+		\draw[gray, thick] (0,0) -- (8,0); %base
+		\draw[gray, thick] (4,0) -- (4, -0.5);
+		\draw[black, thick] (3.75, -0.5) -- (4.25, -0.5);
+		\draw[gray, thick] (3.82, -0.6) -- (4.18, -0.6);
+		\draw[gray, thick] (3.9, -0.7) -- (4.1, -0.7);
+		\node[] at (-0.6,1.85) {1V};
+		\node[] at (7.4,1.85) {2V};
+		\node[] at (3.1,2) {1$\mu$F};
+		\node[] at (0.5,3.7) {P};
+		\node[] at (1.1,4.6) {S};
+		\node[] at (4, 4.6) {X};
+		\node[] at (4.6, -0.5) {G};
+		%\node[] at (1.3,3.4) {Q};
+		\node[] at (2.55,4.4) {1$\ohm$};
+		\node[] at (6.25,4.4) {2$\ohm$};v
+	\end{tikzpicture}
+\end{figure}
+\fi
+
+\item Find $q_1$.\\
+\solution After a long time, the capacitor starts to behave like an open switch, which means that no current will flow through the capacitor. Assume that the circuit is grounded at the negative terminals of the battery and current in the circuit is $i$. Applying KVL in the loop:
+	\begin{align}
+		1+i+2i-2=0\\
+		\implies i=\frac{1}{3}A\\
+		\frac{q_1\mu}{C} = 1+\frac{1}{3}\\
+		\implies q_1=\frac{4}{3}
+	\end{align}
+
 \item Find $q_1$.\\
 \solution\\
 After infinite time with switch at P\\
@@ -265,7 +323,7 @@ Applying KCL at X:
 	\begin{align}
 		e^{-at}u(t) &\system{L} \frac{1}{s+a}, \quad a > 0
 	\end{align}
-and find the ROC.
+and find the ROC.\\
 \solution
 \begin{align}
 	e^{-at}u(t) &\system{L} \int_{0}^{\infty}u(t)e^{-(s + a)t}dt \\
@@ -286,6 +344,7 @@ where
 	u(t) \system{L} V_1(s)
 	\\
 	2u(t) \system{L} V_2(s)
+	\label{eq:V2}
 \end{align}
 Find the voltage across the capacitor $V_{C_0}(s)$.\\
 \solution
@@ -293,7 +352,8 @@ Applying KCL at X:
 \begin{align}
 	\dfrac{V_x - \frac{1}{s}}{R_1} + s(V C_0)= \dfrac{\frac{2}{s} - V_x}{R_2}\\
 	V(s) = \frac{\frac{1}{R_1} + \frac{2}{R_2}}{s\brak{\frac{1}{R_1} + \frac{1}{R_2} + sC_0}} \\
-	= \frac{2R_1 + R_2}{R_1 + R_2}\brak{\frac{1}{s} - \frac{1}{\frac{1}{C_0}\brak{\frac{1}{R_1} + \frac{1}{R_2}} + s}} 
+	= \frac{2R_1 + R_2}{R_1 + R_2}\brak{\frac{1}{s} - \frac{1}{\frac{1}{C_0}\brak{\frac{1}{R_1} + \frac{1}{R_2}} + s}} \\
+	= \frac{4}{3}\brak{\frac{1}{s} - \frac{1}{\frac{3}{2C_0} + s}}
 	\label{eq:V-s}
 \end{align}
 \item Find $v_{C_0}(t)$.  Plot using python.
@@ -341,11 +401,54 @@ The circuit at steady state when the switch is at Q:\\
 	\caption{}
 	\label{fig:ckt-q2}
 \end{figure}
+\iffalse
+
+\begin{figure}
+	\begin{tikzpicture}
+		%		\draw[gray, thick] (1,0) -- (1,3.6); %Q
+		%		\draw[gray, thick] (0.75,4.4) -- (1.5,4); %S
+		\draw[gray, thick] (0,4) -- (1.5,4); %P
+		\draw[gray, thick] (1.5,4) -- (2,4); %R_1 and R_2
+		\draw[decorate,decoration=zigzag] (2,4) -- (3.5,4);
+		\draw[gray, thick] (3.5,4) -- (5.5,4);
+		\draw[decorate,decoration=zigzag] (5.5,4) -- (7,4);
+		\draw[gray, thick] (7,4) -- (8,4);
+		\draw[gray, thick] (0,0) -- (0, 4);
+		%\draw[gray, thick] (0,0) -- (0,1.95); %1V
+		%\draw[gray, thick] (0,2.25) -- (0,4);
+		%\draw[gray, thick] (-0.25,1.95) -- (0.25,1.95);
+		%\draw[gray, thick] (-0.5,2.25) -- (0.5,2.25);
+		\draw[gray, thick] (8,0) -- (8,1.95); %2V
+		\draw[gray, thick] (7.75,1.95) -- (8.25,1.95);
+		\draw[gray, thick] (7.5,2.25) -- (8.5,2.25);
+		\draw[gray, thick] (8,2.25) -- (8,4);
+		\draw[gray, thick] (4,0) -- (4,1.95); %capacitor
+		\draw[gray, thick] (4,2.25) -- (4,4);
+		\draw[gray, thick] (3.65,1.95) -- (4.35,1.95);
+		\draw[gray, thick] (3.65,2.25) -- (4.35,2.25);
+		\draw[gray, thick] (0,0) -- (8,0); %base
+		\draw[gray, thick] (4,0) -- (4, -0.5);
+		\draw[black, thick] (3.75, -0.5) -- (4.25, -0.5);
+		\draw[gray, thick] (3.82, -0.6) -- (4.18, -0.6);
+		\draw[gray, thick] (3.9, -0.7) -- (4.1, -0.7);
+		%\node[] at (-0.6,1.85) {1V};
+		\node[] at (7.4,1.85) {2V};
+		\node[] at (3.1,2) {1$\mu$F};
+%		\node[] at (0.5,3.7) {P};
+		\node[] at (1.1,4.6) {S};
+		\node[] at (4, 4.6) {X};
+		\node[] at (4.6, -0.5) {G};
+		\node[] at (0,4.57) {Q};
+		\node[] at (2.55,4.4) {1$\ohm$};
+		\node[] at (6.25,4.4) {2$\ohm$};v
+	\end{tikzpicture}
+\end{figure}
+\fi
 At steady state: Capacitor is charged\\
 Applying KCL at X.
 \begin{align}
 	\frac{V - 0}{1} + \frac{V - 2}{2} = 0\\
-	\implies V = \SI[parse-numbers=false]{\frac{2}{3}}{\V}
+	\implies V = \SI[parse-numbers=false]{\frac{2}{3}}{\V} \quad
 	q_2 = \SI[parse-numbers=false]{\frac{2}{3}}{\micro\coulomb}
 \end{align}                                         
 
@@ -446,7 +549,7 @@ From KCL and KVL,
 \begin{align}
 	&i_1 = i_2 +i_3 \\
 	&i_1R_1 + \frac{4}{3} + \frac{1}{C_0}\int_{0}^{t}i_2dt = 0 \\
-	&\frac{4}{3} + \frac{1}{C_0}\int_{0}^{t}i_2dt - i_3R_2 - 2 = 0 \\
+	&\frac{4}{3} + \frac{1}{C_0}\int_{0}^{t}i_2dt - i_3R_2 - 2 = 0
 \end{align}
 Taking Laplace Transforms on both sides and using the properties of Laplace Transforms,
 \begin{align}
@@ -508,9 +611,10 @@ Using \eqref{eq:diff1} and \eqref{eq:diff3} in \eqref{eq:diff2},
 	\label{eq:diff-eqn-init}
 \end{align}
 where $\tau = \frac{C_0R_1R_2}{R_1 + R_2}$ is the RC time 
-constant of the circuit. Note that $i_2(0) = \frac{V_2}{R_2}$ A and 
-$i_2 = C_0\diff{V}{t}$, where $V$ is the voltage of the capacitor. 
-Hence, integrating \eqref{eq:diff-eqn-init},
+constant\\% of the circuit.\\
+$i_2(0) = \dfrac{V_2}{R_2}$ and 
+$i_2 = C_0\diff{V}{t}$, where $V = V_{C_0}$ is the voltage of the capacitor. 
+%Hence, integrating \eqref{eq:diff-eqn-init},
 \begin{align}
 	C_0\diff{V}{t} - \frac{V_2}{R_2} + \frac{C_0V}{\tau} &= 0 \\
 	\implies \diff{V}{t} + \frac{V}{\tau} = \frac{V_2}{C_0R_2}
@@ -530,12 +634,14 @@ In the $s$ domain:
 \end{align}
 \item Plot $H(s)$.  What kind of filter is it?\\
 \begin{lstlisting}
+https://github.com/DarkWake9/EE3900/blob/main/cktsig/codes/e4.3.py
 \end{lstlisting}
 \begin{figure}[!ht]
 	\includegraphics[width=\columnwidth]{/media/darkwake/VIB2/EE3900/cktsig/figs/e4.3.jpg}
 	\caption{Plot of $H(s)$.}
 	\label{fig:Hs}
 \end{figure}
+\vspace{3.5cm}
 It is a Low-Pass filter\\
 \item Using trapezoidal rule for integration, formulate the difference equation
 by considering 
@@ -543,13 +649,82 @@ by considering
 	y(n) = y(t)\vert_{t=n}
 \end{align}
 \solution\\
-\item Find $H(z)$.
-\item How can you obtain $H(z)$ from $H(s)$?
+$v_{in} = v_2(n) = 2u(n)$ and $v_{out} = v(n)$\\
+Integrating \eqref{eq:diff-eqn} from n to n+1\\ and using \eqref{eq:V2}:
+\begin{align}
+	v(n+1) - v(n) + \frac{v(n+1) + v(n)}{2\tau} \nonumber\\ = \frac{2}{C_0R_2}\frac{(u(n+1) + u(n))}{2}\\
+	v(n+1)(2\tau + 1) + v(n)(1 - 2\tau) \nonumber \\ = \frac{2}{C_0R_2}\tau(u(n+1) + u(n))\\
+	v(n)(2\tau + 1) + v(n-1)(1 - 2\tau) \nonumber \\ = \frac{2}{C_0R_2}\tau(u(n) + u(n-1))
+	\label{eq:n-domain}
+\end{align}
+\item Find $H(z)$.\\
+\solution\\
+\begin{align}
+	H(z) = \frac{V(z)}{V_2(z)}
+\end{align}
+We know that 
+%In the $z$ - domain:
+\begin{align}
+	v_2(n) = 2u(n) \implies V_2(z) = \frac{2}{1-z^{-1}}
+\end{align}
+Applying $\mathcal{Z}$-transform on \eqref{eq:n-domain}
+\begin{align}
+	V(z)&(2\tau + 1) + z^{-1}V(z)(1 - 2\tau) = \frac{2\tau(1 + z^{-1})}{C_0R_2(1 - z^{-1})}\\
+	V(z)&\brak{2\tau + 1 -z^{-1}(2\tau - 1)} = \frac{\tau V_2(z)(1 + z^{-1})}{C_0R_2}\\
+	H(z)& = \frac{V(z)}{V_2(z)} = \frac{\tau(1 + z^{-1})}{C_0R_2\brak{2\tau + 1 -z^{-1}(2\tau - 1)}}
+\end{align}
+\begin{align}
+	H(z) = \frac{\tau(1 + z^{-1})}{R_2C_0\brak{2\tau + 1 -z^{-1}(2\tau - 1)}}\\
+	= \frac{\tau (z + 1)}{R_2C_0(2\tau(z-1) + z + 1))}\\
+	= \dfrac{1}{2C_0\brak{2\dfrac{z - 1}{z + 1} + \dfrac{1}{\tau}}}
+\end{align}
+\begin{align}
+	\text{But }\tau = \frac{C_0R_1R_2}{R_1 + R_2} = \frac{2C_0}{3} \text{ and } R_2 = 2 \nonumber\\
+	\implies H(z) = \dfrac{1}{2C_0\brak{2\dfrac{z - 1}{z + 1} + \dfrac{3}{2C_0}}}
+\end{align}
+\begin{equation}
+	H(z) = \dfrac{1}{3 + 4C_0\dfrac{z-1}{z+1}}
+	\label{eq:Hz}
+\end{equation}
+R.O.C: $|z| < 1$
+\item How can you obtain $H(z)$ from $H(s)$?\\
 \solution\\
 Apply a Bilinear Transform
 \begin{align}
-	s \rightarrow \dfrac{2}{T}\dfrac{z-1}{z+1}
+	s \rightarrow \dfrac{2}{T}\dfrac{z-1}{z+1}\\
+	H(z) = \dfrac{1}{3 + C_0\dfrac{2}{T}\dfrac{z-1}{z+1}}
 \end{align}
+Putting T = $\frac{1}{2}$ will give \eqref{eq:Hz}\\
+\item Find $v(n)$. Verify using ngspice and differential equation\\
+\solution\\
+\begin{align}
+	V(z) = H(z)V_2(z)\\
+	= \dfrac{1}{3 +  \frac{2}{T}C_0 \frac{1 - z^{-1}}{1 + z^{-1}}}\frac{2}{1 - z^{-1}}
+\end{align}
+\begin{align}
+	= \frac{2}{1 - z^{-1}} \frac{\frac{2}{T}C_0(1 + z^{-1})}{3\sbrak{3(1 + z^{-1}) + \frac{2}{T}C_0(1 - z^{-1})}}
+\end{align}
+\begin{align}
+	&= \frac{2}{3(1 - z^{-1})} - \frac{2\frac{\tau}{T}}{3\sbrak{(1 + z^{-1}) + 2\frac{\tau}{T}(1 - z^{-1})}}\\
+	&= \frac{2}{3(1 - z^{-1})} - \frac{2\tau}{3\sbrak{ 2\tau + 1 - z^{-1}(2\tau - 1)}}\\
+	&= \frac{2}{3(1 - z^{-1})} - \frac{2\frac{\tau}{T}}{2\frac{\tau}{T}+ 1}\frac{1}{3\sbrak{1 - z^{-1}\sbrak{\frac{2\frac{\tau}{T} - 1}{2\frac{\tau}{T} + 1}}}}\\
+	&= \frac{2}{3(1 - z^{-1})} - \frac{2\frac{\tau}{T}}{2\frac{\tau}{T}+ 1}\frac{1}{3\sbrak{1 - z^{-1}\sbrak{\frac{2\tau - T}{2\tau + T}}}}
+%\end{align}
+\intertext{aking Inverse $\mathcal{Z}$ transform on both sides}
+%\begin{align}
+v(n) &= \sbrak{\frac{2}{3} - \frac{2\tau}{3(2\tau + T	)}\brak{\frac{2\tau + T}{2\tau - T}}^n}u(n)
+\end{align}
+Python code used to plot can be found at:
+\begin{lstlisting}
+https://github.com/DarkWake9/EE3900/blob/main/cktsig/codes/e4.7.py
+\end{lstlisting}
+\begin{figure}[!ht]
+	\begin{center}
+		\includegraphics[width=\columnwidth]{./figs/e4.7.pdf}
+	\end{center}
+	\captionof{figure}{}
+	\label{fig:}	
+\end{figure}
 \end{enumerate}
 
 \end{document}
