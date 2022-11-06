@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2022.9.4)  4 NOV 2022 01:19
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2022.9.4)  6 NOV 2022 14:40
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -600,9 +600,6 @@ File: l3backend-pdftex.def 2022-01-12 L3 backend support: PDF output (pdfTeX)
 )
 (./main.aux
 
-LaTeX Warning: Label `fig:' multiply defined.
-
-
 LaTeX Warning: Label `eq:duality' multiply defined.
 
 
@@ -821,9 +818,6 @@ Package pdftex.def Info: ./figs/e1.1.pdf  used on input line 215.
 (pdftex.def)             Requested size: 252.0pt x 189.00429pt.
 
 
-LaTeX Warning: Reference `fig:xt' on page 1 undefined on input line 221.
-
-
 LaTeX Warning: Command \j invalid in math mode on input line 238.
 
 
@@ -889,7 +883,7 @@ LaTeX Warning: Command \j invalid in math mode on input line 275.
 
 
  <./figs/e1.1.pdf>]
-<./figs/e2.3.pdf, id=83, 462.52798pt x 346.89601pt>
+<./figs/e2.3.pdf, id=84, 462.52798pt x 346.89601pt>
 File: ./figs/e2.3.pdf Graphic file (type pdf)
 <use ./figs/e2.3.pdf>
 Package pdftex.def Info: ./figs/e2.3.pdf  used on input line 285.
@@ -945,7 +939,7 @@ LaTeX Warning: Command \j invalid in math mode on input line 330.
 
 LaTeX Warning: Command \j invalid in math mode on input line 330.
 
-<./figs/e2.6.pdf, id=87, 462.52798pt x 346.89601pt>
+<./figs/e2.6.pdf, id=88, 462.52798pt x 346.89601pt>
 File: ./figs/e2.6.pdf Graphic file (type pdf)
 <use ./figs/e2.6.pdf>
 Package pdftex.def Info: ./figs/e2.6.pdf  used on input line 339.
@@ -1008,7 +1002,7 @@ LaTeX Warning: Command \j invalid in math mode on input line 410.
 
 LaTeX Warning: Command \j invalid in math mode on input line 410.
 
-<./figs/e3.8.pdf, id=159, 462.52798pt x 346.89601pt>
+<./figs/e3.8.pdf, id=160, 462.52798pt x 346.89601pt>
 File: ./figs/e3.8.pdf Graphic file (type pdf)
 <use ./figs/e3.8.pdf>
 Package pdftex.def Info: ./figs/e3.8.pdf  used on input line 424.
@@ -1047,12 +1041,12 @@ LaTeX Warning: Command \j invalid in math mode on input line 441.
 
 LaTeX Warning: Command \j invalid in math mode on input line 441.
 
-<./figs/e3.9.pdf, id=231, 462.52798pt x 346.89601pt>
+<./figs/e3.9.pdf, id=232, 462.52798pt x 346.89601pt>
 File: ./figs/e3.9.pdf Graphic file (type pdf)
 <use ./figs/e3.9.pdf>
 Package pdftex.def Info: ./figs/e3.9.pdf  used on input line 447.
 (pdftex.def)             Requested size: 252.0pt x 189.00429pt.
-<./figs/e3.10.pdf, id=233, 462.52798pt x 346.89601pt>
+<./figs/e3.10.pdf, id=234, 462.52798pt x 346.89601pt>
 File: ./figs/e3.10.pdf Graphic file (type pdf)
 <use ./figs/e3.10.pdf>
 Package pdftex.def Info: ./figs/e3.10.pdf  used on input line 464.
@@ -1063,86 +1057,88 @@ Underfull \hbox (badness 10000) in paragraph at lines 473--476
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 489--491
+Underfull \hbox (badness 10000) in paragraph at lines 490--492
 
  []
 
 
-LaTeX Warning: Command \j invalid in math mode on input line 498.
+LaTeX Warning: Command \j invalid in math mode on input line 499.
 
 
-LaTeX Warning: Command \j invalid in math mode on input line 498.
+LaTeX Warning: Command \j invalid in math mode on input line 499.
 
 
-LaTeX Warning: Command \j invalid in math mode on input line 498.
+LaTeX Warning: Command \j invalid in math mode on input line 499.
 
 
-LaTeX Warning: Command \j invalid in math mode on input line 498.
+LaTeX Warning: Command \j invalid in math mode on input line 499.
 
 
-LaTeX Warning: Command \j invalid in math mode on input line 498.
+LaTeX Warning: Command \j invalid in math mode on input line 499.
 
 
-LaTeX Warning: Command \j invalid in math mode on input line 498.
+LaTeX Warning: Command \j invalid in math mode on input line 499.
 
 
-LaTeX Warning: Command \j invalid in math mode on input line 498.
+LaTeX Warning: Command \j invalid in math mode on input line 499.
 
 
-LaTeX Warning: Command \j invalid in math mode on input line 498.
+LaTeX Warning: Command \j invalid in math mode on input line 499.
 
 
-LaTeX Warning: Command \j invalid in math mode on input line 498.
+LaTeX Warning: Command \j invalid in math mode on input line 499.
 
 
-LaTeX Warning: Command \j invalid in math mode on input line 498.
+LaTeX Warning: Command \j invalid in math mode on input line 499.
 
 
-LaTeX Warning: Command \j invalid in math mode on input line 498.
+LaTeX Warning: Command \j invalid in math mode on input line 499.
 
 
-LaTeX Warning: Command \j invalid in math mode on input line 498.
+LaTeX Warning: Command \j invalid in math mode on input line 499.
 
 
-LaTeX Warning: Command \j invalid in math mode on input line 498.
+LaTeX Warning: Command \j invalid in math mode on input line 499.
 
 
-LaTeX Warning: Command \j invalid in math mode on input line 498.
+LaTeX Warning: Command \j invalid in math mode on input line 499.
 
 
-LaTeX Warning: Command \j invalid in math mode on input line 498.
+LaTeX Warning: Command \j invalid in math mode on input line 499.
 
 
-LaTeX Warning: Command \j invalid in math mode on input line 498.
+LaTeX Warning: Command \j invalid in math mode on input line 499.
 
 
 Underfull \vbox (badness 2846) has occurred while \output is active []
 
  [4 <./figs/e3.8.pdf> <./figs/e3.9.pdf> <./figs/e3.10.pdf>]
-<./figs/e4.3.pdf, id=384, 462.52798pt x 346.89601pt>
+<./figs/e4.3.pdf, id=385, 462.52798pt x 346.89601pt>
 File: ./figs/e4.3.pdf Graphic file (type pdf)
 <use ./figs/e4.3.pdf>
-Package pdftex.def Info: ./figs/e4.3.pdf  used on input line 506.
+Package pdftex.def Info: ./figs/e4.3.pdf  used on input line 507.
 (pdftex.def)             Requested size: 252.0pt x 189.00429pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 515--519
+Underfull \hbox (badness 10000) in paragraph at lines 516--520
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 523--527
+Underfull \hbox (badness 10000) in paragraph at lines 529--533
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 533--534
+Underfull \hbox (badness 10000) in paragraph at lines 539--540
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 550--551
 
  []
 
 [5 <./figs/e4.3.pdf>] (./main.aux)
-
-LaTeX Warning: There were undefined references.
-
 
 LaTeX Warning: There were multiply-defined labels.
 
@@ -1150,13 +1146,13 @@ Package rerunfilecheck Info: File `main.out' has not changed.
 (rerunfilecheck)             Checksum: 43EED739D6F151668068F9FE9749AB82;562.
  ) 
 Here is how much of TeX's memory you used:
- 16256 strings out of 478287
- 254638 string characters out of 5849290
+ 16258 strings out of 478287
+ 254657 string characters out of 5849290
  764924 words of memory out of 5000000
- 34084 multiletter control sequences out of 15000+600000
+ 34085 multiletter control sequences out of 15000+600000
  541866 words of font info for 183 fonts, out of 8000000 for 9000
  1144 hyphenation exceptions out of 8191
- 60i,16n,63p,232b,1318s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 60i,16n,63p,232b,1322s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texliv
 e/texmf-dist/fonts/type1/public/txfonts/rtxmi.pfb></usr/share/texlive/texmf-dis
 t/fonts/type1/public/txfonts/rtxr.pfb></usr/share/texlive/texmf-dist/fonts/type
@@ -1168,10 +1164,10 @@ are/texlive/texmf-dist/fonts/type1/public/txfonts/txsyc.pfb></usr/share/texlive
 ts/type1/urw/times/utmbi8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/t
 imes/utmr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmri8a.pf
 b>
-Output written on main.pdf (5 pages, 215403 bytes).
+Output written on main.pdf (5 pages, 214999 bytes).
 PDF statistics:
- 502 PDF objects out of 1000 (max. 8388607)
- 267 compressed objects within 3 object streams
- 123 named destinations out of 1000 (max. 500000)
+ 504 PDF objects out of 1000 (max. 8388607)
+ 269 compressed objects within 3 object streams
+ 124 named destinations out of 1000 (max. 500000)
  76 words of extra memory for PDF output out of 10000 (max. 10000000)
 
