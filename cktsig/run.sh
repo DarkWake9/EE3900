@@ -7,19 +7,19 @@ pwd
 
 python3 e2.6.py
 echo e2.6.py ran successfully
-sleep(10s)
+sleep 10
 
 python3 e3.4.py
 echo e3.4.py ran successfully
-sleep(10s)
+sleep 10
 
 python3 e4.3.py
 echo e4.3.py ran successfully
-sleep(10s)
+sleep 10
 
 python3 e4.7.py
 echo e4.7.py ran successfully
-sleep(10s)
+sleep 10
 
 echo All python codes ran successfully
 
