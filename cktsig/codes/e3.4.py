@@ -23,7 +23,7 @@ def vc0(t):
 k = np.linspace(1e-10,1e-5,100000)
 vvco = [vc0(i) for i in k]
 
-vspice = np.loadtxt('../codes/e3.txt')
+vspice = np.loadtxt('e3.txt')
 
 plt.plot(k,vvco, label = 'Theoretical')
 plt.plot(vspice[:,0],vspice[:,1],'.', label = 'Simulation')
