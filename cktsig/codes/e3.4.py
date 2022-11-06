@@ -1,6 +1,7 @@
 import os
 import numpy as np
 from matplotlib import pyplot as plt
+from time import sleep
 
 def u(t):
     if t < 0:
@@ -31,6 +32,7 @@ plt.ylabel("$V_{C_{0}}(t) (V)$")
 plt.xlabel("$t(s)")
 plt.grid(True, 'both')
 plt.legend()
-plt.savefig('../figs/e3.4.jpg')
+plt.savefig('../figs/e3.4.pdf')
+sleep(4)
 #plt.show()
 os.system('xdg-open ../figs/e3.4.pdf')
