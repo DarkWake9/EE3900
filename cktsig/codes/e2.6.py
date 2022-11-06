@@ -1,3 +1,4 @@
+import os
 import numpy as np
 from matplotlib import pyplot as plt
 
@@ -13,7 +14,7 @@ def u(t):
         return 1
 
 vc0 = lambda t: (4/3) * 1 - np.exp(-1.5 * 10**6 * t) * u(t)
-vco_spice = np.loadtxt('cktsig/codes/e2.txt')
+vco_spice = np.loadtxt('../codes/e2.txt')
 k = np.linspace(1e-14,1e-5,100000, len(vco_spice))
 t = np.linspace(1e-14,1e-5,100000, len(vco_spice))
 vvco = [vc0(i) for i in t]
@@ -24,5 +25,6 @@ plt.xlabel("$t(s)$'")
 plt.ylabel("$V_{C_{0}}(t) (V)$'")
 plt.legend()
 plt.grid(True, 'both')
-plt.savefig('cktsig/figs/e2.6.png')
-plt.show()
+plt.savefig("../figs/e2.6.pdf")
+#plt.show()
+os.system('xdg-open ../figs/e2.6.pdf')

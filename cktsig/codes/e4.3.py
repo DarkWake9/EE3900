@@ -1,3 +1,4 @@
+import os
 import numpy as np
 from matplotlib import pyplot as plt
 
@@ -11,5 +12,6 @@ plt.plot(s, H)
 plt.ylabel("$H(s)$")
 plt.xlabel("$s$")
 plt.grid(True, 'both')
-plt.savefig('cktsig/figs/e4.3.jpg')
-plt.show()
+plt.savefig('../figs/e4.3.pdf')
+#plt.show()
+os.system('xdg-open ../figs/e4.3.pdf')
