@@ -208,21 +208,27 @@
 		\label{fig:transformer}
 	\end{figure}
 	
+	
+\begin{figure}[!ht]
+	\includegraphics[width=\columnwidth]{figs/hwrect.jpg}
+  \caption{Output half-wave rectified waveform across diode across A - B 20 V peak.}
+	\label{fig:hwrect}
+\end{figure}
 	\begin{figure}[!ht]
 		\includegraphics[width=\columnwidth]{figs/rectified.jpg}
-		\caption{Output full-wave rectified waveform across diode across C - D 13 V peak.}
+		\caption{Output full-wave rectified waveform across diode across C - D 17.5 V peak.}
 		\label{fig:rectifier}
 	\end{figure}
 	
 	\begin{figure}[!ht]
-		\includegraphics[width=\columnwidth]{figs/filter.jpg}
-		\caption{Output DC waveform at filter stage across IS (18 V).}
+		\includegraphics[width=\columnwidth]{figs/capout.jpg}
+		\caption{Output DC waveform at filter stage across C - G 22 V.}
 		\label{fig:filter}
 	\end{figure}
 	
 	\begin{figure}[!ht]
 		\includegraphics[width=\columnwidth]{figs/final_op.jpg}
-		\caption{Output DC waveform at regulator stage across OG (5 V).}
+		\caption{Output DC waveform at regulator stage across H - G 5 V.}
 		\label{fig:regulator_dc}
 	\end{figure}
 	
@@ -234,19 +240,10 @@
 	
 	\begin{enumerate}
 		\item Peak voltage after transformer and rectifier, 
-		$V_p = 13$ V.
+		$V_p = 20$ V.
 		\item DC component after filter, 
-		$V_{DC} = 13$ V.
+		$V_{DC} = 20$ V.
 		\item DC component after regulator stage, $V_{DC}' = 5$ V.
 		%\item Ripple after regulator stage, $\epsilon = \SI{5}{\milli\V}$.
-	\end{enumerate}
-	
-	\section{Learning Outcomes}
-	\begin{enumerate}
-		\item Working and implementation of a low-pass analog filter.
-		\item Use of regulator to help realise an analog low-pass filter with
-		very low cutoff frequency.
-		\item Use of lab equipment such as solder, oscilloscope, breadboard, PCB, etc.
-		to realize a circuit.
 	\end{enumerate}
 \end{document}

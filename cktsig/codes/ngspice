@@ -1,0 +1,23 @@
+* Output After Switching
+
+R1  X    0    1
+
+C1  X    0    1u    ic=0
+
+R2  X    3    2
+
+V2  3    0    2
+
+
+.control
+tran    1n    20u    uic
+
+run
+wrdata    e4.txt    v(X)
+set color0 = white
+set color1 = black
+plot  v(X)
+hardcopy ../figs/e4.7.pdf v(X)
+.endc
+
+.end

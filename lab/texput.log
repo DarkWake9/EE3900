@@ -1,11 +1,11 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Termux) (preloaded format=pdflatex 2022.11.4)  7 NOV 2022 13:42
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Termux) (preloaded format=pdflatex 2022.11.4)  7 NOV 2022 13:31
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
-**main.tex
-(./main.tex
-LaTeX2e <2022-11-01>
-L3 programming layer <2022-11-02>
+**\documentclass[journal,12pt,twocolumn]{IEEEtran}
+
+*\usepackage{setspace}
+
 (/data/data/com.termux/files/usr/share/texlive/texmf-dist/tex/latex/ieeetran/IE
 EEtran.cls
 Document Class: IEEEtran 2015/08/26 V1.8b by Michael Shell
@@ -112,14 +112,20 @@ LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <24> not available
 \c@IEEEbiography=\count199
 \@IEEEtranrubishbin=\box52
 )
+*\usepackage{gensymb}
+
 (/data/data/com.termux/files/usr/share/texlive/texmf-dist/tex/latex/setspace/se
 tspace.sty
 Package: setspace 2011/12/19 v6.7a set line spacing
 )
+*\usepackage{xcolor}
+
 (/data/data/com.termux/files/usr/share/texlive/texmf-dist/tex/latex/gensymb/gen
 symb.sty
 Package: gensymb 2022/10/17 v1.0.2 (KJH)
 )
+*\usepackage{caption}
+
 (/data/data/com.termux/files/usr/share/texlive/texmf-dist/tex/latex/xcolor/xcol
 or.sty
 Package: xcolor 2022/06/12 v2.14 LaTeX color extensions (UK)
@@ -146,6 +152,12 @@ Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1374.
 Package xcolor Info: Model `Gray' substituted by `gray' on input line 1375.
 Package xcolor Info: Model `wave' substituted by `hsb' on input line 1376.
 )
+*%\usepackage{subcaption}
+
+*%\doublespacing
+
+*\singlespacing
+
 (/data/data/com.termux/files/usr/share/texlive/texmf-dist/tex/latex/caption/cap
 tion.sty
 Package: caption 2022/03/01 v3.6b Customizing captions (AR)
@@ -189,6 +201,16 @@ See the caption package documentation for explanation.
 \c@caption@flags=\count266
 \c@continuedfloat=\count267
 )
+*\usepackage{siunitx}
+
+*%\usepackage{graphicx}
+
+*%\usepackage{amssymb}
+
+*%\usepackage{relsize}
+
+*\usepackage[cmex10]{amsmath}
+
 (/data/data/com.termux/files/usr/share/texlive/texmf-dist/tex/latex/siunitx/siu
 nitx.sty
 Package: siunitx 2022-10-23 v3.1.9 A comprehensive (SI) units package
@@ -270,6 +292,8 @@ Package: array 2022/09/04 v2.5g Tabular extension package (FMi)
 \backup@length=\skip51
 \ar@cellbox=\box61
 ))
+*\usepackage{mathtools}
+
 (/data/data/com.termux/files/usr/share/texlive/texmf-dist/tex/latex/amsmath/ams
 math.sty
 Package: amsmath 2022/04/08 v2.17n AMS math features
@@ -334,6 +358,20 @@ LaTeX Info: Redefining \Relbar on input line 971.
 LaTeX Info: Redefining \[ on input line 2953.
 LaTeX Info: Redefining \] on input line 2954.
 )
+*%\usepackage{amsthm}
+
+*%\interdisplaylinepenalty=2500
+
+*%\savesymbol{iint}
+
+*%\usepackage{txfonts}
+
+*%\restoresymbol{TXF}{iint}
+
+*%\usepackage{wasysym}
+
+*\usepackage{hyperref}
+
 (/data/data/com.termux/files/usr/share/texlive/texmf-dist/tex/latex/mathtools/m
 athtools.sty
 Package: mathtools 2022/06/29 v1.29 mathematical typesetting tools
@@ -368,6 +406,8 @@ Package: mhsetup 2021/03/18 v1.4 programming setup (MH)
 \xmathstrut@box=\box64
 \xmathstrut@dim=\dimen197
 )
+*\usepackage{amsthm}
+
 (/data/data/com.termux/files/usr/share/texlive/texmf-dist/tex/latex/hyperref/hy
 perref.sty
 Package: hyperref 2022-09-22 v7.00t Hypertext links for LaTeX
@@ -513,6 +553,8 @@ Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 )
 \Hy@SectionHShift=\skip59
 )
+*\usepackage{mathrsfs}
+
 (/data/data/com.termux/files/usr/share/texlive/texmf-dist/tex/latex/amscls/amst
 hm.sty
 Package: amsthm 2020/05/29 v2.20.6
@@ -526,11 +568,15 @@ Package: amsthm 2020/05/29 v2.20.6
 \thm@headsep=\skip62
 \dth@everypar=\toks29
 )
+*\usepackage{txfonts}
+
 (/data/data/com.termux/files/usr/share/texlive/texmf-dist/tex/latex/jknapltx/ma
 thrsfs.sty
 Package: mathrsfs 1996/01/01 Math RSFS package v1.0 (jk)
 \symrsfs=\mathgroup4
 )
+*\usepackage{stfloats}
+
 (/data/data/com.termux/files/usr/share/texlive/texmf-dist/tex/latex/txfonts/txf
 onts.sty
 Package: txfonts 2008/01/22 v3.2.1
@@ -612,6 +658,8 @@ LaTeX Info: Redefining \not on input line 1043.
 LaTeX Info: Redefining \textsquare on input line 1063.
 LaTeX Info: Redefining \openbox on input line 1064.
 )
+*\usepackage{cite}
+
 (/data/data/com.termux/files/usr/share/texlive/texmf-dist/tex/latex/sttools/stf
 loats.sty
 Package: stfloats 2017/03/27 v3.3 Improve float mechanism and baselineskip sett
@@ -619,17 +667,25 @@ ings
 \@dblbotnum=\count307
 \c@dblbotnumber=\count308
 )
+*\usepackage{cases}
+
 (/data/data/com.termux/files/usr/share/texlive/texmf-dist/tex/latex/cite/cite.s
 ty
 LaTeX Info: Redefining \cite on input line 302.
 LaTeX Info: Redefining \nocite on input line 332.
 Package: cite 2015/02/27  v 5.5
 )
+*\usepackage{subfig}
+
 (/data/data/com.termux/files/usr/share/texlive/texmf-dist/tex/latex/cases/cases
 .sty
 Package: cases 2020/03/29 ver 3.2
 \numc@numwid=\dimen258
 )
+*%\usepackage{xtab}
+
+*\usepackage{longtable}
+
 (/data/data/com.termux/files/usr/share/texlive/texmf-dist/tex/latex/subfig/subf
 ig.sty
 Package: subfig 2005/06/28 ver: 1.3 subfig package
@@ -647,6 +703,8 @@ Package: subfig 2005/06/28 ver: 1.3 subfig package
 \sf@top=\skip66
 \sf@bottom=\skip67
 )
+*\usepackage{multirow}
+
 (/data/data/com.termux/files/usr/share/texlive/texmf-dist/tex/latex/tools/longt
 able.sty
 Package: longtable 2021-09-01 v4.17 Multi-page Table package (DPC)
@@ -667,6 +725,14 @@ Package: longtable 2021-09-01 v4.17 Multi-page Table package (DPC)
 \c@LT@chunks=\count320
 \LT@p@ftn=\toks30
 )
+*%\usepackage{algorithm}
+
+*%\usepackage{algpseudocode}
+
+*%\usepackage{enumerate}
+
+*\usepackage{enumitem}
+
 (/data/data/com.termux/files/usr/share/texlive/texmf-dist/tex/latex/multirow/mu
 ltirow.sty
 Package: multirow 2021/03/15 v2.8 Span multiple rows of a table
@@ -675,6 +741,8 @@ Package: multirow 2021/03/15 v2.8 Span multiple rows of a table
 \multirow@dima=\skip73
 \bigstrutjot=\dimen261
 )
+*\usepackage{mathtools}
+
 (/data/data/com.termux/files/usr/share/texlive/texmf-dist/tex/latex/enumitem/en
 umitem.sty
 Package: enumitem 2019/06/20 v3.9 Customized lists
@@ -685,6 +753,14 @@ Package: enumitem 2019/06/20 v3.9 Customized lists
 \enit@count@id=\count322
 \enitdp@description=\count323
 )
+*%\usepackage{iithtlc}
+
+*%\usepackage[framemethod=tikz]{mdframed}
+
+*\usepackage{listings}
+
+*\usepackage{tikz}
+
 (/data/data/com.termux/files/usr/share/texlive/texmf-dist/tex/latex/listings/li
 stings.sty
 \lst@mode=\count324
@@ -712,6 +788,8 @@ stings.cfg
 File: listings.cfg 2020/03/24 1.8d listings configuration
 ))
 Package: listings 2020/03/24 1.8d (Carsten Heinz)
+
+*\usetikzlibrary{shapes,arrows,positioning}
 
 (/data/data/com.termux/files/usr/share/texlive/texmf-dist/tex/latex/pgf/fronten
 dlayer/tikz.sty
@@ -1125,6 +1203,10 @@ File: pgflibraryarrows.code.tex 2021/05/15 v3.1.9a (3.1.9a)
 endlayer/tikz/libraries/tikzlibrarypositioning.code.tex
 File: tikzlibrarypositioning.code.tex 2021/05/15 v3.1.9a (3.1.9a)
 )
+*\usepackage{circuitikz}
+
+*\let\vec\mathbf
+
 (/data/data/com.termux/files/usr/share/texlive/texmf-dist/tex/latex/circuitikz/
 circuitikz.sty
 Package: circuitikz 2022/09/09{} The CircuiTikz circuit drawing package version
@@ -1217,14 +1299,75 @@ z/pgfcircvoltage.tex
 z/pgfcirccurrent.tex)
 (/data/data/com.termux/files/usr/share/texlive/texmf-dist/tex/generic/circuitik
 z/pgfcircflow.tex))
+*
+(Please type a command or say `\end')
+*
+(Please type a command or say `\end')
+*%\usepackage{stmaryrd}
+
+*
+(Please type a command or say `\end')
+*
+(Please type a command or say `\end')
+*%\usepackage{wasysym}
+
+*%\newcounter{MYtempeqncnt}
+
+*\DeclareMathOperator*{\Res}{Res}
+
+*%\renewcommand{\baselinestretch}{2}
+
+*\renewcommand\thesection{\arabic{section}}
+
+*\renewcommand\thesubsection{\thesection.\arabic{subsection}}
+
+*\renewcommand\thesubsubsection{\thesubsection.\arabic{subsubsection}}
+
+*
+(Please type a command or say `\end')
+*\renewcommand\thesectiondis{\arabic{section}}
+
+*\renewcommand\thesubsectiondis{\thesectiondis.\arabic{subsection}}
+
+*\renewcommand\thesubsubsectiondis{\thesubsectiondis.\arabic{subsubsection}}
+
+*
+(Please type a command or say `\end')
+*%\renewcommand{\labelenumi}{\textbf{\theenumi}}
+
+*%\renewcommand{\theenumi}{P.\arabic{enumi}}
+
+*
+(Please type a command or say `\end')
+*% correct bad hyphenation here
+
+*\hyphenation{op-tical net-works semi-conduc-tor}
+
+*
+(Please type a command or say `\end')
+*\lstset{
+
+*	language=Python,
+
+*	frame=single,
+
+*	breaklines=true,
+
+*	columns=fullflexible
+
+*}
+
 (/data/data/com.termux/files/usr/share/texlive/texmf-dist/tex/latex/listings/ls
 tlang1.sty
 File: lstlang1.sty 2020/03/24 1.8d listings language file
 )
+*
+(Please type a command or say `\end')
+*\begin{document}
 Package translations Info: No language package found. I am going to use `englis
-h' as default language. on input line 74.
-LaTeX Font Info:    Trying to load font information for OT1+txr on input line 7
-4.
+h' as default language. on input line 0.
+LaTeX Font Info:    Trying to load font information for OT1+txr on input line 0
+.
 
 (/data/data/com.termux/files/usr/share/texlive/texmf-dist/tex/latex/txfonts/ot1
 txr.fd
@@ -1235,101 +1378,101 @@ File: ot1txr.fd 2000/12/15 v3.1
 File: l3backend-pdftex.def 2022-10-26 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count357
 \l__pdf_internal_box=\box105
-) (./main.aux)
-\openout1 = `main.aux'.
+)
+No file texput.aux.
+\openout1 = `texput.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/txmi/m/it on input line 74.
+LaTeX Font Info:    Checking defaults for OML/txmi/m/it on input line 0.
 LaTeX Font Info:    Trying to load font information for OML+txmi on input line 
-74.
+0.
 
 (/data/data/com.termux/files/usr/share/texlive/texmf-dist/tex/latex/txfonts/oml
 txmi.fd
 File: omltxmi.fd 2000/12/15 v3.1
 )
-LaTeX Font Info:    ... okay on input line 74.
-LaTeX Font Info:    Checking defaults for OMS/txsy/m/n on input line 74.
+LaTeX Font Info:    ... okay on input line 0.
+LaTeX Font Info:    Checking defaults for OMS/txsy/m/n on input line 0.
 LaTeX Font Info:    Trying to load font information for OMS+txsy on input line 
-74.
+0.
 
 (/data/data/com.termux/files/usr/share/texlive/texmf-dist/tex/latex/txfonts/oms
 txsy.fd
 File: omstxsy.fd 2000/12/15 v3.1
 )
-LaTeX Font Info:    ... okay on input line 74.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 74.
-LaTeX Font Info:    ... okay on input line 74.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 74.
-LaTeX Font Info:    ... okay on input line 74.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 74.
-LaTeX Font Info:    ... okay on input line 74.
-LaTeX Font Info:    Checking defaults for OMX/txex/m/n on input line 74.
+LaTeX Font Info:    ... okay on input line 0.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 0.
+LaTeX Font Info:    ... okay on input line 0.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 0.
+LaTeX Font Info:    ... okay on input line 0.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 0.
+LaTeX Font Info:    ... okay on input line 0.
+LaTeX Font Info:    Checking defaults for OMX/txex/m/n on input line 0.
 LaTeX Font Info:    Trying to load font information for OMX+txex on input line 
-74.
+0.
 
 (/data/data/com.termux/files/usr/share/texlive/texmf-dist/tex/latex/txfonts/omx
 txex.fd
 File: omxtxex.fd 2000/12/15 v3.1
 )
-LaTeX Font Info:    ... okay on input line 74.
-LaTeX Font Info:    Checking defaults for U/txexa/m/n on input line 74.
-LaTeX Font Info:    Trying to load font information for U+txexa on input line 7
-4.
+LaTeX Font Info:    ... okay on input line 0.
+LaTeX Font Info:    Checking defaults for U/txexa/m/n on input line 0.
+LaTeX Font Info:    Trying to load font information for U+txexa on input line 0
+.
 
 (/data/data/com.termux/files/usr/share/texlive/texmf-dist/tex/latex/txfonts/utx
 exa.fd
 File: utxexa.fd 2000/12/15 v3.1
 )
-LaTeX Font Info:    ... okay on input line 74.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 74.
-LaTeX Font Info:    ... okay on input line 74.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 74.
-LaTeX Font Info:    ... okay on input line 74.
+LaTeX Font Info:    ... okay on input line 0.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 0.
+LaTeX Font Info:    ... okay on input line 0.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 0.
+LaTeX Font Info:    ... okay on input line 0.
 LaTeX Font Info:    Font shape `OT1/txr/b/n' in size <6> not available
-(Font)              Font shape `OT1/txr/bx/n' tried instead on input line 74.
+(Font)              Font shape `OT1/txr/bx/n' tried instead on input line 0.
 LaTeX Font Info:    Font shape `OT1/txr/b/it' in size <6> not available
-(Font)              Font shape `OT1/txr/bx/it' tried instead on input line 74.
+(Font)              Font shape `OT1/txr/bx/it' tried instead on input line 0.
 LaTeX Font Info:    Font shape `OT1/txr/b/n' in size <8> not available
-(Font)              Font shape `OT1/txr/bx/n' tried instead on input line 74.
+(Font)              Font shape `OT1/txr/bx/n' tried instead on input line 0.
 LaTeX Font Info:    Font shape `OT1/txr/b/it' in size <8> not available
-(Font)              Font shape `OT1/txr/bx/it' tried instead on input line 74.
+(Font)              Font shape `OT1/txr/bx/it' tried instead on input line 0.
 LaTeX Font Info:    Font shape `OT1/txr/b/n' in size <9> not available
-(Font)              Font shape `OT1/txr/bx/n' tried instead on input line 74.
+(Font)              Font shape `OT1/txr/bx/n' tried instead on input line 0.
 LaTeX Font Info:    Font shape `OT1/txr/b/it' in size <9> not available
-(Font)              Font shape `OT1/txr/bx/it' tried instead on input line 74.
+(Font)              Font shape `OT1/txr/bx/it' tried instead on input line 0.
 LaTeX Font Info:    Font shape `OT1/txr/b/n' in size <10> not available
-(Font)              Font shape `OT1/txr/bx/n' tried instead on input line 74.
+(Font)              Font shape `OT1/txr/bx/n' tried instead on input line 0.
 LaTeX Font Info:    Font shape `OT1/txr/b/it' in size <10> not available
-(Font)              Font shape `OT1/txr/bx/it' tried instead on input line 74.
+(Font)              Font shape `OT1/txr/bx/it' tried instead on input line 0.
 LaTeX Font Info:    Font shape `OT1/txr/b/n' in size <12> not available
-(Font)              Font shape `OT1/txr/bx/n' tried instead on input line 74.
+(Font)              Font shape `OT1/txr/bx/n' tried instead on input line 0.
 LaTeX Font Info:    Font shape `OT1/txr/b/it' in size <12> not available
-(Font)              Font shape `OT1/txr/bx/it' tried instead on input line 74.
+(Font)              Font shape `OT1/txr/bx/it' tried instead on input line 0.
 LaTeX Font Info:    Font shape `OT1/txr/b/n' in size <14> not available
-(Font)              Font shape `OT1/txr/bx/n' tried instead on input line 74.
+(Font)              Font shape `OT1/txr/bx/n' tried instead on input line 0.
 LaTeX Font Info:    Font shape `OT1/txr/b/it' in size <14> not available
-(Font)              Font shape `OT1/txr/bx/it' tried instead on input line 74.
+(Font)              Font shape `OT1/txr/bx/it' tried instead on input line 0.
 LaTeX Font Info:    Font shape `OT1/txr/b/n' in size <20> not available
-(Font)              Font shape `OT1/txr/bx/n' tried instead on input line 74.
+(Font)              Font shape `OT1/txr/bx/n' tried instead on input line 0.
 LaTeX Font Info:    Font shape `OT1/txr/b/it' in size <20> not available
-(Font)              Font shape `OT1/txr/bx/it' tried instead on input line 74.
+(Font)              Font shape `OT1/txr/bx/it' tried instead on input line 0.
 LaTeX Font Info:    Font shape `OT1/txr/b/n' in size <22> not available
-(Font)              Font shape `OT1/txr/bx/n' tried instead on input line 74.
+(Font)              Font shape `OT1/txr/bx/n' tried instead on input line 0.
 LaTeX Font Info:    Font shape `OT1/txr/b/it' in size <22> not available
-(Font)              Font shape `OT1/txr/bx/it' tried instead on input line 74.
+(Font)              Font shape `OT1/txr/bx/it' tried instead on input line 0.
 LaTeX Font Info:    Font shape `OT1/txr/b/n' in size <24> not available
-(Font)              Font shape `OT1/txr/bx/n' tried instead on input line 74.
+(Font)              Font shape `OT1/txr/bx/n' tried instead on input line 0.
 LaTeX Font Info:    Font shape `OT1/txr/b/it' in size <24> not available
-(Font)              Font shape `OT1/txr/bx/it' tried instead on input line 74.
+(Font)              Font shape `OT1/txr/bx/it' tried instead on input line 0.
 
 -- Lines per column: 50 (exact).
-LaTeX Info: Redefining \celsius on input line 74.
-Package gensymb Info: Faking symbols for \degree and \celsius on input line 74.
-
+LaTeX Info: Redefining \celsius on input line 0.
+Package gensymb Info: Faking symbols for \degree and \celsius on input line 0.
 
 Package gensymb Warning: Not defining \perthousand.
 
-LaTeX Info: Redefining \ohm on input line 74.
-Package gensymb Info: Using \Omega for \ohm on input line 74.
+LaTeX Info: Redefining \ohm on input line 0.
+Package gensymb Info: Using \Omega for \ohm on input line 0.
 
 Package gensymb Warning: Not defining \micro.
 
@@ -1378,100 +1521,471 @@ File: translations-basic-dictionary-english.trsl (english translation file `tra
 nslations-basic-dictionary')
 )
 Package translations Info: loading dictionary `translations-basic-dictionary' f
-or `english'. on input line 74.
-Package hyperref Info: Link coloring OFF on input line 74.
- (./main.out) (./main.out)
+or `english'. on input line 0.
+Package hyperref Info: Link coloring OFF on input line 0.
 \@outlinefile=\write4
-\openout4 = `main.out'.
+\openout4 = `texput.out'.
 
 \c@lstlisting=\count364
+
+*	
+
+*	\theoremstyle{definition}
+
+*	\newtheorem{theorem}{Theorem}[section]
 \c@theorem=\count365
+
+*	\newtheorem{problem}{Problem}
+
+*	\newtheorem{proposition}{Proposition}[section]
 \c@problem=\count366
 \c@proposition=\count367
+
+*	\newtheorem{lemma}{Lemma}[section]
 \c@lemma=\count368
+
+*	\newtheorem{corollary}[theorem]{Corollary}
+
+*	\newtheorem{example}{Example}[section]
 \c@example=\count369
+
+*	\newtheorem{definition}{Definition}[section]
 \c@definition=\count370
+
+*	%\newtheorem{algorithm}{Algorithm}[section]
+
+*	%\newtheorem{cor}{Corollary}
+
+*	\newcommand{\BEQA}{\begin{eqnarray}}
+
+*		\newcommand{\EEQA}{\end{eqnarray}}
+
+*	\newcommand{\define}{\stackrel{\triangle}{=}}
+
+*	\newcommand{\myvec}[1]{\ensuremath{\begin{pmatrix}#1\end{pmatrix}}}
+
+*	\newcommand{\mydet}[1]{\ensuremath{\begin{vmatrix}#1\end{vmatrix}}}
+
+*	
+
+*	\bibliographystyle{IEEEtran}
+
+*	%\bibliographystyle{ieeetr}
+
+*	
+
+*	\providecommand{\nCr}[2]{\,^{#1}C_{#2}} % nCr
+
+*	\providecommand{\nPr}[2]{\,^{#1}P_{#2}} % nPr
+
+*	\providecommand{\mbf}{\mathbf}
+
+*	\providecommand{\pr}[1]{\ensuremath{\Pr\left(#1\right)}}
+
+*	\providecommand{\qfunc}[1]{\ensuremath{Q\left(#1\right)}}
+
+*	\providecommand{\sbrak}[1]{\ensuremath{{}\left[#1\right]}}
+
+*	\providecommand{\lsbrak}[1]{\ensuremath{{}\left[#1\right.}}
+
+*	\providecommand{\rsbrak}[1]{\ensuremath{{}\left.#1\right]}}
+
+*	\providecommand{\brak}[1]{\ensuremath{\left(#1\right)}}
+
+*	\providecommand{\lbrak}[1]{\ensuremath{\left(#1\right.}}
+
+*	\providecommand{\rbrak}[1]{\ensuremath{\left.#1\right)}}
+
+*	\providecommand{\cbrak}[1]{\ensuremath{\left\{#1\right\}}}
+
+*	\providecommand{\lcbrak}[1]{\ensuremath{\left\{#1\right.}}
+
+*	\providecommand{\rcbrak}[1]{\ensuremath{\left.#1\right\}}}
+
+*	\theoremstyle{remark}
+
+*	\newtheorem{rem}{Remark}
+
+*	\newcommand{\sgn}{\mathop{\mathrm{sgn}}}
 \c@rem=\count371
 
-(./main.toc
-LaTeX Font Info:    Trying to load font information for U+rsfs on input line 2.
+*	%\providecommand{\abs}[1]{\left\vert#1\right\vert}
+
+*	\providecommand{\res}[1]{\Res\displaylimits_{#1}}
+
+*	\providecommand{\norm}[1]{\lVert#1\rVert}
+
+*	\providecommand{\mtx}[1]{\mathbf{#1}}
+
+*%	\providecommand{\mean}[1]{E\left[ #1 \right]}
+
+*	\providecommand{\fourier}{\overset{\mathcal{F}}{ \rightleftharpoons}}
+
+*	\providecommand{\ztrans}{\overset{\mathcal{Z}}{ \rightleftharpoons}}
+
+*	\providecommand{\diff}[2]{\ensuremath{\frac{d{#1}}{d{#2}}}}
+
+*	%\providecommand{\hilbert}{\overset{\mathcal{H}}{ \rightleftharpoons}}
+
+*	\providecommand{\system}[1]{\overset{\mathcal{#1}}{\longleftrightarrow}}
+
+*	%\newcommand{\solution}[2]{\textbf{Solution:}{#1}}
+
+*	\newcommand{\solution}{\noindent \textbf{Solution: }}
+
+*	\providecommand{\dec}[2]{\ensuremath{\overset{#1}{\underset{#2}{\gtrless}}}}
+
+*	\numberwithin{equation}{section}
+
+*	%\numberwithin{equation}{subsection}
+
+*	%\numberwithin{problem}{subsection}
+
+*	%\numberwithin{definition}{subsection}
+
+*	
+
+*	\let\StandardTheFigure\thefigure
+
+*	%\renewcommand{\thefigure}{\theproblem.\arabic{figure}}
+
+*	\renewcommand{\thefigure}{\arabic{section}.\arabic{figure}}
+
+*	\makeatletter
+
+*	\@addtoreset{figure}{section}
+
+*	\makeatother
+
+*	
+
+*	%\numberwithin{figure}{subsection}
+
+*	
+
+*	\def\putbox#1#2#3{\makebox[0in][l]{\makebox[#1][l]{}\raisebox{\baselineskip}[
+0in][0in]{\raisebox{#2}[0in][0in]{#3}}}}
+
+*	\def\rightbox#1{\makebox[0in][r]{#1}}
+
+*	\def\centbox#1{\makebox[0in]{#1}}
+
+*	\def\topbox#1{\raisebox{-\baselineskip}[0in][0in]{#1}}
+
+*	\def\midbox#1{\raisebox{-0.5\baselineskip}[0in][0in]{#1}}
+
+*	
+
+*%	\vspace{3cm}
+
+*	
+
+*	\title{5V Mobile Charger using a Low Pass Filter}
+
+*	\author{VIBHAVASU - EP20BTECH11015}
+
+*	\maketitle
+
+*	\tableofcontents
+No file texput.toc.
+\tf@toc=\write5
+\openout5 = `texput.toc'.
+
+
+*	\renewcommand{\thetable}{\theenumi}
+
+*	\bigskip
+
+*	\begin{abstract}
+
+*		This is a lab report on the realization of a 5 V charger using
+
+*		a low pass analog filter.
+
+*	\end{abstract}
+
+*	\section{Components}
+
+*	The key components of the charging circuit are:
+
+*	\begin{enumerate}
+
+*		\item Step-down transformer (12-0-12)
+
+*		\item Full-wave bridge rectifier
+
+*		\item RC filtering circuit
+
+*		\item 5 V Regulator (7805)
+
+*	\end{enumerate}
+
+*	
+
+*	The schematic diagram of the entire circuit is shown in Fig. \ref{fig:ckt}.
+
+LaTeX Warning: Reference `fig:ckt' on page 1 undefined on input line 0.
+
+
+*	\begin{figure}[!htb]
+
+*		\includegraphics[width=1.1\columnwidth]{figs/ckt.jpeg}
+<figs/ckt.jpeg, id=7, 1118.1775pt x 419.5675pt>
+File: figs/ckt.jpeg Graphic file (type jpg)
+<use figs/ckt.jpeg>
+Package pdftex.def Info: figs/ckt.jpeg  used on input line 0.
+(pdftex.def)             Requested size: 277.20154pt x 104.00812pt.
+
+*		\caption{Schematic diagram of the circuit.}
+
+Overfull \hbox (25.20154pt too wide) detected at line 0
+[][] 
+ []
+
+
+*		\label{fig:ckt}
+
+*	\end{figure}
+
+*	\subsection{Transformer}
+
+*	The transformer used is a centre-tapped 12-0-12 step-down
+
+*	transformer. The ground and one of the output wires is used
+
+*	in the charging circuit. The output waveform at this stage is
+
+*	a 12 V, 50 Hz AC sinusoid.
+
+*	
+
+*	\subsection{Rectifier}
+
+*	The full-wave rectifier is realized using four Si diodes arranged in a
+
+*	bridge form as shown in Fig. \ref{fig:ckt}. The output waveform at this
+
+LaTeX Warning: Reference `fig:ckt' on page 1 undefined on input line 0.
+
+
+*	stage is a DC 12 V, 50 Hz rectified sinusoid.
+
+*	
+
+*	\subsection{Filter}
+
+*	The 100 $\mu$F capacitor acts as a first order analog low pass filter. It fil
+ters
+LaTeX Font Info:    Trying to load font information for U+rsfs on input line 0.
 
 
 (/data/data/com.termux/files/usr/share/texlive/texmf-dist/tex/latex/jknapltx/ur
 sfs.fd
 File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
 )
-LaTeX Font Info:    Trying to load font information for U+txmia on input line 2
+LaTeX Font Info:    Trying to load font information for U+txmia on input line 0
 .
 
 (/data/data/com.termux/files/usr/share/texlive/texmf-dist/tex/latex/txfonts/utx
 mia.fd
 File: utxmia.fd 2000/12/15 v3.1
 )
-LaTeX Font Info:    Trying to load font information for U+txsya on input line 2
+LaTeX Font Info:    Trying to load font information for U+txsya on input line 0
 .
 
 (/data/data/com.termux/files/usr/share/texlive/texmf-dist/tex/latex/txfonts/utx
 sya.fd
 File: utxsya.fd 2000/12/15 v3.1
 )
-LaTeX Font Info:    Trying to load font information for U+txsyb on input line 2
+LaTeX Font Info:    Trying to load font information for U+txsyb on input line 0
 .
 
 (/data/data/com.termux/files/usr/share/texlive/texmf-dist/tex/latex/txfonts/utx
 syb.fd
 File: utxsyb.fd 2000/12/15 v3.1
 )
-LaTeX Font Info:    Trying to load font information for U+txsyc on input line 2
+LaTeX Font Info:    Trying to load font information for U+txsyc on input line 0
 .
 
 (/data/data/com.termux/files/usr/share/texlive/texmf-dist/tex/latex/txfonts/utx
 syc.fd
 File: utxsyc.fd 2000/12/15 v3.1
-))
-\tf@toc=\write5
-\openout5 = `main.toc'.
+)
+*	around the zero frequency DC component and partially eliminates the
 
-<figs/ckt.jpeg, id=38, 1118.1775pt x 419.5675pt>
-File: figs/ckt.jpeg Graphic file (type jpg)
-<use figs/ckt.jpeg>
-Package pdftex.def Info: figs/ckt.jpeg  used on input line 168.
-(pdftex.def)             Requested size: 277.20154pt x 104.00812pt.
+*	even harmonics associated with the rectified sinusoid. The output
 
-Overfull \hbox (25.20154pt too wide) in paragraph at lines 168--169
-[][] 
- []
+*	waveform at this stage consists of the constant DC component. Note
 
-<figs/transformerf.jpg, id=40, 1160.335pt x 870.25125pt>
+*	there is no gain and hence we require a regulator to obtain the
+
+*	required DC 5V supply.
+
+*	
+
+*	\subsection{Regulator}
+
+*	The regulator used in this circuit is a 7805 regulator, which outputs
+
+*	a constant DC supply of 5 V with very little ripple through a
+
+*	feedback mechanism. The regulator will work because the DC component
+
+*	associated with the rectified waveform is
+
+*	\begin{align}
+
+*		V_{DC} = \frac{2V_p}{\pi} = \frac{2\times12\sqrt{2}}{\pi} > \SI{5}{\V}
+
+*	\end{align}
+
+*	where $V_p$ is the peak voltage. Thus, we obtain an almost
+
+*	constant supply of 5 V DC to charge a mobile phone.
+
+*	
+
+*	\section{Results}
+
+*	The screenshots of the waveforms at each stage are shown ahead.
+
+*	
+
+*	\begin{figure}[!ht]
+
+*		\includegraphics[width=\columnwidth]{figs/transformerf.jpg}
+<figs/transformerf.jpg, id=8, 1160.335pt x 870.25125pt>
 File: figs/transformerf.jpg Graphic file (type jpg)
 <use figs/transformerf.jpg>
-Package pdftex.def Info: figs/transformerf.jpg  used on input line 206.
+Package pdftex.def Info: figs/transformerf.jpg  used on input line 0.
 (pdftex.def)             Requested size: 252.0pt x 188.99925pt.
-<figs/hwrect.jpg, id=41, 1160.335pt x 870.25125pt>
+
+*		\caption{Output AC waveform at transformer stage across B - E 20 V peak.}
+
+*		\label{fig:transformer}
+
+*	\end{figure}
+
+*	
+
+*	\begin{figure}[!ht]
+
+*		\includegraphics[width=\columnwidth]{figs/hwrect.jpg}
+<figs/hwrect.jpg, id=9, 1160.335pt x 870.25125pt>
 File: figs/hwrect.jpg Graphic file (type jpg)
 <use figs/hwrect.jpg>
-Package pdftex.def Info: figs/hwrect.jpg  used on input line 213.
+Package pdftex.def Info: figs/hwrect.jpg  used on input line 0.
 (pdftex.def)             Requested size: 252.0pt x 188.99925pt.
 
-Underfull \hbox (badness 2253) in paragraph at lines 214--214
-[]\OT1/txr/m/n/12 Fig. 2.2: |Out-put half-wave rec-ti-fied wave-form
- []
+*		\caption{Output Halfwave rectified waveform across diode across B - C 20 V p
+eak.}
 
-<figs/rectified.jpg, id=42, 1284.8pt x 722.7pt>
+*		\label{fig:hwrect}
+
+*	\end{figure}
+
+*
+(Please type a command or say `\end')
+*	\begin{figure}[!ht]
+
+*		\includegraphics[width=\columnwidth]{figs/rectified.jpg}
+<figs/rectified.jpg, id=10, 1284.8pt x 722.7pt>
 File: figs/rectified.jpg Graphic file (type jpg)
 <use figs/rectified.jpg>
-Package pdftex.def Info: figs/rectified.jpg  used on input line 218.
+Package pdftex.def Info: figs/rectified.jpg  used on input line 0.
 (pdftex.def)             Requested size: 252.0pt x 141.74748pt.
-<figs/capout.jpg, id=43, 1606.0pt x 1204.5pt>
+
+*		\caption{Output full-wave rectified waveform across diode across C - D 17.5 
+V peak.}
+
+*		\label{fig:rectifier}
+
+*	\end{figure}
+
+*	
+
+*	\begin{figure}[!ht]
+
+*		\includegraphics[width=\columnwidth]{figs/capout.jpg}
+<figs/capout.jpg, id=11, 1606.0pt x 1204.5pt>
 File: figs/capout.jpg Graphic file (type jpg)
 <use figs/capout.jpg>
-Package pdftex.def Info: figs/capout.jpg  used on input line 224.
+Package pdftex.def Info: figs/capout.jpg  used on input line 0.
 (pdftex.def)             Requested size: 252.0pt x 188.99297pt.
-<figs/final_op.jpg, id=44, 1284.8pt x 722.7pt>
+
+*		\caption{Output DC waveform at filter stage across IS (20 V).}
+
+*		\label{fig:filter}
+
+*	\end{figure}
+
+*	
+
+*	\begin{figure}[!ht]
+
+*		\includegraphics[width=\columnwidth]{figs/final_op.jpg}
+<figs/final_op.jpg, id=12, 1284.8pt x 722.7pt>
 File: figs/final_op.jpg Graphic file (type jpg)
 <use figs/final_op.jpg>
-Package pdftex.def Info: figs/final_op.jpg  used on input line 230.
+Package pdftex.def Info: figs/final_op.jpg  used on input line 0.
 (pdftex.def)             Requested size: 252.0pt x 141.74748pt.
+
+*		\caption{Output DC waveform at regulator stage across OG (5 V).}
+
+*		\label{fig:regulator_dc}
+
+*	\end{figure}
+
+*	
+
+*	%\begin{figure}[!ht]
+
+*	%	\includegraphics[width=\columnwidth]{figs/regulator_ac.jpg}
+
+*	%	\caption{Output AC ripple at regulator stage across OG (5 mV).}
+
+*	%	\label{fig:regulator_ac}
+
+*	%\end{figure}
+
+*	
+
+*	\begin{enumerate}
+
+*		\item Peak voltage after transformer and rectifier,
+
+*		$V_p = 13$ V.
+
+*		\item DC component after filter,
+
+*		$V_{DC} = 13$ V.
+
+*		\item DC component after regulator stage, $V_{DC}' = 5$ V.
+
+*		%\item Ripple after regulator stage, $\epsilon = \SI{5}{\milli\V}$.
+
+*	\end{enumerate}
+
+*	
+
+*	\section{Learning Outcomes}
+
+*	\begin{enumerate}
+
+*		\item Working and implementation of a low-pass analog filter.
+
+*		\item Use of regulator to help realise an analog low-pass filter with
+
+*		very low cutoff frequency.
+
+*		\item Use of lab equipment such as solder, oscilloscope, breadboard, PCB, et
+c.
+
+*		to realize a circuit.
+
+*	\end{enumerate}
+
+*\end{document}
 [1{/data/data/com.termux/files/usr/share/texlive/texmf-var/fonts/map/pdftex/upd
 map/pdftex.map}
 
@@ -1481,36 +1995,45 @@ map/pdftex.map}
 LaTeX Warning: Text page 2 contains only floats.
 
 [2 <./figs/transformerf.jpg> <./figs/hwrect.jpg> <./figs/rectified.jpg> <./figs
-/capout.jpg> <./figs/final_op.jpg>] (./main.aux)
+/capout.jpg> <./figs/final_op.jpg>] (./texput.aux)
+
+LaTeX Warning: There were undefined references.
+
 
 LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 
-Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 3BB732E6A51CC2C877101A9679F78F2B;574.
- ) 
+
+Package rerunfilecheck Warning: File `texput.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `texput.out':
+(rerunfilecheck)             Before: <no file>
+(rerunfilecheck)             After:  38B1E25E71192FD6D83F51ED69D9212D;705.
+ 
 Here is how much of TeX's memory you used:
- 47601 strings out of 474971
- 1137582 string characters out of 5765144
- 1857319 words of memory out of 5000000
- 68485 multiletter control sequences out of 15000+600000
+ 47587 strings out of 474971
+ 1137448 string characters out of 5765144
+ 1856323 words of memory out of 5000000
+ 68478 multiletter control sequences out of 15000+600000
  529951 words of font info for 148 fonts, out of 8000000 for 9000
  1144 hyphenation exceptions out of 8191
- 100i,12n,104p,427b,876s stack positions out of 10000i,1000n,20000p,200000b,200000s
-{/data/data/com.termux/files/usr/share/texlive/texmf-dist/fonts/enc/dvips/bas
-e/8r.enc}</data/data/com.termux/files/usr/share/texlive/texmf-dist/fonts/type1/
-public/txfonts/rtxmi.pfb></data/data/com.termux/files/usr/share/texlive/texmf-d
-ist/fonts/type1/public/txfonts/rtxr.pfb></data/data/com.termux/files/usr/share/
-texlive/texmf-dist/fonts/type1/public/txfonts/rtxsc.pfb></data/data/com.termux/
-files/usr/share/texlive/texmf-dist/fonts/type1/public/txfonts/txsy.pfb></data/d
-ata/com.termux/files/usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmb8a.
-pfb></data/data/com.termux/files/usr/share/texlive/texmf-dist/fonts/type1/urw/t
-imes/utmbi8a.pfb></data/data/com.termux/files/usr/share/texlive/texmf-dist/font
-s/type1/urw/times/utmr8a.pfb></data/data/com.termux/files/usr/share/texlive/tex
-mf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on main.pdf (2 pages, 677364 bytes).
+ 99i,12n,104p,418b,876s stack positions out of 10000i,1000n,20000p,200000b,200000s
+{/data/data/com.termux/files/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/
+8r.enc}</data/data/com.termux/files/usr/share/texlive/texmf-dist/fonts/type1/pu
+blic/txfonts/rtxmi.pfb></data/data/com.termux/files/usr/share/texlive/texmf-dis
+t/fonts/type1/public/txfonts/rtxr.pfb></data/data/com.termux/files/usr/share/te
+xlive/texmf-dist/fonts/type1/public/txfonts/rtxsc.pfb></data/data/com.termux/fi
+les/usr/share/texlive/texmf-dist/fonts/type1/public/txfonts/txsy.pfb></data/dat
+a/com.termux/files/usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmb8a.pf
+b></data/data/com.termux/files/usr/share/texlive/texmf-dist/fonts/type1/urw/tim
+es/utmbi8a.pfb></data/data/com.termux/files/usr/share/texlive/texmf-dist/fonts/
+type1/urw/times/utmr8a.pfb></data/data/com.termux/files/usr/share/texlive/texmf
+-dist/fonts/type1/urw/times/utmri8a.pfb>
+Output written on texput.pdf (2 pages, 677965 bytes).
 PDF statistics:
- 119 PDF objects out of 1000 (max. 8388607)
- 92 compressed objects within 1 object stream
- 24 named destinations out of 1000 (max. 500000)
- 91 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 97 PDF objects out of 1000 (max. 8388607)
+ 70 compressed objects within 1 object stream
+ 28 named destinations out of 1000 (max. 500000)
+ 43 words of extra memory for PDF output out of 10000 (max. 10000000)
 
