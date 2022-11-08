@@ -39,7 +39,7 @@
 %\usepackage[framemethod=tikz]{mdframed}
 \usepackage{listings}
 \let\vec\mathbf
-
+\usepackage{circuitikz}
 
 %\usepackage{stmaryrd}
 
@@ -523,33 +523,169 @@ G^2(f) = |H_n(f)|^2 = \frac{1}{1 + \brak{\frac{f}{f_0}}^{2n}}
 Where $f_0$ is the cutoff frequency.\\
 Gain at a frequency in dB is given as
 \begin{align}
-	A = -10\log_{10}(G^2(f)) = -20\log_{10}(H_n(f))
+	A = -10\log_{10}(G^2(f)) = -20\log_{10}\abs{H_n(f)}
+	\label{eq:loss}
 \end{align}
-At $f = f0$, A = -3 dB
-\item Design a Chebyschev filter for $H(f)$.
-\solution\\
-For an $n^{th}$ order Chebyschev filter:\\
-The Gain response $G(f)$ is given by\\
-\begin{align}
-	G(f) = H_n(f) = \frac{1}{\sqrt{1 + \epsilon^2 T^2_n\frac{f}{f_0}}}
-\end{align}
-Where :
+
+Assumptions for the lowpass analog Butterworth filter:
 \begin{enumerate}
-
-\item $f_0$ is the cutoff frequency.\\
-\item $T_n$ is a Chebyshev polynomial of the $n^{th}$ order.
+	\item Passband edge, $f_p = 50$ Hz
+	\item Stopband edge, $f_s = 100$ Hz
+	\item Passband attenuation, $A_p = -1$ dB
+	\item Stopband attenuation, $A_s = -20$ dB
+\end{enumerate}
+We are required to find a desriable order $n$ and cutoff
+frequency $f_0$ for the filter. From \eqref{eq:loss},
 \begin{align}
-	T_n = \begin{cases}
-		\cos \brak{n \cos^{-1} x} & \abs{x} < 1\\
-		\cosh \brak{n \cosh^{-1} x} & \abs{x} \geq 1
-	\end{cases}
+	A_p &= -10\log_{10}\sbrak{1 + \brak{\frac{f_p}{f_0}}^{2n}} \\
+	A_s &= -10\log_{10}\sbrak{1 + \brak{\frac{f_s}{f_0}}^{2n}}
 \end{align}
-\item $\epsilon$ is the ripple
+Thus,
+\begin{align}
+	\brak{\frac{f_p}{f_0}}^{2n} = 10^{-\frac{A_p}{10}} - 1 \label{eq:fc1} \\
+	\brak{\frac{f_s}{f_0}}^{2n} = 10^{-\frac{A_s}{10}} - 1 \label{eq:fc2}
+\end{align}
+Therefore, on dividing the above equations and solving for $n$,
+\begin{align}
+	n = \frac{\log\brak{10^{-\frac{A_s}{10}} - 1} - 
+		\log\brak{10^{-\frac{A_p}{10}} - 1}}{2\brak{\log{f_s} - \log{f_p}}}
+\end{align}
+In this case, making appropriate susbstitutions gives $n = 4.29$.
+Hence, we take $n = 5$. Solving for $f_0$ in \eqref{eq:fc1} and
+\eqref{eq:fc2},
+\begin{align}
+	f_{c1} = f_p\sbrak{10^{-\frac{A_p}{10}} - 1}^{-\frac{1}{2n}} = {57.23}{Hz} \\
+	f_{c2} = f_s\sbrak{10^{-\frac{A_s}{10}} - 1}^{-\frac{1}{2n}} = {63.16}{Hz}
+\end{align}
+Hence, we take $f_0 = \sqrt{f_{c1}f_{c2}} = {60}{Hz}$ approximately.
+\item Design a Chebyshev filter for $H(f)$.
+\solution The Chebyshev filter has an amplitude response
+given by
+\begin{align}
+	\abs{H\brak{f}}^2 = \frac{1}{\brak{1 + \epsilon^2T_n^2\brak{\frac{f}{f_0}}}}
+\end{align}
+where 
+\begin{enumerate}
+	\item $n$ is the order of the filter
+	\item $\epsilon$ is the ripple
+	\item $f_0$ is the cutoff frequency 
+	\item $T_n = \cosh^{-1}\brak{n\cosh{x}}$ denotes 
+	the n\textsuperscript{th} order Chebyshev polynomial,
+	given by
+	\begin{align}
+		T_n(x) =
+		\begin{cases}
+			\cos\brak{n\cos^{-1}x} & \abs{x} \le 1 \\
+			\cosh\brak{n\cosh^{-1}x} & \textrm{otherwise}
+		\end{cases}
+		\label{eq:chebypol}
+	\end{align}
 \end{enumerate}
-
-\item Design a circuit for your Butterworth filter.\\
-\item Design a circuit for your Chebyschev filter.
+We are given the following specifications:
+\begin{enumerate}
+	\item Passband edge (which is equal to 
+	cutoff frequency), $f_p = f_0$
+	\item Stopband edge, $f_s$
+	\item Attenuation at stopband edge, $A_s$
+	\item Peak-to-peak ripple $\delta$ in the passband.
+	It is given in dB and is related to $\epsilon$ as
+	\begin{align}
+		\delta = 10\log_{10}\brak{1 + \epsilon^2}
+		\label{eq:delta-eps}
+	\end{align}
 \end{enumerate}
+and we must find a suitable $n$ and $\epsilon$.\\
+From \eqref{eq:delta-eps},
+\begin{align}
+	\epsilon = \sqrt{10^{\frac{\delta}{10}} - 1}
+	\label{eq:epsilon-del}
+\end{align}
+At $f_s > f_p = f_0$, using \eqref{eq:chebypol}, $A_s$ is given by
+\begin{align}
+	A_s = -10\log_{10}\sbrak{1 + \epsilon^2c_n^2\brak{\frac{f_s}{f_p}}} \\
+	\implies c_n\brak{\frac{f_s}{f_p}} = \frac{\sqrt{10^{-\frac{A_s}{10}} - 1}}{\epsilon} \\
+	\implies n = \frac{\cosh^{-1}\brak{\frac{\sqrt{10^{-\frac{A_s}{10}} - 1}}{\epsilon}}}
+	{\cosh^{-1}\brak{\frac{f_s}{f_p}}}
+\end{align}
+We consider the following specifications:
+\begin{enumerate}
+	\item Passband edge/cutoff frequency, $f_p = f_0 = {60}{Hz}$.
+	\item Stopband edge, $f_s = {100}{Hz}$.
+	\item Passband ripple, $\delta = {0.5}{dB}$
+	\item Stopband attenuation, $A_s = {-20}{dB}$
+\end{enumerate}
+$\epsilon = 0.35$ and $n = 3.68$. Hence, we take $n = 4$
+as the order of the Chebyshev filter.
+\item Design a circuit for your Butterworth filter.
+\solution Looking at the table of normalized element values
+$L_k$, $C_k$, of the Butterworth filter for order 5, and noting
+that de-normalized values $L_k'$ and $C_k'$ are given by
+\begin{align}
+	C_k' = \frac{C_k}{\omega_c} \qquad L_k' = \frac{L_k}{\omega_c}
+\end{align}
+De-normalizing these values, taking $f_0 = 60$ Hz,
+\begin{align}
+	C_1' = C_5' = {1.64}{mF} \\
+	L_2' = L_4' = {4.29}{mH} \\
+	C_3' = {5.31}{mF} \\
+\end{align}
+The L-C network is shown in Fig. \ref{fig:butter-filter}.
+\begin{figure}[!ht]
+	\centering
+	\begin{circuitikz} 
+		\draw (0,0) to[short, o-o] (7,0);
+		\draw (0,2) to [short, o-] (1,2) to [L, l=4.29 mH] (3.5,2) to [L, l=4.29 mH] (6,2) to[short, -o] (7,2);
+		\draw (1,0) to[C, l=1.64 mF] (1,2);
+		\draw (3.5,0) to[C, l=5.31 mF] (3.5,2);
+		\draw (6,0) to[C, l=1.64 mF] (6,2);
+	\end{circuitikz}
+	\caption{L-C Butterworth Filter}
+	\label{fig:butter-filter}
+\end{figure}
+\\
+Python code to compare the amplitude response
+of the simulated circuit with the theoretical expression.
+\begin{lstlisting}
+https://github.com/DarkWake9/EE3900/blob/main/charger/codes/e5.3.py
+\end{lstlisting}
+\begin{figure}
+	\includegraphics[width=\columnwidth]{figs/e5.3.pdf}
+	\caption{Amplitude Response of Butterworth filter.}
+	\label{fig:sim-butter}
+\end{figure}
+\vspace{2cm}
+\item Design a circuit for your Chebyshev filter.
+\solution Looking at the table of normalized element values
+of the Chebyshev filter for order 3 and 0.5 dB ripple,
+and de-nomrmalizing those values, taking $f_0 = {60}{Hz}$,
+\begin{align}
+	C_1' = {4.43}{mF} \\
+	L_2' = {3.16}{mH} \\
+	C_3' = {6.28}{mF} \\
+	L_4' = {2.23}{mH}
+\end{align}
+The L-C network is shown in Fig. \ref{fig:cheby-filter}.
+\begin{figure}[!ht]
+	\centering
+	\begin{circuitikz} 
+		\draw (0,0) to[short, o-o] (7,0); 
+		\draw (1,0) to[C, l=4.43 mF] (1,2);
+		\draw (3.5,0) to[C, l=6.28 mF] (3.5,2);
+		\draw (0,2) to [short, o-] (1,2) to [L, l=3.16 mH] (3.5,2) to[L, l=2.23 mH] (6,2) to[short, -o] (7,2);
+	\end{circuitikz}
+	\caption{L-C Chebyshev Filter}
+	\label{fig:cheby-filter}
+\end{figure}
 
-
+Python code to compare the amplitude response
+of the simulated circuit with the theoretical expression.
+\begin{lstlisting}
+https://github.com/DarkWake9/EE3900/blob/main/charger/codes/e5.4.py
+\end{lstlisting}
+\begin{figure}
+	\includegraphics[width=\columnwidth]{figs/e5.4.pdf}
+	\caption{Amplitude Response of Chebyshev filter.}
+	\label{fig:sim-cheby}
+\end{figure}
+\end{enumerate}
 \end{document}

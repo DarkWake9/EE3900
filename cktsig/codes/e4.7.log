@@ -1,0 +1,7 @@
+Questionable use of curly braces in "set color0 = {white}"
+    Error: undefined symbol in: "[white]"
+Questionable use of curly braces in "set color1 = {black}"
+    Error: undefined symbol in: "[black]"
+Circuit: * Output After Switching
+
+Fatal Error: Multiple instances of "Set"

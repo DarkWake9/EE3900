@@ -1,0 +1,17 @@
+*Amplitude Response of Butterworth Filter
+
+V1 in 0 dc 0 ac 1
+R0 in 1 1
+C1 1 0 1.64m ic=0
+L2 1 2 4.29m
+C3 2 0 5.31m ic=0
+L4 2 3 4.29m
+C5 3 0 1.64m ic=0
+RL 3 0 1
+
+.control
+ac dec 10 1 1000
+wrdata e5.3.txt vdb(3)
+.endc
+
+.end

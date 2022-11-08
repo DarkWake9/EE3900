@@ -168,7 +168,7 @@
 		Circuits and Transforms
 		%	\logo{Octave for Math Computing }
 	}
-	\author{VIBHAVASU}
+	\author{VIBHAVASU - EP20BTECH11015}
 
 
 % make the title area
@@ -676,7 +676,7 @@ Applying $\mathcal{Z}$-transform on \eqref{eq:n-domain}
 \begin{align}
 	H(z) = \frac{\tau(1 + z^{-1})}{R_2C_0\brak{2\tau + 1 -z^{-1}(2\tau - 1)}}\\
 	= \frac{\tau (z + 1)}{R_2C_0(2\tau(z-1) + z + 1))}\\
-	= \dfrac{1}{2C_0\brak{2\dfrac{z - 1}{z + 1} + \dfrac{1}{\tau}}}
+	= \dfrac{1}{R_2C_0\brak{2\dfrac{z - 1}{z + 1} + \dfrac{1}{\tau}}}
 \end{align}
 \begin{align}
 	\text{But }\tau = \frac{C_0R_1R_2}{R_1 + R_2} = \frac{2C_0}{3} \text{ and } R_2 = 2 \nonumber\\
@@ -698,23 +698,21 @@ Putting T = $\frac{1}{2}$ will give \eqref{eq:Hz}\\
 \item Find $v(n)$. Verify using ngspice and differential equation\\
 \solution\\
 \begin{align}
-	V(z) = H(z)V_2(z)\\
-	= \dfrac{1}{3 +  \frac{2}{T}C_0 \frac{1 - z^{-1}}{1 + z^{-1}}}\frac{2}{1 - z^{-1}}
+	&V(z) = H(z)V_2(z)\\
+	&= \dfrac{1}{3 +  \frac{2}{T}C_0 \frac{1 - z^{-1}}{1 + z^{-1}}}\frac{2}{1 - z^{-1}}\\
+	&= \frac{2}{3}\brak{\frac{1}{1 + \frac{\tau}{T}\frac{1 - z^{-1}}{1 + z^{-1}}}\frac{1}{1 - z^{-1}}}\\
+	&= \frac{2}{3}\brak{\frac{1 + z^{-1}}{1 + z^{-1} + \frac{\tau}{T}\brak{1 - z^{-1}}} \frac{1}{1 - z^{-1}}}\\
+	&= \frac{2}{3}\brak{\frac{1}{1 - z^{-1}} - \frac{\frac{\tau}{T}}{1 + z^{-1} + \frac{\tau}{T}\brak{1 - z^{-1}}}}\\
+	&= \frac{2}{3}\brak{\frac{1}{1 - z^{-1}} - \frac{\frac{\tau}{T}}{1 + \frac{\tau}{T} + z^{-1}\brak{1 - \frac{\tau}{T}}}}\\
+	&= \frac{2}{3}\brak{\frac{1}{1 - z^{-1}} - \frac{\frac{\tau}{T}}{1 + \frac{\tau}{T}} \frac{1}{1 - \brak{\frac{\frac{\tau}{T} - 1}{\frac{\tau}{T} + 1}} z^{-1}}}
 \end{align}
+Taking Inverse $\mathcal{Z}$ transform on both sides
 \begin{align}
-	= \frac{2}{1 - z^{-1}} \frac{\frac{2}{T}C_0(1 + z^{-1})}{3\sbrak{3(1 + z^{-1}) + \frac{2}{T}C_0(1 - z^{-1})}}
+v(n) &= \frac{2}{3}u(n)\sbrak{1 - \frac{\frac{\tau}{T}}{\frac{\tau}{T} + 1}\brak{\frac{{ \frac{\tau}{T} - 1}}{{\frac{\tau}{T} + 1}}}^n}
 \end{align}
-\begin{align}
-	&= \frac{2}{3(1 - z^{-1})} - \frac{2\frac{\tau}{T}}{3\sbrak{(1 + z^{-1}) + 2\frac{\tau}{T}(1 - z^{-1})}}\\
-	&= \frac{2}{3(1 - z^{-1})} - \frac{2\tau}{3\sbrak{ 2\tau + 1 - z^{-1}(2\tau - 1)}}\\
-	&= \frac{2}{3(1 - z^{-1})} - \frac{2\frac{\tau}{T}}{2\frac{\tau}{T}+ 1}\frac{1}{3\sbrak{1 - z^{-1}\sbrak{\frac{2\frac{\tau}{T} - 1}{2\frac{\tau}{T} + 1}}}}\\
-	&= \frac{2}{3(1 - z^{-1})} - \frac{2\frac{\tau}{T}}{2\frac{\tau}{T}+ 1}\frac{1}{3\sbrak{1 - z^{-1}\sbrak{\frac{2\tau - T}{2\tau + T}}}}
-%\end{align}
-\intertext{Taking Inverse $\mathcal{Z}$ transform on both sides}
-%\begin{align}
-v(n) &= \sbrak{\frac{2}{3} - \frac{2\tau}{3(2\tau + T	)}\brak{\frac{2\tau + T}{2\tau - T}}^n}u(n)
-\end{align}
-Python code used to plot can be found at:
+\vspace{2.5cm}
+\newline
+Python code used to plot theoretical and simulated values of $v(n)$ can be found at:
 \begin{lstlisting}
 https://github.com/DarkWake9/EE3900/blob/main/cktsig/codes/e4.7.py
 \end{lstlisting}

@@ -4,9 +4,9 @@ R1  X    0    1
 
 C1  X    0    1u    ic=0
 
-R2  X    3    2
+R2  X    1    2
 
-V2  3    0    2
+V2  1    0    dc	2V
 
 
 .control
