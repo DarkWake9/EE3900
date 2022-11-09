@@ -6,7 +6,7 @@ C1  X    0    1u    ic=0
 
 R2  X    3    2
 
-V2  3    0    2
+V2  3    0    dc	2V
 
 
 .control

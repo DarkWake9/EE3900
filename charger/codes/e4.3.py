@@ -1,7 +1,6 @@
 import numpy as np
 from matplotlib import pyplot as plt
-import subprocess
-import shlex
+import os
 
 A0 = 12
 V0 = 5
@@ -21,7 +20,8 @@ plt.grid(True, 'both')
 plt.xlabel('t')
 plt.ylabel('V')
 plt.savefig('../figs/e4.3.pdf')
-plt.show()
+#plt.show()
+os.system('xdg-open ../figs/e4.3.pdf')
 
 
 

@@ -1,8 +1,7 @@
 import numpy as np
 import matplotlib.pyplot as plt
 import scipy.fft as fft
-import subprocess
-import shlex
+import os
 
 A = 12
 f0 = 50
@@ -41,5 +40,6 @@ plt.legend()
 plt.grid(True, 'both')
 plt.title("Fourier Transform of x(t) = $A |sin(2 \pi f t)|$")
 plt.savefig('../figs/e3.8.pdf')
-plt.show()
+#plt.show()
+os.system('xdg-open ../figs/e3.8.pdf')
 #subprocess.run(shlex.split("termux-open ../figs/e2.3.pdf"))<F5>

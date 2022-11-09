@@ -1,7 +1,6 @@
 import numpy as np
 import matplotlib.pyplot as plt
-import subprocess
-import shlex
+import os
 
 A = 12
 f = 50
@@ -27,5 +26,5 @@ plt.grid(True, which='both')
 plt.xlabel('t')
 plt.ylabel('x(t)')
 plt.savefig('../figs/e2.3.pdf')
-plt.show()
-#subprocess.run(shlex.split("termux-open ../figs/e2.3.pdf"))<F5>
+#plt.show()
+os.system('xdg-open ../figs/e2.3.pdf')

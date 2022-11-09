@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2022.9.4)  8 NOV 2022 21:50
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2022.9.4)  9 NOV 2022 14:25
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1344,42 +1344,42 @@ Package pdftex.def Info: ./figs/lap-ckt.jpg  used on input line 338.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-<./figs/e2.6.png, id=63, 390.258pt x 289.08pt>
-File: ./figs/e2.6.png Graphic file (type png)
-<use ./figs/e2.6.png>
-Package pdftex.def Info: ./figs/e2.6.png  used on input line 371.
-(pdftex.def)             Requested size: 252.0pt x 186.6691pt.
- [2 <./figs/lap-ckt.jpg> <./figs/e2.6.png>]
+<./figs/e2.6.pdf, id=63, 462.52798pt x 346.89601pt>
+File: ./figs/e2.6.pdf Graphic file (type pdf)
+<use ./figs/e2.6.pdf>
+Package pdftex.def Info: ./figs/e2.6.pdf  used on input line 371.
+(pdftex.def)             Requested size: 252.0pt x 189.00429pt.
+ [2 <./figs/lap-ckt.jpg> <./figs/e2.6.pdf>]
 LaTeX Font Info:    Trying to load font information for TS1+txr on input line 4
-52.
+11.
 
 (/usr/share/texlive/texmf-dist/tex/latex/txfonts/ts1txr.fd
 File: ts1txr.fd 2000/12/15 v3.1
 )
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-<./figs/e3.4.jpg, id=97, 462.528pt x 346.896pt>
+<./figs/e3.4.jpg, id=136, 462.528pt x 346.896pt>
 File: ./figs/e3.4.jpg Graphic file (type jpg)
 <use ./figs/e3.4.jpg>
-Package pdftex.def Info: ./figs/e3.4.jpg  used on input line 507.
+Package pdftex.def Info: ./figs/e3.4.jpg  used on input line 466.
 (pdftex.def)             Requested size: 252.0pt x 189.00427pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [3 <./figs/e3.4.jpg>]
-Underfull \hbox (badness 3623) in paragraph at lines 568--571
+Underfull \hbox (badness 3623) in paragraph at lines 527--530
 []\OT1/txr/m/n/12 In Fig. []2.1[], con-sider the case when $\OML/txmi/m/it/12 S
 $
  []
 
 
-Underfull \hbox (badness 1655) in paragraph at lines 568--571
+Underfull \hbox (badness 1655) in paragraph at lines 527--530
 \OT1/txr/m/n/12 is switched to $\OML/txmi/m/it/12 Q$ \OT1/txr/m/n/12 right in t
 he be-gin-ning.
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 568--571
+Underfull \hbox (badness 10000) in paragraph at lines 527--530
 
  []
 
@@ -1387,32 +1387,32 @@ Underfull \hbox (badness 10000) in paragraph at lines 568--571
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [4]
-Underfull \hbox (badness 10000) in paragraph at lines 623--625
+Underfull \hbox (badness 10000) in paragraph at lines 582--584
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 635--636
+Underfull \hbox (badness 10000) in paragraph at lines 594--595
 
  []
 
-<./figs/e4.3.jpg, id=156, 462.528pt x 346.896pt>
+<./figs/e4.3.jpg, id=195, 462.528pt x 346.896pt>
 File: ./figs/e4.3.jpg Graphic file (type jpg)
 <use ./figs/e4.3.jpg>
-Package pdftex.def Info: ./figs/e4.3.jpg  used on input line 640.
+Package pdftex.def Info: ./figs/e4.3.jpg  used on input line 599.
 (pdftex.def)             Requested size: 252.0pt x 189.00427pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 645--646
+Underfull \hbox (badness 10000) in paragraph at lines 604--605
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 660--662
+Underfull \hbox (badness 10000) in paragraph at lines 619--621
 
  []
 
 
-Overfull \hbox (1.83948pt too wide) detected at line 675
+Overfull \hbox (1.83948pt too wide) detected at line 634
 []
  []
 
@@ -1420,30 +1420,30 @@ Overfull \hbox (1.83948pt too wide) detected at line 675
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [5 <./figs/e4.3.jpg>]
-Underfull \hbox (badness 10000) in paragraph at lines 696--698
+Underfull \hbox (badness 10000) in paragraph at lines 655--657
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 698--700
+Underfull \hbox (badness 10000) in paragraph at lines 657--659
 
  []
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-<./figs/e4.7.pdf, id=190, 462.52798pt x 346.89601pt>
+<./figs/e4.7.pdf, id=229, 462.52798pt x 346.89601pt>
 File: ./figs/e4.7.pdf Graphic file (type pdf)
 <use ./figs/e4.7.pdf>
-Package pdftex.def Info: ./figs/e4.7.pdf  used on input line 721.
+Package pdftex.def Info: ./figs/e4.7.pdf  used on input line 680.
 (pdftex.def)             Requested size: 252.0pt x 189.00429pt.
  [6 <./figs/e4.7.pdf>] (./main.aux)
 Package rerunfilecheck Info: File `main.out' has not changed.
 (rerunfilecheck)             Checksum: D3BF9C80BE444E36F35564B54C366050;501.
  ) 
 Here is how much of TeX's memory you used:
- 48647 strings out of 478287
- 1147807 string characters out of 5849290
+ 48646 strings out of 478287
+ 1147827 string characters out of 5849290
  1823657 words of memory out of 5000000
  66069 multiletter control sequences out of 15000+600000
  537225 words of font info for 166 fonts, out of 8000000 for 9000
@@ -1459,10 +1459,10 @@ are/texlive/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/texlive/tex
 mf-dist/fonts/type1/urw/times/utmbi8a.pfb></usr/share/texlive/texmf-dist/fonts/
 type1/urw/times/utmr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times
 /utmri8a.pfb>
-Output written on main.pdf (6 pages, 394418 bytes).
+Output written on main.pdf (6 pages, 393815 bytes).
 PDF statistics:
- 325 PDF objects out of 1000 (max. 8388607)
- 253 compressed objects within 3 object streams
+ 368 PDF objects out of 1000 (max. 8388607)
+ 261 compressed objects within 3 object streams
  138 named destinations out of 1000 (max. 500000)
  75 words of extra memory for PDF output out of 10000 (max. 10000000)
 

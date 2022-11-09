@@ -1,8 +1,7 @@
 import numpy as np
 from scipy import fft
 from matplotlib import pyplot as plt
-import subprocess
-import shlex
+import os
 
 
 
@@ -33,5 +32,4 @@ plt.xlim(-6, 6)
 plt.legend()
 plt.title("Fourier Transform of rect(x)")
 plt.savefig('../figs/e3.9.pdf')
-plt.show()
-#subprocess.run(shlex.split("termux-open ../figs/e3.9.pdf"))
+os.system('xdg-open ../figs/e3.9.pdf')
