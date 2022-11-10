@@ -1353,7 +1353,7 @@ $\begin{bmatrix}
 	\solution
 	Download the source code by typing the next command \\
 	\begin{lstlisting}
-		$ wget https://raw.githubusercontent.com/goats-9/ee3900-assignments/main/filter/codes/8_1.py
+		$ wget https://github.com/DarkWake9/EE3900/blob/main/Assignment%201/filter/codes/8_1.py
 	\end{lstlisting}
 	and run it using
 	\begin{lstlisting}
@@ -1405,11 +1405,11 @@ $\begin{bmatrix}
 	\end{align}
 	The values $r(i)$, $p(i)$, $k(i)$ and thus the impulse response function are computed and plotted at
 	\begin{lstlisting}
-		$ wget https://raw.githubusercontent.com/goats-9/ee3900-assignments/main/filter/codes/8_2_1.py
+$ wget https://github.com/DarkWake9/EE3900/blob/main/Assignment%201/filter/codes/8_2_1.py
 	\end{lstlisting}
 	The filter frequency response is plotted at
 	\begin{lstlisting}
-		$ wget https://raw.githubusercontent.com/goats-9/ee3900-assignments/main/filter/codes/8_2_2.py
+$ wget https://github.com/DarkWake9/EE3900/blob/main/Assignment%201/filter/codes/8_2_2.py
 	\end{lstlisting}
 	Observe that for a series $t_n = r^n$, $\frac{t_{n + 1}}{t_n} = r$.
 	By the ratio test, $t_n$ converges if $|r| < 1$. We observe that for all $i$, 
@@ -1423,11 +1423,7 @@ $\begin{bmatrix}
 	can apply a 64-bit FFT to get y(n). The following code uses the DFT matrix
 	to generate $y(n)$ in Fig. \eqref{fig:butter-out}.
 	\begin{lstlisting}
-		$ wget https://raw.githubusercontent.com/goats-9/ee3900-assignments/main/filter/codes/8_2_3.py
-	\end{lstlisting}
-	The codes can be run all at once by typing a small shell script
-	\begin{lstlisting}
-		$ for file in 8_2_*.py; do python ${file}; done
+$ wget https://github.com/DarkWake9/EE3900/blob/main/Assignment%201/filter/codes/8_2_3.py
 	\end{lstlisting}
 	\begin{figure}[!htb]
 		\includegraphics[width=\columnwidth]{./figs/8_2_1.png}
