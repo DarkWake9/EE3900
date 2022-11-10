@@ -29,7 +29,7 @@ for iter in range(iterations):
 
         for j in range(k):
             dist1 = (X[i][0]-k_points[j])**2
-            if dist1<dist:
+            if dist1<dist:KO
                 new_label = j + 1
                 dist = dist1
 

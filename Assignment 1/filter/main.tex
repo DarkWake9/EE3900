@@ -1335,131 +1335,127 @@ $\begin{bmatrix}
 
 \end{enumerate}
 
-
 \section{Exercises}
-Answer the following questions by looking at the python code in Problem \ref{prob:output}.
-\begin{enumerate}[label=\thesection.\arabic*]
-\item
-The command
-\begin{lstlisting}
-output_signal = signal.lfilter(b, a, input_signal)
-\end{lstlisting}
-in Problem \ref{prob:output} is executed through the following difference equation
-\begin{equation}
-	\label{eq:iir_filter_gen}
-	\sum _{m=0}^{M}a\brak{m}y\brak{n-m}=\sum _{k=0}^{N}b\brak{k}x\brak{n-k}
-\end{equation}
-%
-where the input signal is $x(n)$ and the output signal is $y(n)$ with initial values all 0. Replace
-\textbf{signal.filtfilt} with your own routine and verify.\\
-\solution
-\begin{lstlisting}
-wget	https://github.com/DarkWake9/EE3900/blob/main/Assignment%201/e8.1.py
-\end{lstlisting}
-\item Repeat all the exercises in the previous sections for the above $a$ and $b$.
-
-
-\solution
-%\begin{align}
-%	\mtx{a} =
-%	\begin{pmatrix}
-	%		4.44 \\ 8.78 \\ -9.93 \\ 6.90 \\ -2.93 \\ 0.70 \\ -0.07
-	%	\end{pmatrix}
-%	\mtx{b} = 
-%	\begin{pmatrix}
-	%		5.02 \times 10^{-5} \\ 3.52 \times 10^{-4} \\ 1.05 \times 10^{-3} \\ 1.76 \times 10^{-3} \\ 1.76 \times 10^{-3} \\ 1.05 \times 10^{-3} \\ 3.52 \times 10^{-4} \\ 5.02 \times 10^{-5} 
-	%	\end{pmatrix}
-%\end{align}
-For the given values, the difference equation is
-\begin{align}
-	&y(n) - \brak{4.44}y(n - 1) + \brak{8.78}y(n - 2) \nonumber \\
-	&- \brak{9.93}y(n - 3) + \brak{6.90}y(n - 4) \nonumber \\
-	&- \brak{2.93}y(n - 5) \nonumber + \brak{0.70}y(n - 6) \nonumber \\
-	&- \brak{0.07}y(n - 7) = \brak{5.02 \times 10^{-5}}x(n) \nonumber \\
-	&+ \brak{3.52 \times 10^{-4}}x(n - 1) + \brak{1.05 \times 10^{-3}}x(n - 2) \nonumber \\
-	&+ \brak{1.76 \times 10^{-3}}x(n - 3) + \brak{1.76 \times 10^{-3}}x(n - 4) \nonumber \\
-	&+ \brak{1.05 \times 10^{-3}}x(n - 5) + \brak{3.52 \times 10^{-4}}x(n - 6) \nonumber \\
-	&+ \brak{5.02 \times 10^{-5}}x(n - 7)
-\end{align}
-From \eqref{eq:iir_filter_gen}, we see that the transfer function can be written as follows
-\begin{align}
-	H(z) &= \frac{\sum_{k = 0}^{N}b(k)z^{-k}}{\sum_{k = 0}^{M}a(k)z^{-k}} \\
-	&= \sum_{i}\frac{r(i)}{1 - p(i)z^{-1}} + \sum_{j}k(j)z^{-j}
-	\label{eq:trans-func}
-\end{align}
-where $r(i)$, $p(i)$, are called residues and poles respectively of the partial 
-fraction expansion of $H(z)$. $k(i)$ are the coefficients of the direct polynomial 
-terms that might be left over. We can now take the inverse $z$-transform of
-\eqref{eq:trans-func} and get using \eqref{eq:anun},
-\begin{align}
-	h(n) &= \sum_{i}r(i)[p(i)]^nu(n) + \sum_{j}k(j)\delta(n - j)
-	\label{eq:h-n-expr}
-\end{align}
-Substituting the values,
-\begin{align}
-	&h(n) = [\brak{2.76}\brak{0.55}^n \nonumber \\ 
-	&+ \brak{-1.05-1.84\j}\brak{0.57+0.16\j}^n \nonumber \\
-	&+ \brak{-1.05+1.84\j}\brak{0.57-0.16\j}^n \nonumber \\
-	&+ \brak{-0.53+0.08\j}\brak{0.63+0.32\j}^n \nonumber \\
-	&+ \brak{-0.53-0.08\j}\brak{0.63-0.32\j}^n \nonumber \\
-	&+ \brak{0.20+0.004\j}\brak{0.75+0.47\j}^n \nonumber \\
-	&+ \brak{0.20-0.004\j}\brak{0.75-0.47\j}^n]u(n) \nonumber \\
-	&+ \brak{-6.81 \times 10^{-4}}\delta(n)
-\end{align}
-The values $r(i)$, $p(i)$, $k(i)$ and thus the impulse response function are computed and plotted at
-\begin{lstlisting}
-	$ wget https://raw.githubusercontent.com/prajwal-3-14159/EE3900_ma20btech11013/main/filter/codes/problem_8-2-1.py
-\end{lstlisting}
-The filter frequency response is plotted at
-\begin{lstlisting}
-	$ wget https://raw.githubusercontent.com/prajwal-3-14159/EE3900_ma20btech11013/main/filter/codes/problem_8-2-2.py
-\end{lstlisting}
-Observe that for a series $t_n = r^n$, $\frac{t_{n + 1}}{t_n} = r$.
-By the ratio test, $t_n$ converges if $|r| < 1$. We note that
-observe that $|p(i)| < 1$ and so, as $h(n)$ is the sum of convergent series,
-we see that $h(n)$ converges. From Fig. \eqref{fig:butter-imp}, it is clear
-that $h(n)$ is bounded. From \eqref{eq:z_trans},
-\begin{align}
-	\sum_{n = 0}^{\infty}h(n) = H(1) = 1 < \infty
-\end{align}
-Therefore, the system is stable. From
-Fig. \eqref{fig:butter-imp}, $h(n)$ is negligible after $n \geq 64$, and we
-can apply a 64-bit FFT to get y(n). The following code uses the DFT matrix
-to generate $y(n)$ in Fig. \eqref{fig:butter-out}.
-\begin{lstlisting}
-	$ wget https://raw.githubusercontent.com/prajwal-3-14159/EE3900_ma20btech11013/main/filter/codes/problem_8-2-3.py
-\end{lstlisting}
-\begin{figure}[!htb]
-	\includegraphics[width=\columnwidth]{figs/prob_7-2-1.png}
-	\caption{Plot of $h(n)$}
-	\label{fig:butter-imp}
-\end{figure}
-\begin{figure}[!htb]
-	\includegraphics[width=\columnwidth]{figs/prob_7-2-2.png}
-	\caption{Filter frequency response}
-	\label{fig:butter-resp}
-\end{figure}
-\begin{figure}[!htb]
-	\includegraphics[width=\columnwidth]{figs/prob_7-2-3.png}
-	\caption{Plot of $y(n)$}
-	\label{fig:butter-out}
-\end{figure}
-
-
-
-\item What is the sampling frequency of the input signal?
-\\
-\solution
-Sampling frequency(fs)=44.1kHZ.
-\item
-What is type, order and  cutoff-frequency of the above butterworth filter
-\\
-\solution
-The given butterworth filter is low pass with order=2 and cutoff-frequency=4kHz.
-%
-\item
-Modifying the code with different input parameters and to get the best possible output.
-%
-
+\noindent Answer the following questions by looking at the python code in Problem \ref{prob:output}.
+\begin{enumerate}[label=\thesection.\arabic*.,ref=\thesection.\theenumi]
+	\item
+	The command
+	\begin{lstlisting}
+		output_signal = signal.lfilter(b, a, input_signal)
+	\end{lstlisting}
+	in Problem \ref{prob:output} is executed through the following difference equation
+	\begin{equation}
+		\label{eq:iir_filter_gen}
+		\sum _{m=0}^{M}a\brak{m}y\brak{n-m}=\sum _{k=0}^{N}b\brak{k}x\brak{n-k}
+	\end{equation}
+	where the input signal is $x(n)$ and the output signal is $y(n)$ with initial values all 0. Replace
+	\textbf{signal.filtfilt} with your own routine and verify.
+	\solution
+	Download the source code by typing the next command \\
+	\begin{lstlisting}
+		$ wget https://raw.githubusercontent.com/goats-9/ee3900-assignments/main/filter/codes/8_1.py
+	\end{lstlisting}
+	and run it using
+	\begin{lstlisting}
+		$ python3 8_1.py
+	\end{lstlisting}
+	\item Repeat all the exercises in the previous sections for the above $a$ and $b$.
+	\solution
+	For the given values, the difference equation is
+	\begin{align}
+		&y(n) - \brak{2.52}y(n - 1) + \brak{2.56}y(n - 2) \nonumber \\
+		&- \brak{1.21}y(n - 3) + \brak{0.22}y(n - 4) \nonumber \\
+		&= \brak{3.45 \times 10^{-3}}x(n) + \brak{1.38 \times 10^{-2}}x(n - 1) \nonumber \\
+		&+ \brak{2.07 \times 10^{-2}}x(n - 2) + \brak{1.38 \times 10^{-2}}x(n - 3) \nonumber \\
+		&+ \brak{3.45 \times 10^{-3}}x(n - 4)
+	\end{align}
+	From \eqref{eq:iir_filter_gen}, we see that the transfer function can be written as follows
+	\begin{align}
+		H(z) &= \frac{\sum_{k = 0}^{N}b(k)z^{-k}}{\sum_{k = 0}^{M}a(k)z^{-k}} \\
+		&= \sum_{i}\frac{r(i)}{1 - p(i)z^{-1}} + \sum_{j}k(j)z^{-j}
+		\label{eq:trans-func}
+	\end{align}
+	where $r(i)$, $p(i)$, are called residues and poles respectively of the partial 
+	fraction expansion of $H(z)$. $k(i)$ are the coefficients of the direct polynomial 
+	terms that might be left over. We can now take the inverse $z$-transform of
+	\eqref{eq:trans-func} and get using \eqref{eq:anun},
+	\begin{align}
+		h(n) &= \sum_{i}r(i)[p(i)]^nu(n) + \sum_{j}k(j)\delta(n - j)
+		\label{eq:h-n-expr}
+	\end{align}
+	Substituting the values,
+	\begin{align}
+		&h(n) = [\brak{-0.24-0.71\j}\brak{0.56+0.14\j}^n \nonumber \\
+		&+ \brak{-0.24+0.71\j}\brak{0.56-0.14\j}^n \nonumber \\
+		&+ \brak{-0.25+0.12\j}\brak{0.70+0.41\j}^n \nonumber \\
+		&+ \brak{-0.25-0.12\j}\brak{0.70-0.41\j}^n]u(n) \nonumber \\
+		&+ \brak{1.6 \times 10^{-2}}\delta(n) \\
+		&\implies h(n) = \brak{1.5}\brak{0.58}^n\cos\brak{n\alpha_1 + \beta_1} \nonumber \\
+		&+ \brak{0.55}\brak{0.81}^n\cos\brak{n\alpha_2 + \beta_2} \nonumber \\
+		&+ \brak{1.6 \times 10^{-2}}\delta(n)
+		\label{eq:h-n-real}
+	\end{align}
+	where
+	\begin{align}
+		\tan{\alpha_1} &= 0.25 \\
+		\tan{\beta_1} &= 2.96 \\
+		\tan{\alpha_2} &= 0.59 \\
+		\tan{\beta_2} &= -0.48
+		\label{eq:h-params}
+	\end{align}
+	The values $r(i)$, $p(i)$, $k(i)$ and thus the impulse response function are computed and plotted at
+	\begin{lstlisting}
+		$ wget https://raw.githubusercontent.com/goats-9/ee3900-assignments/main/filter/codes/8_2_1.py
+	\end{lstlisting}
+	The filter frequency response is plotted at
+	\begin{lstlisting}
+		$ wget https://raw.githubusercontent.com/goats-9/ee3900-assignments/main/filter/codes/8_2_2.py
+	\end{lstlisting}
+	Observe that for a series $t_n = r^n$, $\frac{t_{n + 1}}{t_n} = r$.
+	By the ratio test, $t_n$ converges if $|r| < 1$. We observe that for all $i$, 
+	$|p(i)| < 1$ and so, as $h(n)$ is the sum of many convergent series,
+	we see that $h(n)$ converges and is bounded. From \eqref{eq:z_trans},
+	\begin{align}
+		\sum_{n = 0}^{\infty}h(n) = H(1) = \frac{\sum_{k = 0}^{N}b(k)}{\sum_{k = 0}^{M}a(k)} = 1 < \infty
+	\end{align}
+	Therefore, the system is stable. From
+	Fig. \eqref{fig:butter-imp}, $h(n)$ is negligible after $n \geq 64$, and we
+	can apply a 64-bit FFT to get y(n). The following code uses the DFT matrix
+	to generate $y(n)$ in Fig. \eqref{fig:butter-out}.
+	\begin{lstlisting}
+		$ wget https://raw.githubusercontent.com/goats-9/ee3900-assignments/main/filter/codes/8_2_3.py
+	\end{lstlisting}
+	The codes can be run all at once by typing a small shell script
+	\begin{lstlisting}
+		$ for file in 8_2_*.py; do python ${file}; done
+	\end{lstlisting}
+	\begin{figure}[!htb]
+		\includegraphics[width=\columnwidth]{./figs/8_2_1.png}
+		\caption{Plot of $h(n)$}
+		\label{fig:butter-imp}
+	\end{figure}
+	\begin{figure}[!htb]
+		\includegraphics[width=\columnwidth]{figs/8_2_2.png}
+		\caption{Filter frequency response}
+		\label{fig:butter-resp}
+	\end{figure}
+	\begin{figure}[!htb]
+		\includegraphics[width=\columnwidth]{figs/8_2_3.png}
+		\caption{Plot of $y(n)$}
+		\label{fig:butter-out}
+	\end{figure}
+	\item What is the sampling frequency of the input signal?
+	\solution
+	Sampling frequency $f_s = 44.1$ kHZ.
+	\item
+	What is type, order and  cutoff frequency of the above Butterworth filter?
+	\solution
+	The given Butterworth filter is low pass with order 4 and cutoff frequency 4 kHz.
+	\item
+	Modify the code with different input parameters and get the best possible output.
+	\solution
+	A better filtering was found on setting the order of the filter to be 7.
+\end{enumerate}
+\end{document}
 \end{document}
 

@@ -1,4 +1,4 @@
-V1 in 0 dc 0 ac 1
+V1 in 0 SIN (0 12 5k 0 0)
 R0 in 1 1
 C1 1 0 4.43m ic=0
 L2 1 2 3.16m
@@ -7,7 +7,8 @@ L4 2 3 2.23m
 RL 3 0 1.9841
 
 .control
-tran 1e-9 2 uic
+tran 1 1.0000001 uic
+plot  v(3)
 wrdata e5.4b.txt v(3)
 .endc
 

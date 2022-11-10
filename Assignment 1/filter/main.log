@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2022.9.4)  10 OCT 2022 15:10
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2022.9.4)  10 NOV 2022 11:10
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1400,189 +1400,132 @@ Underfull \hbox (badness 10000) in paragraph at lines 1314--1315
  []
 
 
-Overfull \hbox (7.96732pt too wide) detected at line 1383
+Underfull \hbox (badness 10000) in paragraph at lines 1350--1355
+
+ []
+
+
+Overfull \hbox (7.96732pt too wide) detected at line 1371
 []
  []
 
 
-LaTeX Warning: Command \j invalid in math mode on input line 1408.
+LaTeX Warning: Command \j invalid in math mode on input line 1397.
 
 
-LaTeX Warning: Command \j invalid in math mode on input line 1408.
+LaTeX Warning: Command \j invalid in math mode on input line 1397.
 
 
-LaTeX Warning: Command \j invalid in math mode on input line 1408.
+LaTeX Warning: Command \j invalid in math mode on input line 1397.
 
 
-LaTeX Warning: Command \j invalid in math mode on input line 1408.
+LaTeX Warning: Command \j invalid in math mode on input line 1397.
 
 
-LaTeX Warning: Command \j invalid in math mode on input line 1408.
+LaTeX Warning: Command \j invalid in math mode on input line 1397.
 
 
-LaTeX Warning: Command \j invalid in math mode on input line 1408.
+LaTeX Warning: Command \j invalid in math mode on input line 1397.
 
 
-LaTeX Warning: Command \j invalid in math mode on input line 1408.
+LaTeX Warning: Command \j invalid in math mode on input line 1397.
 
 
-LaTeX Warning: Command \j invalid in math mode on input line 1408.
+LaTeX Warning: Command \j invalid in math mode on input line 1397.
 
 
-LaTeX Warning: Command \j invalid in math mode on input line 1408.
+LaTeX Warning: Command \j invalid in math mode on input line 1397.
 
 
-LaTeX Warning: Command \j invalid in math mode on input line 1408.
+LaTeX Warning: Command \j invalid in math mode on input line 1397.
 
 
-LaTeX Warning: Command \j invalid in math mode on input line 1408.
+LaTeX Warning: Command \j invalid in math mode on input line 1397.
 
 
-LaTeX Warning: Command \j invalid in math mode on input line 1408.
+LaTeX Warning: Command \j invalid in math mode on input line 1397.
 
 
-LaTeX Warning: Command \j invalid in math mode on input line 1408.
+LaTeX Warning: Command \j invalid in math mode on input line 1397.
 
 
-LaTeX Warning: Command \j invalid in math mode on input line 1408.
+LaTeX Warning: Command \j invalid in math mode on input line 1397.
 
 
-LaTeX Warning: Command \j invalid in math mode on input line 1408.
+LaTeX Warning: Command \j invalid in math mode on input line 1397.
 
 
-LaTeX Warning: Command \j invalid in math mode on input line 1408.
+LaTeX Warning: Command \j invalid in math mode on input line 1397.
 
 
-LaTeX Warning: Command \j invalid in math mode on input line 1408.
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
+ [11]
+LaTeX Font Info:    Trying to load font information for OMS+txr on input line 1
+430.
 
-LaTeX Warning: Command \j invalid in math mode on input line 1408.
-
-
-LaTeX Warning: Command \j invalid in math mode on input line 1408.
-
-
-LaTeX Warning: Command \j invalid in math mode on input line 1408.
-
-
-LaTeX Warning: Command \j invalid in math mode on input line 1408.
-
-
-LaTeX Warning: Command \j invalid in math mode on input line 1408.
-
-
-LaTeX Warning: Command \j invalid in math mode on input line 1408.
-
-
-LaTeX Warning: Command \j invalid in math mode on input line 1408.
-
-[11]
-
-LaTeX Warning: File `figs/prob_7-2-1.png' not found on input line 1433.
-
-
-! Package pdftex.def Error: File `figs/prob_7-2-1.png' not found: using draft s
-etting.
-
-See the pdftex.def package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.1433 ...width=\columnwidth]{figs/prob_7-2-1.png}
-                                                  
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-LaTeX Font Info:    Trying to load font information for OT1+txtt on input line 
-1433.
-(/usr/share/texlive/texmf-dist/tex/latex/txfonts/ot1txtt.fd
-File: ot1txtt.fd 2000/12/15 v3.1
+(/usr/share/texlive/texmf-dist/tex/latex/txfonts/omstxr.fd
+File: omstxr.fd 2000/12/15 v3.1
 )
+LaTeX Font Info:    Font shape `OMS/txr/m/n' in size <12> not available
+(Font)              Font shape `OMS/txsy/m/n' tried instead on input line 1430.
 
-LaTeX Warning: File `figs/prob_7-2-2.png' not found on input line 1438.
+<./figs/8_2_1.png, id=668, 462.528pt x 346.896pt>
+File: ./figs/8_2_1.png Graphic file (type png)
+<use ./figs/8_2_1.png>
+Package pdftex.def Info: ./figs/8_2_1.png  used on input line 1433.
+(pdftex.def)             Requested size: 252.0pt x 189.00427pt.
+<figs/8_2_2.png, id=670, 462.528pt x 346.896pt>
+File: figs/8_2_2.png Graphic file (type png)
+<use figs/8_2_2.png>
+Package pdftex.def Info: figs/8_2_2.png  used on input line 1438.
+(pdftex.def)             Requested size: 252.0pt x 189.00427pt.
+<figs/8_2_3.png, id=671, 462.528pt x 346.896pt>
+File: figs/8_2_3.png Graphic file (type png)
+<use figs/8_2_3.png>
+Package pdftex.def Info: figs/8_2_3.png  used on input line 1443.
+(pdftex.def)             Requested size: 252.0pt x 189.00427pt.
 
 
-! Package pdftex.def Error: File `figs/prob_7-2-2.png' not found: using draft s
-etting.
+LaTeX Warning: Text page 12 contains only floats.
 
-See the pdftex.def package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.1438 ...width=\columnwidth]{figs/prob_7-2-2.png}
-                                                  
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-LaTeX Warning: File `figs/prob_7-2-3.png' not found on input line 1443.
-
-
-! Package pdftex.def Error: File `figs/prob_7-2-3.png' not found: using draft s
-etting.
-
-See the pdftex.def package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.1443 ...width=\columnwidth]{figs/prob_7-2-3.png}
-                                                  
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-[12]
-
-! LaTeX Error: \begin{enumerate} on input line 1341 ended by \end{document}.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.1464 \end{document}
-                     
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-[13
+[12 <./figs/8_2_1.png> <./figs/8_2_2.png> <./figs/8_2_3.png>] [13
 
 ] (./main.aux)
 
 LaTeX Warning: There were undefined references.
 
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
 Package rerunfilecheck Info: File `main.out' has not changed.
 (rerunfilecheck)             Checksum: EDFC8E4B8727EDBA1BB28508A87337F9;882.
- )
-(\end occurred inside a group at level 1)
-
-### semi simple group (level 1) entered at line 1341 (\begingroup)
-### bottom level 
+ ) 
 Here is how much of TeX's memory you used:
- 17939 strings out of 478287
- 280952 string characters out of 5849290
+ 17861 strings out of 478287
+ 278661 string characters out of 5849290
  1005371 words of memory out of 5000000
- 35512 multiletter control sequences out of 15000+600000
- 550680 words of font info for 198 fonts, out of 8000000 for 9000
+ 35440 multiletter control sequences out of 15000+600000
+ 550404 words of font info for 197 fonts, out of 8000000 for 9000
  1144 hyphenation exceptions out of 8191
- 70i,24n,76p,246b,1436s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</us
-r/share/texlive/texmf-dist/fonts/type1/public/txfonts/rtcxr.pfb></usr/share/tex
-live/texmf-dist/fonts/type1/public/txfonts/rtxb.pfb></usr/share/texlive/texmf-d
-ist/fonts/type1/public/txfonts/rtxi.pfb></usr/share/texlive/texmf-dist/fonts/ty
-pe1/public/txfonts/rtxmi.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/
-txfonts/rtxr.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/txfonts/rtxs
-c.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/txfonts/txex.pfb></usr/
-share/texlive/texmf-dist/fonts/type1/public/txfonts/txsy.pfb></usr/share/texliv
-e/texmf-dist/fonts/type1/public/txfonts/txsya.pfb></usr/share/texlive/texmf-dis
-t/fonts/type1/public/txfonts/txsyc.pfb></usr/share/texlive/texmf-dist/fonts/typ
-e1/public/txfonts/txtt.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times
-/utmb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmbi8a.pfb></
-usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texli
-ve/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on main.pdf (13 pages, 397757 bytes).
+ 70i,24n,76p,246b,1477s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texliv
+e/texmf-dist/fonts/type1/public/txfonts/rtcxr.pfb></usr/share/texlive/texmf-dis
+t/fonts/type1/public/txfonts/rtxb.pfb></usr/share/texlive/texmf-dist/fonts/type
+1/public/txfonts/rtxi.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/txf
+onts/rtxmi.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/txfonts/rtxr.p
+fb></usr/share/texlive/texmf-dist/fonts/type1/public/txfonts/rtxsc.pfb></usr/sh
+are/texlive/texmf-dist/fonts/type1/public/txfonts/txex.pfb></usr/share/texlive/
+texmf-dist/fonts/type1/public/txfonts/txsy.pfb></usr/share/texlive/texmf-dist/f
+onts/type1/public/txfonts/txsya.pfb></usr/share/texlive/texmf-dist/fonts/type1/
+public/txfonts/txsyc.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/u
+tmb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmbi8a.pfb></us
+r/share/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texlive
+/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
+Output written on main.pdf (13 pages, 436805 bytes).
 PDF statistics:
- 819 PDF objects out of 1000 (max. 8388607)
- 579 compressed objects within 6 object streams
- 301 named destinations out of 1000 (max. 500000)
- 115 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 830 PDF objects out of 1000 (max. 8388607)
+ 586 compressed objects within 6 object streams
+ 310 named destinations out of 1000 (max. 500000)
+ 130 words of extra memory for PDF output out of 10000 (max. 10000000)
 
