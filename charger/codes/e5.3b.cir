@@ -1,18 +1,29 @@
-
-V1 in 0 SIN (0 12 5k 0 0)
-R0 in 1 1
+*. model DIODE1 D ( bv =50 is =1 e -13 n =1.05)
+V1 c a SINE(0 12 50 0 0 0 10000)
+d1 a b	diode
+d2 c b	diode
+d3 0 c	diode
+d4 0 a	diode
+R0 b 1 1
 C1 1 0 1.64m ic=0
 L2 1 2 4.29m
 C3 2 0 5.31m ic=0
 L4 2 3 4.29m
 C5 X 0 1.64m ic=0
 RL X 0 1
-V2 out
 
+
+.MODEL  diode d
 .control
-tran 1e-9 10u uic
-plot  v(X)
-wrdata e5.3b.txt v(X)
+run
+tran 1 1.0005 uic
+
+wrdata e5.3b.txt v(3)
+set color0 = white
+set color1 = black
+plot  v(3)
+hardcopy ../figs/e5.3b.ps v(3)
+
 .endc
 
 .end
